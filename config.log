@@ -1,0 +1,1082 @@
+file /home/xxtang/fsp/fsp2/SConstruct,line 89:
+	Configure(confdir = .sconf_temp)
+scons: Configure: Checking whether the C compiler works... 
+scons: Configure: ".sconf_temp/conftest_0.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_0.c <-
+  |  |
+  |  |int main()
+  |  |{
+  |  |    return 0;
+  |  |}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_0.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_0.o -c -Iinclude -Ip2pnat/include .sconf_temp/conftest_0.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking whether mipsel-buildroot-linux-uclibc-gcc supports -Wall... 
+scons: Configure: ".sconf_temp/conftest_1.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_1.c <-
+  |  |
+  |  |void dummy(void);
+  |  |void dummy(void) {}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_1.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_1.o -c -Wall -Iinclude -Ip2pnat/include .sconf_temp/conftest_1.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking whether mipsel-buildroot-linux-uclibc-gcc supports -W... 
+scons: Configure: ".sconf_temp/conftest_2.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_2.c <-
+  |  |
+  |  |void dummy(void);
+  |  |void dummy(void) {}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_2.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_2.o -c -Wall -W -Iinclude -Ip2pnat/include .sconf_temp/conftest_2.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking whether mipsel-buildroot-linux-uclibc-gcc supports -Wstrict-prototypes... 
+scons: Configure: ".sconf_temp/conftest_3.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_3.c <-
+  |  |
+  |  |void dummy(void);
+  |  |void dummy(void) {}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_3.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_3.o -c -Wall -W -Wstrict-prototypes -Iinclude -Ip2pnat/include .sconf_temp/conftest_3.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking whether mipsel-buildroot-linux-uclibc-gcc supports -Wmissing-prototypes... 
+scons: Configure: ".sconf_temp/conftest_4.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_4.c <-
+  |  |
+  |  |void dummy(void);
+  |  |void dummy(void) {}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_4.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_4.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Iinclude -Ip2pnat/include .sconf_temp/conftest_4.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking whether mipsel-buildroot-linux-uclibc-gcc supports -Wshadow... 
+scons: Configure: ".sconf_temp/conftest_5.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_5.c <-
+  |  |
+  |  |void dummy(void);
+  |  |void dummy(void) {}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_5.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_5.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Iinclude -Ip2pnat/include .sconf_temp/conftest_5.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking whether mipsel-buildroot-linux-uclibc-gcc supports -Wbad-function-cast... 
+scons: Configure: ".sconf_temp/conftest_6.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_6.c <-
+  |  |
+  |  |void dummy(void);
+  |  |void dummy(void) {}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_6.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_6.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Iinclude -Ip2pnat/include .sconf_temp/conftest_6.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking whether mipsel-buildroot-linux-uclibc-gcc supports -Wcast-qual... 
+scons: Configure: ".sconf_temp/conftest_7.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_7.c <-
+  |  |
+  |  |void dummy(void);
+  |  |void dummy(void) {}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_7.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_7.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Iinclude -Ip2pnat/include .sconf_temp/conftest_7.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking whether mipsel-buildroot-linux-uclibc-gcc supports -Wcast-align... 
+scons: Configure: ".sconf_temp/conftest_8.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_8.c <-
+  |  |
+  |  |void dummy(void);
+  |  |void dummy(void) {}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_8.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_8.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Iinclude -Ip2pnat/include .sconf_temp/conftest_8.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking whether mipsel-buildroot-linux-uclibc-gcc supports -Wwrite-strings... 
+scons: Configure: ".sconf_temp/conftest_9.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_9.c <-
+  |  |
+  |  |void dummy(void);
+  |  |void dummy(void) {}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_9.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_9.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Iinclude -Ip2pnat/include .sconf_temp/conftest_9.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking whether mipsel-buildroot-linux-uclibc-gcc supports -Waggregate-return... 
+scons: Configure: ".sconf_temp/conftest_10.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_10.c <-
+  |  |
+  |  |void dummy(void);
+  |  |void dummy(void) {}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_10.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_10.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Iinclude -Ip2pnat/include .sconf_temp/conftest_10.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking whether mipsel-buildroot-linux-uclibc-gcc supports -Wmissing-declarations... 
+scons: Configure: ".sconf_temp/conftest_11.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_11.c <-
+  |  |
+  |  |void dummy(void);
+  |  |void dummy(void) {}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_11.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_11.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Iinclude -Ip2pnat/include .sconf_temp/conftest_11.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking whether mipsel-buildroot-linux-uclibc-gcc supports -Wmissing-format-attribute... 
+scons: Configure: ".sconf_temp/conftest_12.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_12.c <-
+  |  |
+  |  |void dummy(void);
+  |  |void dummy(void) {}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_12.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_12.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Iinclude -Ip2pnat/include .sconf_temp/conftest_12.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking whether mipsel-buildroot-linux-uclibc-gcc supports -Wnested-externs... 
+scons: Configure: ".sconf_temp/conftest_13.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_13.c <-
+  |  |
+  |  |void dummy(void);
+  |  |void dummy(void) {}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_13.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_13.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -Iinclude -Ip2pnat/include .sconf_temp/conftest_13.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking whether mipsel-buildroot-linux-uclibc-gcc supports -ggdb... 
+scons: Configure: ".sconf_temp/conftest_14.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_14.c <-
+  |  |
+  |  |void dummy(void);
+  |  |void dummy(void) {}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_14.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_14.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -Iinclude -Ip2pnat/include .sconf_temp/conftest_14.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking whether mipsel-buildroot-linux-uclibc-gcc supports -fno-common... 
+scons: Configure: ".sconf_temp/conftest_15.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_15.c <-
+  |  |
+  |  |void dummy(void);
+  |  |void dummy(void) {}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_15.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_15.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Iinclude -Ip2pnat/include .sconf_temp/conftest_15.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking whether mipsel-buildroot-linux-uclibc-gcc supports -Wchar-subscripts... 
+scons: Configure: ".sconf_temp/conftest_16.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_16.c <-
+  |  |
+  |  |void dummy(void);
+  |  |void dummy(void) {}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_16.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_16.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Iinclude -Ip2pnat/include .sconf_temp/conftest_16.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking whether mipsel-buildroot-linux-uclibc-gcc supports -Wcomment... 
+scons: Configure: ".sconf_temp/conftest_17.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_17.c <-
+  |  |
+  |  |void dummy(void);
+  |  |void dummy(void) {}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_17.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_17.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Iinclude -Ip2pnat/include .sconf_temp/conftest_17.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking whether mipsel-buildroot-linux-uclibc-gcc supports -Wimplicit... 
+scons: Configure: ".sconf_temp/conftest_18.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_18.c <-
+  |  |
+  |  |void dummy(void);
+  |  |void dummy(void) {}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_18.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_18.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Iinclude -Ip2pnat/include .sconf_temp/conftest_18.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking whether mipsel-buildroot-linux-uclibc-gcc supports -Wsequence-point... 
+scons: Configure: ".sconf_temp/conftest_19.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_19.c <-
+  |  |
+  |  |void dummy(void);
+  |  |void dummy(void) {}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_19.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_19.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Iinclude -Ip2pnat/include .sconf_temp/conftest_19.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking whether mipsel-buildroot-linux-uclibc-gcc supports -Wreturn-type... 
+scons: Configure: ".sconf_temp/conftest_20.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_20.c <-
+  |  |
+  |  |void dummy(void);
+  |  |void dummy(void) {}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_20.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_20.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Iinclude -Ip2pnat/include .sconf_temp/conftest_20.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking whether mipsel-buildroot-linux-uclibc-gcc supports -Wfloat-equal... 
+scons: Configure: ".sconf_temp/conftest_21.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_21.c <-
+  |  |
+  |  |void dummy(void);
+  |  |void dummy(void) {}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_21.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_21.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Wfloat-equal -Iinclude -Ip2pnat/include .sconf_temp/conftest_21.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking whether mipsel-buildroot-linux-uclibc-gcc supports -Wno-system-headers... 
+scons: Configure: ".sconf_temp/conftest_22.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_22.c <-
+  |  |
+  |  |void dummy(void);
+  |  |void dummy(void) {}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_22.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_22.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Wfloat-equal -Wno-system-headers -Iinclude -Ip2pnat/include .sconf_temp/conftest_22.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking whether mipsel-buildroot-linux-uclibc-gcc supports -Wredundant-decls... 
+scons: Configure: ".sconf_temp/conftest_23.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_23.c <-
+  |  |
+  |  |void dummy(void);
+  |  |void dummy(void) {}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_23.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_23.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Wfloat-equal -Wno-system-headers -Wredundant-decls -Iinclude -Ip2pnat/include .sconf_temp/conftest_23.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking whether mipsel-buildroot-linux-uclibc-gcc supports -pedantic... 
+scons: Configure: ".sconf_temp/conftest_24.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_24.c <-
+  |  |
+  |  |void dummy(void);
+  |  |void dummy(void) {}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_24.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_24.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Wfloat-equal -Wno-system-headers -Wredundant-decls -pedantic -Iinclude -Ip2pnat/include .sconf_temp/conftest_24.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking whether mipsel-buildroot-linux-uclibc-gcc supports -Wlong-long... 
+scons: Configure: ".sconf_temp/conftest_25.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_25.c <-
+  |  |
+  |  |void dummy(void);
+  |  |void dummy(void) {}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_25.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_25.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Wfloat-equal -Wno-system-headers -Wredundant-decls -pedantic -Wlong-long -Iinclude -Ip2pnat/include .sconf_temp/conftest_25.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking whether mipsel-buildroot-linux-uclibc-gcc supports -Wundef... 
+scons: Configure: ".sconf_temp/conftest_26.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_26.c <-
+  |  |
+  |  |void dummy(void);
+  |  |void dummy(void) {}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_26.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_26.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Wfloat-equal -Wno-system-headers -Wredundant-decls -pedantic -Wlong-long -Wundef -Iinclude -Ip2pnat/include .sconf_temp/conftest_26.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking whether mipsel-buildroot-linux-uclibc-gcc supports -Winline... 
+scons: Configure: ".sconf_temp/conftest_27.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_27.c <-
+  |  |
+  |  |void dummy(void);
+  |  |void dummy(void) {}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_27.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_27.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Wfloat-equal -Wno-system-headers -Wredundant-decls -pedantic -Wlong-long -Wundef -Winline -Iinclude -Ip2pnat/include .sconf_temp/conftest_27.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking whether mipsel-buildroot-linux-uclibc-gcc supports -Wpointer-arith... 
+scons: Configure: ".sconf_temp/conftest_28.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_28.c <-
+  |  |
+  |  |void dummy(void);
+  |  |void dummy(void) {}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_28.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_28.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Wfloat-equal -Wno-system-headers -Wredundant-decls -pedantic -Wlong-long -Wundef -Winline -Wpointer-arith -Iinclude -Ip2pnat/include .sconf_temp/conftest_28.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking whether mipsel-buildroot-linux-uclibc-gcc supports -Wno-unused-parameter... 
+scons: Configure: ".sconf_temp/conftest_29.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_29.c <-
+  |  |
+  |  |void dummy(void);
+  |  |void dummy(void) {}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_29.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_29.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Wfloat-equal -Wno-system-headers -Wredundant-decls -pedantic -Wlong-long -Wundef -Winline -Wpointer-arith -Wno-unused-parameter -Iinclude -Ip2pnat/include .sconf_temp/conftest_29.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking whether mipsel-buildroot-linux-uclibc-gcc supports -Wunreachable-code... 
+scons: Configure: ".sconf_temp/conftest_30.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_30.c <-
+  |  |
+  |  |void dummy(void);
+  |  |void dummy(void) {}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_30.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_30.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Wfloat-equal -Wno-system-headers -Wredundant-decls -pedantic -Wlong-long -Wundef -Winline -Wpointer-arith -Wno-unused-parameter -Wunreachable-code -Iinclude -Ip2pnat/include .sconf_temp/conftest_30.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking whether mipsel-buildroot-linux-uclibc-gcc supports -fmacro-backtrace-limit=2... 
+scons: Configure: ".sconf_temp/conftest_31.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_31.c <-
+  |  |
+  |  |void dummy(void);
+  |  |void dummy(void) {}
+  |  |
+  |
+scons: Configure: Building ".sconf_temp/conftest_31.o" failed in a previous run and all its sources are up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_31.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Wfloat-equal -Wno-system-headers -Wredundant-decls -pedantic -Wlong-long -Wundef -Winline -Wpointer-arith -Wno-unused-parameter -Wunreachable-code -fmacro-backtrace-limit=2 -Iinclude -Ip2pnat/include .sconf_temp/conftest_31.c
+  |
+scons: Configure: (cached) no
+
+scons: Configure: Checking whether mipsel-buildroot-linux-uclibc-gcc supports -Wno-cast-align... 
+scons: Configure: ".sconf_temp/conftest_32.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_32.c <-
+  |  |
+  |  |void dummy(void);
+  |  |void dummy(void) {}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_32.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_32.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Wfloat-equal -Wno-system-headers -Wredundant-decls -pedantic -Wlong-long -Wundef -Winline -Wpointer-arith -Wno-unused-parameter -Wunreachable-code -Wno-cast-align -Iinclude -Ip2pnat/include .sconf_temp/conftest_32.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking whether mipsel-buildroot-linux-uclibc-gcc supports -Wno-pointer-sign... 
+scons: Configure: ".sconf_temp/conftest_33.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_33.c <-
+  |  |
+  |  |void dummy(void);
+  |  |void dummy(void) {}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_33.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_33.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Wfloat-equal -Wno-system-headers -Wredundant-decls -pedantic -Wlong-long -Wundef -Winline -Wpointer-arith -Wno-unused-parameter -Wunreachable-code -Wno-cast-align -Wno-pointer-sign -Iinclude -Ip2pnat/include .sconf_temp/conftest_33.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking if DSSSL processor jade works... 
+scons: Configure: (cached) yes
+
+scons: Configure: Locating Docbook DSSSL Stylesheets... 
+scons: Configure: (cached) no
+
+scons: Configure: Checking for C function srandomdev()... 
+scons: Configure: ".sconf_temp/conftest_34.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_34.c <-
+  |  |
+  |  |
+  |  |#include <assert.h>
+  |  |
+  |  |#ifdef __cplusplus
+  |  |extern "C"
+  |  |#endif
+  |  |char srandomdev();
+  |  |
+  |  |int main() {
+  |  |#if defined (__stub_srandomdev) || defined (__stub___srandomdev)
+  |  |  fail fail fail
+  |  |#else
+  |  |  srandomdev();
+  |  |#endif
+  |  |
+  |  |  return 0;
+  |  |}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_34.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_34.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Wfloat-equal -Wno-system-headers -Wredundant-decls -pedantic -Wlong-long -Wundef -Winline -Wpointer-arith -Wno-unused-parameter -Wunreachable-code -Wno-cast-align -Wno-pointer-sign -Iinclude -Ip2pnat/include .sconf_temp/conftest_34.c
+  |
+scons: Configure: Building ".sconf_temp/conftest_34" failed in a previous run and all its sources are up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_34 -Wl,-rpath=/var/lib .sconf_temp/conftest_34.o -L/usr/lib -L/usr/local/lib -L/var/lib -Lp2pnat/lib/om50s -lp2pnat -lpthread
+  |
+scons: Configure: (cached) no
+
+scons: Configure: Checking for C function random()... 
+scons: Configure: ".sconf_temp/conftest_35.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_35.c <-
+  |  |
+  |  |
+  |  |#include <assert.h>
+  |  |
+  |  |#ifdef __cplusplus
+  |  |extern "C"
+  |  |#endif
+  |  |char random();
+  |  |
+  |  |int main() {
+  |  |#if defined (__stub_random) || defined (__stub___random)
+  |  |  fail fail fail
+  |  |#else
+  |  |  random();
+  |  |#endif
+  |  |
+  |  |  return 0;
+  |  |}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_35.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_35.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Wfloat-equal -Wno-system-headers -Wredundant-decls -pedantic -Wlong-long -Wundef -Winline -Wpointer-arith -Wno-unused-parameter -Wunreachable-code -Wno-cast-align -Wno-pointer-sign -Iinclude -Ip2pnat/include .sconf_temp/conftest_35.c
+  |
+scons: Configure: ".sconf_temp/conftest_35" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_35 -Wl,-rpath=/var/lib .sconf_temp/conftest_35.o -L/usr/lib -L/usr/local/lib -L/var/lib -Lp2pnat/lib/om50s -lp2pnat -lpthread
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking for C function fork()... 
+scons: Configure: ".sconf_temp/conftest_36.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_36.c <-
+  |  |
+  |  |
+  |  |#include <assert.h>
+  |  |
+  |  |#ifdef __cplusplus
+  |  |extern "C"
+  |  |#endif
+  |  |char fork();
+  |  |
+  |  |int main() {
+  |  |#if defined (__stub_fork) || defined (__stub___fork)
+  |  |  fail fail fail
+  |  |#else
+  |  |  fork();
+  |  |#endif
+  |  |
+  |  |  return 0;
+  |  |}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_36.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_36.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Wfloat-equal -Wno-system-headers -Wredundant-decls -pedantic -Wlong-long -Wundef -Winline -Wpointer-arith -Wno-unused-parameter -Wunreachable-code -Wno-cast-align -Wno-pointer-sign -DHAVE_RANDOM -Iinclude -Ip2pnat/include .sconf_temp/conftest_36.c
+  |
+scons: Configure: ".sconf_temp/conftest_36" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_36 -Wl,-rpath=/var/lib .sconf_temp/conftest_36.o -L/usr/lib -L/usr/local/lib -L/var/lib -Lp2pnat/lib/om50s -lp2pnat -lpthread
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking for C function setsid()... 
+scons: Configure: ".sconf_temp/conftest_37.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_37.c <-
+  |  |
+  |  |
+  |  |#include <assert.h>
+  |  |
+  |  |#ifdef __cplusplus
+  |  |extern "C"
+  |  |#endif
+  |  |char setsid();
+  |  |
+  |  |int main() {
+  |  |#if defined (__stub_setsid) || defined (__stub___setsid)
+  |  |  fail fail fail
+  |  |#else
+  |  |  setsid();
+  |  |#endif
+  |  |
+  |  |  return 0;
+  |  |}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_37.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_37.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Wfloat-equal -Wno-system-headers -Wredundant-decls -pedantic -Wlong-long -Wundef -Winline -Wpointer-arith -Wno-unused-parameter -Wunreachable-code -Wno-cast-align -Wno-pointer-sign -DHAVE_RANDOM -DHAVE_FORK -Iinclude -Ip2pnat/include .sconf_temp/conftest_37.c
+  |
+scons: Configure: ".sconf_temp/conftest_37" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_37 -Wl,-rpath=/var/lib .sconf_temp/conftest_37.o -L/usr/lib -L/usr/local/lib -L/var/lib -Lp2pnat/lib/om50s -lp2pnat -lpthread
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking for C header file unistd.h... 
+scons: Configure: ".sconf_temp/conftest_38.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_38.c <-
+  |  |
+  |  |#include "unistd.h"
+  |  |
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_38.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_38.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Wfloat-equal -Wno-system-headers -Wredundant-decls -pedantic -Wlong-long -Wundef -Winline -Wpointer-arith -Wno-unused-parameter -Wunreachable-code -Wno-cast-align -Wno-pointer-sign -DHAVE_RANDOM -DHAVE_FORK -DHAVE_SETSID -Iinclude -Ip2pnat/include .sconf_temp/conftest_38.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking for C header file limits.h... 
+scons: Configure: ".sconf_temp/conftest_39.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_39.c <-
+  |  |
+  |  |#include "limits.h"
+  |  |
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_39.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_39.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Wfloat-equal -Wno-system-headers -Wredundant-decls -pedantic -Wlong-long -Wundef -Winline -Wpointer-arith -Wno-unused-parameter -Wunreachable-code -Wno-cast-align -Wno-pointer-sign -DHAVE_RANDOM -DHAVE_FORK -DHAVE_SETSID -DHAVE_UNISTD_H -Iinclude -Ip2pnat/include .sconf_temp/conftest_39.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking for C header file strings.h... 
+scons: Configure: ".sconf_temp/conftest_40.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_40.c <-
+  |  |
+  |  |#include "strings.h"
+  |  |
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_40.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_40.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Wfloat-equal -Wno-system-headers -Wredundant-decls -pedantic -Wlong-long -Wundef -Winline -Wpointer-arith -Wno-unused-parameter -Wunreachable-code -Wno-cast-align -Wno-pointer-sign -DHAVE_RANDOM -DHAVE_FORK -DHAVE_SETSID -DHAVE_UNISTD_H -DHAVE_LIMITS_H -Iinclude -Ip2pnat/include .sconf_temp/conftest_40.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking for C header file sys/resource.h... 
+scons: Configure: ".sconf_temp/conftest_41.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_41.c <-
+  |  |
+  |  |#include "sys/resource.h"
+  |  |
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_41.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_41.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Wfloat-equal -Wno-system-headers -Wredundant-decls -pedantic -Wlong-long -Wundef -Winline -Wpointer-arith -Wno-unused-parameter -Wunreachable-code -Wno-cast-align -Wno-pointer-sign -DHAVE_RANDOM -DHAVE_FORK -DHAVE_SETSID -DHAVE_UNISTD_H -DHAVE_LIMITS_H -DHAVE_STRINGS_H -Iinclude -Ip2pnat/include .sconf_temp/conftest_41.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking for C header file sys/syslimits.h... 
+scons: Configure: ".sconf_temp/conftest_42.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_42.c <-
+  |  |
+  |  |#include "sys/syslimits.h"
+  |  |
+  |  |
+  |
+scons: Configure: Building ".sconf_temp/conftest_42.o" failed in a previous run and all its sources are up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_42.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Wfloat-equal -Wno-system-headers -Wredundant-decls -pedantic -Wlong-long -Wundef -Winline -Wpointer-arith -Wno-unused-parameter -Wunreachable-code -Wno-cast-align -Wno-pointer-sign -DHAVE_RANDOM -DHAVE_FORK -DHAVE_SETSID -DHAVE_UNISTD_H -DHAVE_LIMITS_H -DHAVE_STRINGS_H -DHAVE_SYS_RESOURCE_H -Iinclude -Ip2pnat/include .sconf_temp/conftest_42.c
+  |
+scons: Configure: (cached) no
+
+scons: Configure: Checking for C header file sys/wait.h... 
+scons: Configure: ".sconf_temp/conftest_43.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_43.c <-
+  |  |
+  |  |#include "sys/wait.h"
+  |  |
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_43.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_43.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Wfloat-equal -Wno-system-headers -Wredundant-decls -pedantic -Wlong-long -Wundef -Winline -Wpointer-arith -Wno-unused-parameter -Wunreachable-code -Wno-cast-align -Wno-pointer-sign -DHAVE_RANDOM -DHAVE_FORK -DHAVE_SETSID -DHAVE_UNISTD_H -DHAVE_LIMITS_H -DHAVE_STRINGS_H -DHAVE_SYS_RESOURCE_H -Iinclude -Ip2pnat/include .sconf_temp/conftest_43.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking for C header file utime.h... 
+scons: Configure: ".sconf_temp/conftest_44.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_44.c <-
+  |  |
+  |  |#include "utime.h"
+  |  |
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_44.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_44.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Wfloat-equal -Wno-system-headers -Wredundant-decls -pedantic -Wlong-long -Wundef -Winline -Wpointer-arith -Wno-unused-parameter -Wunreachable-code -Wno-cast-align -Wno-pointer-sign -DHAVE_RANDOM -DHAVE_FORK -DHAVE_SETSID -DHAVE_UNISTD_H -DHAVE_LIMITS_H -DHAVE_STRINGS_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_WAIT_H -Iinclude -Ip2pnat/include .sconf_temp/conftest_44.c
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking for C header file utmpx.h... 
+scons: Configure: ".sconf_temp/conftest_45.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_45.c <-
+  |  |
+  |  |#include "utmpx.h"
+  |  |
+  |  |
+  |
+scons: Configure: Building ".sconf_temp/conftest_45.o" failed in a previous run and all its sources are up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_45.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Wfloat-equal -Wno-system-headers -Wredundant-decls -pedantic -Wlong-long -Wundef -Winline -Wpointer-arith -Wno-unused-parameter -Wunreachable-code -Wno-cast-align -Wno-pointer-sign -DHAVE_RANDOM -DHAVE_FORK -DHAVE_SETSID -DHAVE_UNISTD_H -DHAVE_LIMITS_H -DHAVE_STRINGS_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_WAIT_H -DHAVE_UTIME_H -Iinclude -Ip2pnat/include .sconf_temp/conftest_45.c
+  |
+scons: Configure: (cached) no
+
+scons: Configure: Checking for C type union semun... 
+scons: Configure: ".sconf_temp/conftest_46.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_46.c <-
+  |  |
+  |  |
+  |  |#include <sys/types.h>
+  |  |#include <sys/ipc.h>
+  |  |#include <sys/sem.h>
+  |  |
+  |  |int main() {
+  |  |  if ((union semun *) 0)
+  |  |    return 0;
+  |  |  if (sizeof (union semun))
+  |  |    return 0;
+  |  |}
+  |  |
+  |
+scons: Configure: Building ".sconf_temp/conftest_46.o" failed in a previous run and all its sources are up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_46.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Wfloat-equal -Wno-system-headers -Wredundant-decls -pedantic -Wlong-long -Wundef -Winline -Wpointer-arith -Wno-unused-parameter -Wunreachable-code -Wno-cast-align -Wno-pointer-sign -DHAVE_RANDOM -DHAVE_FORK -DHAVE_SETSID -DHAVE_UNISTD_H -DHAVE_LIMITS_H -DHAVE_STRINGS_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_WAIT_H -DHAVE_UTIME_H -Iinclude -Ip2pnat/include .sconf_temp/conftest_46.c
+  |
+scons: Configure: (cached) no
+
+scons: Configure: Checking for C function fseeko()... 
+scons: Configure: ".sconf_temp/conftest_47.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_47.c <-
+  |  |
+  |  |
+  |  |#include <assert.h>
+  |  |
+  |  |#ifdef __cplusplus
+  |  |extern "C"
+  |  |#endif
+  |  |char fseeko();
+  |  |
+  |  |int main() {
+  |  |#if defined (__stub_fseeko) || defined (__stub___fseeko)
+  |  |  fail fail fail
+  |  |#else
+  |  |  fseeko();
+  |  |#endif
+  |  |
+  |  |  return 0;
+  |  |}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_47.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_47.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Wfloat-equal -Wno-system-headers -Wredundant-decls -pedantic -Wlong-long -Wundef -Winline -Wpointer-arith -Wno-unused-parameter -Wunreachable-code -Wno-cast-align -Wno-pointer-sign -DHAVE_RANDOM -DHAVE_FORK -DHAVE_SETSID -DHAVE_UNISTD_H -DHAVE_LIMITS_H -DHAVE_STRINGS_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_WAIT_H -DHAVE_UTIME_H -D_SEM_SEMUN_UNDEFINED=1 -Iinclude -Ip2pnat/include .sconf_temp/conftest_47.c
+  |
+scons: Configure: ".sconf_temp/conftest_47" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_47 -Wl,-rpath=/var/lib .sconf_temp/conftest_47.o -L/usr/lib -L/usr/local/lib -L/var/lib -Lp2pnat/lib/om50s -lp2pnat -lpthread
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking size of off_t ... 
+scons: Configure: ".sconf_temp/conftest_48.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_48.c <-
+  |  |#include <stdio.h>
+  |  |#include <sys/types.h>
+  |  |#include <stdlib.h>
+  |  |#include <stdio.h>
+  |  |int main() {
+  |  |    printf("%d", (int)sizeof(off_t));
+  |  |    return 0;
+  |  |}
+  |  |    
+  |
+scons: Configure: ".sconf_temp/conftest_48.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_48.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Wfloat-equal -Wno-system-headers -Wredundant-decls -pedantic -Wlong-long -Wundef -Winline -Wpointer-arith -Wno-unused-parameter -Wunreachable-code -Wno-cast-align -Wno-pointer-sign -DHAVE_RANDOM -DHAVE_FORK -DHAVE_SETSID -DHAVE_UNISTD_H -DHAVE_LIMITS_H -DHAVE_STRINGS_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_WAIT_H -DHAVE_UTIME_H -D_SEM_SEMUN_UNDEFINED=1 -DHAVE_FSEEKO -Iinclude -Ip2pnat/include .sconf_temp/conftest_48.c
+  |
+scons: Configure: ".sconf_temp/conftest_48" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_48 -Wl,-rpath=/var/lib .sconf_temp/conftest_48.o -L/usr/lib -L/usr/local/lib -L/var/lib -Lp2pnat/lib/om50s -lp2pnat -lpthread
+  |
+scons: Configure: Building ".sconf_temp/conftest_48.out" failed in a previous run and all its sources are up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_48 > .sconf_temp/conftest_48.out
+  |
+scons: Configure: (cached) no
+
+scons: Configure: Checking for C function lockf()... 
+scons: Configure: ".sconf_temp/conftest_49.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_49.c <-
+  |  |
+  |  |
+  |  |#include <assert.h>
+  |  |
+  |  |#ifdef __cplusplus
+  |  |extern "C"
+  |  |#endif
+  |  |char lockf();
+  |  |
+  |  |int main() {
+  |  |#if defined (__stub_lockf) || defined (__stub___lockf)
+  |  |  fail fail fail
+  |  |#else
+  |  |  lockf();
+  |  |#endif
+  |  |
+  |  |  return 0;
+  |  |}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_49.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_49.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Wfloat-equal -Wno-system-headers -Wredundant-decls -pedantic -Wlong-long -Wundef -Winline -Wpointer-arith -Wno-unused-parameter -Wunreachable-code -Wno-cast-align -Wno-pointer-sign -DHAVE_RANDOM -DHAVE_FORK -DHAVE_SETSID -DHAVE_UNISTD_H -DHAVE_LIMITS_H -DHAVE_STRINGS_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_WAIT_H -DHAVE_UTIME_H -D_SEM_SEMUN_UNDEFINED=1 -DHAVE_FSEEKO -DSIZEOF_OFF_T=4 -Iinclude -Ip2pnat/include .sconf_temp/conftest_49.c
+  |
+scons: Configure: ".sconf_temp/conftest_49" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_49 -Wl,-rpath=/var/lib .sconf_temp/conftest_49.o -L/usr/lib -L/usr/local/lib -L/var/lib -Lp2pnat/lib/om50s -lp2pnat -lpthread
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking for C function semop()... 
+scons: Configure: ".sconf_temp/conftest_50.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_50.c <-
+  |  |
+  |  |
+  |  |#include <assert.h>
+  |  |
+  |  |#ifdef __cplusplus
+  |  |extern "C"
+  |  |#endif
+  |  |char semop();
+  |  |
+  |  |int main() {
+  |  |#if defined (__stub_semop) || defined (__stub___semop)
+  |  |  fail fail fail
+  |  |#else
+  |  |  semop();
+  |  |#endif
+  |  |
+  |  |  return 0;
+  |  |}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_50.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_50.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Wfloat-equal -Wno-system-headers -Wredundant-decls -pedantic -Wlong-long -Wundef -Winline -Wpointer-arith -Wno-unused-parameter -Wunreachable-code -Wno-cast-align -Wno-pointer-sign -DHAVE_RANDOM -DHAVE_FORK -DHAVE_SETSID -DHAVE_UNISTD_H -DHAVE_LIMITS_H -DHAVE_STRINGS_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_WAIT_H -DHAVE_UTIME_H -D_SEM_SEMUN_UNDEFINED=1 -DHAVE_FSEEKO -DSIZEOF_OFF_T=4 -Iinclude -Ip2pnat/include .sconf_temp/conftest_50.c
+  |
+scons: Configure: ".sconf_temp/conftest_50" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_50 -Wl,-rpath=/var/lib .sconf_temp/conftest_50.o -L/usr/lib -L/usr/local/lib -L/var/lib -Lp2pnat/lib/om50s -lp2pnat -lpthread
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking for C function shmget()... 
+scons: Configure: ".sconf_temp/conftest_51.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_51.c <-
+  |  |
+  |  |
+  |  |#include <assert.h>
+  |  |
+  |  |#ifdef __cplusplus
+  |  |extern "C"
+  |  |#endif
+  |  |char shmget();
+  |  |
+  |  |int main() {
+  |  |#if defined (__stub_shmget) || defined (__stub___shmget)
+  |  |  fail fail fail
+  |  |#else
+  |  |  shmget();
+  |  |#endif
+  |  |
+  |  |  return 0;
+  |  |}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_51.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_51.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Wfloat-equal -Wno-system-headers -Wredundant-decls -pedantic -Wlong-long -Wundef -Winline -Wpointer-arith -Wno-unused-parameter -Wunreachable-code -Wno-cast-align -Wno-pointer-sign -DHAVE_RANDOM -DHAVE_FORK -DHAVE_SETSID -DHAVE_UNISTD_H -DHAVE_LIMITS_H -DHAVE_STRINGS_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_WAIT_H -DHAVE_UTIME_H -D_SEM_SEMUN_UNDEFINED=1 -DHAVE_FSEEKO -DSIZEOF_OFF_T=4 -Iinclude -Ip2pnat/include .sconf_temp/conftest_51.c
+  |
+scons: Configure: ".sconf_temp/conftest_51" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_51 -Wl,-rpath=/var/lib .sconf_temp/conftest_51.o -L/usr/lib -L/usr/local/lib -L/var/lib -Lp2pnat/lib/om50s -lp2pnat -lpthread
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking for C function flock()... 
+scons: Configure: ".sconf_temp/conftest_52.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_52.c <-
+  |  |
+  |  |
+  |  |#include <assert.h>
+  |  |
+  |  |#ifdef __cplusplus
+  |  |extern "C"
+  |  |#endif
+  |  |char flock();
+  |  |
+  |  |int main() {
+  |  |#if defined (__stub_flock) || defined (__stub___flock)
+  |  |  fail fail fail
+  |  |#else
+  |  |  flock();
+  |  |#endif
+  |  |
+  |  |  return 0;
+  |  |}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_52.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_52.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Wfloat-equal -Wno-system-headers -Wredundant-decls -pedantic -Wlong-long -Wundef -Winline -Wpointer-arith -Wno-unused-parameter -Wunreachable-code -Wno-cast-align -Wno-pointer-sign -DHAVE_RANDOM -DHAVE_FORK -DHAVE_SETSID -DHAVE_UNISTD_H -DHAVE_LIMITS_H -DHAVE_STRINGS_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_WAIT_H -DHAVE_UTIME_H -D_SEM_SEMUN_UNDEFINED=1 -DHAVE_FSEEKO -DSIZEOF_OFF_T=4 -Iinclude -Ip2pnat/include .sconf_temp/conftest_52.c
+  |
+scons: Configure: ".sconf_temp/conftest_52" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_52 -Wl,-rpath=/var/lib .sconf_temp/conftest_52.o -L/usr/lib -L/usr/local/lib -L/var/lib -Lp2pnat/lib/om50s -lp2pnat -lpthread
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking for FSP locking type... 
+scons: Configure: (cached) semop and shmget
+
+scons: Configure: Checking for reliable signals... 
+scons: Configure: ".sconf_temp/conftest_53.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_53.c <-
+  |  |
+  |  |#include <stdio.h>    
+  |  |#include <signal.h>
+  |  |#include <unistd.h>
+  |  |#include <stdlib.h>    
+  |  |volatile int test;
+  |  |void sig_handler(int sg)
+  |  |{ 
+  |  |    test=1;
+  |  |}
+  |  |int main()
+  |  |{
+  |  |    signal(SIGUSR1,sig_handler);
+  |  |    test=0;
+  |  |    kill(getpid(),SIGUSR1);
+  |  |    sleep(1);
+  |  |    if(test==0) {
+  |  |        printf("Signals ARE BROKEN!\n");
+  |  |        kill(0,SIGQUIT);
+  |  |    }
+  |  |    test=0;
+  |  |    kill(getpid(),SIGUSR1);
+  |  |    if(test==1)
+  |  |        exit(0);
+  |  |    else
+  |  |        exit(1);
+  |  |}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_53.o" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_53.o -c -Wall -W -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Waggregate-return -Wmissing-declarations -Wmissing-format-attribute -Wnested-externs -ggdb -fno-common -Wchar-subscripts -Wcomment -Wimplicit -Wsequence-point -Wreturn-type -Wfloat-equal -Wno-system-headers -Wredundant-decls -pedantic -Wlong-long -Wundef -Winline -Wpointer-arith -Wno-unused-parameter -Wunreachable-code -Wno-cast-align -Wno-pointer-sign -DHAVE_RANDOM -DHAVE_FORK -DHAVE_SETSID -DHAVE_UNISTD_H -DHAVE_LIMITS_H -DHAVE_STRINGS_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_WAIT_H -DHAVE_UTIME_H -D_SEM_SEMUN_UNDEFINED=1 -DHAVE_FSEEKO -DSIZEOF_OFF_T=4 -DFSP_USE_SHAREMEM_AND_SEMOP -Iinclude -Ip2pnat/include .sconf_temp/conftest_53.c
+  |
+scons: Configure: ".sconf_temp/conftest_53" is up to date.
+scons: Configure: The original builder output was:
+  |mipsel-buildroot-linux-uclibc-gcc -o .sconf_temp/conftest_53 -Wl,-rpath=/var/lib .sconf_temp/conftest_53.o -L/usr/lib -L/usr/local/lib -L/var/lib -Lp2pnat/lib/om50s -lp2pnat -lpthread
+  |
+scons: Configure: Building ".sconf_temp/conftest_53.out" failed in a previous run and all its sources are up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_53 > .sconf_temp/conftest_53.out
+  |
+scons: Configure: (cached) no
+
+scons: Configure: Checking for user supplied lockprefix... 
+scons: Configure: (cached) no
+
+scons: Configure: Checking for user supplied prefix... 
+scons: Configure: (cached) no
+
+scons: Configure: Checking for user supplied sysconfdir... 
+scons: Configure: (cached) no
+
+scons: Configure: Checking where to install man pages... 
+scons: Configure: (cached) //man
+
+scons: Configure: Checking for user supplied mandir... 
+scons: Configure: (cached) no
+
+scons: Configure: Checking for user supplied docdir... 
+scons: Configure: (cached) no
+
+scons: Configure: Checking if we are building with extra debug code... 
+scons: Configure: (cached) no
+
+scons: Configure: Checking whether to enable maintainer mode... 
+scons: Configure: (cached) no
+
+scons: Configure: Checking if we are building lamer pack... 
+scons: Configure: (cached) no
+
+scons: Configure: Checking if we are building client commands... 
+scons: Configure: (cached) yes
+
+scons: Configure: Checking if client commands can time out... 
+scons: Configure: (cached) yes
+
+

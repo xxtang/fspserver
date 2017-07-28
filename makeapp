@@ -1,0 +1,82 @@
+#! /bin/sh
+
+SCONS=scons
+
+if [ $1 = "clean" ]
+then
+rm -rf build/wroc/* build/om400/* build/om50s/*
+
+elif [ $1 = "cleanwroc" ]
+then
+cp SConstruct_wroc SConstruct
+export PATH=$PATH:/opt/buildroot-gcc342/bin
+${SCONS} -c
+rm -rf build/wroc/*
+elif [ $1 = "cleanom400" ]
+then
+cp SConstruct_om400 SConstruct
+export PATH="/opt/eabi/arm-2009q1/bin:/opt/eabi/arm-eabi-4.4.0/bin:$PATH"
+${SCONS} -c
+rm -rf build/om400/*
+elif [ $1 = "cleanom50s" ]
+then
+cp SConstruct_om50s SConstruct
+export LD_LIBRARY_PATH=/usr/local/lib
+export PATH="/opt/buildroot-gcc463/usr/bin:$PATH"
+${SCONS} -c
+rm -rf build/om50s/*
+
+
+elif [ $1 = "all" ]
+then
+
+cp SConstruct_wroc SConstruct
+${SCONS} -c
+export PATH=$PATH:/opt/buildroot-gcc342/bin
+${SCONS}
+bzip2 server/fspd
+mv server/fspd.bz2 build/wroc/
+
+cp SConstruct_om400 SConstruct
+${SCONS} -c
+export PATH="/opt/eabi/arm-2009q1/bin:/opt/eabi/arm-eabi-4.4.0/bin:$PATH"
+${SCONS}
+bzip2 server/fspd
+mv server/fspd.bz2 build/om400/
+
+cp SConstruct_om50s SConstruct
+${SCONS} -c
+export LD_LIBRARY_PATH=/usr/local/lib
+export PATH="/opt/buildroot-gcc463/usr/bin:$PATH"
+${SCONS}
+bzip2 server/fspd
+mv server/fspd.bz2 build/om50s/
+
+elif [ $1 = "wroc" ]
+then
+cp SConstruct_wroc SConstruct
+${SCONS} -c
+export PATH=$PATH:/opt/buildroot-gcc342/bin
+${SCONS}
+bzip2 server/fspd
+mv server/fspd.bz2 build/wroc/
+
+elif [ $1 = "om400" ]
+then
+cp SConstruct_om400 SConstruct
+${SCONS} -c
+export PATH="/opt/eabi/arm-2009q1/bin:/opt/eabi/arm-eabi-4.4.0/bin:$PATH"
+${SCONS}
+bzip2 server/fspd
+mv server/fspd.bz2 build/om400/
+
+elif [ $1 = "om50s" ]
+then
+cp SConstruct_om50s SConstruct
+${SCONS} -c
+export LD_LIBRARY_PATH=/usr/local/lib
+export PATH="/opt/buildroot-gcc463/usr/bin:$PATH"
+${SCONS}
+bzip2 server/fspd
+mv server/fspd.bz2 build/om50s/
+fi

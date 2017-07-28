@@ -1,0 +1,215 @@
+.TH FSPD 1 "Mar 2005" FSP
+.SH NAME
+fspd, in.fspd \- File Service Protocol (FSP) server
+.SH SYNOPSIS
+.B fspd [-f configfile] [-p port] [-i] [-v|-V] [-t timeout] [-X] [-d directory] [-F ] [-T temporary directory] [-l logfile] [-P pidlogname] [-b bandwidth] [-s packetsize]
+.SH DESCRIPTION
+.B fspd
+is the server for an anonymous-ftp style archive called FSP. The main
+features of this service are: connection-less model, communication
+robustness, server resource protection, inter-client protection, and user
+friendly interface. Please read the INFO file bundled with the FSP source
+for more information. 
+.LP
+.SH OPTIONS
+.PD 0
+.TP 20
+.B -f
+May be used to specify an alternate configuration file.
+
+.PD 0
+.TP 20
+.B -i
+Use when fspd is running from inetd.
+
+.PD 0
+.TP 20
+.B -p port
+May be used to specify an alternative port.
+
+.PD 0
+.TP 20
+.B -d directory
+May be used to specify an alternative home directory.
+
+.PD 0
+.TP 20
+.B -v | -V
+Show server version.
+
+.PD 0
+.TP 20
+.B -X
+Turn on debuging.
+
+.PD 0
+.TP 20
+.B -t timeout
+Set server inactivity shutdown timeout for running in inetd mode. Default is
+120 seconds. When -d is used, this timeout works in normal mode also (usefull
+for debuging of memory leaks).
+
+.PD 0
+.TP 20
+.B -F
+Run fspd in foreground, do not daemonize.
+
+.PD 0
+.TP 20
+.B -T directory
+Set server temporary directory used for uploading. This directory can
+be outside FSP home directory since it is not directly accessible by
+clients. Using directory inside FSP home is not a security risk.
+
+.PD 0
+.TP 20
+.B -l logfile
+Write log output to file.
+
+.PD 0
+.TP 20
+.B -P pidlogname
+Write pid to the given file name.
+
+.PD 0
+.TP 20
+.B -b bandwidth
+Enable bandwidth limiting. Limit output to
+.I bandwidth
+bytes per second.
+
+.PD 0
+.TP 20
+.B -s packetsize
+Sets maximum allowed or prefered packet's payload size. Server must
+support packets up to 1024, but may prefer to send smaller packets.
+It may accept packets over 1024 bytes. Default value is 1460 bytes.
+All networks must be able to transfer 500 bytes (RFC requirement).
+
+.LP
+.SH FILES
+.PD 0
+.TP 20
+.B .FSP_OWNER
+Used to indicate the ownership of a directory.  This file contains
+lines with the same syntax as host lines in fspd.cnf but without
+keyword host on start of line. Host types D, I, N can be used to
+restrict access to specific directory. Owners are marked with host
+type O.
+
+.TP
+.B .README
+A text file that is sent to the client when the directory is entered giving
+information about the directory.  It can only be hand created by the site
+administrator at this time. This text file should be no more than 1022
+bytes in size. Any data above this limit will be silently ignored. Name
+of this file can be changed in server configuration file.
+
+.TP
+.B .FSP_OK_DEL
+Existence of this file in a directory grants non-owner machines
+the permission to delete items from this directory.
+
+.TP
+.B .FSP_OK_ADD
+Existence of this file in a directory grants non-owner machines
+the permission to add items to this directory.
+
+.TP
+.B .FSP_NO_LIST
+Existence of this file removes right to list a directory from
+non-owner.
+
+.TP
+.B .FSP_NO_GET
+Existence of this file in a directory means that files in that
+directory cannot be read by public, i.e. they are private.
+
+.TP
+.B .FSP_OK_MKDIR
+Existence of this file in a directory grants non-owner machines
+the permission to create subdirectories under the current directory.
+
+.TP
+.B .FSP_OK_RENAME
+Existence of this file in a directory grants non-owner machines
+the permission to rename files in directory.
+
+.TP
+.B .FSP_OK_PASSWORD
+Password required for non privileged access.
+
+.TP
+.B .FSP_OWNER_PASSWORD
+Password required for privileged access. You must have also your
+IP listed in .FSP_OWNER file.
+
+.TP
+.B .TXXXXXXXXXXXX
+Transient temporary file in the FSP temporary directory used for file
+uploading.
+
+.TP
+.B .GXXXXXXXXXXXX
+Transient temporary file in the FSP temporary directory used for file
+downloading through the
+.B fgrab
+command.
+
+.TP
+.B fspd.conf
+A file containing control information about how specific features of the
+server are to be used. See the 
+.B example.conf
+file for explicit details.
+
+.TP
+.B .FSP_CONTENT
+File used to cache directory listing.  Such files are normally created
+on demand in each directory that
+.B fspd
+exports.
+
+.SH SIGNALS
+.TP
+.B SIGUSR1
+Server dumps stats to file specified as dumpfile in configuration.
+This file must be writeable by server or server must have rights
+to create it.
+
+.TP
+.B SIGINT | SIGTERM
+Server performs cleaup and exits. All connected clients will be
+disconnected. Because FSP is stateless protocol, if you start
+server later, clients can continue without breakage.
+
+.SH EXIT CODES
+.B 1
+configuration or command line invocation error.
+
+.B 2
+can not open/bind server socket
+
+.B 3
+can not change uid to runuid
+
+.B 4
+can not change gid to rungid
+
+.B 5
+out of memory
+
+.B 6
+can not change directory to homedir
+
+.B 7
+select() error
+
+.B 99
+Internal terror
+
+.SH "SEE ALSO"
+.PD
+fcatcmd(1), fcdcmd(1), fgetcmd(1), fgrabcmd(1), flscmd(1), fmkdir(1),
+fprocmd(1), fput(1), frmcmd(1), frmdircmd(1), fver(1), fducmd(1),
+fhostcmd(1), fspd(1), fsp_prof(5), ffindcmd(1), fbye(1), fmvcmd(1)

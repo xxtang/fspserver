@@ -1,0 +1,126 @@
+.TH FHOST 1 "15 Oct 2003" FSP
+.SH NAME
+fhostcmd, fhost \- set environment variables
+.SH SYNOPSIS
+.B fhostcmd [-d delay] [-p local port] [-l local directory] [-o timeout]
+[-t trace] [-w password] [-f filename] [-h number | name] [-c | -b]
+[host port [directory] | abbreviation]
+.LP
+.B fhost [-d delay] [-p local port] [-l local directory] [-o timeout]
+[-t trace] [-w password] [-f filename] [-h number | name] [-c | -b]
+[host port [directory] | abbreviation]
+.SH DESCRIPTION
+.LP
+.B fhost
+uses a resources files to set all environmant variables needed to connect to a
+given host via FSP. If a -f option is given, the given filename is also used
+as resources file.
+.B fhost
+loads all available resource files. If server is defined in multiple
+files, first match is returned. Load order is
+.I .fsp_prof
+in the current working directory and in the user's home
+directory. Then a system wide default file is used.
+If
+.B fhost
+is invoked with an abbreviation given, the resource files are searched for the
+first host to match this abbreviation. The values given for this host will
+be set.
+.LP
+If
+.B fhost
+is invoked with a given host and port number, this host will be used and no
+searching in the resource file will be done.
+.LP
+Setting up the host the user can change between using the host name or the
+internet address. In case only one is given and the other should be used
+.B fhost
+tries to find it using a built in mini-nslookup facility. The default is to use
+what is given and to use the number if both are given.
+.LP
+Since programs cannot change environment variables of their parent shell in
+a simple way, it is recommended that the user defines a shell alias or
+function to make it possible.
+.B csh
+example:
+.LP
+.nf
+alias fhost 'eval `fhostcmd \!*`'
+.fi
+.SH FSP_PROF
+For more information about the resource file confer
+.I fsp_prof(5).
+Here's just a short example of how it works. If your resource file contains
+the following
+
+.nf
+host seismo.soar.cs.cmu.edu
+fsp port 30
+local directory ~/sources/fsp-266.1
+trace off
+.fi
+
+a call of
+.B fhost
+seismo in
+.B csh
+will produce the following output to be evaluated
+
+.nf
+unsetenv FSP_TRACE;
+setenv FSP_PORT 30;
+setenv FSP_LOCAL_DIR ~/sources/fsp-266.1;
+setenv FSP_HOST seismo.soar.cs.cmu.edu;
+setenv FSP_DIR /;
+.fi
+.SH ARGUMENTS
+.LP
+.B -d
+-- set FSP_DELAY to
+.I delay
+.LP
+.B -p
+-- set FSP_LOCALPORT to
+.I local port
+.LP
+.B -l
+-- set FSP_LOCAL_DIR to
+.I local directory
+.LP
+.B -o
+-- set FSP_TIMEOUT to
+.I timeout
+.LP
+.B -t
+-- set FSP_TRACE if
+.I trace
+=
+.I on,
+unset it if
+.I trace
+=
+.I off
+.LP
+.B -p
+-- set FSP_PASSWORD to
+.I password
+.LP
+.B -f
+-- use
+.I filename
+as resource file
+.LP
+.B -b
+-- output Bourne shell code
+.LP
+.B -c
+-- output C shell code
+.SH ENVIRONMENT
+.LP
+The environment variables associate this program with a FSP database and are
+set (resp. unset) if needed. See fsp_env(7) for list.
+.SH "SEE ALSO"
+.PD
+fcatcmd(1), fcdcmd(1), fgetcmd(1), fgrabcmd(1), flscmd(1), fmkdir(1),
+fprocmd(1), fput(1), frmcmd(1), frmdircmd(1), fver(1), fducmd(1),
+fhostcmd(1), fspd(1), fsp_prof(5), ffindcmd(1), fsp_env(7), fspsites(5)

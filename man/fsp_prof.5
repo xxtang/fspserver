@@ -1,0 +1,74 @@
+.TH FSP_PROF 5 "15 Oct 2003"
+.SH NAME
+fsp_prof \- file for fsp remote login data
+.SH DESCRIPTION
+The
+.B \&.fsp_prof
+file contains data for logging in to a
+remote host over the network for file transfers by
+.BR fsp
+commands. This file resides in the user's current or home directory
+on the machine initiating the file transfer. A system wide default file
+will be also used.
+If passwords are stored in this file, its permissions should be set to
+disallow read access by group and others (see
+.BR chmod (1)).
+.LP
+The following tokens
+are recognized; they may be separated by
+.SM SPACE
+or
+.SM NEWLINE
+characters (except the
+.I host
+command which has to be on a line of its own):
+.TP
+.BI host | machine  " name | internet-addr [ alias ...]"
+Identify a remote machine name.
+The auto-login process searches the
+.B .fsp_prof
+file for a
+token that matches the alias or hostname given.
+Once a match is made, the subsequent
+.B .fsp_prof
+tokens are processed, stopping when the
+.SM EOF
+is reached or another
+.B host
+token is encountered.
+.TP
+.BI "[fsp] port"  " port"
+Identify the remote fsp port.
+.TP
+.BI "local port"  " port"
+Identify the local port to be used by fsp.
+.TP
+.BI "[fsp] directory"   " dir"
+Set the directory in the FSP database.
+.TP
+.BI "local directory" " dir"
+Set the local working directory.
+.TP
+.BI delay " delay"
+Set the delay value.
+.TP
+.BI timeout " tim"
+Set the timeout value.
+.TP
+.BI trace " on | off"
+Enable resp. disable tracing.
+.TP
+.BI password " password"
+Supply a password.
+Note: if this token is present the 
+.B .fsp_prof
+file shouldn't be readable by anyone besides the user. See 
+.BR chmod (1).
+.SH FILES
+.PD
+.B ~/.fsp_prof
+.SH "SEE ALSO"
+.PD
+fcatcmd(1), fcdcmd(1), fgetcmd(1), fgrabcmd(1), flscmd(1), fmkdir(1),
+fprocmd(1), fput(1), frmcmd(1), frmdircmd(1), fver(1), fducmd(1),
+fsethostcmd(1), fspd(1), fsp_prof(5), ffindcmd(1), fsp_env(7)

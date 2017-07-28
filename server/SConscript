@@ -1,0 +1,10 @@
+Import(Split("env PREFIX common bsdfsp"))
+
+fspd=env.Program(target = 'fspd', source = Split('''
+acl.c       file.c      info.c      main.c      random.c
+conf.c      filecache.c iprange.c   path.c      server.c
+fifocache.c host.c      log.c       pidfile.c   udptoapp.c
+app_log.c
+''') + common  + bsdfsp)
+
+env.Install(dir = PREFIX+'/bin', source = fspd)

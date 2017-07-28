@@ -1,0 +1,152 @@
+How to run FSP:
+	The first step in running this fine software (:) is to get it to
+	compile.  Every effort on my part will be made to make this code
+	compile and run on any reasonable system.  The information in this
+	file CURRENTLY pertains only to Unix and probably to Cygwin users.
+
+Building:
+        FSP uses SCons software construction tool. Building was tested
+	with SCons 1.2.0 and Python 2.5, but older versions will probably
+	work fine. Prior to building FSP you need to download and install
+	SCons from http://www.scons.org.
+
+	Other tools needed for building FSP are GNU flex and GNU C compiler.
+	They should be part of your Unix distribution but you can also 
+	download and compile them yourself from http://flex.sourceforge.net/
+	and http://gcc.gnu.org. Its possible to use Clang as replacement
+	for GCC.
+
+	For building optional documentation you need jade or openjade and
+	DocBook DSSSL stylesheets.
+
+	SCons is replacement for configure and make utility; there is no
+	separate configuration step. Building with SCons is very similar
+	to using make. Run 'scons' to compile and 'scons install' to
+	install.  You can skip compile part. 'scons install' will do both
+	steps then.
+
+	SCons can take several optional switches. You must supply these
+	switches to BOTH phases (compile and install) of build process.
+	Most important switch is disable-timeout=yes. This option switches
+	fsp clients into classic infinite retry mode which is preferred
+	by people with very flaky networks.
+
+>>	By default, the SCons will install the code in /usr/local/bin
+>>	and the man pages under /usr/local/man.  If you wish to change this,
+>>	you MUST run scons with the prefix option.  For instance, on my
+>>	machine, I install the files under /usr/jt/bin and /usr/jt/man.
+>>	To do this, I type: scons prefix=/usr/jt install
+
+	If you get ANY errors while compiling this code (excepting warnings),
+	please send me email with a complete copy of the output of scons as
+	well as a copy of the config.log file.
+
+SCons command line options:
+	prefix=directory	set installation directory
+	disable-timeout=yes	client utilities never timeouts
+	enable-debug=yes	compile in extra debug code
+	enable-lamerpack=yes	build lamer pack version of fspd
+	lockprefix=directory	set directory for creating client lock files
+	locking=type		set locking type, default autodetected
+				type is one of none, lockf, semop, flock, shmget
+	enable-maintainer-mode=yes compile with libefence debug library and
+				   some extra debug information
+	mandir=directory	where to install man pages. default autodetect
+	sysconfdir=directory	where to look for fspd and client configuration
+				files. Default prefix/etc
+	without-clients=yes     dont build and install client commands
+	dsssl=directory		Look for DocBook DSSSL Stylesheets there
+
+Client utilities:
+        All inter-command states are kept in these three shell environment
+        variables.
+
+            FSP_PORT            Port number of the fspd you wish to contact.
+            FSP_HOST            Host name or number of the fspd.
+            FSP_DIR             Your current working directory in the archive.
+
+        When multiple client utilities are run at the same time on the
+        same client machine, packet multiplexing mechanisms can be used
+        to enable concurrent access to the same fsp database.  If none
+        of the mechanisms are selected at compile time, FSP_LOCALPORT
+        can be used to ensure that only once client utility can run at
+        any time.  In this case, FSP_LOCALPORT can be set to any port
+        number not current used on the client machine.
+
+        FSP_TRACE can be set if you want status reports be printed while
+        files are being transferred.
+
+	FSP_DELAY variable can be used to set the retransmit interval for
+	client utilities (in thousandth of a second). This value should be
+	set to slightly higher than average round trip time.  The retransmit
+	rate is adjusted in an exponential manner, until the retry rate
+	reaches FSP_MAXDELAY msec per retry.  This delay cannot be set
+	below 250 msecs.
+
+        FSP_BUF_SIZE can be set to a positive number less than or equal
+        to 1024.  When set, it determines the size of data to be send for
+        each request during file and directory information transfer.  The
+        default is 1024.  Some sites are connected via links that cannot
+        transmit buffers containing 1024 bytes of data in addition to the
+        header information.  Setting FSP_BUF_SIZE to a lower value will
+        allow these sites to access fsp archives. Large values can provide
+	faster transfers.
+
+        FSP_LOCAL_DIR can be set to a local working directory from/to which
+        all data will be transferred.
+
+Server Administration:
+	IMPORTANT NOTE: You do not need to run the fspd process if you only
+	wish to access existing fsp archives.  FSPD is only needed if you 
+	wish to set up and maintain a new archive for use.
+
+        fspd can run independently or it can be run under inetd.  When
+        running independently, fspd waits for messages through a UDP
+        socket whoes port number is defined in the fspd.conf file. 
+	When runing under inetd, fspd is invoked as in.fspd.  Inetd will
+	spawn fspd when a message arrives for the FSP socket.  The fspd
+	process will take over and stick around to wait on additional
+	messages.  After 5 minutes pass with no messages, fspd will exit
+	and return control to inted.
+
+        Sample setup for inetd operation:
+
+          In /etc/services file:
+
+            fsp             21/udp          fspd
+
+          In /etc/inetd.conf file:
+
+            fsp dgram   udp wait ftp /usr/local/bin/fspd in.fspd
+
+          In this sample, the same port number for ftp is used for the
+          fsp socket.  There will not be a conflict because ftp uses
+          stream protocol, and fsp uses UDP protocol.  The fspd program
+          in this example is ran under user 'ftp'.
+
+	Many other options controlling the behavior of fspd can be set in
+	the fspd.conf file.  Please read the comments in the fspd.conf
+	file for details.
+
+        Clients do not get to read the directory information directly.
+        Instead, fspd maintains a directory listing for each directory
+        in a cache file.  If the directory is writable by fspd, or if a
+        writable file in it is prepared beforehand, fspd will store the
+        directory information in .FSP_CONTENT file in that directory.
+
+        When a client requests information for a directory, the cache
+        file is created if it doesn't exist, and it is rebuilt if it is
+        out of date.  The information is accessed by having the client
+        read the directory listing file. Care is taken so that the client
+        will not get corrupted entries when the directory is changed while
+        the listing is being read.
+
+        Files being uploaded are first written to a temporary file in the
+        work directory: .TXXXXXXXXYYYY where XXXXXXXX is the inet number
+        of the client, and YYYY is the port number of the client program.
+        When upload is compelete, the file is moved into the intended
+        location.
+
+        Sending it an 'alarm' signal will cause fspd to dump its current
+        client database into the file .HTAB_DUMP in the work directory.
+        This can be useful for debugging and for catching rogue clients.

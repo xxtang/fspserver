@@ -1,0 +1,64 @@
+.TH FCD 1 "8 December 1991" FSP
+.SH NAME
+fcdcmd, fcd \- change client's current working directory in the FSP database
+.SH SYNOPSIS
+.B fcdcmd
+.I path
+.LP
+.B fcd
+.I path
+.SH DESCRIPTION
+.LP
+If no paths are given, / is used as the current working directory.  If
+.I path
+begins with a /,
+.B fcdcmd
+uses it as the current working directory.  Otherwise,
+.B fcdcmd
+appends
+.I path
+to the end of the current working directory.  In both cases,
+.B fcdcmd
+simplifies the new path and writes it to the
+.I stdout.
+In order for the effect of
+.B fcdcmd
+to be felt in subsequent FSP transactions, user needs to save the
+.I stdout
+output in the
+.I FSP_DIR
+variable.  If the change is successful,
+.B fcdcmd
+will display the protection setting of the new working directory.
+.LP
+.B fcdcmd
+will perform
+.B csh
+file name globbing based on file and directory information
+obtained from the FSP database.
+.LP
+Since user's command shells generally cannot do the proper globbing for
+this program, it is recommended that user defines a shell alias or
+function to turn off command shell globbing before running this program.
+.B csh
+example:
+.LP
+.nf
+alias fcd setenv FSP_DIR \e`\e(set noglob\e; exec fcdcmd \e!\e*\e)\e`
+.fi
+.SH ENVIRONMENT
+.LP
+See fsp_env(7) for list of used environment variables.
+.SH "SEE ALSO"
+.PD
+fcatcmd(1), fcdcmd(1), fgetcmd(1), fgrabcmd(1), flscmd(1), fmkdir(1),
+fprocmd(1), fput(1), frmcmd(1), frmdircmd(1), fver(1), fducmd(1),
+fhostcmd(1), fspd(1), fsp_prof(5), ffindcmd(1), fsp_env(7)
+.br
+.ne 5
+.SH BUGS
+.LP
+If more than one
+.B path
+is given, only the first one will be used.
+The rest will be silently ignored.

@@ -1,0 +1,6 @@
+Import(Split("env"))
+
+env.Program(target = 'cachecheck', source = ['cachecheck.c','../server/fifocache.c'])
+env.Program(target = 'mklargefile', source = 'mklargefile.c')
+env.Program(target = 'parsecheck', source = ['parsecheck.c','../server/path.c'])
+env.Program(target = 'randomcheck', source = 'randomcheck.c')

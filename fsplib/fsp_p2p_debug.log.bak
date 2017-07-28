@@ -1,0 +1,45 @@
+[04/13 15:36:51.590154]p2pnat lib version 1.1.0
+[04/13 15:36:51.691486] API: dns_resove(390) - IP address [54.223.244.5] for hostname - <p2p.newrocktech.com>
+[04/13 15:36:51.723723] send packet 54.223.244.5:7042
+P2PNAT00 REG
+mid: 00000bc3
+
+[04/13 15:36:51.754588] recv packet 54.223.244.5:7042
+P2PNAT01 REG
+cid: ccc958c0-0149-11e6-afa6-024abe532443
+mid: 00000bc3
+key: 95d35e0d5e0098f1b3a08a6fdebc9a2d
+code: 201
+
+[04/13 15:36:51.754622]ccc958c0-0149-11e6-afa6-024abe532443 Obtain cid and key
+[04/13 15:36:51.787542] send secure packet 54.223.244.5:7042
+P2PNAT00 REG
+cid: ccc958c0-0149-11e6-afa6-024abe532443
+mid: 00000bc4
+data: KG/R1UnEuK9ZYr3eRs9xpklXwwlPipYaoVq6fferuLXgKF0OA5HP0w3FKiHpnD+nmA/HA+WS1hd+T3snH7LR4AQTmQ2736fk0+b6WlISbX0=
+
+[04/13 15:36:51.816157] recv secure packet 54.223.244.5:7042
+P2PNAT01 REG
+cid: ccc958c0-0149-11e6-afa6-024abe532443
+mid: 00000bc4
+service: FSP
+ed: 192.168.20.164:47597
+oid: default
+ped: 116.236.246.122:47597
+code: 200
+
+[04/13 15:36:51.816187]ccc958c0-0149-11e6-afa6-024abe532443 Registered
+[04/13 15:36:51.816236] send secure packet 54.223.244.5:7042
+P2PNAT00 CON
+cid: ccc958c0-0149-11e6-afa6-024abe532443
+mid: 00000bc5
+data: g1fBunl66du2Nbk4ok9SyHV4rYMvOS4Ok0bocdiWlEBmamBM2zuGiO/wxcKucX5i6av/wkl1uTM3OdI+hu2XtDrllW6ZDXC91QfwfSz7qf+aRTW/d49oA3g7nysuICCE
+
+[04/13 15:36:51.844687] recv packet 54.223.244.5:7042
+P2PNAT01 CON
+mid: 00000bc5
+code: 400
+emsg: service FSP of target e8607146-c627-0cbf-edcd-b425118e1594 does not exists!
+
+[04/13 15:36:51.844715]connect fail, code 400(service FSP of target e8607146-c627-0cbf-edcd-b425118e1594 does not exists!)
+[04/13 15:36:51.844738]ccc958c0-0149-11e6-afa6-024abe532443->e8607146-c627-0cbf-edcd-b425118e1594 Connect Failed

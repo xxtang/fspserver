@@ -1,0 +1,86 @@
+.TH FPRO 1 "27 January 1993" FSP
+.SH NAME
+fprocmd, fpro \- get or set permissions for directories in the FSP database
+.SH SYNOPSIS
+.B fprocmd
+[
+.B +c|-c|+d|-d|+g|-g|+m|-m|+l|-l|+r|-r
+]
+.I [ directory ]
+\&.\|.\|.
+.LP
+.B fpro
+[
+.B +c|-c|+d|-d|+g|-g|+m|-m|+l|-l|+r|-r
+]
+.I [ directory ]
+\&.\|.\|.
+.SH DESCRIPTION
+.LP
+If no flags are specified, for each file named in the argument list,
+.B fprocmd
+displays the current permission settings for each directory named.
+If a flag is present (only one may be specified each time),
+.B fprocmd
+will perform the following operations
+and display the resulting settings for each named directory:
+.TP
+.B +c
+Give others permission to create new items.
+.TP
+.B -c
+Deny others permission to create new items.
+.TP
+.B +d
+Give others permission to delete old items.
+.TP
+.B -d
+Deny others permission to delete old items.
+.TP
+.B +g
+Give others permission to get items.
+.TP
+.B -g
+Deny others permission to get items.
+.TP
+.B +m
+Give others permission to create subdirectories.
+.TP
+.B -m
+Deny others permission to create subdirectories.
+.TP
+.B +l
+Give others permission to list directory content.
+.TP
+.B -l
+Deny others permission to list directory content.
+.TP
+.B +r
+Give others permission to rename files in this directory.
+.TP
+.B -r
+Deny others permission to rename files in this directory.
+.LP
+.B fprocmd
+will perform
+.B csh
+file name globbing based on file and directory information
+obtained from the FSP database.
+.LP
+Since user's command shells generally cannot do the proper globbing for
+this program, it is recommended that user defines a shell alias or
+function to turn off command shell globbing before running this program.
+.B csh
+example:
+.LP
+.nf
+alias fpro \e(set noglob\e; exec fprocmd \e!\e*\e)
+.fi
+.SH ENVIRONMENT
+.LP
+See fsp_env(7) for list of used environment variables.
+.SH "SEE ALSO"
+.PD
+fcatcmd(1), fcdcmd(1), fgetcmd(1), fgrabcmd(1), flscmd(1), fmkdir(1),
+fprocmd(1), fput(1), frmcmd(1), frmdircmd(1), fver(1), fducmd(1),
+fhostcmd(1), fspd(1), fsp_prof(5), ffindcmd(1), fsp_env(7)

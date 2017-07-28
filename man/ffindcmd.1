@@ -1,0 +1,247 @@
+.TH FFIND 1 "14 April 1993" FSP
+.SH NAME
+ffindcmd, ffind \- find files by name or by other characteristics in FSP database
+.SH SYNOPSIS
+.B ffindcmd
+.I pathname-list  expression
+.br
+.B ffind
+.I pathname-list  expression
+.LP
+.SH DESCRIPTION
+.B ffindcmd
+recursively descends the directory hierarchy for each 
+pathname in the 
+.IR pathname-list ,
+seeking files that match a logical
+.I expression
+written using the operators listed below.  
+.SH USAGE
+.SS Operators
+In the descriptions, the argument 
+.I n
+is used as a decimal integer where 
+.BI + n
+means more than 
+.IR n ,
+.BI \-  n
+means less than 
+.IR n ,
+and 
+.I n
+means exactly
+.IR n .
+All three maybe used if an integer argument is needed.
+.I
+.TP 15
+.BI \-name " filename" 
+True if the 
+.I filename
+argument matches the current file name.
+Shell argument syntax can be used if escaped (watch out for
+.BR [ ", "
+.BR ? " and "
+.BR * ")."
+.TP
+.B \-prune
+Always yields true.  Has the side effect of pruning the search
+tree at the file.  That is, if the current path name is a directory,
+.B ffindcmd
+will not descend into that directory.
+.TP
+.BI \-type " c"
+True if the type of the file is 
+.IR c ,
+where 
+.I c
+is one of:
+.RS 
+.RS
+.TP
+.PD 0
+.B d
+for directory
+.TP
+.B f
+for plain file
+.RE
+.RE
+.PD
+.TP
+.BI \-size " n"
+True if the file is 
+.I n
+blocks long (512 bytes per block).
+If
+.I n
+is followed by a
+.BR c ,
+the size is in characters.
+.TP
+.BI \-time " n"
+True if the file has been accessed/modified/changed in 
+.I n
+days.
+.TP
+.BI \-exec " command"
+True if the executed 
+.I command
+returns a zero value as exit status.
+The end of 
+.I command
+must be punctuated by an escaped semicolon.
+A command argument 
+.B {\|}
+is replaced by the current pathname.
+.TP
+.BI \-ok " command"
+Like
+.B \-exec
+except that the generated command is written on
+the standard output, then the standard input is read
+and the command executed only upon response
+.BR y .
+.TP
+.B \-print
+Always true; the current pathname is printed.
+.TP
+.B \-ls
+Always true;
+prints current pathname together
+with its associated statistics.
+These include
+size in blocks (512 bytes),
+protection mode,
+number of hard links,
+user,
+group,
+size in bytes,
+and modification time.
+.br
+Note: formatting is done internally,
+without executing the
+.B fls
+program.
+.TP
+.BI \-newer " file"
+True if the current file has been modified more recently than the
+argument 
+.IR filename .
+.TP
+.BI ( expression )
+True if the parenthesized 
+.I expression
+is true.
+.br
+Note: Parentheses are special to the shell and must be escaped.
+.TP
+.BI ! primary
+True if the 
+.I primary
+is false 
+.RB ( !
+is the unary 
+.I not
+operator).
+.HP
+.I primary1
+[
+.B \-a
+]
+.I primary2
+.br
+True if both 
+.I primary1
+and 
+.I primary2
+are true.
+The 
+.B \-a
+is not required.  It is implied by the juxtaposition of two 
+primaries.
+.HP
+.IB primary1 " \-o " primary2
+.br
+True if either 
+.I primary1
+or 
+.I primary2
+is true
+.RB "(" \-o " is the"
+.I or
+operator).
+.LP
+.B ffindcmd
+will perform
+.B csh
+file name globbing based on file and directory information
+obtained from the FSP database.
+.LP
+Since user's command shells generally cannot do the proper globbing for
+this program, it is recommended that user defines a shell alias or
+function to turn off command shell globbing before running this program.
+.B csh
+example:
+.LP
+.nf
+alias ffind \e(set noglob\e; exec ffindcmd \e!\e*\e)
+.fi
+.SH EXAMPLE
+To find all the files called 
+.B intro.ms
+starting from the current
+directory:
+.LP
+.nf
+example% ffind . \-name intro.ms \-print
+\&.\|/manuals/assembler/intro.ms
+\&.\|/manuals/sun.core/intro.ms
+\&.\|/manuals/driver.tut/intro.ms
+\&.\|/manuals/sys.manager/uucp.impl/intro.ms
+\&.\|/supplements/general.works/unix.introduction/intro.ms
+\&.\|/supplements/programming.tools/sccs/intro.ms
+example%
+.fi
+.LP
+To recursively print all files names in the current directory and below,
+but skipping 
+.SM SCCS
+directories:
+.LP
+.nf
+example% ffind . \-name \s-1SCCS\s0 \-prune \-o \-print
+example%
+.fi
+.LP
+To recursively print all files names in the current directory and below,
+skipping the contents of
+.SM SCCS
+directories, but printing out the
+.SM SCCS
+directory name:
+.nf
+example% ffind . \-print \-name \s-1SCCS\s0 \-prune
+example%
+.fi
+.LP
+To remove files named
+.B a.out
+or
+.B *.o 
+that have not been accessed for a week or more
+.nf
+example% ffind . \e( \-name a.out \-o \-name *.o \e) \-time +7 \-exec frm {\|} \e;
+.fi
+.SH ENVIRONMENT
+.LP
+See fsp_env(7) for list of used environment variables.
+.SH "SEE ALSO"
+.PD
+fcatcmd(1), fcdcmd(1), fgetcmd(1), fgrabcmd(1), flscmd(1), fmkdir(1),
+fprocmd(1), fput(1), frmcmd(1), frmdircmd(1), fver(1), fducmd(1),
+fhostcmd(1), ffindcmd(1), fspd(1), fsp_prof(5)
+.LP
+.SH "BUGS"
+There seems to be a problem using an alias as command to execute.
+But since there is no globbing performed on the pathname
+the original FSP commands may be used instead.

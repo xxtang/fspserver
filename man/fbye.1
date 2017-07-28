@@ -1,0 +1,20 @@
+.TH FBYE 1 "Dec 2004" FSP
+.SH NAME
+fbye \- terminates session with FSP database
+.SH SYNOPSIS
+.B fver
+.SH DESCRIPTION
+.LP
+Command
+.B fbye
+terminates active session with FSP server database. Using this command
+is not neceseary, because session times out after at most 60 seconds of
+inactivity. Main use of this command is to remove cached session keys.
+.SH ENVIRONMENT
+.LP
+See fsp_env(7) for list of used environment variables.
+.SH "SEE ALSO"
+.PD
+fcatcmd(1), fcdcmd(1), fgetcmd(1), fgrabcmd(1), flscmd(1), fmkdir(1),
+fprocmd(1), fput(1), frmcmd(1), frmdircmd(1), fver(1), fducmd(1), 
+fhostcmd(1), fspd(1), fsp_prof(5), ffindcmd(1), fsp_env(7)

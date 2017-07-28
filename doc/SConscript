@@ -1,0 +1,7 @@
+Import(Split("env PREFIX DOCDIR JADE DSSSL"))
+
+env.Install(dir=DOCDIR,source=Split("PROTOCOL HISTORY faq.html"))
+env.Alias("install",DOCDIR)
+if JADE:
+    env.Command('fsp-faq.html','fsp-faq.sgml',JADE+' -V nochunks -t sgml -d '+DSSSL+'/html/docbook.dsl fsp-faq.sgml > fsp-faq.html',chdir=1)
+    env.Install(dir=DOCDIR,source='fsp-faq.html')

@@ -1,0 +1,180 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+ACTIONFAILED	server.c	58;"	d	file:
+ACTIONINFO	server.c	53;"	d	file:
+ACTIONLOG0	server.c	33;"	d	file:
+ACTIONLOG1	server.c	40;"	d	file:
+ACTIONLOG2	server.c	47;"	d	file:
+ACTIONOK	server.c	64;"	d	file:
+CHECK_ACCESS_RIGHTS	server.c	70;"	d	file:
+FifoCache	fifocache.h	/^struct FifoCache$/;"	s
+HALLOC_SIZE	host.c	28;"	d	file:
+LOGBUFFER	log.c	25;"	d	file:
+NULL_DEV	main.c	18;"	d	file:
+add_ipline	iprange.c	/^void add_ipline (const char * text, IPrange ** table)$/;"	f
+append_dir_listing	file.c	/^static int append_dir_listing (DIRLISTING * dl,const char * buf,unsigned int size)$/;"	f	file:
+arg_err	main.c	/^static void arg_err (void)$/;"	f	file:
+build_dir_listing	file.c	/^static void build_dir_listing (DIRLISTING * dl,const char *directory)$/;"	f	file:
+cachesize	fifocache.h	/^    unsigned int cachesize; \/* max. number of entries *\/$/;"	m	struct:FifoCache
+check_ip	iprange.c	/^static char *check_ip (unsigned long inet_num, const IPrange * iprange)$/;"	f	file:
+check_ip_table	iprange.c	/^const char *check_ip_table (unsigned long inet_num,IPrange *table)$/;"	f
+check_required_vars	main.c	/^static void check_required_vars (void)$/;"	f	file:
+conf_read	conf.c	/^static int conf_read = 0;$/;"	v	file:
+config_file	main.c	/^static const char *config_file = CONF_FILE ;$/;"	v	file:
+copy_file	file.c	/^static const char *copy_file (const char * n1, const char * n2)$/;"	f	file:
+cur_time	server.c	/^time_t cur_time;$/;"	v
+daemonize	conf.c	/^int daemonize = 1;$/;"	v
+dbug	conf.c	/^int dbug = 0;$/;"	v
+destroy_configuration	conf.c	/^void destroy_configuration (void)$/;"	f
+dir_cache_limit	conf.c	/^unsigned int dir_cache_limit = DEFAULT_DIRLISTCACHE_SIZE;$/;"	v
+dirlistcache	file.c	/^static struct FifoCache *dirlistcache;$/;"	v	typeref:struct:FifoCache	file:
+dirlistcache_entry_profiler	file.c	/^static unsigned int dirlistcache_entry_profiler (const void *entry)$/;"	f	file:
+dirlistcache_free_entry	file.c	/^static void dirlistcache_free_entry (void * entry)$/;"	f	file:
+dirstatcache	file.c	/^static struct FifoCache *dirstatcache;$/;"	v	typeref:struct:FifoCache	file:
+dirstatcache_entry_profiler	file.c	/^static unsigned int dirstatcache_entry_profiler  (const void *entry)$/;"	f	file:
+dirstatcache_free_entry	file.c	/^static void dirstatcache_free_entry (void * entry)$/;"	f	file:
+display_version	main.c	/^static void display_version (void)$/;"	f	file:
+dump	server.c	/^static int dump = 0;$/;"	v	file:
+dump_htab	host.c	/^int dump_htab (FILE *fp)$/;"	f
+dump_iptab	iprange.c	/^void dump_iptab (IPrange *table,FILE * fp)$/;"	f
+dumpname	conf.c	/^char *dumpname = NULL;$/;"	v
+e_destroy_func	fifocache.h	/^    void (*e_destroy_func) (void *key); \/* element destoy function *\/$/;"	m	struct:FifoCache
+e_head	fifocache.h	/^    int8_t *e_head;\/* block of cache entries, every entry has entrysize bytes *\/$/;"	m	struct:FifoCache
+e_next	fifocache.h	/^    int8_t *e_next; \/* new intem will be placed there *\/$/;"	m	struct:FifoCache
+e_stop	fifocache.h	/^    const void *e_stop; \/* stop mark for entries, never write here! *\/$/;"	m	struct:FifoCache
+entrysize	fifocache.h	/^    unsigned int entrysize; \/* size of 1 entry in bytes *\/$/;"	m	struct:FifoCache
+f_cache_clear	fifocache.c	/^void f_cache_clear(struct FifoCache *cache)$/;"	f
+f_cache_delete_by_key	fifocache.c	/^int f_cache_delete_by_key(struct FifoCache *cache, void *key)$/;"	f
+f_cache_delete_entry	fifocache.c	/^int f_cache_delete_entry(struct FifoCache *cache, void *entry)$/;"	f
+f_cache_destroy	fifocache.c	/^void f_cache_destroy(struct FifoCache *cache)$/;"	f
+f_cache_find	fifocache.c	/^void *f_cache_find(struct FifoCache *cache,const void *key)$/;"	f
+f_cache_get_key	fifocache.c	/^void * f_cache_get_key(struct FifoCache *cache,const void *entry)$/;"	f
+f_cache_new	fifocache.c	/^struct FifoCache * f_cache_new(unsigned int cachesize,unsigned int entrysize,$/;"	f
+f_cache_put	fifocache.c	/^void * f_cache_put(struct FifoCache *cache,const void *key,const void *data)$/;"	f
+f_cache_set_memory_profilers	fifocache.c	/^void f_cache_set_memory_profilers(struct FifoCache *cache,unsigned int (*keysize) (const void *key),unsigned int (*entrysize) (const void *entry))$/;"	f
+f_cache_stats	fifocache.c	/^void f_cache_stats(struct FifoCache *cache,FILE *f)$/;"	f
+f_cache_void_profiler	fifocache.c	/^unsigned int f_cache_void_profiler(void *anything)$/;"	f
+find_host	host.c	/^HTAB *find_host (unsigned long inet_num)$/;"	f
+find_hostname	host.c	/^static char *find_hostname (unsigned long inet_num)$/;"	f	file:
+fp_cache_limit	conf.c	/^unsigned int fp_cache_limit= DEFAULT_FPCACHE_SIZE;$/;"	v
+fpcache	file.c	/^static struct FifoCache *fpcache;$/;"	v	typeref:struct:FifoCache	file:
+fpcache_entry_profiler	file.c	/^static unsigned int fpcache_entry_profiler (const void *entry)$/;"	f	file:
+fpcache_free_entry	file.c	/^static void fpcache_free_entry (void *entry)$/;"	f	file:
+free_ip_table	iprange.c	/^void free_ip_table (IPrange *table)$/;"	f
+fsploga	log.c	/^void fsploga(const char *fmt, ...)$/;"	f
+fsplogf	log.c	/^void fsplogf (void)$/;"	f
+fsplogs	log.c	/^void fsplogs (void)$/;"	f
+gen_next_key	random.c	/^unsigned short gen_next_key (void)$/;"	f
+get_boolean	conf.c	/^static int get_boolean (const char *q)$/;"	f	file:
+get_entrysize	fifocache.h	/^    unsigned int (*get_entrysize) (const void *entry);  \/* return dynamic memory used by entry *\/$/;"	m	struct:FifoCache
+get_keysize	fifocache.h	/^    unsigned int (*get_keysize) (const void *key); \/* return dynamic memory used by key *\/$/;"	m	struct:FifoCache
+grab_enabled	conf.c	/^int grab_enabled = 1;$/;"	v
+hcnt	host.c	/^static unsigned  hcnt;		\/* number of clients.			*\/$/;"	v	file:
+hit	fifocache.h	/^    unsigned int hit; \/* cache search hits *\/$/;"	m	struct:FifoCache
+home_dir	conf.c	/^char *home_dir = NULL;$/;"	v
+homedir_restricted	conf.c	/^int homedir_restricted = 1;$/;"	v
+htab	host.c	/^static HTAB     *htab;		\/* client data base.			*\/$/;"	v	file:
+htot	host.c	/^static unsigned  htot = 0;	\/* available entries in the data base.	*\/$/;"	v	file:
+hzero	host.c	/^static HTAB     hzero;$/;"	v	file:
+inetd_mode	main.c	/^static int inetd_mode = 0;$/;"	v	file:
+init_caches	file.c	/^int init_caches (void)$/;"	f
+init_home_dir	file.c	/^void init_home_dir (void)$/;"	f
+init_htab	host.c	/^int init_htab (void) \/* always have 2 entries -- 0, MAXINT *\/$/;"	f
+init_random	main.c	/^static void init_random (void)$/;"	f	file:
+iptab	iprange.c	/^IPrange *iptab=NULL;$/;"	v
+k_compare_func	fifocache.h	/^    int (*k_compare_func) (const void *key1,const void *key2); \/* element destoy function *\/$/;"	m	struct:FifoCache
+k_destroy_func	fifocache.h	/^    void (*k_destroy_func) (void *key); \/* key destoy function *\/$/;"	m	struct:FifoCache
+k_head	fifocache.h	/^    int8_t *k_head; \/* block of keys starts there *\/$/;"	m	struct:FifoCache
+k_next	fifocache.h	/^    int8_t *k_next; \/* new item *\/$/;"	m	struct:FifoCache
+k_stop	fifocache.h	/^    const void *k_stop; \/* stop mark for key entries *\/$/;"	m	struct:FifoCache
+keysize	fifocache.h	/^    unsigned int keysize; \/* size of 1 key in bytes *\/$/;"	m	struct:FifoCache
+listen_on	conf.c	/^char *listen_on = NULL;$/;"	v
+load_access_rights	acl.c	/^void load_access_rights (DIRINFO *di)$/;"	f
+load_configuration	conf.c	/^void load_configuration (const char *config_file)$/;"	f
+load_password	acl.c	/^static char *load_password (const char * file)$/;"	f	file:
+log_set	conf.c	/^static void log_set (int flag, int neg)$/;"	f	file:
+logbuf	log.c	/^static char logbuf[LOGBUFFER];	\/* buffer for log message *\/$/;"	v	file:
+logfd	log.c	/^int logfd = -1;  \/* logfile file descriptor *\/$/;"	v
+logging	conf.c	/^int logging = 0;$/;"	v
+logname	conf.c	/^char *logname = NULL;$/;"	v
+logpos	log.c	/^static size_t logpos = 0;	\/* current log message length *\/$/;"	v	file:
+main	main.c	/^int main (int argc, char ** argv)$/;"	f
+maxthcallowed	conf.c	/^unsigned int maxthcallowed = 0;$/;"	v
+miss	fifocache.h	/^    unsigned int miss; \/* cache search misses *\/$/;"	m	struct:FifoCache
+myfd	server.c	/^static int myfd;$/;"	v	file:
+no_unnamed	conf.c	/^int no_unnamed = 0;$/;"	v
+packetsize	conf.c	/^unsigned short packetsize = DEFAULT_SPACE;$/;"	v
+parse_hostname	iprange.c	/^static IPrange *parse_hostname (const char * text, unsigned int len)$/;"	f	file:
+parse_ipcomponent	iprange.c	/^static const char *parse_ipcomponent (const char * text, unsigned char * lo,$/;"	f	file:
+parse_ipcomponentnum	iprange.c	/^static unsigned char parse_ipcomponentnum (const char * * textp)$/;"	f	file:
+parse_ipline	iprange.c	/^static IPrange *parse_ipline (const char * text)$/;"	f	file:
+parse_ipnumber	iprange.c	/^static IPrange *parse_ipnumber (const char * text)$/;"	f	file:
+parse_path	path.c	/^const char *parse_path (char * fullp, unsigned int len, PPATH * pp)$/;"	f
+permit_passwordless_owners	conf.c	/^int permit_passwordless_owners = 0;$/;"	v
+pidfile	pidfile.c	/^int pidfile(const char *pidfile_path)$/;"	f
+pidfile_cleanup	pidfile.c	/^void pidfile_cleanup(const char *pidfile_path)$/;"	f
+pidfile_pid	pidfile.c	/^static pid_t pidfile_pid;$/;"	v	file:
+pidlogname	conf.c	/^char *pidlogname = NULL;$/;"	v
+print_command	server.c	/^static const char * print_command(unsigned char cmd)$/;"	f	file:
+priv_mode	conf.c	/^int priv_mode = 0;$/;"	v
+read_configuration	conf.c	/^static void read_configuration (const char * name)$/;"	f	file:
+read_only	conf.c	/^int read_only = 0;$/;"	v
+readme_file	conf.c	/^char *readme_file = NULL;$/;"	v
+require_access_rights	acl.c	/^const char * require_access_rights (const DIRINFO *di,unsigned char rights,unsigned long ip_addr, const char * passwd)$/;"	f
+retry_timeout	conf.c	/^time_t retry_timeout = 3;$/;"	v
+run_gid	conf.c	/^gid_t run_gid = 0;$/;"	v
+run_uid	conf.c	/^uid_t run_uid = 0;$/;"	v
+save_access_rights	acl.c	/^void save_access_rights (DIRINFO *di)$/;"	f
+save_password	acl.c	/^static void save_password (const char *file,const char *password)$/;"	f	file:
+search_fpcache	file.c	/^static FPCACHE *search_fpcache (unsigned long inet_num,$/;"	f	file:
+send_error	server.c	/^static void send_error (struct sockaddr_in * from, UBUF * ub, const char * msg)$/;"	f	file:
+serve_file	server.c	/^void serve_file (struct sockaddr_in * from, UBUF * ub, FILE * fp,$/;"	f
+server_del_dir	file.c	/^const char *server_del_dir (PPATH * pp, DIRINFO *di)$/;"	f
+server_del_file	file.c	/^const char *server_del_file (PPATH * pp, DIRINFO * di)$/;"	f
+server_dump	server.c	/^RETSIGTYPE server_dump (int signum)$/;"	f
+server_get_dir	file.c	/^const char *server_get_dir (DIRLISTING ** dl, const DIRINFO * di)$/;"	f
+server_get_file	file.c	/^const char *server_get_file (PPATH * pp,$/;"	f
+server_get_pro	file.c	/^int server_get_pro (DIRINFO * di, char * result, const char * acc)$/;"	f
+server_grab_done	file.c	/^const char *server_grab_done (unsigned long inet_num,$/;"	f
+server_grab_file	file.c	/^const char *server_grab_file (FILE ** fp,$/;"	f
+server_install	file.c	/^const char *server_install (PPATH * pp, unsigned long inet_num,$/;"	f
+server_interrupt	server.c	/^RETSIGTYPE server_interrupt (int signum)$/;"	f
+server_loop	server.c	/^int server_loop (int fd, time_t timeout)$/;"	f
+server_make_dir	file.c	/^const char *server_make_dir (PPATH * pp, unsigned long inet_num,DIRINFO **di)$/;"	f
+server_process_packet	server.c	/^static void server_process_packet (unsigned bytes, UBUF * ub, int old,$/;"	f	file:
+server_rename	file.c	/^const char *server_rename (PPATH *src,PPATH *dest,DIRINFO *sdir, DIRINFO *tdir)$/;"	f
+server_reply	server.c	/^int server_reply (struct sockaddr_in *from, UBUF * ub,$/;"	f
+server_secure_file	file.c	/^const char *server_secure_file (PPATH * pp, unsigned long inet_num,$/;"	f
+server_set_pro	file.c	/^const char *server_set_pro (DIRINFO *di, const char * key)$/;"	f
+server_show_version	server.c	/^static void server_show_version (struct sockaddr_in * from, UBUF * ub)$/;"	f	file:
+server_stat	file.c	/^const char *server_stat (UBUF * ubuf )$/;"	f
+server_up_load	file.c	/^const char *server_up_load (char * data, unsigned int len, unsigned long pos,$/;"	f
+session_timeout	conf.c	/^time_t session_timeout = 60;$/;"	v
+shutdown_caches	file.c	/^void shutdown_caches (void)$/;"	f
+shutdowning	server.c	/^int shutdowning = 0;$/;"	v
+skip_whitespace	iprange.c	22;"	d	file:
+stat_cache_limit	conf.c	/^unsigned int stat_cache_limit = DEFAULT_DIRSTATCACHE_SIZE;$/;"	v
+stat_cache_timeout	conf.c	/^time_t stat_cache_timeout = 25;$/;"	v
+stat_caches	file.c	/^void stat_caches (FILE *fp)$/;"	f
+string_compare	file.c	/^static int string_compare (const void *e1,const void *e2)$/;"	f	file:
+string_free	file.c	/^static void string_free (void * entry)$/;"	f	file:
+string_profiler	file.c	/^static unsigned int string_profiler (const void *entry)$/;"	f	file:
+system_umask	conf.c	/^mode_t system_umask = 0077;$/;"	v
+thc	server.c	/^static int thc[THCCOUNT];$/;"	v	file:
+thcbase	server.c	/^static time_t thcbase;$/;"	v	file:
+tlogbuf	log.c	/^static char tlogbuf[LOGBUFFER];	\/* buffer for log message *\/$/;"	v	file:
+tlogfd	log.c	/^int tlogfd = -1; \/* transfer log file descriptor *\/$/;"	v
+tlogname	conf.c	/^char *tlogname = NULL;$/;"	v
+tmp_dir	conf.c	/^char *tmp_dir = NULL;$/;"	v
+udp_port	conf.c	/^unsigned short udp_port = 21;$/;"	v
+upload_umask	conf.c	/^mode_t upload_umask = 0033;$/;"	v
+use_access_files	conf.c	/^int use_access_files = 1;$/;"	v
+use_directory_mtime	conf.c	/^int use_directory_mtime =$/;"	v
+use_prebuild_dirlists	conf.c	/^int use_prebuild_dirlists =$/;"	v
+validate_path	file.c	/^const char *validate_path (char * fullp, unsigned lenfullp, PPATH * pp,DIRINFO **di, int want_directory)$/;"	f
+ver_enabled	conf.c	/^int ver_enabled = 1;$/;"	v
+xferlog	log.c	/^void xferlog(char direction, const char *filename,unsigned long filesize,const char *hostname)$/;"	f

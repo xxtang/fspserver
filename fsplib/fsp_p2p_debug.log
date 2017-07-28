@@ -1,0 +1,87 @@
+[04/13 15:37:19.885465]p2pnat lib version 1.1.0
+[04/13 15:37:19.887286] API: dns_resove(390) - IP address [54.223.242.247] for hostname - <p2p.newrocktech.com>
+[04/13 15:37:19.919248] send packet 54.223.242.247:7042
+P2PNAT00 REG
+mid: 00000bdf
+
+[04/13 15:37:19.954008] recv packet 54.223.242.247:7042
+P2PNAT01 REG
+cid: dd97e053-0149-11e6-afa6-024abe532443
+mid: 00000bdf
+key: c1ca3e0ca0910cdc571dea70c23b3cd0
+code: 201
+
+[04/13 15:37:19.954041]dd97e053-0149-11e6-afa6-024abe532443 Obtain cid and key
+[04/13 15:37:19.980982] send secure packet 54.223.242.247:7042
+P2PNAT00 REG
+cid: dd97e053-0149-11e6-afa6-024abe532443
+mid: 00000be0
+data: n2X8h0GQ+LpX3EtRLl3aLRcfyMOhi0C20ZVwlaYvbemADxuA+sIpJkjuYM5TVfkNGxbg0jaH/oWbcL9NN9rIgdTP41U7W5kjXWoYO0JGQDY=
+
+[04/13 15:37:20.015660] recv secure packet 54.223.242.247:7042
+P2PNAT01 REG
+cid: dd97e053-0149-11e6-afa6-024abe532443
+mid: 00000be0
+service: FSP
+ed: 192.168.20.164:39154
+oid: default
+ped: 116.236.246.122:39154
+code: 200
+
+[04/13 15:37:20.015692]dd97e053-0149-11e6-afa6-024abe532443 Registered
+[04/13 15:37:20.015742] send secure packet 54.223.242.247:7042
+P2PNAT00 CON
+cid: dd97e053-0149-11e6-afa6-024abe532443
+mid: 00000be1
+data: /h7uJWoBA8zM4LEVgQ76zNjeCS5spNYuBYleoD6NVIC5JrXaWDvpZ5MXNtulB0iY1/C0U9tagrJUgiB1HD3aqamr0wgReaKHaPbMFlfGyqM9+c8bfkM8LNsxpe7dCP7y
+
+[04/13 15:37:20.052813] recv secure packet 54.223.242.247:7042
+P2PNAT01 CON
+cid: dd97e053-0149-11e6-afa6-024abe532443
+mid: 00000be1
+connid: c43a179f
+service: FSP
+tid: e8607146-c627-0cbf-edcd-b425118e1594
+ed: 192.168.130.234:2000
+oid: default
+toid: default
+ped: 116.226.191.188:2000
+code: 200
+
+[04/13 15:37:20.052841]dd97e053-0149-11e6-afa6-024abe532443->e8607146-c627-0cbf-edcd-b425118e1594 Start Connecting
+[04/13 15:37:20.052880] send packet 192.168.130.234:2000
+P2PNAT00 PING
+mid: 00000be2
+connid: c43a179E
+
+[04/13 15:37:20.052950] send packet 116.226.191.188:2000
+P2PNAT00 PING
+mid: 00000be3
+connid: c43a179P
+
+[04/13 15:37:20.054839] recv packet 192.168.130.234:2000
+P2PNAT00 PING
+mid: 00000ab4
+connid: c43a179E
+
+[04/13 15:37:20.054875] send packet 192.168.130.234:2000
+P2PNAT01 PONG
+mid: 00000ab4
+connid: c43a179E
+
+[04/13 15:37:20.054934] send packet 192.168.130.234:2000
+P2PNAT00 PING
+mid: 00000be4
+connid: c43a179E
+
+[04/13 15:37:20.054982] send packet 116.226.191.188:2000
+P2PNAT00 PING
+mid: 00000be5
+connid: c43a179P
+
+[04/13 15:37:20.056113] recv packet 192.168.130.234:2000
+P2PNAT01 PONG
+mid: 00000be4
+connid: c43a179E
+
+[04/13 15:37:20.056142]dd97e053-0149-11e6-afa6-024abe532443->e8607146-c627-0cbf-edcd-b425118e1594 Connect Success

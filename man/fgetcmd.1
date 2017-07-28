@@ -1,0 +1,84 @@
+.TH FGET 1 "3 Sep 2003" FSP
+.SH NAME
+fgetcmd, fget \- download files from the FSP database
+.SH SYNOPSIS
+.B fgetcmd
+[-[f|o]|u|t|n|a|c|r|p]
+.br
+.B fgetcmd
+[-[f|o]|u|t|n|a|c|r|p]
+.I filename
+\&.\|.\|.
+.LP
+.B fget
+[-[f|o]|u|t|n|a|c|r|p]
+.br
+.B fget
+[-[f|o]|u|t|n|a|c|r|p]
+.I filename
+\&.\|.\|.
+.SH DESCRIPTION
+.LP
+When used without arguments, a list of file names is read from the
+standard input.  When arguments are given, the arguments are taken
+to be the list of file names.  For each file named in the list,
+.B fgetcmd
+copies the file to the client's current working directory in the
+client machine.
+.B fgetcmd
+will perform
+.B csh
+file name globbing based on file and directory information
+obtained from the FSP database.
+.LP
+Since user's command shells generally cannot do the proper globbing for
+this program, it is recommended that user defines a shell alias or
+function to turn off command shell globbing before running this program.
+.B csh
+example:
+.LP
+.nf
+alias fget \e(set noglob\e; exec fgetcmd \e!\e*\e)
+.fi
+.SH ARGUMENTS
+.LP
+.B -p 
+-- preserve date/times of original file.
+.LP
+.B -f | -o
+-- forces overwriting of files during an fget.
+.LP
+.B -u
+-- forces unique filenames (appends a unique integer to each copy)
+.LP
+.B -t
+-- forces overwrite of local file if download is successful.
+This has the drawback of possibly leaving behind temporary files with names like
+.I .fsp.####
+.LP
+.B -n
+-- forces
+.B fgetcmd
+to refuse to overwrite files with identical names.
+.LP
+.B -a | -c
+-- forces
+.B fgetcmd
+to try and append data to a partial file.
+.LP
+.B -r
+-- forces
+.B fgetcmd
+to recursively get all files in given directories.
+.LP
+The default mode is for
+.B fgetcmd
+is to create unique file names.
+.SH ENVIRONMENT
+.LP
+See fsp_env(7) for list of used environment variables.
+.SH "SEE ALSO"
+.PD
+fcatcmd(1), fcdcmd(1), fgetcmd(1), fgrabcmd(1), flscmd(1), fmkdir(1),
+fprocmd(1), fput(1), frmcmd(1), frmdircmd(1), fver(1), fducmd(1),
+fhostcmd(1), fspd(1), fsp_prof(5), ffindcmd(1), fsp_env(7)

@@ -1,0 +1,46 @@
+from os import symlink, unlink
+Import(Split("env PREFIX MANDIR CLIENTS"))
+
+MAN1=Split("fspscan.1 fspd.1")
+if CLIENTS:
+    MAN1.extend(Split("""
+    fgetcmd.1   fmkdir.1    frmcmd.1
+    fcdcmd.1
+    fgrabcmd.1  fmvcmd.1    frmdircmd.1
+    fducmd.1
+    fbye.1      fhostcmd.1  fprocmd.1   fsetupcmd.1 fstatcmd.1
+    ffindcmd.1  fput.1      fver.1
+    fcatcmd.1   flscmd.1
+    """))
+if CLIENTS:    
+    MAN5=Split("fspsites.5 fsp_prof.5")
+    MAN7=Split("fsp_env.7")
+else:
+    MAN5=[]
+    MAN7=[]
+
+SYMLINKS=[ ('fcdcmd','fcd'), ('fducmd','fdu'), ('fcatcmd','fcat'),
+	   ('fgetcmd','fget'), ('fgrabcmd','fgrab'), ('ffindcmd','ffind'),
+	   ('fmvcmd','fmv'), ('fhostcmd','fhost'), ('flscmd','fls'),
+	   ('frmcmd','frm'), ('frmdircmd','frmdir'), ('fprocmd','fpro'),
+	   ('fstatcmd','fstat'), ('fsetupcmd','fsetup')
+	 ]
+
+# compress manpages
+for page in MAN1+MAN5+MAN7:
+    env.GZip(page+'.gz',page)
+
+# install man pages
+for page in MAN1:
+    env.Install(dir=MANDIR+"/man1",source=page+'.gz')
+for page in MAN5:
+    env.Install(dir=MANDIR+"/man5",source=page+'.gz')
+for page in MAN7:
+    env.Install(dir=MANDIR+"/man7",source=page+'.gz')
+
+# install symlinks for man pages
+if 'install' in COMMAND_LINE_TARGETS and CLIENTS:
+    for pair in SYMLINKS:
+	env.Symlink(MANDIR+'/man1/'+pair[1]+'.1.gz',MANDIR+'/man1/'+pair[0]+'.1.gz')
+
+env.Alias("install",MANDIR)

@@ -1,0 +1,779 @@
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook V4.2//EN" [
+<!-- define some ENTITYs -->
+<!ENTITY fsp "File Service Protocol">
+]>
+<article id="fsp-faq" lang="en">
+  <articleinfo>
+    <title>FSP - &fsp; FAQ</title>
+    <author>
+      <firstname>Sven</firstname>
+      <othername>"Hoaxter"</othername>
+      <surname>Hoexter</surname>
+       <affiliation>
+          <address><email>sven@du-gehoerst-mir.de-nospam</email></address>
+       </affiliation>
+    </author>
+    <author>
+       <firstname>Radim</firstname>
+       <othername>"HSN"</othername>
+       <surname>Kolar</surname>
+       <affiliation>
+          <address><email>hsn@no.spam.sendmail.cz</email></address>
+       </affiliation>
+    </author>    
+    <copyright>
+      <year>2003-2004</year>
+      <holder>Authors</holder>
+    </copyright>
+    <revhistory>
+      <revision>
+        <revnumber>0.2</revnumber>
+        <date>2005.01.03</date>
+      </revision>
+    </revhistory>
+    <!-- starting with some general stuff -->
+    <abstract>
+      <para>
+        This document is a major rewrite of the old 
+        <ulink url="http://fsp.sourceforge.net/doc/faq.html">FSP FAQ</ulink>.
+        I started with this FAQ from scratch cause nearly all parts of the old FAQ where outdated. This new FAQ is maintained
+        in DocBook SGML. Send patches to the fsp-devel Mailinglist (FIXME link to id gethelpml) or directly to me
+        <email>sven@du-gehoerst-mir.de-nospam</email>. You should be able to find the latest SGML version of this FAQ in the 
+        <ulink url="http://sourceforge.net/cvs/?group_id=93841">fsp CVS at sf.net</ulink> or here
+        <ulink url="http://sven.stormbind.net/fsp/fsp-doc/fsp-faq.sgml">http://sven.stormbind.net/fsp/fsp-doc/fsp-faq.sgml</ulink>
+        (be aware the sf.net public CVS is often about a week behind the "real" CVS :( )
+      </para>
+    </abstract>
+  </articleinfo>
+  <!-- end of the general stuff -->
+
+<!-- starting with the main document -->
+
+<!-- starting with the introduction -->
+<sect1 id="introduction">
+    <title>Introduction</title>
+
+    <sect2 id="whatisfsp">
+      <title>What is FSP?</title>
+      <para>
+        FSP stands for &fsp;. In general FSP is what anonymous ftp should be: a reliable and bandwidth friendly
+        way to access publicly available data.
+      </para>
+      <para>  
+       FSP is a lightweight UDP based protocol for transferring files around.
+       It has many benefits over FTP, mainly for running
+       anonymous archives. FSP protocol is valuable in all kinds of
+       environments because it is one of the only TCP/IP protocols that is not
+       aggressive about bandwidth, while still being sufficiently fault tolerant.
+      </para>
+    </sect2>
+    <sect2 id="fsp-project">
+      <title>FSP Project</title>
+      <para>
+        FSP is (and always has been) open source project with MIT/X11 source
+        code license. See <xref linkend="licence"> for more details.
+      </para>
+      <para>
+        In the past various people maintained the FSP code base.
+        At the moment Radim Kolar
+        is maintaining FSP. FSP project is now hosted on
+        <ulink url="http://sourceforge.net">Source Forge.NET</ulink>.
+      </para>  
+      <para>  
+        If you like to get involved take a look at the FSP
+        <ulink url="http://fsp.sourceforge.net">Homepage</ulink> and the 
+        <ulink url="http://www.sourceforge.net/projects/fsp/">FSP project page</ulink>.
+      </para>
+    </sect2>
+    <sect2 id="whatisitfor">
+      <title>Why and for what should I use FSP?</title>
+      <para>
+        The &fsp; has its strengths on slow lines and connections with a high packets lose like a Wireless LAN or radio packet networks. Because FSP is simple
+        and lightweight, it is very well suited for use in embedded devices area.
+      </para>
+      <para>
+        FSP protocol is not aggressive about bandwidth and was designed
+        to resist against users which want to do some bandwidth-related attacks.
+        It can support more users, because the same available
+        bandwidth is divided into smaller parts.
+        Because FSP uses less bandwidth, FSP transfers takes about
+        2-3 times longer than with TCP-based protocols.
+      </para>
+      <para>  
+        FSP protocol
+        chooses reliability and simplicity over raw transfer speed.
+        File transfer takes longer, but there are much more resistant
+        against network failure.
+      </para>
+      <para>  
+        Entire connection management is moved from server to client side,
+        which solves problems with aborted and timed out transfer. Because
+        FSP is stateless protocol, it can survive even server reboot without
+        interruption.
+      </para>
+      <para>
+        More information about FSP use can be found
+        in <ulink url="http://cvs.sourceforge.net/viewcvs.py/fsp/fsp/INFO?view=auto">INFO document</ulink>.
+      </para>
+      </sect2>
+      <sect2 id="comparison">
+        <title>Comparison between fsp and other protocols</title>
+        <para>
+          We did some benchmarking so that you can see how fsp performance
+          compared to various other command protocols used to transfer
+          files.
+        </para>
+        <sect3 id="benchresults">
+        <title>Benchmark results</title>
+        <para> 
+          You should understand that FSP is slower than TCP
+          based protocols by design. TCP protocol can have more than
+          one packet flying in network (usually 2-3) while FSP was designed to
+          make it impossible (See <xref linkend="keying">).
+        </para>  
+        <para>
+          All TCP protocols have on normal networks
+          (max 10% packet loss) higher transfer rate than FSP.
+          FSP is clean winner when it comes to overloaded sites or lines.
+          These benchmarks were performed on 10Mbit LAN with zero traffic.
+          Transfer rate is quite slow even for 10Mb because one of testing
+          machines was old AMD K5/90 and both machines used cheap clone ISA NE2000 Ethernet cards.
+        </para>  
+        <para>Test file was 3656535 bytes long (FreeBSD kernel image).
+        Test results shows, that FSP is about 2-2.5 times slower than TCP. 
+        <programlisting>
+        tftp  15.2 secs 240.6 kB/s
+        ftp   5.18 secs 688.7 kB/s
+        http  5.32 secs 685.4 KB/s 
+        sftp  8.0  secs 446.4 KB/s
+        fsp   12.7 secs 287.7 kB/s
+        </programlisting>
+        </para>
+        </sect3>
+        <sect3 id="comparehttp">
+          <title>FSP vs. http</title>
+          <para>
+          HTTP: widely supported by servers, clients and proxies.
+          De-facto standard protocol for accessing information today.
+          HTTP is also primary protocol used for file distribution today.
+          </para>
+          <para>
+          FSP: Can provide directory listings, which are not supported
+          by standard HTTP/1.1 protocol. You need to have configured
+          WebDAV server-side extension for that.
+          </para>
+        </sect3>
+        <sect3 id="compareftp">
+          <title>FSP vs. ftp</title>
+          <para>
+          FTP: widely supported by servers and clients, more difficult
+          to proxy than HTTP, uses 2 TCP connections, can provide directory
+          listings in site-specific format, server side is more heavy service
+          than HTTP. FTP is being replaced by HTTP today.
+          </para>
+          <para>
+          FSP: do not needs to make any connection, server side is very
+          lightweight service,
+          directory listings are standardized by protocol and very quick,
+          no problems with NAT.
+          </para>
+        </sect3>
+        <sect3 id="comparetftp">
+          <title>FSP vs. tftp</title>
+          <para>
+          tftp is simple UDP (but TCP version also exists) protocol used mainly
+          for loading boot and flash ROM images from network. Standard
+          tftp uses 512 bytes long packets.
+          </para>
+          <para>
+          TFTP: more widely used, standardized in RFC, most network cards
+          can boot image via TFTP.
+          </para>
+          <para>
+          FSP: about 1.5-times faster because of 1k-1.4k packet size,
+          supports directory listings,
+          can query file date and size, 
+          can provide random access to file and supports opening
+          more than one file, supports access control, timeout
+          management moved to client side, stateless.
+          </para>
+        </sect3>
+    </sect2>
+    <sect2 id="whyfspd">
+      <title>Why should I run fspd?</title>
+      <para>
+      If you are providing anonymous archive (FTP,WWW), you should also
+      offer FSP access. FSP daemon is a very lightweight process, never
+      forks and you will never have more than one copy running around.
+      On todays machines, it has zero performance impact.
+      </para>
+      <para>
+      Running fspd allows people with overloaded or lousy lines to get
+      files from your archive. It also helps people during spikes periods
+      when archive is very busy.
+      </para>
+      <para>
+      There are also some people which likes slower FSP downloads better,
+      because
+      it saves their bandwidth for interactive tasks. This is often preferred
+      way of downloading large files, like CD-ROM images.
+      </para>
+      <para>
+      It is not true that UDP based protocols are unsecure. &fsp; provides
+      the same security level as anonymous FTP and is much more resistant
+      against denial of service attacks. It is nearly impossible to overload
+      fsp server by flooding. On other side, TCP-based protocols are very
+      simple to SYN flood.
+      </para>
+    </sect2>  
+    <sect2 id="wherecanifind">
+      <title>Where can I download FSP?</title>
+      <para>
+        You can Download the FSP source Distribution from the
+        <ulink url="http://sourceforge.net/project/showfiles.php?group_id=93841">sf.net mirror network</ulink>
+        or from 
+        <ulink url="http://ibiblio.org/pub/linux/system/network/file-transfer/">ibblio</ulink>.
+        If you have the FSP tools already you can access the latest FSP release
+        via fsp on hxt.homelinux.org or wrack.telelev.net both running fspd on
+        port 2221.
+      </para>
+      <para>
+        When you're interested in the latest, and of course greatest,
+        development done in FSP please try a CVS checkout.
+        Explanation and all needed information to do this can be found
+        on the
+        <ulink url="http://sourceforge.net/cvs/?group_id=93841">sf.net CVS page</ulink>.
+        </para>
+    </sect2>
+    <sect2 id="gethelp">
+      <title>Where can I find help?</title>
+      <para>
+        First of all various people took the time to write nice documentation on FSP including the fspd Server
+        and the client tools. Please read those fine documents before you start writing to the mailinglists.
+      </para>
+      <sect3 id="gethelpdocs">
+        <title>RTFM - Read the fine Manuals</title>
+        <para>
+          <ulink url="http://fsp.sourceforge.net/doc/PROTOCOL.txt">The &fsp; definition</ulink>
+          The latest version of the FAQ,
+          The <ulink url="http://fsp.sourceforge.net/doc/faq.html">old FSP FAQ</ulink>.
+        </para>
+      </sect3>
+      <sect3 id="gethelpml">
+        <title>The Mailinglists</title>
+        <para>
+          For developing issue write to the fsp-dev mainlinglist. For end-user questions
+          and questions on how to configure your server/client write to the fsp-user Mailinglist.
+          You can find more information on how to subscribe/unsubscribe to the mailinglist and
+          the archive on the
+          <ulink url="http://sourceforge.net/mail/?group_id=93841">FSP mailinglist page</ulink>
+          on sf.net.
+          Please before you write to one of the provided mailinglists read and understand
+          <ulink url="http://www.catb.org/~esr/faqs/smart-questions.html">ESRs HowTo ask smart questions</ulink>
+          and
+          <ulink url="http://www.netmeister.org/news/learn2quote.html">learn.to/quote</ulink>
+        </para>
+      </sect3>
+    </sect2>
+ 
+    <sect2 id="licence">
+      <title>Licence, copyright and redistribution of FSP</title>
+      <para>
+        FSP code base uses MIT/X11 license (also known as 2-point BSD
+        license). This license is very friendly to users in commercional area. 
+        You can freely develop, use and sell your commercional implementation of &fsp;.
+      <orderedlist>
+          <listitem>
+             <para>Do not claim that you have wrote this software.</para>
+          </listitem>
+          <listitem>
+             <para>Do not sue us if something breaks.</para>
+          </listitem>
+      </orderedlist>
+      Summary: As long as you will not remove our copyrights from source code
+      and will not go with your complains to the court, you can
+      do with this software anything you want.
+      </para>
+      <para>
+        From the COPYRIGHT file in the source distribution (e-mail addresses removed):
+        <programlisting>
+          Authors:
+          Radim Kolar  (Current FSP maintainer)
+          Andrew Doherty
+          Michael Fischbein
+          Cimarron D. Taylor
+          Guido van Rossum
+          Wen-King Su
+          Philip G. Richards
+          Michael Meskes
+          Rich $alz
+          gjc@mitech.com
+          Joseph_Traub
+          Sven (VMS port maintainer)
+          Very Mad Students, University of Karlsruhe, FRG (VMS port)
+          
+          Copyright:
+          All of the FSP code is free software.  Most of fsp falls under two
+          copyrights, the 2-point BSD copyright and one by Wen-King Su:
+          
+          Copyright (c) 1991 by Wen-King Su (wen-king@vlsi.cs.caltech.edu)
+          You may copy or modify this file in any manner you wish, provided
+          that this notice is always included, and that you hold the author
+          harmless for any loss or damage resulting from the installation or
+          use of this software.
+          
+          Other contributions to fsp fall under different copyrights:
+          
+          This file is Copyright 1992 by Philip G. Richards.  All Rights Reserved.
+          See the file README that came with this distribution for permissions on
+          code usage, copying, and distribution.  It comes with absolutely no warranty.
+          
+          Copyright (c) 1993 by Michael Meskes
+          You may copy or modify this file in any manner you wish, provided
+          that this notice is always included, and that you hold the author
+          harmless for any loss or damage resulting from the installation or
+          use of this software.
+        </programlisting>
+      </para>
+    </sect2>
+   
+    <sect2 id="projecthistory">
+      <title>Project history</title>
+      <para>
+        This should give you a short overview over the development of the &fsp;
+        in the past and today.
+      </para>
+      <sect3 id="histpast">
+        <title>The past</title>
+        <para>
+        FSP development started in a very old days. From source code and man
+        page time stamps we can see that it was working and alive in 1988. 
+        FSP versions 1.0 and 2.0 was born in Dec 1991. Release 2.0 was just
+        bufixed 1.0 but includes man pages.  After that two first
+        releases FSP goes to the active life. People starts using it because
+        it was superior to anonymous FTP at that time.
+        </para>
+        <para>
+        FSP active development era ends in May 1993 when last official
+        version 2.7.1 was released. It was quite popular at that time,
+        mainly because it was superior way for transferring warez around
+        when compared with FTP. Because of this, FSP protocol got a bad
+        name "Underground file sharing protocol" and suffers from it even today.
+        I see that FSP warez era
+        as practical demonstration how can FSP perform nicely on
+        overloaded sites and lines.
+        </para>
+        <para>
+        After that then was some maintenance work on FSP in 1995 which ends
+        with famous last official beta FSP version 2.8.1b3
+        in March 1996, which was coded by original FSP developers team. 
+        This version is used on some servers today because Debian Woody has it.
+        </para>
+        <para>
+        Last official stable FSP version was still 2.7.1 from May '93.
+        This is still used on some forgotten machines in universities today.
+        It has also
+        known security issue (fspd follows all symlinks), but at this
+        time this was viewed as feature, not a bug.
+        </para>
+        <para>
+        Radim Kolar released 2.8.1b4 in 2001, which was just some bugfixed
+        version of 2.8.1b3 untouched from 1997 when I ported it to OS/2.
+        </para>
+        <para>
+        With wireless networks Wi-Fi boom in 2002, it becomes clear that
+        large wireless networks can have quite a high packet loss rate
+        and TCP protocol is not very suitable for them.
+        </para>
+        <para> 
+        Active working on FSP again starts on 25 June 2003 when Version
+        2.8.1b5 goes out. Major parts of FSP server code was rewrited
+        for higher performance and many old bugs in FSP code fixed.
+        Some bugs gets fixed after more than 10 years.
+        </para>
+        <para>
+        In the past various people worked on the &fsp;, see
+        <xref linkend="licence">
+        </para>
+      </sect3>
+      <sect3 id="histtoday">
+        <title>Today</title>
+        <para>
+          Radim Kolar started to work on the &fsp; again in June 2003. Since
+          that time he's maintaining the source distribution. You can reach him
+          on the mailinglists or via e-mail <email>hsn@no.spam.sendmail.cz</email>.
+          </para>
+        <para>
+          Since September 2003 Sven Hoexter is working on parts of the documentation and code. He is also doing release management and RPM, deb packaging.
+          You can reach him on the mailinglists or via e-mail
+          <email>sven@du-gehoerst-mir.de-nospam</email>.
+        </para>
+      </sect3>
+    </sect2>
+ 
+    <sect2 id="credits">
+      <title>Developers and contributors</title>
+      <para>
+        See <xref linkend="licence">
+      </para>
+    </sect2>
+
+</sect1>
+<!-- end of the introduction -->
+  
+ <!-- start with the installation instructions-->
+<sect1 id="installation">
+<title>Installation instructions</title>
+    <sect2 id="getfsp">
+      <title>How to get FSP</title>
+      <sect3 id="getsource">
+        <title>How to obtain the source distribution</title>
+        <para>
+          There are several ways to obtain the fsp source distribution please take a
+          look at <xref linkend="wherecanifind">          
+        </para>
+      </sect3>
+      <sect3 id="getbinary">
+        <title>How to obtain a binary copy</title>
+        <para>
+          At the moment we provide only RPM for RedHat 7.3. You can download the RPM file from
+          the sf.net download page or from wrack.telelev.net. wrack.telelev.net provides the
+          rpms in a apt-rpm usable way, for more information about apt-rpm and the packages on
+          wrack.telelev.net take a look at http://sven.stormbind.net/aptrpm/
+          If you're running other rpm based distributions you can try to rebuild the source rpms.
+        </para>
+      </sect3>
+    </sect2>
+
+<sect2 id="compilesource">
+      <title>How to compile the source code</title>
+      <para>
+        After download you should be able to unpack the source tarball, change
+        into the source directory and use
+        ./configure
+        make
+        su
+        make install
+      </para>
+    </sect2>
+</sect1>
+<!-- end of the installation instructions -->  
+
+<!-- start how to use on the server side -->
+<sect1 id="serverside">
+    <title>How to set up your FSP server</title>
+    <para>
+      Setting FSP server is a easy task. Majority of people runs FSP
+      server in read only mode. In this mode fspd needs to know
+      only home directory and port number. Both can be supplied by command
+      line arguments to fspd.
+    </para>  
+    <para>
+      If you need additional features, such as
+      logging, you will need to have <xref linkend="fspd.conf">
+    </para>
+    <sect2 id="installserver">
+      <title>How to install fsp server</title>
+      <para>
+        FSP server is included in main FSP package. See <xref linkend="installation"> first. FSP server for windows is in the <xref linkend="lamerpack">.
+      </para>
+      <para>
+        Server can be installed as inetd service or standalone. I prefer
+        inetd installation, because modification of system startup
+        scripts is not needed.
+      </para>  
+      <para>
+        Server can operate even without user supplied configuration file
+        fspd.conf. Basic setup can be easily done by command line arguments.
+      </para>  
+    </sect2>
+    <sect2 id="installfspdquick">
+      <title>How to quickly install fsp server</title>
+      <para>
+        Add following line to your /etc/inetd.conf
+<programlisting>
+ftp dgram udp wait ftp /usr/local/bin/fspd in.fspd -d /home/ftp
+</programlisting>
+        This easy setup will run fsp server on standard port 21, home directory set to /home/ftp and effective user set to ftp. If you do not have configured
+        temporary directory in fspd.conf, fsp server will run in read-only
+        mode.
+      </para>
+      <para>
+        Some inetd server uses slightly different syntax of inetd.conf
+        file. Consult your local man pages for inetd and inetd.conf.
+      </para>
+    </sect2>  
+    <sect2 id="fspd.conf">
+      <title>How to setup a basic fspd.conf</title>
+      <para>
+        Example config file for fsp server is called fspd.conf and can be
+        found in distribution. This file needs to be installed as
+        /usr/local/etc/fspd.conf or you can specify alternate location
+        by -f command line switch passed to fspd.
+      </para>  
+      <para>  
+        Configuration file itself is commented. Read comments inside.
+      </para>
+    </sect2>
+    <sect2 id="initscript">
+        <title>How can I start the fspd automagicly on reboot?</title>
+      <para>
+        FIXME.
+        Use init scripts ;) or run it from inetd.
+      </para>
+    </sect2>
+      <sect2 id="restrictions">
+        <title>How to setup restrictions on directories?</title>
+        <para>
+          FIXME.
+          See manual page fspd(1).
+        </para>
+      </sect2>
+  </sect1>
+<!-- end how to use the server -->
+
+<!-- start how to use on the client side -->
+<sect1 id="clientside">
+    <title>How to use the fsp client tools</title>
+    <para>
+      For accessing FSP server, you need to use programs which supports
+      FSP v2 protocol. There are several programs available today.
+    </para>
+    <sect2 id="fsptoolchain">
+      <title>The fsp tool collection</title>
+      <para>
+        Classic command line interfacing with FSP server is via client
+        utilities found in basic distribution. Because FSP protocol
+        do not uses connections, there is no central command line interpreter
+        like found in ftp, because it is not needed. Information about
+        current remote server address and remote working directory is kept
+        in several environment variables. See manual page fsp_env for more
+        info.
+      </para>  
+      <para>
+        Fsp client commands are started from normal shell interpreter. Because
+        most commands does remote globing which can not be done by your
+        local shell, you will need to turn globing in your shell off or
+        use one of prepared shell aliases. In distribution you will find
+        setup.sh and setup.csh shell scripts. These scripts must be
+        sourced (not executed) by your current shell.
+      </para>  
+      <para>
+        Fsp commands names follows unix standard with f prepended. For
+        example: fcd, fpwd, fls. Files are transfered by fget/fput commands.
+      </para>
+    </sect2>
+    <sect2 id="fspclient">
+      <title>fspclient</title>
+      <para>
+        FSP Client is FTP-like interface for FSP.
+        It look exactly like classic FTP does, but uses different transfer
+        protocol. People usually find this program easier to use that
+        multiple client programs in FSP protocol suite. If you are at least
+        somewhat familiar with command line FTP and want to try FSP, this
+        program is right for you.
+      </para>  
+      <para>
+        The old, real hackers prefers <xref linkend="fsptoolchain">, because
+        fspclient is just 'fsp for lamah'.
+      </para>  
+      <para>
+       FSP client homepage is <ulink url="http://fspclient.sourceforge.net">http://fspclient.sourceforge.net</ulink>.
+      </para>
+    </sect2> 
+    <sect2 id="gui">
+      <title>FSP PROXY: Using FSP in browser</title>
+      <para>
+        If you want a GUI, the easiest way is to use FSP directly
+        from your web browser. This is recommended method for using FSP
+        by standard BFU users. They can handle web browser well -- no
+        extra education is necessary.
+      </para>  
+      <para>
+        You need to download and install <ulink url="http://fsp.sf.net/javalib.html">FSP Java LIB</ulink> and <ulink url="http://fsp.sf.net/fsproxy.html">Proxy server</ulink>. Read included docs for install instructions.
+      </para>
+    </sect2>  
+    <sect2 id="dmachine">
+       <title>Download Machine</title>
+       <para>
+         Download Machine is non interactive, non graphical, batch download
+         manager. Tired of GUI Download managers and mouse clicking?
+         Then Download Machine is just for YOU!
+       </para>  
+       <para>  
+         Download Machine is written in portable Java 1.1 code and supports
+         <ulink url="http://www.w3.org/Protocols/">HTTP</ulink>,
+         FTP and <ulink url="http://fsp.sourceforge.net/">FSP</ulink>
+         protocols.
+       </para>
+     </sect2>    
+     <sect2 id="lamerpack">
+         <title>FSP Win32 Suite</title>
+         <para>
+           Special, easy to use, starting suite targeted at common Windows users.
+           Suite contains 3 valueable items:
+           Easy to use fsp server (works without configration file),
+           windows version of fspclient and
+           Lamah starting guide to FSP.
+         </para>  
+         <para>
+            This package is downloadable from
+            <ulink url="http://sourceforge.net/project/showfiles.php?group_id=93841&amp;package_id=133839">Source Forge</ulink> and requires cygwin dll library
+            not included in the package.
+         </para>
+     </sect2>
+  </sect1>
+<!-- end how to use the client -->
+
+<sect1 id="techinfo">
+    <title>FSP technology in-depth</title>
+    <sect2 id="protocol">
+      <title>Protocol definition document</title>
+      <para>
+        FSP protocol is well documented.
+        You can find the latest protocol definition right here
+        <ulink url="http://fsp.sourceforge.net/doc/PROTOCOL.txt">http://fsp.sourceforge.net/doc/PROTOCOL.txt</ulink>
+        or in the source distribution in the "doc" subdirectory.
+      </para>
+    </sect2>  
+    <sect2 id="transport">  
+      <title>Transport mechanism used by FSP</title>    
+      <para>
+        FSP is datagram-based protocol. FSP protocol itself do not require
+        reliable underlying transport. FSP can operate even without
+        any Layer 2 and Layer 3 transports only with some extra features
+        disabled. FSP can be implemented in all kinds of environments.
+        This makes FSP very suitable for embedded devices area, because
+        it is easier to implement than other transfer protocols like X-Modem.
+      </para>  
+      <para>  
+        When used in TCP/IP based networks,
+        UDP is used for transporting of FSP datagrams, this lowers protocol
+        overhead by skipping TCP level, which is not needed, because FSP
+        handles connection management by itself. This method is standardized
+        in <xref linkend="protocol">.
+      </para>
+      <para>
+        FSP frames can be packed directly info Ethernet 802.2, USB or GSM
+        frames. Biggest advantage of using FSP in that areas is simplicity.
+        FSP protocol is very simple to implement.
+      </para>  
+    </sect2>
+    <sect2 id="keying">
+    <title>Keying: Network bandwidth protection</title>
+    <para>
+        One of interesting parts of underlying network technology used
+        by FSP is how protocol design restrict user from sending
+        more than one packet into network.
+    </para>    
+    <para>
+        FSP uses very simple method: Every packet sent from server to client
+        contains a 16-bit long, pseudo random key. Client needs this key
+        for sending next request to server. Server will ignore requests
+        with wrong key, unless there was no previous activity recorded
+        for client IP address in last 60 seconds.
+    </para>
+    <para>
+        Server remembers for each IP not only nextkey, but also previous
+        key. When packet's key matches previously stored key -- it is
+        resend from client. Server limits replies to resend packets also.
+        Max. allowed reply rate to resend packets is 1 reply per 3 seconds.
+        This method also allows ignore duplicate requests by server for
+        action which should not be done more than once (for example mkdir).
+    </para>
+    <para>
+        In each packet sent by client to server is sequence number.
+        Server will echo this number back to the client, when packet is
+        processed. There is no restriction on that number, client can
+        use anything he wants.
+        Primary purpose
+        of this sequence number is possibility to put unique mark on
+        every network packet. Client can use this information and
+        fine-tune its retry algorithm
+        by computing packet loss ratio of network, and duplicate
+        packet rate.
+    </para>
+    </sect2>    
+    <sect2>
+    <title>Client side locking</title>
+    <para>
+    FSP server has its secret keys database divided by client ip address,
+    not by client:port. All requests comming from the same machine must
+    shares the same secret key.  This is done for bandwidth protection.
+    </para>
+    <para>
+    Client must submit a valid key with request. Where there are 2 programs
+    runnings on the client PC and both wants to talk to the same FSPD at once,
+    they must exchange knowledge of this secret key between themselfs.
+    If they don't, only one program can talk to the FSPD, because others do not
+    knows the next session key. They can try to talk but fspd will ignore them.
+    This is kind of client-side multiplexing.
+    </para>
+    <para>
+    There are several methods how to do this key sharing. Best method is
+    to use semop+shmget, second is to use lockf on file in /tmp. All FSP
+    clients running on the same machine must use the same locking method.
+    </para>
+    </sect2>
+    <sect2 id="largepackets">
+    <title>Why not use bigger packet size?</title>
+    <para>
+       &fsp; defines maximum packet size 1024 bytes of data + header.
+       All FSP compatible protocol stacks must support this packet size.
+       Nearly all networks can transfer 1036 bytes long UDP packets.
+       Some networks allows only 512 bytes long UDP (maximal size required
+       by RFC). To use FSP on that networks, fsp clients must be configured
+       to use only 500 bytes of payload.
+    </para>   
+    <para>
+       Because MTU of most networks is about 1500 bytes. It is true, that
+       we can use slightly bigger packets for gaining some speed. FSP
+       server can optionally support larger packet size, but must send
+       them out only on explicit client request.
+    </para>   
+    <para>
+       We have performed some benchmarks and they shows only minor
+       performance increase, about 10-15 percent. Similar testing
+       was performed by HP in <ulink url="http://www.ietf.org/rfc/rfc2348.txt">RFC 2348</ulink>.
+    </para>   
+    <para>
+       For bigger performance enhancement we need to use at least 2.5 KB,
+       but packets of that size must be fragmented on most network and fragmenting increases possibility of packet loss.
+    </para>
+    </sect2>   
+    <sect2 id="prog">
+    <title>Using FSP in your programs</title>
+    <para>
+      You can easily add support for FSP v2 protocol into your programs.
+      Currently exists two independend libraries for FSP protocol support
+      and one library is in the work.
+    </para>  
+    <para>  
+      First library is called <ulink url="http://fsp.sourceforge.net/javalib.html">JFSPlib</ulink>. This is FSP library for Java language.
+    </para>  
+    <para>
+      Second library is called <ulink url="http://fsp.sourceforge.net/fsplib.html">FSPlib</ulink>. This is FSP library for C language with POSIX-like API.
+    </para>  
+    <para>
+      FSP support for Python <ulink url="http://fsp.sourceforge.net/pyfsp.html">PyFSP</ulink> is currently work in progress. Note: PyFSP uses GPL license, not MIT/X11 like other libraries.
+    </para>
+    </sect2>  
+    <sect2 id="faster">
+    <title>How can I make FSP faster?</title>
+    <para>
+      Set FSP server and client to use bigger block size (<xref linkend="largepackets">), decrease server retry timeout to 1 sec, and descrease client delay also. Using this methods, FSP can run about 1.7 faster than before.
+      If you need even higher transfer speed, switch to HTTP protocol.
+    </para>
+    </sect2>  
+    <sect2 id="slower">
+    <title>How can I make FSP slower?</title>
+    <para>
+      If your FSP server eats too much bandwidth, the best is to use
+      smaller packets. FSP server has builtin output thruput limiting, you
+      can slow down it in fspd.conf file. Slightly increasing server retry
+      timer also helps.
+    </para>
+    </sect2>  
+</sect1>
+</article>
+<!-- vim: set expandtab: -->

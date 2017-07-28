@@ -1,0 +1,33 @@
+.TH FSPSITES 5 "Jan 2005"
+.SH NAME
+fspsites \- list of available FSP sites
+.SH DESCRIPTION
+The
+.B \&.fspsites
+file contains lists of sites running fsp daemon.
+This file resides in the user's current or home directory
+on the machine initiating the file transfer. A system wide default file
+will be also used.
+.LP
+This file is read by
+.BR fsetup(1)
+utility. This file is easier to use than
+.BR fsp_prof(5).
+.SH FILE FORMAT
+The file has simple format. One entry per line. 
+Each entry starts on new line with hostname or IP address followed
+by port number. Next field is alias for the site. File can contains
+comments. Comments starts with # character and ends on the end of line.
+.SH EXAMPLE
+wrack.telelev.net 2221 wrack #nice fsp site
+.SH HISTORY
+This format was very commonly used for exchanging lists of FSP sites
+and it is de facto standard format.
+.SH FILES
+.PD
+.B ~/.fspsites
+.SH "SEE ALSO"
+.PD
+fcatcmd(1), fcdcmd(1), fgetcmd(1), fgrabcmd(1), flscmd(1), fmkdir(1),
+fprocmd(1), fput(1), frmcmd(1), frmdircmd(1), fver(1), fducmd(1),
+fsethostcmd(1), fspd(1), fsp_prof(5), ffindcmd(1), fsp_env(7), fsetup(1)

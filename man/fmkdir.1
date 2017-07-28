@@ -1,0 +1,28 @@
+.TH FMKDIR 1 "8 December 1991" FSP
+.SH NAME
+fmkdir \- create directories in the FSP database
+.SH SYNOPSIS
+.B fmkdir
+.I name
+\&.\|.\|.
+.SH DESCRIPTION
+.LP
+For each
+.I name
+appearing in the argument list,
+.B fmkdir
+creates a directory in the client's current working directory
+in the FSP database.  The new directories are owned by the
+client machine, and permission for other machines to create or
+delete items in these directories are initially turned off.
+The client may alter the permission states with the
+.B fprocmd
+command.
+.SH ENVIRONMENT
+.LP
+See fsp_env(7) for list of used environment variables.
+.SH "SEE ALSO"
+.PD
+fcatcmd(1), fcdcmd(1), fgetcmd(1), fgrabcmd(1), flscmd(1), fmkdir(1),
+fprocmd(1), fput(1), frmcmd(1), frmdircmd(1), fver(1), fducmd(1),
+fhostcmd(1), fspd(1), fsp_prof(5), ffindcmd(1), fsp_env(7)

@@ -1,0 +1,67 @@
+Import(Split("env PREFIX common bsdfsp client CLIENTS"))
+
+def createMergeSource(basename):
+    """Creates skeleton source file for compiling merge client."""
+    f=open(basename+"_m.c","w")
+    f.write('#include "%s.c"\n' % basename)
+    f.close()
+
+if CLIENTS:
+    fcatcmd=env.Program(target = 'fcatcmd',source=['fcatcmd.c']+client+common+bsdfsp)
+    fcdcmd=env.Program(target = 'fcdcmd', source=['fcdcmd.c','printpro.c']+client+common+bsdfsp)
+    fducmd=env.Program(target = 'fducmd', source=['fducmd.c']+client+common+bsdfsp)
+    ffindcmd=env.Program(target = 'ffindcmd',source=['ffindcmd.c']+client+common+bsdfsp)
+    fget=env.StaticObject('fgetcmd.c', CPPDEFINES='-DCOMMAND_GET')
+    fgetcmd=env.Program(target = 'fgetcmd',source=fget+client+common+bsdfsp)
+    fgrabcmd=env.Program(target = 'fgrabcmd',source=['fgrabcmd.c']+client+common+bsdfsp)
+    fhostcmd=env.Program(target = 'fhostcmd',source=['fhostcmd.c','fhost.c','fspprof.l'])
+    flscmd=env.Program(target = 'flscmd',source=['flscmd.c']+client+common+bsdfsp)
+    fmkdircmd=env.Program(target = 'fmkdir',source=['fmkdir.c']+client+common)
+    fprocmd=env.Program(target = 'fprocmd',source=['fprocmd.c','printpro.c']+client+common+bsdfsp)
+    fputcmd=env.Program(target = 'fput',source=['fput.c']+client+common)
+    frmcmd=env.Program(target = 'frmcmd',source=['frmcmd.c']+client+common+bsdfsp)
+    frmdircmd=env.Program(target = 'frmdircmd',source=['frmdircmd.c']+client+common+bsdfsp)
+    fvercmd=env.Program(target = 'fver',source=['fver.c']+client+common)
+    fstatcmd=env.Program(target = 'fstatcmd',source=['fstatcmd.c']+client+common+bsdfsp)
+    fmvcmd=env.Program(target = 'fmvcmd',source=['fmvcmd.c']+client+common+bsdfsp)
+    fbyecmd=env.Program(target = 'fbye',source=['fbye.c']+client+common)
+    fspsites=env.StaticObject('fspsites.l', LEXFLAGS='-Psite')
+    fsetupcmd=env.Program(target = 'fsetupcmd',source=['fsetupcmd.c',fspsites,'fhost.c']+client+common)
+
+    MERGED_SRC=[ 'fcatcmd','fcdcmd','fducmd','ffindcmd','fgetcmd','fgrabcmd',
+               'fhostcmd','flscmd','fmkdir','fprocmd','fput','frmcmd',
+	       'frmdircmd','fver','fstatcmd','fmvcmd','fbye', 'fsetupcmd']
+
+    for program in MERGED_SRC:
+	createMergeSource(program)
+
+    fcatcmd_m=env.StaticObject('fcatcmd_m.c', CPPDEFINES='-Dmain=fcatcmd_main')
+    fcdcmd_m =env.StaticObject('fcdcmd_m.c', CPPDEFINES='-Dmain=fcdcmd_main')
+    fducmd_m =env.StaticObject('fducmd_m.c', CPPDEFINES='-Dmain=fducmd_main')
+    ffindcmd_m=env.StaticObject('ffindcmd_m.c', CPPDEFINES='-Dmain=ffindcmd_main')
+    fgetcmd_m=env.StaticObject('fgetcmd_m.c', CPPDEFINES=['-Dmain=fgetcmd_main','-DCOMMAND_GET'])
+    fgrabcmd_m=env.StaticObject('fgrabcmd_m.c', CPPDEFINES='-Dmain=fgrabcmd_main')
+    fhostcmd_m=env.StaticObject('fhostcmd_m.c', CPPDEFINES='-Dmain=fhostcmd_main')
+    flscmd_m=env.StaticObject('flscmd_m.c', CPPDEFINES='-Dmain=flscmd_main')
+    fmkdir_m=env.StaticObject('fmkdir_m.c', CPPDEFINES='-Dmain=fmkdir_main')
+    fprocmd_m=env.StaticObject('fprocmd_m.c', CPPDEFINES='-Dmain=fprocmd_main')
+    fput_m=env.StaticObject('fput_m.c', CPPDEFINES='-Dmain=fput_main')
+    frmcmd_m=env.StaticObject('frmcmd_m.c', CPPDEFINES='-Dmain=frmcmd_main')
+    frmdircmd_m=env.StaticObject('frmdircmd_m.c', CPPDEFINES='-Dmain=frmdircmd_main')
+    fver_m=env.StaticObject('fver_m.c', CPPDEFINES='-Dmain=fver_main')
+    fstatcmd_m=env.StaticObject('fstatcmd_m.c', CPPDEFINES='-Dmain=fstatcmd_main')
+    fmvcmd_m=env.StaticObject('fmvcmd_m.c', CPPDEFINES='-Dmain=fmvcmd_main')
+    fbye_m=env.StaticObject('fbye_m.c', CPPDEFINES='-Dmain=fbye_main')
+    fsetupcmd_m=env.StaticObject('fsetupcmd_m.c', CPPDEFINES='-Dmain=fsetupcmd_main')
+    fspmerge=env.Program(target = 'fspmerge',source=['merge.c','printpro.c','fspprof.l','fhost.c',fspsites]+
+    [fcatcmd_m, fcdcmd_m, fducmd_m, ffindcmd_m, fgetcmd_m, fgrabcmd_m,
+     fhostcmd_m, flscmd_m, fmkdir_m, fprocmd_m, fput_m, frmcmd_m,
+     frmdircmd_m, fver_m, fmvcmd_m, fstatcmd_m, fbye_m, fsetupcmd_m] + [
+     client, common, bsdfsp])
+
+    PROGRAMS=[ fcatcmd, fcdcmd, fducmd, ffindcmd, fgetcmd, fgrabcmd, fhostcmd,
+	     flscmd, fmkdircmd, fprocmd, fputcmd, frmcmd, frmdircmd, fvercmd,
+	     fstatcmd, fmvcmd, fbyecmd, fsetupcmd, fspmerge ]
+
+    for program in PROGRAMS:
+	env.Install(dir = PREFIX+'/bin', source = program)

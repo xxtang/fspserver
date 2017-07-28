@@ -1,0 +1,220 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+FSP_CC_BYE	include/fsplib.h	41;"	d
+FSP_CC_CH_PASSWD	include/fsplib.h	46;"	d
+FSP_CC_DEL_DIR	include/fsplib.h	37;"	d
+FSP_CC_DEL_FILE	include/fsplib.h	36;"	d
+FSP_CC_ERR	include/fsplib.h	31;"	d
+FSP_CC_GET_DIR	include/fsplib.h	32;"	d
+FSP_CC_GET_FILE	include/fsplib.h	33;"	d
+FSP_CC_GET_PRO	include/fsplib.h	38;"	d
+FSP_CC_GRAB_DONE	include/fsplib.h	43;"	d
+FSP_CC_GRAB_FILE	include/fsplib.h	42;"	d
+FSP_CC_INFO	include/fsplib.h	30;"	d
+FSP_CC_INSTALL	include/fsplib.h	35;"	d
+FSP_CC_LIMIT	include/fsplib.h	47;"	d
+FSP_CC_MAKE_DIR	include/fsplib.h	40;"	d
+FSP_CC_RENAME	include/fsplib.h	45;"	d
+FSP_CC_SET_PRO	include/fsplib.h	39;"	d
+FSP_CC_STAT	include/fsplib.h	44;"	d
+FSP_CC_TEST	include/fsplib.h	48;"	d
+FSP_CC_UP_LOAD	include/fsplib.h	34;"	d
+FSP_CC_VERSION	include/fsplib.h	29;"	d
+FSP_DIR	include/fsplib.h	/^typedef struct FSP_DIR {$/;"	s
+FSP_DIR	include/fsplib.h	/^} FSP_DIR;$/;"	t	typeref:struct:FSP_DIR
+FSP_DIR_ADD	include/fsplib.h	78;"	d
+FSP_DIR_DEL	include/fsplib.h	77;"	d
+FSP_DIR_GET	include/fsplib.h	80;"	d
+FSP_DIR_LIST	include/fsplib.h	82;"	d
+FSP_DIR_MKDIR	include/fsplib.h	79;"	d
+FSP_DIR_OWNER	include/fsplib.h	76;"	d
+FSP_DIR_README	include/fsplib.h	81;"	d
+FSP_DIR_RENAME	include/fsplib.h	83;"	d
+FSP_FILE	include/fsplib.h	/^typedef struct FSP_FILE {$/;"	s
+FSP_FILE	include/fsplib.h	/^} FSP_FILE;$/;"	t	typeref:struct:FSP_FILE
+FSP_HSIZE	include/fsplib.h	51;"	d
+FSP_KEY_PREFIX	include/lock.h	7;"	d
+FSP_LOCK	include/lock.h	/^typedef struct FSP_LOCK {  $/;"	s
+FSP_LOCK	include/lock.h	/^typedef struct FSP_LOCK {$/;"	s
+FSP_LOCK	include/lock.h	/^} FSP_LOCK;$/;"	t	typeref:struct:FSP_LOCK
+FSP_MAXPACKET	include/fsplib.h	53;"	d
+FSP_OFFSET_CMD	include/fsplib.h	56;"	d
+FSP_OFFSET_KEY	include/fsplib.h	58;"	d
+FSP_OFFSET_LEN	include/fsplib.h	60;"	d
+FSP_OFFSET_POS	include/fsplib.h	61;"	d
+FSP_OFFSET_SEQ	include/fsplib.h	59;"	d
+FSP_OFFSET_SUM	include/fsplib.h	57;"	d
+FSP_PKT	include/fsplib.h	/^typedef struct FSP_PKT {$/;"	s
+FSP_PKT	include/fsplib.h	/^} FSP_PKT;$/;"	t	typeref:struct:FSP_PKT
+FSP_PRO_BYTES	include/fsplib.h	75;"	d
+FSP_RDENTRY	include/fsplib.h	/^typedef struct FSP_RDENTRY  {$/;"	s
+FSP_RDENTRY	include/fsplib.h	/^} FSP_RDENTRY;$/;"	t	typeref:struct:FSP_RDENTRY
+FSP_RDTYPE_DIR	include/fsplib.h	66;"	d
+FSP_RDTYPE_END	include/fsplib.h	64;"	d
+FSP_RDTYPE_FILE	include/fsplib.h	65;"	d
+FSP_RDTYPE_LINK	include/fsplib.h	67;"	d
+FSP_RDTYPE_SKIP	include/fsplib.h	68;"	d
+FSP_SESSION	include/fsplib.h	/^typedef struct FSP_SESSION {$/;"	s
+FSP_SESSION	include/fsplib.h	/^} FSP_SESSION;$/;"	t	typeref:struct:FSP_SESSION
+FSP_SPACE	include/fsplib.h	52;"	d
+Usage	test.c	/^static char Usage[] =$/;"	v	file:
+_FSPLIB_H	include/fsplib.h	2;"	d
+_FSPLIB_H_LOCK	include/lock.h	2;"	d
+__buf	lock.c	/^  struct seminfo *__buf;$/;"	m	union:semun	typeref:struct:semun::seminfo	file:
+array	lock.c	/^  unsigned short int *array;$/;"	m	union:semun	file:
+blocksize	include/fsplib.h	/^	unsigned short blocksize; \/* size of directory block *\/$/;"	m	struct:FSP_DIR
+buf	include/fsplib.h	/^	unsigned char   buf[FSP_SPACE];   \/* packet payload *\/$/;"	m	struct:FSP_PKT
+buf	lock.c	/^  struct semid_ds *buf;$/;"	m	union:semun	typeref:struct:semun::semid_ds	file:
+bufpos	include/fsplib.h	/^	int bufpos;                \/* position in buffer *\/$/;"	m	struct:FSP_FILE
+buildfilename	fsplib.c	/^static int buildfilename(const FSP_SESSION *s,FSP_PKT *out,const char *dirname)$/;"	f	file:
+checkForBuildingSharedLibrary	site_scons/buildshared.py	/^def checkForBuildingSharedLibrary(conf):$/;"	f
+checkForCCOption	site_scons/compilertest.py	/^def checkForCCOption(conf,option):$/;"	f
+checkForDirentMember	site_scons/dirent.py	/^def checkForDirentMember(conf,member,symbol):$/;"	f
+checkForLockPrefix	site_scons/lockprefix.py	/^def checkForLockPrefix(conf):$/;"	f
+checkForLockingType	site_scons/locktype.py	/^def checkForLockingType(check,conf):$/;"	f
+checkForMaintainerMode	site_scons/maintainer.py	/^def checkForMaintainerMode(conf,force=False):$/;"	f
+checkForUserPrefix	site_scons/prefix.py	/^def checkForUserPrefix(conf,oldprefix=None):$/;"	f
+client_destroy_key	lock.c	/^client_destroy_key(FSP_LOCK *lock)$/;"	f
+client_destroy_key	lock.c	/^void client_destroy_key(FSP_LOCK *lock)$/;"	f
+client_get_key	lock.c	/^unsigned short client_get_key (FSP_LOCK *lock)$/;"	f
+client_init_key	lock.c	/^int client_init_key (FSP_LOCK *lock,$/;"	f
+client_set_key	lock.c	/^void client_set_key (FSP_LOCK *lock,unsigned short key)$/;"	f
+client_set_key	lock.c	/^void client_set_key (FSP_LOCK *lock,unsigned short nkey)$/;"	f
+cmd	include/fsplib.h	/^	unsigned char       cmd; \/* message code.             *\/$/;"	m	struct:FSP_PKT
+code_str	lock.c	/^static char code_str[] =$/;"	v	file:
+data	include/fsplib.h	/^	unsigned char  *data;     \/* raw directory data *\/$/;"	m	struct:FSP_DIR
+datasize	include/fsplib.h	/^	unsigned int   datasize;  \/* size of raw dir. data *\/$/;"	m	struct:FSP_DIR
+device_id	test.c	/^char device_id[60]={0};$/;"	v
+device_key	test.c	/^char device_key[60]={0};$/;"	v
+directoryfromfilename	fsplib.c	/^static char * directoryfromfilename(const char *filename)$/;"	f	file:
+dirent	include/fsplib.h	/^	struct dirent dirent;$/;"	m	union:dirent_workaround	typeref:struct:dirent_workaround::dirent
+dirent_workaround	include/fsplib.h	/^typedef union dirent_workaround {$/;"	u
+dirent_workaround	include/fsplib.h	/^} dirent_workaround;$/;"	t	typeref:union:dirent_workaround
+dirname	include/fsplib.h	/^	char   *dirname;          \/* directory name *\/$/;"	m	struct:FSP_DIR
+dirpos	include/fsplib.h	/^	int     dirpos;           \/* current directory pos. *\/$/;"	m	struct:FSP_DIR
+dummy	.sconf_temp/conftest_0.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_1.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_10.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_11.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_12.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_13.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_14.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_15.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_16.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_17.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_18.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_19.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_2.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_20.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_21.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_22.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_23.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_24.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_25.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_26.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_27.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_28.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_29.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_3.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_30.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_32.c	/^    void dummy()$/;"	f
+dummy	.sconf_temp/conftest_33.c	/^    void dummy()$/;"	f
+dummy	.sconf_temp/conftest_34.c	/^    void dummy()$/;"	f
+dummy	.sconf_temp/conftest_4.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_5.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_6.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_7.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_8.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_9.c	/^void dummy(void) {}$/;"	f
+dupes	include/fsplib.h	/^	unsigned int dupes;       \/* total pkt. dupes    *\/$/;"	m	struct:FSP_SESSION
+eof	include/fsplib.h	/^	unsigned char eof;         \/* EOF reached? *\/$/;"	m	struct:FSP_FILE
+err	include/fsplib.h	/^	unsigned char err;         \/* i\/o error? *\/$/;"	m	struct:FSP_FILE
+fd	include/fsplib.h	/^	int fd;                   \/* i\/o descriptor      *\/$/;"	m	struct:FSP_SESSION
+file_name	test.c	/^char file_name[60]={0};$/;"	v
+fill	include/fsplib.h	/^	char fill[offsetof (struct dirent, d_name) + MAXNAMLEN + 1];$/;"	m	union:dirent_workaround
+fsp_canupload	fsplib.c	/^int fsp_canupload(FSP_SESSION *s,const char *fname)$/;"	f
+fsp_ch_passwd	fsplib.c	/^int fsp_ch_passwd(FSP_SESSION *s,const char *new_fsp_password)$/;"	f
+fsp_close_session	fsplib.c	/^void fsp_close_session(FSP_SESSION *s)$/;"	f
+fsp_closedir	fsplib.c	/^int fsp_closedir(FSP_DIR *dirp)$/;"	f
+fsp_fclose	fsplib.c	/^int fsp_fclose(FSP_FILE *file)$/;"	f
+fsp_fflush	fsplib.c	/^int fsp_fflush(FSP_FILE *file)$/;"	f
+fsp_fopen	fsplib.c	/^FSP_FILE * fsp_fopen(FSP_SESSION *session, const char *path,const char *modeflags)$/;"	f
+fsp_fpurge	fsplib.c	/^int fsp_fpurge(FSP_FILE *file)$/;"	f
+fsp_fread	fsplib.c	/^size_t fsp_fread(void *dest,size_t size,size_t count,FSP_FILE *file)$/;"	f
+fsp_fseek	fsplib.c	/^int fsp_fseek(FSP_FILE *stream, long offset, int whence)$/;"	f
+fsp_ftell	fsplib.c	/^long fsp_ftell(FSP_FILE *f)$/;"	f
+fsp_fwrite	fsplib.c	/^size_t fsp_fwrite(const void * source, size_t size, size_t count, FSP_FILE * file)$/;"	f
+fsp_getpro	fsplib.c	/^int fsp_getpro(FSP_SESSION *s,const char *directory,unsigned char *result)$/;"	f
+fsp_install	fsplib.c	/^int fsp_install(FSP_SESSION *s,const char *fname,time_t timestamp)$/;"	f
+fsp_mkdir	fsplib.c	/^int fsp_mkdir(FSP_SESSION *s,const char *directory)$/;"	f
+fsp_open_session	fsplib.c	/^FSP_SESSION * fsp_open_session(const char* tid,const char* key, const char *password)$/;"	f
+fsp_opendir	fsplib.c	/^FSP_DIR * fsp_opendir(FSP_SESSION *s,const char *dirname)$/;"	f
+fsp_password	test.c	/^char fsp_password[32]={0};$/;"	v
+fsp_pkt_read	fsplib.c	/^int fsp_pkt_read(FSP_PKT *p,const void *space,size_t recv_len)$/;"	f
+fsp_pkt_write	fsplib.c	/^size_t fsp_pkt_write(const FSP_PKT *p,void *space)$/;"	f
+fsp_readdir	fsplib.c	/^struct dirent * fsp_readdir(FSP_DIR *dirp)$/;"	f
+fsp_readdir_native	fsplib.c	/^int fsp_readdir_native(FSP_DIR *dir,FSP_RDENTRY *entry, FSP_RDENTRY **result)$/;"	f
+fsp_readdir_r	fsplib.c	/^int fsp_readdir_r(FSP_DIR *dir,struct dirent *entry, struct dirent **result)$/;"	f
+fsp_rewind	fsplib.c	/^void fsp_rewind(FSP_FILE *f)$/;"	f
+fsp_rewinddir	fsplib.c	/^void fsp_rewinddir(FSP_DIR *dirp)$/;"	f
+fsp_seekdir	fsplib.c	/^void fsp_seekdir(FSP_DIR *dirp, long loc)$/;"	f
+fsp_stat	fsplib.c	/^int fsp_stat(FSP_SESSION *s,const char *path,struct stat *sb)$/;"	f
+fsp_telldir	fsplib.c	/^long fsp_telldir(FSP_DIR *dirp)$/;"	f
+fsp_transaction	fsplib.c	/^int fsp_transaction(FSP_SESSION *s,FSP_PKT *p,FSP_PKT *rpkt)$/;"	f
+in	include/fsplib.h	/^	FSP_PKT in,out;            \/* io packets *\/$/;"	m	struct:FSP_FILE
+inuse	include/fsplib.h	/^	short   inuse;            \/* in use counter *\/$/;"	m	struct:FSP_DIR
+key	include/fsplib.h	/^	unsigned short      key; \/* message key.              *\/$/;"	m	struct:FSP_PKT
+key_string	include/lock.h	/^		char key_string[sizeof(FSP_KEY_PREFIX)+32];$/;"	m	struct:FSP_LOCK
+key_string	include/lock.h	/^	       char key_string[sizeof(FSP_KEY_PREFIX)+32];$/;"	m	struct:FSP_LOCK
+last_delay	include/fsplib.h	/^	unsigned int last_delay;  \/* last delay time     *\/$/;"	m	struct:FSP_SESSION
+last_dupes	include/fsplib.h	/^	unsigned int last_dupes;  \/* last dupes          *\/$/;"	m	struct:FSP_SESSION
+last_resends	include/fsplib.h	/^	unsigned int last_resends;\/* last resends        *\/$/;"	m	struct:FSP_SESSION
+last_rtt	include/fsplib.h	/^	unsigned int last_rtt;    \/* last rtt            *\/$/;"	m	struct:FSP_SESSION
+lastmod	include/fsplib.h	/^	unsigned int  lastmod;$/;"	m	struct:FSP_RDENTRY
+len	include/fsplib.h	/^	unsigned short      len; \/* number of bytes in buf 1. *\/$/;"	m	struct:FSP_PKT
+lock	include/fsplib.h	/^	void *   lock;            \/* key locking         *\/$/;"	m	struct:FSP_SESSION
+lock_fd	include/lock.h	/^	       int lock_fd;$/;"	m	struct:FSP_LOCK
+lock_sem	include/lock.h	/^		int   lock_sem;$/;"	m	struct:FSP_LOCK
+lock_shm	include/lock.h	/^		int   lock_shm;$/;"	m	struct:FSP_LOCK
+main	.sconf_temp/conftest_31.c	/^int main() {$/;"	f
+main	.sconf_temp/conftest_36.c	/^int main() {$/;"	f
+main	.sconf_temp/conftest_37.c	/^int main() {$/;"	f
+main	.sconf_temp/conftest_38.c	/^int main() {$/;"	f
+main	.sconf_temp/conftest_39.c	/^int main() {$/;"	f
+main	test.c	/^int main (int argc, char *argv[])$/;"	f
+make_key_string	lock.c	/^static void make_key_string(	FSP_LOCK *lock,$/;"	f	file:
+maxdelay	include/fsplib.h	/^	unsigned int   maxdelay;  \/* maximum recv. delay *\/$/;"	m	struct:FSP_SESSION
+name	include/fsplib.h	/^	char *name;                \/* filename for upload *\/$/;"	m	struct:FSP_FILE
+name	include/fsplib.h	/^	char name[255 + 1];        \/* entry name *\/$/;"	m	struct:FSP_RDENTRY
+namlen	include/fsplib.h	/^	unsigned short namlen;     \/* length     *\/$/;"	m	struct:FSP_RDENTRY
+new_fsp_password	test.c	/^char new_fsp_password[32]={0};$/;"	v
+new_udp_socket	comm.c	/^int new_udp_socket(int local_port, char *local_address)$/;"	f
+out	include/fsplib.h	/^	FSP_PKT in,out;            \/* io packets *\/$/;"	m	struct:FSP_FILE
+p2p_endpoint	include/fsplib.h	/^	REND_EPT_HANDLE p2p_endpoint;\/*p2p nat struct*\/ $/;"	m	struct:FSP_SESSION
+password	include/fsplib.h	/^	char *password;           \/* host acccess password *\/$/;"	m	struct:FSP_SESSION
+phrase_argv	test.c	/^int phrase_argv(int argc, char *argv[])$/;"	f
+pos	include/fsplib.h	/^	unsigned int        pos; \/* location in the file.     *\/                       $/;"	m	struct:FSP_PKT
+pos	include/fsplib.h	/^	unsigned int pos;          \/* position of next packet *\/$/;"	m	struct:FSP_FILE
+reclen	include/fsplib.h	/^	unsigned short reclen;     \/* directory record length *\/$/;"	m	struct:FSP_RDENTRY
+recv_udp_packet	comm.c	/^int recv_udp_packet(int udp_fd, char *udp_message, int message_len, struct sockaddr_in *peer_addr)$/;"	f
+resends	include/fsplib.h	/^	unsigned int resends;     \/* total pkt. sends    *\/$/;"	m	struct:FSP_SESSION
+rtts	include/fsplib.h	/^	unsigned long rtts;       \/* cumul. rtt          *\/$/;"	m	struct:FSP_SESSION
+s	include/fsplib.h	/^	FSP_SESSION *s;            \/* master session *\/$/;"	m	struct:FSP_FILE
+semun	lock.c	/^union semun$/;"	u	file:
+seq	include/fsplib.h	/^	unsigned short      seq; \/* message sequence number.  *\/$/;"	m	struct:FSP_PKT
+seq	include/fsplib.h	/^	unsigned short seq;       \/* sequence number     *\/$/;"	m	struct:FSP_SESSION
+share_key	include/lock.h	/^		unsigned int *share_key;$/;"	m	struct:FSP_LOCK
+share_key	include/lock.h	/^               unsigned short share_key;$/;"	m	struct:FSP_LOCK
+simplecommand	fsplib.c	/^static int simplecommand(FSP_SESSION *s,const char *directory,unsigned char command)$/;"	f	file:
+size	include/fsplib.h	/^	unsigned int  size;$/;"	m	struct:FSP_RDENTRY
+sum	include/fsplib.h	/^	unsigned char       sum; \/* message checksum.         *\/$/;"	m	struct:FSP_PKT
+timeout	include/fsplib.h	/^	unsigned int   timeout;   \/* send timeout 1\/1000s*\/$/;"	m	struct:FSP_SESSION
+trips	include/fsplib.h	/^	unsigned int trips;       \/* total pkt trips     *\/$/;"	m	struct:FSP_SESSION
+type	include/fsplib.h	/^	unsigned char type;        \/* field type *\/$/;"	m	struct:FSP_RDENTRY
+val	lock.c	/^  int val;$/;"	m	union:semun	file:
+writing	include/fsplib.h	/^	unsigned char writing;     \/* opened for writing *\/$/;"	m	struct:FSP_FILE
+xlen	include/fsplib.h	/^	unsigned short     xlen; \/* number of bytes in buf 2  *\/$/;"	m	struct:FSP_PKT

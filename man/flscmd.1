@@ -1,0 +1,66 @@
+.TH FLS 1 "8 December 1991" FSP
+.SH NAME
+flscmd, fls \- list the contents of a FSP database
+.SH SYNOPSIS
+.B flscmd
+[
+.B unix ls flags
+]
+.I filename
+\&.\|.\|.
+.LP
+.B fls
+[
+.B unix ls flags
+]
+.I filename
+\&.\|.\|.
+.SH DESCRIPTION
+.LP
+.B flscmd
+lists the content of the FSP database.  All usual
+flags and usages for the unix
+.B ls
+command are accepted.
+.LP
+.B flscmd
+will perform
+.B csh
+file name globbing based on file and directory information
+obtained from the FSP database.
+.LP
+Since user's command shells generally cannot do the proper globbing for
+this program, it is recommended that user defines a shell alias or
+function to turn off command shell globbing before running this program.
+.B csh
+example:
+.LP
+.nf
+alias fls \e(set noglob\e; exec flscmd \e!\e*\e)
+.fi
+.SH ENVIRONMENT
+.LP
+See fsp_env(7) for list of used environment variables.
+.SH BUGS
+.LP
+.B flscmd
+is based on 4.3
+.B ls
+code.  It inherits any bugs found in 4.3
+.B ls.
+In addition, only four pieces of information for each file and directory
+are available through FSP:
+.B name,
+.B time,
+.B size,
+and
+.B type.
+All other information that
+.B flscmd
+display are for compatibility purposes only
+and are forged locally.
+.SH "SEE ALSO"
+.PD
+fcatcmd(1), fcdcmd(1), fgetcmd(1), fgrabcmd(1), flscmd(1), fmkdir(1),
+fprocmd(1), fput(1), frmcmd(1), frmdircmd(1), fver(1), fducmd(1),
+fhostcmd(1), fspd(1), fsp_prof(5), ffindcmd(1), fsp_env(7)

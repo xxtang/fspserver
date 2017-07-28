@@ -1,0 +1,146 @@
+###########      ### #   ########   
+ ###     ##    ##  ###    ###   ##  
+ ###     ##    #    ##    ###    ## 
+ ###      #   #     ##    ###    ## 
+ ###      #   #      #    ###    ##     Why 4 U riding this phile? 4u l8m3r?
+ ###          #           ###    ## 
+ ###          #           ###    ## 
+ ###   #      ##          ###    ## 
+ ###   #      ####        ###   ##              You 4 at r8t platz!
+ #######       #####      #######   
+ ###   #       ######     ###       
+ ###   #        #####     ###       
+ ###              ####    ###       
+ ###                ##    ###               w e l c o m e 
+ ###                ###   ###                        
+ ###                 ##   ###                         t o
+ ###                 ##   ###       
+ ###                 ##   ###       
+ ###         #       #    ###              L8mer guide to FSP
+ ###         ##     ##    ###       
+ ###         ###    #     ###                 LQ Version
+#####       # ######     #####                 Jan 2005
+                                
+Why you need it
+
+- stealth operation
+- few people knows what FSP is
+- old proved software with 10 years history
+- Elite SitEZ has non interrupted operation by
+  lamerz for more than 10 years!
+- for EliTe only
+- 100% attack resistant
+- net adminz do not like it
+- lamerz can not handle it
+- bandwidth friendly
+- very resistant to packet loss
+
+STuFF firSt!
+
+you neeeed to get a p-file called cygwin1.dll. lamerz at www.cygwin.com
+have some. Grab a copy, man. Copy it to your c:\winlost\sistema32 dyr.
+
+If you can not get it from lamerz listed above and your friends do not have
+one, last chance for getting this important p-file is to do a minimal
+installation of CygLose.
+
+Have it? Right! You are ready now.
+
+------------------------ sharing -------------------
+
+FSP server rocks!
+
+There is a p-file fspd.exe. This is for stuff sharing. Server. You know.
+Right. Running this is easy:
+
+fspd.exe -d c:\your\stuff\to\share -p 53
+
+this number is important. Recommended numbers for stealth
+operation are: 53, 2090, 137-139, 13, 80, 443
+
+You can be catch more easily with bad number, so chose wisely. Remember,
+some numbers like 2221, 21, 2000, 2001 are used only by Elite!
+do not try it at home; bad thingz can hepen. you know. police will certainly
+take a visit. Lamers can detect you more easily on this ports, so be
+wise a little. Remember: You are c000l.
+
+Upload area
+
+You want uploads from users. Of course. You need to setup an upload
+area. This is easy.
+
+In your FSP homedir create subdirectory upload and and create file named
+".FSP_OK_ADD" there.  Content of this file doesn't matter. Copy your favorite
+music into it if you want. Do something nice.
+
+Last point is to add upload directory to server invocation arguments:
+ 
+fspd.exe -d c:\your\stuff\to\share -p 53 -T c:\your\stuff\to\share\upload
+
+that's all.
+
+Wait! If you want to stop users from downloading files from your upload area,
+simply create ".FSP_NO_GET" file here.
+
+------------------------- leeching ------------------
+
+Get more stuff!
+
+Of course that you want to have the latest stuff, isn't it?
+You must have some addresses of other ppl. They looks like
+1.2.3.4 45
+
+There is a p-file fsp.exe. This is for getting new stuff.
+run it.
+fsp.exe
+fsp> 
+now type commands.
+
+You need to know a few:
+open 1.2.3.4 45  -- connects to site
+get file         -- get new stuff
+put file         -- send your stuff
+pro              -- show your access level
+dir		 -- list directory
+quit             -- go to sleep.
+
+We will give you some nice starting numbers for free. There are not a high
+quality, but this is lq version of this guide. we can sell you
+much better guide -  hq version. Try to offer something.
+
+912.000.000.102. 2056
+234.234.234.823. 55
+123.578.866.346. 34567
+432.333.134.23   5436
+543.47.5436.5432 5432
+4352.532.532.21.54 4365
+4312.5637.4332.5432 4325
+324.43652.6543.4321 6547
+431.142.654.3112.3243 542
+1.34.342.543 542
+321.312.653.645 5432                         
+9.02.1.0 6969
+127.0.0.7 56
+192.168.45.21 108
+10.20.30.40 5060
+
+never try to flood FSP server, this does not work, elite will laugh
+at you and cut your accez down. remember, you are elite, not a kiddie!
+
+-----**************------*******************----------************---
+
+for HQ version of this guide send
+    20 bucks to
+    e-gold.com account
+      number 550694
+
+Features included:
+      list of 5 hq quality sitez
+      how to search for new sitez
+      how to make FSP faster
+      special FSP sites seek tool
+      and 3 secret bonuzez
+
+!We Do NOT sEnDZ hQ guiDe to LAmeRZ! Prove yourself first.
+
+------*****-----------******************--------------**************---

@@ -1,0 +1,55 @@
+.TH FSPSCAN 1 "Jan 2005" FSP
+
+.SH NAME
+fspscan is a small tool to scan host for a running fsp server
+
+.SH SYNOPSIS
+.B fspscan
+[-t][-o file][-r retries][-l local port][-i ip address][-p starting port][-h][-e endport]
+
+.SH DESCRIPTION
+fspscan is small tool to scan for a running fsp server on a remote host. When it  detects a running server it will display
+the server version and the port.
+
+.SH ARGUMENTS
+.LP
+.B -t
+-- trace (on|off), default is off
+.LP
+.B -o
+-- file, define a file for the output, default is stdout
+.LP
+.B -r
+-- retries, define the number of probes bevor we skip this port and continue with the next one, default is 3
+.LP
+.B -l
+-- local port, define the local port number we use for scaning, default is 9191
+.LP
+.B -i
+-- ip address, define the ip address or hostname of the host you would like to scan
+.LP
+.B -p
+-- starting port, define the port number where we start to scan, default is 21
+.LP
+.B -e
+-- ending port, define the port number where we stop to scan, default is 65535
+.LP
+.B -h
+-- help, print out a short help and the default values
+
+.SH BUGS
+fspscan is not fastest scanning tool on the earth. This program is
+known in the wild as FSP exploit. Detection can be avoided by
+disabling CC_VERSION command on server side.
+.SH HISTORY
+This program was written in late 1992 by Cuda and quickly becomes must have
+tool for every FSP fan. In September 2003
+it was adapted to modern C compilers and added to FSP suite by Radim
+Kolar. Because most value of this program is purely historic, fixes
+and feature enhancements
+of this program are kept at minimal amount.
+.SH "SEE ALSO"
+.PD
+fcatcmd(1), fcdcmd(1), fgetcmd(1), fgrabcmd(1), flscmd(1), fmkdir(1),
+fprocmd(1), fput(1), frmcmd(1), frmdircmd(1), fver(1), fducmd(1),
+fhostcmd(1), fspd(1), fstatcmd(1), fsp_prof(5), ffindcmd(1), fsp_env(7)

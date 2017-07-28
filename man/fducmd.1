@@ -1,0 +1,82 @@
+.TH FDU 1 "7 April 1993" FSP
+.SH NAME
+fducmd, fdu  \- display the number of disk blocks used per directory or file
+.SH SYNOPSIS
+.B fducmd
+[
+.B \-s
+]
+[
+.B \-a
+]
+[
+.B \-r
+]
+[
+.I filename
+.B .\|.\|.
+]
+.LP
+.B fdu
+[
+.B \-s
+]
+[
+.B \-a
+]
+[
+.B \-r
+]
+[
+.I filename
+.B .\|.\|.
+]
+.SH DESCRIPTION
+.B fdu
+gives the number of kilobytes contained in all files and, recursively,
+directories within each specified directory or file
+.IR filename .
+If
+.I filename
+is missing, 
+.RB ` . '
+(the current directory) is used.
+.LP
+.SH OPTIONS
+.TP
+.B \-s
+Only display the grand total for each of the specified
+.IR filename s.
+.TP
+.B \-a
+Generate an entry for each file.
+Entries are generated only for each directory in the absence of this option.
+.TP
+.B \-r
+Recursively go down in the directory tree and show deeper entries, too.
+In absence of this option the deeper directory tree branches are only counted
+belonging to their parent in the top level directory.
+.LP
+.B fducmd
+will perform
+.B csh
+file name globbing based on file and directory information
+obtained from the FSP database.
+.LP
+Since user's command shells generally cannot do the proper globbing for
+this program, it is recommended that user defines a shell alias or
+function to turn off command shell globbing before running this program.
+.B csh
+example:
+.LP
+.nf
+alias fdu \e(set noglob\e; exec fducmd \e!\e*\e)
+.fi
+.SH ENVIRONMENT
+.LP
+See fsp_env(7) for list of used environment variables.
+.SH "SEE ALSO"
+.PD
+fcatcmd(1), fcdcmd(1), fgetcmd(1), fgrabcmd(1), flscmd(1), fmkdir(1),
+fprocmd(1), fput(1), frmcmd(1), frmdircmd(1), fver(1), fducmd(1),
+fhostcmd(1), fspd(1), fsp_prof(5), ffindcmd(1), fsp_env(7)

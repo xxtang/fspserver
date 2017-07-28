@@ -1,0 +1,46 @@
+.TH FSTAT 1 "23 September 2003" FSP
+
+.SH NAME
+fstatcmd, fstat displays information on remote files and directories
+
+.SH SYNOPSIS
+.B fstatcmd
+.I filename ...
+.LP
+.B fstat 
+.I filename ...
+
+.SH DESCRIPTION
+.LP
+.B fstatcmd
+will display the type (file or directory), name, size in bytes and
+creation time of the given remote file. The time and date of creation will
+be displayed in ISO format.
+.LP
+Since user's command shells generally cannot do the proper globbing for
+this program, it is recommended that user defines a shell alias or
+function to turn off command shell globbing before running this program.
+.LP
+.B csh
+example:
+.LP
+.nf
+alias fstat \e(set noglob\e; exec fstatcmd \e!\e*\e)
+.fi
+.LP
+.B bash
+example:
+.LP
+.nf
+_fstat()   { fstatcmd "$@" ;set +f;}
+alias fstat='set -f;_fstat'
+.fi
+
+.SH ENVIRONMEN
+See fsp_env(7) for list of used environment variables.
+
+.SH "SEE ALSO"
+.PD
+fcatcmd(1), fcdcmd(1), fgetcmd(1), fgrabcmd(1), flscmd(1), fmkdir(1),
+fprocmd(1), fput(1), frmcmd(1), frmdircmd(1), fver(1), fducmd(1),
+fhostcmd(1), fspd(1), fsp_prof(5), ffindcmd(1), fsp_env(7)

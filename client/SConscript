@@ -1,0 +1,7 @@
+Import(Split("env PREFIX"))
+
+client=env.StaticLibrary(target = 'client', source = Split('''
+lib.c  lock.c util.c
+'''))
+
+Export(Split("client"))

@@ -1,0 +1,729 @@
+Version 2.8.1b27 - 9 Sep 2014
+	fhostcmd: Fixed output of FSP_TRACE variable for Bourne style shells
+	correctly initialize to zero client packet sent statistic counter
+	note default timeout values in fsp_env man page
+	setting environment value FSP_TIMEOUT to <=0 uses 4byte maxint value
+	note default fspd max packet size in fsp_env man page
+	fix build on systems with utmpx.h API (FreeBSD 9)
+	fspscan: do not shadow host variable
+	fspscan: fix clang warning about empty for cycle body by placing
+	  semicolon on separate line
+	FAQ: Cleaned lot of SGML markup errors
+	Do not use sgmlformat, call jade directly
+	correctly zero entire sockaddr_in structure during name resolving,
+	  error found by Clang.
+	allow docbook dsssl stylesheets to be specified at scons command line
+	always validate path in SETPRO and MKDIR even if packet is resent and
+	  no action will be taken. This is needed to avoid uninitialised
+	  pointer access during reply. Found by Clang.
+
+Version 2.8.1b26 - 1 Oct 2009
+	fver now reports if server can process extra data in input packets.
+	  fspclient did that for a long time. This field is used by fspd
+	  2.8.1 beta 21 or newer.
+	Server version string sent as response to CC_VERSION command have
+	  no longer \n appended to it. Old FSP used it but fver client
+	  command can handle server strings without \n for quite a long
+	  time, so i decided to remove it. It is bad idea to terminate
+	  version strings by \n while it is not required by FSP protocol.
+	glob() function used in FSP clients renamed to bsdglob because it
+	  clashed with glob() function in newer Linux glibc resulting in
+          segfaults.
+	non continuous upload detection fixed. Now detection works as follows:
+	  if you are trying to upload past end of file, fspd will report that
+	  you are trying to create hole in file.
+	  if you are seeking backwards more than 1 packet size fspd will
+	  report noncontinuous upload. Most likely port from old unfinished
+	  download was reused.
+	We can now reupload last block which can happen if fspd server is
+	  restarted and reply to upload command is lost on way from server
+	  to client.
+	Check for overwriting uploaded files in fspd was reversed by mistake.
+	  Now if you want to overwrite file you must have permission for
+	  deleting and adding files or be directory owner.
+	Turning on debug in SCons turns on maintainer mode also.
+	Upload starting at zero position are now always allowed no matter if
+	  source port was reused or not. Old code did that but not over
+	  server restarts.
+	INFO file updated with fresh information
+	fsetupcmd and fhostcmd now reject port number > 65535
+	fsetupcmd - code cleaned a bit. Error message is now
+	  fsetup: No host given! instead of fhost:
+	fsetupcmd got -l option. It lists all known fsp servers collected
+	  from .fspsites files.
+	fpwd command from setup.sh now prints site name instead of ip
+	  address if possible.
+	SCons now check if CC compiler works. We need SCons 1.1 or greater
+	  for building FSP now.
+	Large file support on Linux is now correctly detected.
+	Error codes added to CC_ERR command in PROTOCOL. It was long wished
+	  feature from ISV. Now there is standard way how to pass error codes
+	  from server to client. No such codes are defined yet, but you can
+	  use custom error codes in range 0xF000 - 0xFFFF. because no such
+	  codes are defined fspd do not sends them in error message, but it
+	  now correctly zeroes bb_pos field in CC_ERR reply to indicate
+	  that extended error code status is not attached to message. Old
+	  fspd versions left this field untouched - it will contain request
+	  bb_pos in most, but not all cases. Because we indicate size of
+	  extra data to be received, this extended error handling is
+	  compatible with "plain FSP over serial" standard.
+	Code portability improved. Now we don't need to check sizes of
+	  predefined types because we are now using ISO C types. Only thing
+	  what we need to know is if largefiles are supported or not.
+	  If SCons cant run test program for sizing off_t for any reason,
+	  it defaults to 4 (no largefiles, 32-bit system).
+
+Version 2.8.1b25 - 10 Sep 2009
+	GNU autotools build system was entirely replaced by SCons
+	corrected misleading comment in client/lib.c
+	default packetsize changed to do best fit into maximum 1500 MTU
+	  Ethernet frame = 1460. This is needed for speedup the booting of
+	  Etherboot clients
+	PROTOCOL: when computing checksum declare *t as unsigned char * type
+	changed typo setguid -> setgid in fspd.conf
+	fspd.conf: added note that only numeric uid values works
+	fspd.conf: added more information about packetsize
+	fspd.1: updated information about packetsize
+	fspd.conf: repaired some spelling errors by ispell
+	MTU changed from 1500 to 1492 for better operation on pppOE networks
+	Max payload changed from 4096 to 4380 bytes (3 packets)
+	fspd: command line argument now overrides config file
+	updated year in copyright
+	fsetup command added to setup.sh
+	fsetup command added to setup.csh
+	fcd: remove trailing \r\n from readme file
+	fcd: do not print empty line after directory protection
+	fsetupcmd: don't crash if called with numeric address
+	fspscan: committed fix by Yang Hong
+	SCONS: turning on maintainer-mode links against efence (if possible)
+	  same thing like ./configure do
+	fix compilation on systems without large files
+	cygwin support disabled. we cant detect it from SCons yet
+	frmdir works now. It didn't worked due to adding new access rights
+	  DIR_NOLIST and DIR_NOGET
+	MACHINES updated. Builds confirmed on Ubuntu 8.04.3,
+	  FreeBSD 6.4 and FreeBSD 7.2
+	fsetupcmd added to fspmerge client
+	SCons can now build SGML FSP FAQ if sgmlfmt is found during build
+	  process
+        fspmerge now prints short help text if it is invoked as fspmerge
+	FILES is up to date now
+
+Version 2.8.1b24 - 19 Feb 2005
+	use getopt from stdio.h instead of getopt.h in fspscan.c
+	  fspscan now compiles on AIX and other OS without glibc (hoaxter)
+	!! fixed fatal bug from b23. Server sends large packets to clients if
+	  client request has not preferred reply size inside. This confuses
+	  all old fsp clients.
+	common/strdup.c removed
+	bsd_src/function.c bcopy -> memmove
+	removed STDC_HEADER checks, drop support for pre-ANSI compilers
+	started work on alternate SCons based build system
+	fspd: use urandom, not random -> avoid hangs on Lin suck 2.6
+	build system converted to SCons
+	!! fixed directory listing bug in client library introduced in beta23
+	improvements to security of FSP clients
+	  seq. numbers are now randomized
+	  seed random number generator in fsp clients
+	  check cmd in received packets
+	  check pos in received packets
+
+Version 2.8.1b23 - 14 Jan 2005
+	use srandomdev for seeding of client seq. number generator
+	make dirlister smarter - save one RTT per each directory listings
+	Locking uses unsigned int sized key, not unsigned short
+	Locking type can be specified by ./configure --with-locking=
+	Lock prefix can be specified by ./configure --with-lockprefix=
+	All 5 locking subsystems synced against fsplib and fspclient code base
+	Do not use CC_STAT when doing directory listing -- performance gain.
+	  This saves 1 RTT per directory listing.
+	clients: do not send CC_BYE to the server on exit if we can keep server
+	  key for next invocation. Saves 1 RTT.
+	!! Major client utils speedup: Directory listings are now 3 RTT
+	  times faster.
+	fmvcmd added to merged client
+	new command fbye(1). Sends CC_BYE to the server and possibly removes
+	 cached session key.
+	fbye added to merged client
+	PROTOCOL: Add note about client key multiplexing
+	we have incorrectly recovered requested size of reply packet sent
+	  by client
+	!! LARGE PACKET SUPPORT !! FSP can be quite Fast now.
+	fver -l displays maximum packet size supported by client
+	fsp_env.7: added info about larger packets
+	send_file function renamed to serve_file for avoiding name clash
+	  on AIX.
+	idle resend multiplier decreased from 1.5 to 1.33
+	correctly init first sequence number
+	sequence numbering changed to allow up to 8 packets flying in the
+	  network. Old code uses 4. Even CZFREE.net do not drops 8 packets
+	  in row unless line is down.
+	allow better debugging of retry alg.
+	Default max packetsize supported by server set by 1200 bytes for
+	  now. Let's make some experiments.
+	Calculate real RTT using seq. numbers
+	ignore HUP signal in fgetcmd and fputcmd
+	ignore HUP signal in fcatcmd if stdout is not a terminal
+	fspd.1: minor fixes
+	!! retry alg. retuned for lines with higher PLR. It is much better
+	  than before.
+	use srandomdev() for seeding server random generator
+	FAQ: added section about key locking, dmachine, FSP stack libraries,
+	  lamah FSP Win32 suite.
+	print packet stats after up/downloads if client tracing is enabled.
+	fbye: lower timeout to 10 sec on CC_BYE
+	FAQ: Added two section making FSP slower/faster, version bumped
+	  to 0.2
+	do not use exit code -1 in fspscan
+	LAMAH fspd: improve some error messages, run on port 80 by default
+	Changed all exit() calls to use standard EX_* values. Some utilities
+	  still do not returns error exit when they should.
+	fhostcmd: split host managing functions into fhost.c
+	fhost.c: do not output partial results when dns resolving fails  
+	fhost.c: fallback to other display method (host/ip name) on
+	  resolving failure
+	common lib: When doing addr resolving turn port 0 into 21.
+	fhostcmd: ignore servers without port number set
+	new command fsetup: C rewrite of old Perl script. This command is
+	  like fhostcmd but uses standard fspsites file format
+	man: new manpage for fspsites.5
+	merged client: added support for fbye
+	added man page fstat.1 -> fstatcmd.1
+	added man page for fmvcmd.1
+	removed -Wconversion GCC compile option
+	setup.sh give Sven credits for fgetcmd
+	added man page for fsetup.1
+	fhostcmd, fsetupcmd - report error on non numeric on zero port number
+	fspsites.l - allow multiple aliases per site. Non standard, but nice.
+
+Version 2.8.1b22 - 20 Dec 2004
+	fixed sf bug 1060594: fspd: owner can't rename files
+	fixed sf bug 1060558: fpro 'l' sets 'm' flag instead (dairiki)
+	fixed sf bug 1060558: fpro 'l' flag was not correctly saved
+	  into filesystem
+	fixed sf bug 1060555: fix for 64-bit systems (dairiki)
+	fmvcmd: do not send trailing junk to the server
+	print key=, seq= in fspd debugs with fixed width for easy reading
+	added BUGS and HISTORY sections to fspscan.1 manual page
+	Lamerpack: disable most of command line options in fspd and print
+	  simpler help message.
+	server_install: zero length filename cancels upload in progress
+	  this change is needed for upcoming gftp/fsplib support.
+	PROTOCOL: CC_INSTALL command:
+	  document zero length filename
+	  use request position for sizing of extra data.
+	PROTOCOL: CC_SET_PRO command:
+	  use request position for sizing of extra data.
+	fprocmd: do not send \0 terminated ACL change string  
+	  use request position for sizing of extra data.
+	autogen.sh: Prefer automake19 on FreeBSD platform
+	fprocmd now works without directory name supplied on command line.
+	  directory from environment is used instead
+	fput: use request position for sizing of extra (timestamp) data.
+	  use new upload cancel feature on user abort/kill.
+	fspd: default inetd timeout increased to 5 minutes.
+	udpio: Do not set reuse flag when binding socket
+	nicer help from configure --help
+	!! configure option --disable-timeout for disabling timeout code
+	  in client util. This will switch clients into classic FSP
+	  infinite retry mode.
+	some shell portability fixes in configure.ac shell tests
+	cleaned outdated information from INSTALL file
+	fcdcmd: do not print password to standard output. really
+	  support cd into password protected root directory
+	!! Protocol Wire definiton of rename command has changed
+	PROTOCOL: CC_RENAME updated
+	fmvcmd,fspd: now supports this new definition.
+	fmvcmd: do not sent bye packet to server on bad command line arguments
+	client locking subsystem: do not report errors on deleting shm segment
+	!! shmem+semop client-side locking method added. This should solve all
+	  problems with shmem+lockf locks.
+	autogen.sh updated for FreeBSD-5 + automake 1.9
+	lamerguide: added section on upload area setup.
+	sgml faq: added inetd fspd install
+	sgml faq: client commands updated, added more fspd info
+	fspd: default dirlistcache increased to 100
+	fspd: default fp cache increased to 20 and moved into server_conf.h
+	fget/grab cmd: better -h help
+	fput: add help on -p option
+	fmv alias added to both setup.c?sh scripts
+	fspd: logging of RENAME command fixed
+	fspd.conf: logging of stat and rename added to comments.
+	FILES: file somewhat updated
+	sgml fsp faq released as version 0.1, first public version
+	new locking semop code compiles on Linux systems also.
+
+Version 2.8.1b21 - 1 Nov 2004
+	check for errors while copying files in fspd.
+	removed all the PROTOX macros junk. Tools for analyzing C source
+	  code works with fsp codebase now as result.
+	added rename command
+	add fmvcmd client for renaming files
+	reorder some checks in configure.ac
+	added one testcase to the path test suite
+	client library did not sent any passwords to server
+	util_abs_path now appends \npassword to full path
+	server do not send correctly \0 terminated directory readmes
+	PROTOCOL: Added information about optionally large sized packets,
+	  transport and information about FSP project URL.
+	PROTOCOL: checked/repaired by ispell :)
+	PROTOCOL: added more details about packet checksuming.
+	Lamerpack: removed port 21 from list of recommended ports.
+	Lamerpack: avoid easy detection by lamers by disabling ver command
+	do not print password to stdout in fcdcmd
+	PROTOCOL: Add note to clients writers that two replies from server
+	  can contain extra data even if server is not able to handle extra
+	  data packets on input.
+	FreeBSD needs /usr/local/lib in LDFLAGS to make Electric Fence
+	  correctly detected by autotools
+	PROTOCOL: define 5th bit in version flags - support for xtra data
+	  on input
+	server.c: send accept xtra data flag set
+	fver: print difference between max. supported payload and
+	  preffered payload size
+	when directory has no readme, do not send any regular data block
+	  at all. Previous versions sends one null byte
+	printpro.c - print readme only if nonzero sized
+
+Version 2.8.1b20 - 26 Oct 2004
+	Added pidfile.[c|h] from FreeBSD and modified it to fit in (hoaxter)
+	Added pidfile support, config option is 'pidlogname' (hoaxter)
+	Replaced .file information from INSTALL with a hint to man 1 fspd (hoaxter)
+	PROTOCOL: Added security section, fixed method of computing of checksums        fspd: unlink filecache.c from build
+	conf: commented dangerours settings for win32 platform which can
+	  cause data loss when fspd.conf is reused on win32 without editing.
+	  Defaults are detected at build time.
+	fspd: allow to run without pidfile set.  
+	added autogen.sh for regenerating of autoconf on FreeBSD which needs
+	  to set some env. variables unless --enable-maintainer-mode do
+	  not works.
+	do not free pidfile name on failure
+	changelog reformated: each entry begins with tab/not spaces.
+	  continuation line has 2 chars leading space
+	removed trailing spaces from all sources and headers
+	tests: run random test 2000 times by default
+	random generator switched to simple2. Better results on both
+	  freebsd and linux systems.
+	added maximum supported packet size to output of CC_VER command
+	fspd: -b command line switch for bandwidth limiting
+	PROTOCOL: Added compatibility section to some commands
+	Default timeout increased from 180 to 360 seconds.
+	clients: apply delay timeout also when starting transfer
+	clients: added env. variable FSP_MAXDELAY for fine-tuning resends
+	DEFAULT_MAXDELAY added to source code
+	FSP_TIMEOUT is total number of seconds, not retry count.
+	clients: try to resend packet on less fatal error (network down or so)
+	remove clients lock files after sending BYE. code merged from fspclient.
+	  threre is an race condition: After client unlinks lock file and other
+	  clients still runs new client will create new lock file which will
+	  not share secret key with other clients. New client can't communicate
+	  with server until other clients terminates. 
+	man: we did not install fsp_env.7 manpage
+	allow home directory not starting with /
+	allow uploads only on file border
+	up/down speed is in B/s, not b/s.
+	client tracing improved:
+	  H - not enough bytes for header
+	  C - wrong checksum
+	  S - wrong seq. number
+	  T - truncated
+	  R - First resend
+	  I - Idle  resend
+	client: use random starting seq. number - better for avoiding
+	  seq. number clash with another client
+	fixed compiler warning on BB_READ4(const char *);
+	PROTOCOL: Added more information about directory blocks
+	Add pidfile.h to distribution
+	default FSP_DIR to / if not set
+	improved Sven's fsp-faq.sgml
+	Added local bind port support for server
+	added FSP_LOCALIP env variable for clients
+	--enable-lamerpack == build specialy tuned fspd for lamers
+	lamerz guide added
+	text rotate tool added
+
+Version 2.8.1b19 - 11 Jan 2004
+	sven has added fspget URL command to setup.sh.
+	fixed case for mklargefile.py in tests/Makefile.am
+	added --enable-debug switch to configure for enabling extra
+	  debuging code in client library
+	fsp/fifocache.c changed malloc.h to stdlib.h -> allow compile on
+	  freebsd
+	do not use ${RM} in clients/Makefile.am -> allow compile with bsd make
+
+Version 2.8.1b18 - 25 Nov 24 2003
+	This is MINIMUM REQUIRED VERSION for applications which are using
+	  javafsp library, only download machine atm. Javafsp library will
+	  be released shortly as separate package.
+	PROTOCOL updated. Made rules about breaking directory header on
+	  packet boundary more clear. Previous text was from fspd code comment
+	  and was bad.
+	fixed tests/mklargefile.py
+	log uploads to wuftpd logfile also
+	PROTOCOL file updated. Added required commands section.
+	PROTOCOL file updated. Added recommended delay management section.
+	default delay in clients adjusted from 1.5 to 1.34 sec as recommended
+	  in PROTOCOL
+	support for MIN_DELAY, MAX_DELAY and DEFAULT_DELAY in source
+	path parsing moved to separate file server/path.c
+	new test tool parsecheck for testing server path parser
+	reworked parse path: separate error messages for high bit chars,
+	  control chars
+	MAJOR BUGFIX: path with trailing / or starting / is now parsed correctly
+	pathes with dot after slash are now detected at parse level (side
+	  effect of prev. fix, fixed security prob)
+	tests moved from server/ into tests/ directory
+	removed special test case for root directory in path.c -> use more
+	  general alg. instead. This fixed "/" dir.
+	parsecheck turned into test suite with hard coded test results
+	parsecheck added to 'make check' 
+	support for multiple \n in filename - in future there will be
+	  used for symlinks.
+	random generator changed to one recommended by Jiann-Ming Su.
+	new test program tests/randomcheck.c - tests random number generators.
+
+Version 2.8.1b17 -- 17 Nov 2003 
+	Allow filenames with spaces inside
+	check for fork() and setsid() in configure.ac
+	wu-ftpd compatible `xferlog` -- usernames are not supported, all
+	  transfers are logged as anonymous
+	flex output is included in the distribution archive, you do not
+	need flex to build fsp
+	MACHINES file updated
+
+Version 2.8.1b16 -- 8 Nov 2003 
+	This version fixes 2 major bugs in beta 15 release.
+	fspd: update mtime for directory listing after .FSP_CONTENT write
+	flscmd: do not list file size > 2GB as negative, same for block count
+	fspscan: install it when doing make install
+	fspd: -l logfile switch
+	fixed crash when logfile is in use. (from betat15)
+	fixed memory leak in client/util.c:get_dir_blk
+	fixed memory leak in client/util.c:open_dir
+	fixed error from 2.8.1b15 in util_stat which brokes recursive
+	  directory listings
+	do not delete partial file on FSP timeout in fgetcmd
+
+Version 2.8.1b15 -- 15 Oct 2003 
+	Sven writes manpage for fspscan.1
+	junked concept of private directory, now directory has flag
+	  +g - public can get files
+	dir_priv -> dir_get
+	fprocmd flags changed +p -> -g (incompatible change in protocol)
+	fgetprocmd works in private directories. There are no more
+	  private.
+	.FSP_PRIVATE -> .FSP_NO_GET for avoiding user confusion because
+	  i have axed marking directories as private in beta6
+	fixed off-by-one error in getpro cmd
+	fsetpro cmd shows command syntax on error
+	fspd: do not save readme files to disk (avoids truncation them
+	  to 1k)
+	fspd: fixed reply for makedir command (size of reply block was
+	  not included)
+	fspd: getdirlisting checks for seek offsets (do not allow send partial
+	  packets of dir listings)
+	Done item from my 1997 fsp wishlist: check 4 rights before
+	  uploading!
+	fver command can be disabled on server -- protection against FSP
+	  detectors.
+	fspscan: end port -e switch
+	configure.ac add check for compiler warning options
+	removed multiple definition of process from bsd_src/find.c and
+	  ffindcmd.c 
+	cleaned some warnings in bsd_src/
+	cleaned some warnings in server/
+	configure: do not use -O when in maint. mode
+	client library: do not integer overflow when downloading largefile
+	client library: detect out of diskspace
+	fver: print HOST_LOOKUP status
+	fver: print CLIENT_TIMEOUT status
+	fhostcmd: use $HOME if no passwd entry is found
+	fsp_prof: allow `machine` to be alias for `host`
+	fsp_prof: made `fsp` in `fsp port` optional
+	fsp_prof: made `fsp` in `fsp directory' optional
+	fhostcmd has now parser written in flex, should be less brain
+	  damaged and more stable
+	fhostcmd: searching can now match full hostname or alias, not
+	  a subpart of hostname or alias.
+	fhostcmd: added -? switch
+	fhostcmd: merges infos from all available configuration files
+	  (cmdline,curdir,userhome,system)
+	mklargefile moved from contrib/ to test/
+	mklargefile: use LFS from fsp
+	mklargefile: refuse to create >2GB files on non LFS-enables OSes.
+	do not use echo -e when building fspmerge client
+	updated manpages for fhostcmd.1 and fsp_prof.5
+	fspd: really reuse cached directory listings. Forgot to update
+	  mtime after loading and they were loaded for every dirlisting
+	  packet.
+	client library: do not use CC_STAT when building a directory listing.
+	  fix in beta14 do not fixed the problem when working in non root
+	  directory.
+
+Version 2.8.1b14 -- 22 Sep 2003
+	Sven fixed bash shell script
+	fspd: list files over 4GB as 4GB in directory listings
+	fspd: do not allow seeking over 2GB when OS is not LFS friendly
+	fspd: print command names instead of numbers in debug mode
+	added new program fspscan.c to package. Well known fsp port scanner
+	  made in 1992. Paranoid people calls this program fsp exploit.
+	added new SGML FSP FAQ made by Sven
+	fspd: debug messages are printed to stderr
+	PROTOCOL: added talking about timeouts
+	fcatcmd: removed debug messages
+	!!dirlist cache hit ratio is bad - something overwrites that!!
+	!!only happens when compiled without EFENCE??
+	  fixed by fifocache malloc -> calloc
+	fspd: return 'is a directory' when trying to download directory
+	client library: do not use CC_STAT when building a directory listing
+	  PLEASE!!! It is S l o w. Fixed: Performance of flscmd -l is now
+	  back to the normal speed. EnJoy!
+	fstatcmd: print dates in ISO format, avoid tabs in output
+	fspd: support for long local directory names > 1024 but < 2048
+	fixed SECURITY prob: stat can stat any file (even out of FSP root!) 
+	added support for fstat to both shell scripts
+	fifocache.c support for memory profiler functions
+	fifocache.c supports nice memory stats
+	do not limit filecache to 64 max. Default to 10
+	cache stats are dumped to dumpfile also on SIGUSR1
+
+Version 2.8.1b13 -- 10 Sep 2003
+	fver: reports if timestamping is supported
+	CC_VER: now reports fspd + version + \n
+	Hanno Hecker help us port shell script from CSH to BASH
+	large file support activated in configure
+	example.conf -> fspd.conf
+	added contrib/mklargefile.c program for creating a large file  with
+	  hole
+	fver -l reports max file size supported and LFS mode
+	server detects i/o errors when uploading (out of diskspace)
+	4GB-1 files should work from server p. of view if LFS is on
+	fspd -F runs in foreground, for broken startup scripts
+	random port for fspd (-p 65535) important for keeping lamers out of
+	  your warez site.
+	changed exit codes for server, for easy debuging
+	manual page for fspd updated - exit codes added
+	PROTOCOL: added support for timestamping on uploads
+	fspd: added support for timestamping on uploads
+	fspd: -T switch for setting temporary directory for uploads
+	fput.c: added support for timestamping uploads
+	fcdcmd supports new permisions also
+	fput - made timestamping optional -p option
+	correct stats dumping - now dumpfile is used (really)
+	inetd mode now works!
+	updated INFO document
+	moved faq, history and protocol to a new doc subdirectory
+	turning off timestamping in fput
+
+Version 2.8.1b12 -- 3 Sep 2003
+	port setting in config file works
+	manual page for fprocmd updated
+	fstatcmd now uses remote wildcard expansion like rest of fsp
+	merged fgetcmd and fgrabcmd commands
+	merged patch Geoffrey T. Dairiki. Server records new keyid from client
+	  when serving session timeout.
+	updated Bash version of CSH setup script, but still do not works
+	NEW FEATURE: fget/fgrab can now set file timestamps to remote date
+	  When I have first used FSP in 1996 - I wanted this option.
+	Cygwin has now different builtin defaults
+	modified man page for fgetcmd - after 10 years! same goes for
+	  fgrabcmd
+	default mode of fget/grab changed to unique fnames. Should I
+	  change it to noclober?
+	fget/grab has now -h help
+
+Version 2.8.1b11 -- 27 Aug 2003
+	do not use pointer arith. on void * 
+	use const char * where working with constant strings
+	stat type log switch
+	new command FSP_STAT (not tested)
+	some code cleanup in client/ and common/ directories, warnings
+	  removed.
+	PROTOCOL definition updated (stat and rename commands added)
+	auto_del.csh script added to server directory (untested)
+	return only file or directory objects in dir listing and stat command.
+	documented command FSP_RENAME (not yet implemented w.i.p)
+	server has -? and -h options
+	new command fstatcmd (no manpage yet)
+	fixed main arg count in merged fsp client
+	client library now uses a new command FSP_STAT if server supports it
+	fprocmd without args displays directory name instead of .
+	fprocmd now supports 2.8.1bXX extented access rights
+
+Version 2.8.1b10 -- 21 Jul 2003
+	fixed sever command line arguments handling
+	removed -Wconversion from debug gcc switches
+	MAJOR BUGFIX: can CD to more than 1 level deep
+	changes init order in server/main.c so we can see error messages
+	  during server startup
+
+Version 2.8.1b9 -- 19 Jul 2003
+	missing tmpdir switches fspd to read-only mode (really!)
+	daemonize is on by default
+	added port to default cnf file for fspd
+	check for -lefence in configure script
+	check for sys/syslimits.h - needed for cygwin
+	default port is 21 in conf.c
+	FIXED BUG when server root != file system root
+	Now compiles and runs on cygwin
+	do not use -1 exit code in server/main.c
+	server now tries to create tmpdirectory on startup
+	fspd: allow command line overide even when -f is used
+
+Version 2.8.1b8 -- 17 Jul 2003
+	new cfg switch: setgid
+	use /dev/random for seeding a random number generator
+	new cfg switches: umask and serverumask (octal value). Umask
+	  for creating server files
+	fixed compilation on GCC < 3.0
+	fixed check for maintainer_mode in server/Makefile.am and
+	  clients/Makefile.am
+	fhostcmd: check for $SHELL if we have csh-like shell
+	fhostcmd: options -c or -b to force C or Bourne shell syntax
+	server tables dump signal changed from alarm -> sigusr1
+	new cfg switch: dumpname for dumping runtime stats
+	clean server shutdown on sigint, sigterm
+	new cfg switch: grabcommand on/off
+	env. vars removed from individual manual pages and moved to a New
+	  manpage fsp_env 7.
+	updated PROTOCOL definition of FSP. Fixed some bugs, added method
+	  of packet checksum.
+	updated example configuration file for server
+	removed all prints when debug is not on
+	updated FILES section in fspd manpage
+
+Version 2.8.1b7 -- 13 Jul 2003
+	do not sent zero length blocks if client asks for them
+	filecache.c nuked
+	new cfg statement tmpdir for placing files during upload
+	all server code (except host.c) rewriting complete.
+
+Version 2.8.1b6 -- 2 Jul 2003
+	configuration file was not closed after reading (found by valgrind)
+	link against Eletric Fence only in maintainer mode
+	compile server/cachecheck only in maintainer mode
+	removed long files check and support for code. FSP has maximum path
+	about 1024; it is no need to check if file can be longer than 14 chars
+	use config.guess for guessing OS type.
+	simplified configure.ac
+	up to date BETA.README 
+	MACHINES file lives again
+	allow files starting with \ in directory listing
+	directory content is builded correctly on systems with pragma pack > 1
+	fixed another bug in generating of directory listing which violates FSP
+	  protocol definiton (but worked in current code anyway)
+	use extern only in header files
+	key was not initialised when using shmem locking method
+	default timeout for clients changed from 4 to 180 sec.
+	removed option -r from fcatcmd
+	init socket data in udp io and avoid using sin there (gcc builtin)
+	server debug option changed from -d to -X
+	server argument -d directory -> sets root directory
+	server now runs also without configuration file!
+	keys generated by server are now 16bit random, not 8bit random
+	directory_cache nuked - it was uneffective and it has a file
+	  descriptor leak!
+	new cfg. use_prebuild_dirlists (load/save) content file
+	new directory memory based cache engine works!
+	new directory .FSP_CONTENT load/save engine works
+	clear buffer before generating a directory listing (no information
+	  leak)
+	fixed buffer overflow (exploitable if file uploads was allowed).
+	new cfg keyword statcache - size of dirstatcache
+	new cfg keyword statcache_timeout - (sec)
+	new cfg keyword use_access_files - boolean
+	fixed bug when home directory was symlinked to somewhere
+	removed remote FSP support from PPATH. It was never used in code.
+	new cfg use_directory_mtime - boolean. For windows set it to NO.
+	!!! NEW DIRECTORY STATE ENGINE CACHE !!!
+	new .FSP_PASSWORD access file
+	new .FSP_OWNER owner file (not yet implemented)
+	resend of BYE command is also accepted, why not?
+	no memory leaks in new code. Last leaks are in code which is going
+	  to be rewrited
+	!!! MAJOR PERFORMANCE SPEEDUP. Need only 1 syscal to serve a
+	   packet (if everything is cached).
+	do not list special files as directories
+	added file COPYRIGHT
+	speedup when loading access files
+	min delay for clients was increased from  0.5s to 1.5s (packets
+	  was are just thrown out by server for <3sec reply). Performance
+	  tested on our WireLess network. Today only 65% packets loss!
+	new configuration option homedir_restricted for following symlinks
+	  out of home_directory
+	if $test in configure changed to x$test
+	ip range and IP parsing function moved out of host.c to iprange.c
+	  host type must be specified (in config or in owner file)
+	renamed cfg. bufsize -> packetsize
+	use packetsize when generatin a directory listing. -> max packet size
+	  management moved from user cfg. to server cfg.
+	added support for readme files to new dirstat engine
+	public directory list flag changed from negative to positive
+	new cfg option permit_passwordless_owners
+	NEW SECURITY ENGINE implemented
+	fixed infinite loop in client library if server sends directory
+	  in smaller blocks than expected.
+	removed buffer overflow in log code (remote exploitable of course)
+	  added new log switch 'readonly'
+	fixed security hole in grab command
+	rewrite log in packet processing (more readable)
+	corrected handling of public rights in private directories
+	detect if cached directory listings are out of date
+
+Version 2.8.1b5 -- 25 June 2003
+	configure.ac upgaded to autoconf 2.57 and cleaned
+	added missing include headers to source code
+	vms code nuked from rest of headers
+	prefix is now used when finding configuration file
+	check for max. number of open files and adjust open handle cache
+	removed long file limit hack for FAT/VMS filesystems. Nonstandard and
+	  unsecure.
+	removed include/version.h - use autoconf instead
+	added -V server option (display version)
+	do not use dircache as upload cache. Uploads now works even without
+	  dircache
+	turn off cachedir when it do not exists
+	better init of random number generator. It should be really random.
+	fixed use of prebuild directory content and dircache
+	turn off logging if no log file is set
+	clean cache directory on startup
+	merged security patch from Debian package fsp_2.81.b3-4, i have
+	  fixed this problem in 2.8.1b4; but Debian code looks better.
+	removed non standard NEED_ from configure.ac, use HAVE_
+	fver displays locking method and used config. files.
+	give lockf locking method priority over flock method
+	fgetcmd and fgrabcmd now understands -c continue download
+	fixed check for in.fspd
+	we have called check_required_vars twice
+	display copyright in fspd -V
+	INFO document updated, fixed spelling errors, added section
+	  FSP today
+	added -t option for fspd; specifes timeout for inetd mode (or
+	  when debug is on for normal more also)
+
+Version 2.8.1b4 -- 30 March, 2001
+---------------------------------------------------------------------------
+New maintainer: Radim Kolar hsn/at/sendmail.cz  now maintains FSP codebase.
+---------------------------------------------------------------------------
+	1) Eliminated a lot of warnings when compiling with -Wall.
+	2) Moved to autoconf 2.12. Replaced old m4 macros with Autoconf's.
+	   All autoconf's values are cached.
+	3) Makefiles are now generated by automake.
+	4) include/tweak.h.in is generated by autoheader.
+	5) Added faq.html.
+	6) Server now writes more messages when in debug mode. Debug mode is
+	   disabled when running in inetd mode. Daemonize is disabled when
+	   running in debug mode.
+	7) Server accepts command line switches -d (debug) -i (inetd) 
+	   -v (version) -p <port> (Alternate port number). Uses now getopt.
+	8) Server has now configurable timeouts, maximal packetsize,
+	   directory and file handles caches.
+	9) REMOVED VMS part vms/ and vms_src/. Is was out of date.
+	10) Removed file MACHINES. It was out of date. After my changes in
+	    autoconf, it may not compile on non-Linux systems.
+	11) Implemented a check for reliable signals in the configure script.
+	12) Return type of signal handler is detected in configure script.
+	13) ANSI prototypes are now used, if host compiler supports them.
+	14) When server is running in read-only mode, server send this
+	     information to clients, instead generic "Permission denied".
+	15) Access checking and uploading was fixed. Now works.

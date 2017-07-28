@@ -1,0 +1,19 @@
+#!/bin/sh
+
+if [ $# -ne 1 ]
+then
+echo "no version param, as ~/cpfile 1.0.20"
+exit 0
+fi
+
+ftp -inv  192.168.20.164<<EOF
+user release newrock
+cd /FSP
+cd fspd
+
+bin
+put   ./build/wroc/fspd.bz2  ./wroc/fspd_$1.bz2
+put   ./build/om400/fspd.bz2  ./om400/fspd_$1.bz2
+put   ./build/om50s/fspd.bz2  ./om50s/fspd_$1.bz2
+bye
+EOF

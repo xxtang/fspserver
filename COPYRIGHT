@@ -1,0 +1,38 @@
+Authors:
+  Radim Kolar <hsn@sendmail.cz>  (Current FSP maintainer)
+  Andrew Doherty <A.J.Doherty@reading.ac.uk>
+  Michael Fischbein
+  Cimarron D. Taylor
+  Guido van Rossum
+  Wen-King Su <wen-king@vlsi.cs.caltech.edu>
+  Philip G. Richards <pgr@prg.ox.ac.uk>
+  Michael Meskes <meskes@ulysses.informatik.rwth-aachen.de>
+  Rich $alz <rsalz@bbn.com>
+  gjc@mitech.com
+  Joseph_Traub <jtraub@cs.cmu.edu,Joseph_Traub@SEISMO.SOAR.CS.CMU.EDU>
+  Sven <S.A.Pechler@bdk.tue.nl,bdaasp@rc5.urc.tue.nl> (VMS port maintainer)
+  Very Mad Students, University of Karlsruhe, FRG (VMS port)
+
+Copyright:
+	All of the FSP code is free software.  Most of fsp falls under two
+  copyrights, the 2-point BSD copyright and one by Wen-King Su:
+
+   Copyright (c) 1991 by Wen-King Su (wen-king@vlsi.cs.caltech.edu)
+   You may copy or modify this file in any manner you wish, provided
+   that this notice is always included, and that you hold the author
+   harmless for any loss or damage resulting from the installation or
+   use of this software.
+
+	Other contributions to fsp fall under different copyrights:
+
+   This file is Copyright 1992 by Philip G. Richards.  All Rights Reserved.
+   See the file README that came with this distribution for permissions on
+   code usage, copying, and distribution.  It comes with absolutely no warranty.
+   email: <pgr@prg.ox.ac.uk>
+
+   Copyright (c) 1993 by Michael Meskes
+   (meskes@ulysses.informatik.rwth-aachen.de)
+   You may copy or modify this file in any manner you wish, provided
+   that this notice is always included, and that you hold the author
+   harmless for any loss or damage resulting from the installation or
+   use of this software.

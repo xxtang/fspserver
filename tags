@@ -1,0 +1,1852 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+1	doc/faq.html	/^<h3><a name="1">Section 1: Introduction and Help<\/a><\/h3>$/;"	a
+1.1	doc/faq.html	/^<h4><a name="1.1">Q.1.1 What's alt.comp.fsp? What's fsp?<\/a><\/h4>$/;"	a
+1.2	doc/faq.html	/^<h4><a name="1.2">Q.1.2 Where can I get FSP from?<\/a><\/h4>$/;"	a
+1.3	doc/faq.html	/^<h4><a name="1.3">Q.1.3 Help! I don't understand how to use FSP!<\/a><\/h4>$/;"	a
+1.4	doc/faq.html	/^<h4><a name="1.4">Q.1.4 What are those funny &quot;R&quot; and$/;"	a
+1.5	doc/faq.html	/^<h4><a name="1.5">Q.1.5 Why should I, as a site admin, run an FSP$/;"	a
+1.6	doc/faq.html	/^<h4><a name="1.6">Q.1.6 Why do FSP clients appear to hang$/;"	a
+2	doc/faq.html	/^<h3><a name="2">Section 2: FSP software and resources<\/a><\/h3>$/;"	a
+2.1	doc/faq.html	/^<h4><a name="2.1">Q.2.1 Where can I get an FTP-like interface for$/;"	a
+2.2	doc/faq.html	/^<h4><a name="2.2">Q.2.2 Where can I get a graphical interface for$/;"	a
+2.2.1	doc/faq.html	/^    <dt><b><a name="2.2.1">2.2.1 For Unix (X-Windows) ...<\/a><\/b>$/;"	a
+2.2.2	doc/faq.html	/^    <dt><b><a name="2.2.2">2.2.2 For MS-Windows ...<\/a><\/b> <\/dt>$/;"	a
+2.2.3	doc/faq.html	/^    <dt><b><a name="2.2.3">2.2.3 For OS\/2 ...<\/a><\/b> <\/dt>$/;"	a
+2.2.4	doc/faq.html	/^    <dt><b><a name="2.2.4">2.2.4 For the Macintosh ...<\/a><\/b> <\/dt>$/;"	a
+2.3	doc/faq.html	/^<h4><a name="2.3">Q.2.3 Where can I get hold of a list of sites?<\/a><\/h4>$/;"	a
+2.4	doc/faq.html	/^<h4><a name="2.4">Q.2.4 Where can I get pictures of naked women$/;"	a
+2.5	doc/faq.html	/^<h4><a name="2.5">Q.2.5 What about FSP Software Updates ?<\/a><\/h4>$/;"	a
+3	doc/faq.html	/^<h3><a name="3">Section 3: Technical Issues<\/a><\/h3>$/;"	a
+3.1	doc/faq.html	/^<h4><a name="3.1">Q.3.1 What are the main differences between FSP$/;"	a
+3.2	doc/faq.html	/^<h4><a name="3.2">Q.3.2 How secure\/anonymous is FSP?<\/a><\/h4>$/;"	a
+3.3	doc/faq.html	/^<h4><a name="3.3">Q.3.3 Why not add passwords to FSP?<\/a><\/h4>$/;"	a
+3.4	doc/faq.html	/^<h4><a name="3.4">Q.3.4 So what *does* FSP stand for?<\/a><\/h4>$/;"	a
+4	doc/faq.html	/^<h3><a name="4">Section 4: Who's Who?<\/a><\/h3>$/;"	a
+4.1	doc/faq.html	/^<h4><a name="4.1">Q.4.1 Who writes and maintains FSP software?<\/a><\/h4>$/;"	a
+4.2	doc/faq.html	/^<h4><a name="4.2">Q.4.2 Who writes and maintains FSP Client$/;"	a
+4.3	doc/faq.html	/^<h4><a name="4.3">Q.4.3 Who helped put this FAQ together?<\/a><\/h4>$/;"	a
+5	doc/faq.html	/^<h3><a name="5">Section 5: Site Information<\/a><\/h3>$/;"	a
+5.1	doc/faq.html	/^<h4><a name="5.1">Q.5.1 What FSPable sites exist ?<\/a><\/h4>$/;"	a
+6	doc/faq.html	/^<h3><a name="6">Section 6: FAQ Translations<\/a><\/h3>$/;"	a
+6.1	doc/faq.html	/^<h4><a name="6.1">6.1. Italian<\/a><\/h4>$/;"	a
+ACTIONFAILED	server/server.c	66;"	d	file:
+ACTIONINFO	server/server.c	61;"	d	file:
+ACTIONLOG0	server/server.c	41;"	d	file:
+ACTIONLOG1	server/server.c	48;"	d	file:
+ACTIONLOG2	server/server.c	55;"	d	file:
+ACTIONOK	server/server.c	72;"	d	file:
+APPEND_PASSWORD	client/util.c	35;"	d	file:
+BB_READ2	include/tweak.h	49;"	d
+BB_READ4	include/tweak.h	45;"	d
+BB_WRITE2	include/tweak.h	50;"	d
+BB_WRITE4	include/tweak.h	46;"	d
+BEGIN	clients/fspprof.c	79;"	d	file:
+BEGIN	clients/fspsites.c	97;"	d	file:
+BLK	bsd_src/function.c	369;"	d	file:
+BLK	bsd_src/print.c	53;"	d	file:
+BOOL	p2pnat/include/p2p_log.h	/^typedef unsigned char   BOOL;$/;"	t
+BOOL8	p2pnat/include/p2p_log.h	/^typedef unsigned char   BOOL8;$/;"	t
+BREAK_0	common/random.c	74;"	d	file:
+BREAK_1	common/random.c	79;"	d	file:
+BREAK_2	common/random.c	84;"	d	file:
+BREAK_3	common/random.c	89;"	d	file:
+BREAK_4	common/random.c	94;"	d	file:
+BYTE	p2pnat/include/p2p_log.h	/^typedef unsigned char   BYTE;$/;"	t
+CC	p2pnat/demo/Makefile	/^CC = ${CROSS_COMPILE}-gcc$/;"	m
+CC_BYE	contrib/fspscan.h	59;"	d
+CC_BYE	include/common_def.h	91;"	d
+CC_CH_PASSWD	include/common_def.h	96;"	d
+CC_DEL_DIR	contrib/fspscan.h	55;"	d
+CC_DEL_DIR	include/common_def.h	87;"	d
+CC_DEL_FILE	contrib/fspscan.h	54;"	d
+CC_DEL_FILE	include/common_def.h	86;"	d
+CC_ERR	contrib/fspscan.h	49;"	d
+CC_ERR	include/common_def.h	81;"	d
+CC_GET_DIR	contrib/fspscan.h	50;"	d
+CC_GET_DIR	include/common_def.h	82;"	d
+CC_GET_FILE	contrib/fspscan.h	51;"	d
+CC_GET_FILE	include/common_def.h	83;"	d
+CC_GET_PRO	contrib/fspscan.h	56;"	d
+CC_GET_PRO	include/common_def.h	88;"	d
+CC_GRAB_DONE	include/common_def.h	93;"	d
+CC_GRAB_FILE	include/common_def.h	92;"	d
+CC_INFO	include/common_def.h	80;"	d
+CC_INSTALL	contrib/fspscan.h	53;"	d
+CC_INSTALL	include/common_def.h	85;"	d
+CC_LIMIT	include/common_def.h	97;"	d
+CC_MAKE_DIR	contrib/fspscan.h	58;"	d
+CC_MAKE_DIR	include/common_def.h	90;"	d
+CC_RENAME	include/common_def.h	95;"	d
+CC_SET_PRO	contrib/fspscan.h	57;"	d
+CC_SET_PRO	include/common_def.h	89;"	d
+CC_STAT	include/common_def.h	94;"	d
+CC_TEST	include/common_def.h	98;"	d
+CC_UP_LOAD	contrib/fspscan.h	52;"	d
+CC_UP_LOAD	include/common_def.h	84;"	d
+CC_VERSION	contrib/fspscan.h	48;"	d
+CC_VERSION	include/common_def.h	79;"	d
+CFLAGS	p2pnat/demo/Makefile	/^CFLAGS = -O2 -fomit-frame-pointer -pipe -I..\/include -I$(PWD)\/lib$/;"	m
+CHECK_ACCESS_RIGHTS	server/server.c	78;"	d	file:
+COMMAND_GRAB	clients/fgrabcmd.c	1;"	d	file:
+COMMON_UTIL_H	p2pnat/include/common_util.h	6;"	d
+COMPAR	bsd_src/ls.c	/^typedef int (*COMPAR)(const void *, const void *);$/;"	t	file:
+COMPARE	bsd_src/function.c	89;"	d	file:
+CONF_FILE	include/server_conf.h	10;"	d
+CONNECTION_FAILED	p2pnat/include/p2p_api.h	/^	CONNECTION_FAILED,$/;"	e	enum:__anon23
+CONNECTION_INIT	p2pnat/include/p2p_api.h	/^	CONNECTION_INIT,$/;"	e	enum:__anon23
+CONNECTION_OK	p2pnat/include/p2p_api.h	/^	CONNECTION_OK$/;"	e	enum:__anon23
+CONNECTION_PING	p2pnat/include/p2p_api.h	/^	CONNECTION_PING,$/;"	e	enum:__anon23
+CONNECTION_REQUEST	p2pnat/include/p2p_api.h	/^	CONNECTION_REQUEST,$/;"	e	enum:__anon23
+CONTENTS	doc/faq.html	/^<h2><a name="CONTENTS">Contents<\/a><\/h2>$/;"	a
+CROSS_COMPILE	p2pnat/demo/Makefile	/^CROSS_COMPILE = \/opt\/arm\/usr\/bin\/arm$/;"	m
+CROSS_COMPILE	p2pnat/demo/Makefile	/^CROSS_COMPILE = \/opt\/buildroot-gcc342\/bin\/mipsel-linux-uclibc$/;"	m
+CROSS_COMPILE	p2pnat/demo/Makefile	/^CROSS_COMPILE = \/opt\/eldk3\/usr\/bin\/ppc_8xx$/;"	m
+CROSS_COMPILE	p2pnat/demo/Makefile	/^CROSS_COMPILE = arm-none-linux-gnueabi$/;"	m
+C_APPEND	include/client_def.h	27;"	d
+C_CLOBBER	include/client_def.h	23;"	d
+C_NOCLOBBER	include/client_def.h	22;"	d
+C_TEMPNAME	include/client_def.h	26;"	d
+C_UNIQUE	include/client_def.h	25;"	d
+DAYSPERNYEAR	include/tweak.h	30;"	d
+DDLIST	contrib/fspscan.h	/^			int         ref_cnt; } DDLIST;$/;"	t	typeref:struct:DDLIST
+DDLIST	contrib/fspscan.h	/^typedef struct DDLIST {	struct DDLIST *next;$/;"	s
+DDLIST	include/client_def.h	/^			int         ref_cnt; } DDLIST;$/;"	t	typeref:struct:DDLIST
+DDLIST	include/client_def.h	/^typedef struct DDLIST {	struct DDLIST *next;$/;"	s
+DEFAULT_DELAY	include/common_def.h	154;"	d
+DEFAULT_DIRLISTCACHE_SIZE	include/server_conf.h	31;"	d
+DEFAULT_DIRSTATCACHE_SIZE	include/server_conf.h	40;"	d
+DEFAULT_FPCACHE_SIZE	include/server_conf.h	48;"	d
+DEFAULT_MAXDELAY	include/common_def.h	155;"	d
+DEFAULT_P2PNAT_PORT	server/server.c	25;"	d	file:
+DEFAULT_P2P_SERVER	p2pnat/include/common_util.h	8;"	d
+DEFAULT_SPACE	include/common_def.h	56;"	d
+DEFAULT_TIMEOUT	include/common_def.h	157;"	d
+DEFINE_DL_LIST	p2pnat/include/list.h	92;"	d
+DEFNUM	bsd_src/ls.c	98;"	d	file:
+DEG_0	common/random.c	75;"	d	file:
+DEG_1	common/random.c	80;"	d	file:
+DEG_2	common/random.c	85;"	d	file:
+DEG_3	common/random.c	90;"	d	file:
+DEG_4	common/random.c	95;"	d	file:
+DIRINFO	include/server_def.h	/^} DIRINFO;$/;"	t	typeref:struct:__anon5
+DIRLISTING	include/server_def.h	/^} DIRLISTING;$/;"	t	typeref:struct:__anon4
+DIR_ADD	include/common_def.h	117;"	d
+DIR_DEL	include/common_def.h	116;"	d
+DIR_GET	include/common_def.h	119;"	d
+DIR_LIST	include/common_def.h	121;"	d
+DIR_MKDIR	include/common_def.h	118;"	d
+DIR_OWNER	include/common_def.h	115;"	d
+DIR_README	include/common_def.h	120;"	d
+DIR_RENAME	include/common_def.h	122;"	d
+DISCLAIMER	doc/faq.html	/^<font size="2"><a name="DISCLAIMER">$/;"	a
+DSIZE	common/udp_io.c	20;"	d	file:
+DSIZE	contrib/fspscan.c	56;"	d	file:
+EACH	clients/fducmd.c	31;"	d	file:
+ECHO	clients/fspprof.c	674;"	d	file:
+ECHO	clients/fspsites.c	505;"	d	file:
+ED_BIT	p2pnat/include/rendezvous_endpoint.h	50;"	d
+ENDPOINT_INITIAL	p2pnat/include/p2p_api.h	/^	ENDPOINT_INITIAL,$/;"	e	enum:__anon22
+ENDPOINT_REGISTERING	p2pnat/include/p2p_api.h	/^	ENDPOINT_REGISTERING,$/;"	e	enum:__anon22
+ENDPOINT_REGISTER_FAIL	p2pnat/include/p2p_api.h	/^	ENDPOINT_REGISTER_FAIL,$/;"	e	enum:__anon22
+ENDPOINT_REGISTER_OK	p2pnat/include/p2p_api.h	/^	ENDPOINT_REGISTER_OK$/;"	e	enum:__anon22
+EOB_ACT_CONTINUE_SCAN	clients/fspprof.c	104;"	d	file:
+EOB_ACT_CONTINUE_SCAN	clients/fspsites.c	122;"	d	file:
+EOB_ACT_END_OF_FILE	clients/fspprof.c	105;"	d	file:
+EOB_ACT_END_OF_FILE	clients/fspsites.c	123;"	d	file:
+EOB_ACT_LAST_MATCH	clients/fspprof.c	106;"	d	file:
+EOB_ACT_LAST_MATCH	clients/fspsites.c	124;"	d	file:
+EOS	bsd_src/fnmatch.c	52;"	d	file:
+E_LOG_COMP	p2pnat/include/p2p_log.h	/^} E_LOG_COMP;$/;"	t	typeref:enum:__anon15
+E_LOG_DUMP	p2pnat/include/p2p_log.h	/^} E_LOG_DUMP;$/;"	t	typeref:enum:__anon14
+E_LOG_INFO	p2pnat/include/p2p_log.h	/^} E_LOG_INFO;$/;"	t	typeref:enum:__anon18
+E_LOG_SEVERITY	p2pnat/include/p2p_log.h	/^} E_LOG_SEVERITY;$/;"	t	typeref:enum:__anon16
+E_LOG_TYPE	p2pnat/include/p2p_log.h	/^} E_LOG_TYPE;$/;"	t	typeref:enum:__anon13
+FIND_EQUAL	bsd_src/function.c	85;"	d	file:
+FIND_GREATER	bsd_src/function.c	87;"	d	file:
+FIND_LESSTHAN	bsd_src/function.c	86;"	d	file:
+FIND_SIZE	bsd_src/function.c	495;"	d	file:
+FLEX_SCANNER	clients/fspprof.c	7;"	d	file:
+FLEX_SCANNER	clients/fspsites.c	25;"	d	file:
+FOURGIGS	client/util.c	32;"	d	file:
+FOURGIGS	include/server_def.h	122;"	d
+FPCACHE	include/server_def.h	/^               } FPCACHE;$/;"	t	typeref:struct:__anon3
+FSPD_VERSION	server/main.c	18;"	d	file:
+FSPPROF	include/client_conf.h	16;"	d
+FSPRC	include/client_conf.h	10;"	d
+FSPSITES	include/client_conf.h	17;"	d
+FSPSITESRC	include/client_conf.h	11;"	d
+FSP_ADD	include/server_def.h	114;"	d
+FSP_CC_BYE	fsplib/include/fsplib.h	41;"	d
+FSP_CC_CH_PASSWD	fsplib/include/fsplib.h	46;"	d
+FSP_CC_DEL_DIR	fsplib/include/fsplib.h	37;"	d
+FSP_CC_DEL_FILE	fsplib/include/fsplib.h	36;"	d
+FSP_CC_ERR	fsplib/include/fsplib.h	31;"	d
+FSP_CC_GET_DIR	fsplib/include/fsplib.h	32;"	d
+FSP_CC_GET_FILE	fsplib/include/fsplib.h	33;"	d
+FSP_CC_GET_PRO	fsplib/include/fsplib.h	38;"	d
+FSP_CC_GRAB_DONE	fsplib/include/fsplib.h	43;"	d
+FSP_CC_GRAB_FILE	fsplib/include/fsplib.h	42;"	d
+FSP_CC_INFO	fsplib/include/fsplib.h	30;"	d
+FSP_CC_INSTALL	fsplib/include/fsplib.h	35;"	d
+FSP_CC_LIMIT	fsplib/include/fsplib.h	47;"	d
+FSP_CC_MAKE_DIR	fsplib/include/fsplib.h	40;"	d
+FSP_CC_RENAME	fsplib/include/fsplib.h	45;"	d
+FSP_CC_SET_PRO	fsplib/include/fsplib.h	39;"	d
+FSP_CC_STAT	fsplib/include/fsplib.h	44;"	d
+FSP_CC_TEST	fsplib/include/fsplib.h	48;"	d
+FSP_CC_UP_LOAD	fsplib/include/fsplib.h	34;"	d
+FSP_CC_VERSION	fsplib/include/fsplib.h	29;"	d
+FSP_DEL	include/server_def.h	113;"	d
+FSP_DIR	fsplib/include/fsplib.h	/^typedef struct FSP_DIR {$/;"	s
+FSP_DIR	fsplib/include/fsplib.h	/^} FSP_DIR;$/;"	t	typeref:struct:FSP_DIR
+FSP_DIRLISTING	include/server_def.h	110;"	d
+FSP_DIR_ADD	fsplib/include/fsplib.h	78;"	d
+FSP_DIR_DEL	fsplib/include/fsplib.h	77;"	d
+FSP_DIR_GET	fsplib/include/fsplib.h	80;"	d
+FSP_DIR_LIST	fsplib/include/fsplib.h	82;"	d
+FSP_DIR_MKDIR	fsplib/include/fsplib.h	79;"	d
+FSP_DIR_OWNER	fsplib/include/fsplib.h	76;"	d
+FSP_DIR_README	fsplib/include/fsplib.h	81;"	d
+FSP_DIR_RENAME	fsplib/include/fsplib.h	83;"	d
+FSP_FILE	fsplib/include/fsplib.h	/^typedef struct FSP_FILE {$/;"	s
+FSP_FILE	fsplib/include/fsplib.h	/^} FSP_FILE;$/;"	t	typeref:struct:FSP_FILE
+FSP_HSIZE	fsplib/include/fsplib.h	51;"	d
+FSP_KEY_PREFIX	fsplib/include/lock.h	7;"	d
+FSP_KEY_PREFIX	include/client_conf.h	33;"	d
+FSP_LOCK	fsplib/include/lock.h	/^typedef struct FSP_LOCK {  $/;"	s
+FSP_LOCK	fsplib/include/lock.h	/^typedef struct FSP_LOCK {$/;"	s
+FSP_LOCK	fsplib/include/lock.h	/^} FSP_LOCK;$/;"	t	typeref:struct:FSP_LOCK
+FSP_MAXPACKET	fsplib/include/fsplib.h	53;"	d
+FSP_MKDIR	include/server_def.h	115;"	d
+FSP_NOGET	include/server_def.h	112;"	d
+FSP_NOLIST	include/server_def.h	117;"	d
+FSP_OFFSET_CMD	fsplib/include/fsplib.h	56;"	d
+FSP_OFFSET_KEY	fsplib/include/fsplib.h	58;"	d
+FSP_OFFSET_LEN	fsplib/include/fsplib.h	60;"	d
+FSP_OFFSET_POS	fsplib/include/fsplib.h	61;"	d
+FSP_OFFSET_SEQ	fsplib/include/fsplib.h	59;"	d
+FSP_OFFSET_SUM	fsplib/include/fsplib.h	57;"	d
+FSP_OWNER	include/server_def.h	118;"	d
+FSP_OWNERPASSWORD	include/server_def.h	120;"	d
+FSP_PASSWORD	include/server_def.h	119;"	d
+FSP_PKT	fsplib/include/fsplib.h	/^typedef struct FSP_PKT {$/;"	s
+FSP_PKT	fsplib/include/fsplib.h	/^} FSP_PKT;$/;"	t	typeref:struct:FSP_PKT
+FSP_PRO_BYTES	fsplib/include/fsplib.h	75;"	d
+FSP_RDENTRY	fsplib/include/fsplib.h	/^typedef struct FSP_RDENTRY  {$/;"	s
+FSP_RDENTRY	fsplib/include/fsplib.h	/^} FSP_RDENTRY;$/;"	t	typeref:struct:FSP_RDENTRY
+FSP_RDTYPE_DIR	fsplib/include/fsplib.h	66;"	d
+FSP_RDTYPE_END	fsplib/include/fsplib.h	64;"	d
+FSP_RDTYPE_FILE	fsplib/include/fsplib.h	65;"	d
+FSP_RDTYPE_LINK	fsplib/include/fsplib.h	67;"	d
+FSP_RDTYPE_SKIP	fsplib/include/fsplib.h	68;"	d
+FSP_RENAME	include/server_def.h	116;"	d
+FSP_SESSION	fsplib/include/fsplib.h	/^typedef struct FSP_SESSION {$/;"	s
+FSP_SESSION	fsplib/include/fsplib.h	/^} FSP_SESSION;$/;"	t	typeref:struct:FSP_SESSION
+FSP_SPACE	fsplib/include/fsplib.h	52;"	d
+FSP_STAT	clients/fhostcmd.c	29;"	d	file:
+FSP_STAT	clients/fsetupcmd.c	25;"	d	file:
+FSP_STAT	include/tweak.h	16;"	d
+FUNC_ENT	p2pnat/include/p2p_log.h	118;"	d
+FUNC_EXIT	p2pnat/include/p2p_log.h	119;"	d
+FUNC_MARK	p2pnat/include/p2p_log.h	120;"	d
+FifoCache	server/fifocache.h	/^struct FifoCache$/;"	s
+GAVSIZ	bsd_src/glob.c	45;"	d	file:
+GZip	site_scons/gzipBuilder.py	/^def GZip(target, source, env=None):$/;"	f
+Gcat	bsd_src/glob.c	/^static int Gcat (char * s1, const char * s2)$/;"	f	file:
+HALLOC_SIZE	server/host.c	28;"	d	file:
+HOST_LOOKUP	include/client_conf.h	29;"	d
+HTAB	include/server_def.h	/^struct HTAB {	unsigned long	inet_num;	\/* inet number of client     *\/$/;"	s
+HTAB	include/server_def.h	/^typedef struct HTAB HTAB;$/;"	t	typeref:struct:HTAB
+INET_ZERO	contrib/fspscan.c	/^static struct sockaddr_in INET_ZERO;$/;"	v	typeref:struct:sockaddr_in	file:
+INFO_EOB	include/fspinfo.h	3;"	d
+INFO_NUMERIC_MAX	include/fspinfo.h	36;"	d
+INFO_PKT_IN	include/fspinfo.h	13;"	d
+INFO_PKT_IN_BADKEY	include/fspinfo.h	21;"	d
+INFO_PKT_IN_BADKEY_DESCR	include/fspinfo.h	22;"	d
+INFO_PKT_IN_CORRUPTED	include/fspinfo.h	19;"	d
+INFO_PKT_IN_CORRUPTED_DESCR	include/fspinfo.h	20;"	d
+INFO_PKT_IN_DESCR	include/fspinfo.h	14;"	d
+INFO_PKT_IN_DROPRESENDS	include/fspinfo.h	17;"	d
+INFO_PKT_IN_DROPRESENDS_DESCR	include/fspinfo.h	18;"	d
+INFO_PKT_IN_IGNORED	include/fspinfo.h	23;"	d
+INFO_PKT_IN_IGNORED_DESCR	include/fspinfo.h	24;"	d
+INFO_PKT_IN_REJECTED	include/fspinfo.h	25;"	d
+INFO_PKT_IN_REJECTED_DESCR	include/fspinfo.h	26;"	d
+INFO_PKT_IN_RESENDS	include/fspinfo.h	15;"	d
+INFO_PKT_IN_RESENDS_DESCR	include/fspinfo.h	16;"	d
+INFO_PKT_OUT	include/fspinfo.h	28;"	d
+INFO_PKT_OUT_DESCR	include/fspinfo.h	29;"	d
+INFO_SERVER_LOCATION	include/fspinfo.h	52;"	d
+INFO_SERVER_LOCATION_DESCR	include/fspinfo.h	53;"	d
+INFO_SERVER_NAME	include/fspinfo.h	50;"	d
+INFO_SERVER_NAME_DESCR	include/fspinfo.h	51;"	d
+INFO_SERVER_OPERATOR	include/fspinfo.h	54;"	d
+INFO_SERVER_OPERATOR_DESCR	include/fspinfo.h	55;"	d
+INFO_SERVER_SOFTWARE	include/fspinfo.h	48;"	d
+INFO_SERVER_SOFTWARE_DESCR	include/fspinfo.h	49;"	d
+INFO_SKIP	include/fspinfo.h	4;"	d
+INFO_STARTUP	include/fspinfo.h	39;"	d
+INFO_STARTUP_DESCR	include/fspinfo.h	40;"	d
+INFO_STATSUP	include/fspinfo.h	41;"	d
+INFO_STATSUP_DESCR	include/fspinfo.h	42;"	d
+INFO_STRING_MAX	include/fspinfo.h	57;"	d
+INFO_TIME_MAX	include/fspinfo.h	44;"	d
+INFO_TRAFFIC_IN	include/fspinfo.h	31;"	d
+INFO_TRAFFIC_IN_DESCR	include/fspinfo.h	32;"	d
+INFO_TRAFFIC_OUT	include/fspinfo.h	33;"	d
+INFO_TRAFFIC_OUT_DESCR	include/fspinfo.h	34;"	d
+INFO_USERS_ONLINE	include/fspinfo.h	8;"	d
+INFO_USERS_ONLINE_DESCR	include/fspinfo.h	9;"	d
+INFO_USERS_SEEN	include/fspinfo.h	10;"	d
+INFO_USERS_SEEN_DESCR	include/fspinfo.h	11;"	d
+INITIAL	clients/fspprof.c	566;"	d	file:
+INITIAL	clients/fspsites.c	407;"	d	file:
+INT16	p2pnat/include/p2p_log.h	/^typedef short           INT16;$/;"	t
+INT32	p2pnat/include/p2p_log.h	/^typedef int             INT32;$/;"	t
+INT8	p2pnat/include/p2p_log.h	/^typedef char            INT8;$/;"	t
+IPrange	include/server_def.h	/^} IPrange;$/;"	t	typeref:struct:__anon1
+LDFLAGS	p2pnat/demo/Makefile	/^LDFLAGS = -Wl,-rpath,\/var\/lib$/;"	m
+LDLIBS	p2pnat/demo/Makefile	/^LDLIBS = -lp2pnat$/;"	m
+LIST_H	p2pnat/include/list.h	10;"	d
+LOCAL	p2pnat/include/p2p_log.h	32;"	d
+LOGBUFFER	server/log.c	28;"	d	file:
+LONG	p2pnat/include/p2p_log.h	/^typedef long            LONG;$/;"	t
+LS	include/ls.h	/^} LS;$/;"	t	typeref:struct:_lsstruct
+L_ALL	include/server_def.h	107;"	d
+L_CH_PASSWD	include/server_def.h	106;"	d
+L_DELDIR	include/server_def.h	98;"	d
+L_DELFILE	include/server_def.h	97;"	d
+L_ERR	include/server_def.h	91;"	d
+L_GETDIR	include/server_def.h	93;"	d
+L_GETFILE	include/server_def.h	94;"	d
+L_GETPRO	include/server_def.h	102;"	d
+L_GRABFILE	include/server_def.h	101;"	d
+L_INSTALL	include/server_def.h	96;"	d
+L_MAKEDIR	include/server_def.h	100;"	d
+L_NONE	include/server_def.h	90;"	d
+L_RDONLY	include/server_def.h	103;"	d
+L_RENAME	include/server_def.h	105;"	d
+L_SETPRO	include/server_def.h	99;"	d
+L_STAT	include/server_def.h	104;"	d
+L_UPLOAD	include/server_def.h	95;"	d
+L_VER	include/server_def.h	92;"	d
+MAXPATHLEN	bsd_src/function.c	53;"	d	file:
+MAX_DELAY	include/common_def.h	156;"	d
+MAX_LOGFILE_SIZE	server/log.c	17;"	d	file:
+MAX_TYPES	common/random.c	103;"	d	file:
+MAX_WORST_ALLOWED	tests/randomcheck.c	10;"	d	file:
+MIN_DELAY	include/common_def.h	153;"	d
+Machine	clients/printpro.c	23;"	d	file:
+NAME	clients/fhost.h	16;"	d
+NBSIZE	include/common_def.h	65;"	d
+NCARGS	bsd_src/glob.c	39;"	d	file:
+NEWS	doc/faq.html	/^<h3><a name="NEWS">News:<\/a><\/h3>$/;"	a
+NULLP	contrib/fspscan.h	88;"	d
+NULLP	include/common_def.h	151;"	d
+NULL_DEV	server/main.c	24;"	d	file:
+NUMBER	clients/fhost.h	15;"	d
+N_AND	include/find.h	/^	N_AND = 1, 				\/* must start > 0 *\/$/;"	e	enum:ntype
+N_CLOSEPAREN	include/find.h	/^	N_TIME, N_CLOSEPAREN, N_EXEC, N_EXPR,$/;"	e	enum:ntype
+N_EXEC	include/find.h	/^	N_TIME, N_CLOSEPAREN, N_EXEC, N_EXPR,$/;"	e	enum:ntype
+N_EXPR	include/find.h	/^	N_TIME, N_CLOSEPAREN, N_EXEC, N_EXPR,$/;"	e	enum:ntype
+N_LS	include/find.h	/^	N_LS, N_NAME, N_NEWER,$/;"	e	enum:ntype
+N_NAME	include/find.h	/^	N_LS, N_NAME, N_NEWER,$/;"	e	enum:ntype
+N_NEWER	include/find.h	/^	N_LS, N_NAME, N_NEWER,$/;"	e	enum:ntype
+N_NOT	include/find.h	/^	N_NOT, N_OK, N_OPENPAREN, N_OR, N_PRINT,$/;"	e	enum:ntype
+N_OK	include/find.h	/^	N_NOT, N_OK, N_OPENPAREN, N_OR, N_PRINT,$/;"	e	enum:ntype
+N_OPENPAREN	include/find.h	/^	N_NOT, N_OK, N_OPENPAREN, N_OR, N_PRINT,$/;"	e	enum:ntype
+N_OR	include/find.h	/^	N_NOT, N_OK, N_OPENPAREN, N_OR, N_PRINT,$/;"	e	enum:ntype
+N_PRINT	include/find.h	/^	N_NOT, N_OK, N_OPENPAREN, N_OR, N_PRINT,$/;"	e	enum:ntype
+N_PRUNE	include/find.h	/^	N_PRUNE, N_SIZE, N_TYPE$/;"	e	enum:ntype
+N_SIZE	include/find.h	/^	N_PRUNE, N_SIZE, N_TYPE$/;"	e	enum:ntype
+N_TIME	include/find.h	/^	N_TIME, N_CLOSEPAREN, N_EXEC, N_EXPR,$/;"	e	enum:ntype
+N_TYPE	include/find.h	/^	N_PRUNE, N_SIZE, N_TYPE$/;"	e	enum:ntype
+N_or_Y	clients/printpro.c	22;"	d	file:
+OPTION	include/find.h	/^} OPTION;$/;"	t	typeref:struct:_option
+O_ARGV	include/find.h	95;"	d
+O_ARGVP	include/find.h	96;"	d
+O_NONE	include/find.h	93;"	d
+O_ZERO	include/find.h	94;"	d
+P2P_API	p2pnat/include/p2p_api.h	5;"	d
+P2P_CONNECT	p2pnat/include/rendezvous_packet.h	/^	P2P_CONNECT,$/;"	e	enum:__anon8
+P2P_FORWARD	p2pnat/include/rendezvous_packet.h	/^	P2P_FORWARD,$/;"	e	enum:__anon8
+P2P_LIB_VERSION	p2pnat/include/p2p_api.h	7;"	d
+P2P_LOG_TYPE	p2pnat/include/p2p_api.h	/^}P2P_LOG_TYPE;$/;"	t	typeref:enum:__anon21
+P2P_LOG_TYPE_FILE	p2pnat/include/p2p_api.h	/^    P2P_LOG_TYPE_FILE,$/;"	e	enum:__anon21
+P2P_LOG_TYPE_MAX	p2pnat/include/p2p_api.h	/^    P2P_LOG_TYPE_MAX$/;"	e	enum:__anon21
+P2P_LOG_TYPE_NONE	p2pnat/include/p2p_api.h	/^    P2P_LOG_TYPE_NONE,$/;"	e	enum:__anon21
+P2P_LOG_TYPE_SCREEN	p2pnat/include/p2p_api.h	/^    P2P_LOG_TYPE_SCREEN,$/;"	e	enum:__anon21
+P2P_NONE_CLASS	p2pnat/include/rendezvous_packet.h	/^	P2P_NONE_CLASS,$/;"	e	enum:__anon7
+P2P_NONE_TYPE	p2pnat/include/rendezvous_packet.h	/^	P2P_NONE_TYPE,$/;"	e	enum:__anon8
+P2P_PING	p2pnat/include/rendezvous_packet.h	/^	P2P_PING,$/;"	e	enum:__anon8
+P2P_PONG	p2pnat/include/rendezvous_packet.h	/^	P2P_PONG,$/;"	e	enum:__anon8
+P2P_REGISTER	p2pnat/include/rendezvous_packet.h	/^	P2P_REGISTER,$/;"	e	enum:__anon8
+P2P_REQUEST	p2pnat/include/rendezvous_packet.h	/^	P2P_REQUEST,$/;"	e	enum:__anon7
+P2P_RESPONSE	p2pnat/include/rendezvous_packet.h	/^	P2P_RESPONSE,$/;"	e	enum:__anon7
+PED_BIT	p2pnat/include/rendezvous_endpoint.h	51;"	d
+PLAN	include/find.h	/^} PLAN;$/;"	t	typeref:struct:_plandata
+POLARSSL_ERR_SHA1_FILE_IO_ERROR	p2pnat/include/sha1.h	45;"	d
+POLARSSL_SHA1_H	p2pnat/include/sha1.h	28;"	d
+PPATH	include/server_def.h	/^} PPATH;$/;"	t	typeref:struct:__anon2
+PROTO0	include/proto.h	16;"	d
+PROTO0	include/proto.h	7;"	d
+PROTO1	common/random.c	/^char *setstate PROTO1(char *, arg_state)$/;"	f
+PROTO1	common/random.c	/^void srandom PROTO1(unsigned int, x)$/;"	f
+PROTO1	common/udp_io.c	/^int _x_udp PROTO1(int *, port)$/;"	f
+PROTO1	include/proto.h	17;"	d
+PROTO1	include/proto.h	8;"	d
+PROTO2	common/udp_io.c	/^int _x_select PROTO2(unsigned int *, readfds, long, tt)$/;"	f
+PROTO2	include/proto.h	18;"	d
+PROTO2	include/proto.h	9;"	d
+PROTO3	common/random.c	/^char * initstate PROTO3(unsigned int, seed, char *, arg_state, int, n )$/;"	f
+PROTO3	common/udp_io.c	/^int _x_adr PROTO3(char *, host, int, port, struct sockaddr_in *, his)$/;"	f
+PROTO3	include/proto.h	10;"	d
+PROTO3	include/proto.h	19;"	d
+PROTO4	include/proto.h	11;"	d
+PROTO4	include/proto.h	20;"	d
+PROTO5	include/proto.h	12;"	d
+PROTO5	include/proto.h	21;"	d
+PROTO6	common/udp_io.c	/^int recvfrom PROTO6(int, s, char *, msg, int, len, int, flags,$/;"	f
+PROTO6	common/udp_io.c	/^int sendto PROTO6(int, s, char *, msg, int, len, int, flags,$/;"	f
+PROTO6	include/proto.h	13;"	d
+PROTO6	include/proto.h	23;"	d
+PROTO6	include/proto.h	25;"	d
+PROTO7	include/proto.h	14;"	d
+PRO_BYTES	include/common_def.h	114;"	d
+PWD	p2pnat/demo/Makefile	/^PWD :=$(shell pwd)$/;"	m
+QUOTE	bsd_src/glob.c	42;"	d	file:
+RDHSIZE	contrib/fspscan.h	76;"	d
+RDHSIZE	include/common_def.h	139;"	d
+RDIR	contrib/fspscan.h	/^		      RDIRENT **dep; } RDIR;$/;"	t	typeref:struct:RDIR
+RDIR	contrib/fspscan.h	/^typedef struct RDIR { DDLIST   *ddp;$/;"	s
+RDIR	include/client_def.h	/^		      RDIRENT **dep; } RDIR;$/;"	t	typeref:struct:RDIR
+RDIR	include/client_def.h	/^typedef struct RDIR { DDLIST   *ddp;$/;"	s
+RDIRENT	contrib/fspscan.h	/^                         char        name[1]; } RDIRENT;$/;"	t	typeref:struct:RDIRENT
+RDIRENT	contrib/fspscan.h	/^typedef struct RDIRENT { unsigned long  time;$/;"	s
+RDIRENT	include/common_def.h	/^                         char          name[1]   ; } RDIRENT;$/;"	t	typeref:struct:RDIRENT
+RDIRENT	include/common_def.h	/^typedef struct RDIRENT { unsigned char bb_time[4];$/;"	s
+RDTYPE_DIR	contrib/fspscan.h	85;"	d
+RDTYPE_DIR	include/common_def.h	148;"	d
+RDTYPE_END	contrib/fspscan.h	83;"	d
+RDTYPE_END	include/common_def.h	146;"	d
+RDTYPE_FILE	contrib/fspscan.h	84;"	d
+RDTYPE_FILE	include/common_def.h	147;"	d
+RDTYPE_SKIP	contrib/fspscan.h	86;"	d
+RDTYPE_SKIP	include/common_def.h	149;"	d
+RECENTADDITIONS	doc/faq.html	/^<h3><a name="RECENTADDITIONS">Recent Additions:<\/a> <i>(Latest$/;"	a
+RECURSIVE	clients/fducmd.c	29;"	d	file:
+REJECT	clients/fspprof.c	560;"	d	file:
+REJECT	clients/fspsites.c	401;"	d	file:
+RENDEZVOUS_ENDPOINT_H	p2pnat/include/rendezvous_endpoint.h	7;"	d
+RENDEZVOUS_PACKET_H	p2pnat/include/rendezvous_packet.h	10;"	d
+REND_CONN_HANDLE	p2pnat/include/p2p_api.h	/^typedef void * REND_CONN_HANDLE;$/;"	t
+REND_EPT_HANDLE	p2pnat/include/p2p_api.h	/^typedef void * REND_EPT_HANDLE;$/;"	t
+RETSIGTYPE	include/tweak.h	13;"	d
+REVERSE_ERR_MSG	include/server_def.h	83;"	d
+SAVE	contrib/fspscan.c	57;"	d	file:
+SAVE_ERRNO	common/udp_io.c	21;"	d	file:
+SECSPERDAY	include/tweak.h	27;"	d
+SEP_0	common/random.c	76;"	d	file:
+SEP_1	common/random.c	81;"	d	file:
+SEP_2	common/random.c	86;"	d	file:
+SEP_3	common/random.c	91;"	d	file:
+SEP_4	common/random.c	96;"	d	file:
+SFORM	clients/fstatcmd.c	43;"	d	file:
+SIXMONTHS	bsd_src/function.c	358;"	d	file:
+SIXMONTHS	bsd_src/print.c	108;"	d	file:
+STRIP	p2pnat/demo/Makefile	/^STRIP = ${CROSS_COMPILE}-strip$/;"	m
+STRIPFLAGS	p2pnat/demo/Makefile	/^STRIPFLAGS = --remove-section=.note --remove-section=.comment$/;"	m
+SUM	clients/fducmd.c	30;"	d	file:
+S_EVENT_LOG_GLOBAL	p2pnat/include/p2p_log.h	/^} S_EVENT_LOG_GLOBAL;$/;"	t	typeref:struct:__anon19
+S_LOG_INFO	p2pnat/include/p2p_log.h	/^} S_LOG_INFO;$/;"	t	typeref:struct:__anon17
+Symlink	site_scons/symlinkBuilder.py	/^def Symlink(target, source, env=None):$/;"	f
+TAB	bsd_src/print.c	141;"	d	file:
+THCCOUNT	include/server_conf.h	53;"	d
+TRIM	bsd_src/glob.c	43;"	d	file:
+TWOGIGS	client/util.c	31;"	d	file:
+TWOGIGS	include/server_def.h	123;"	d
+TYPE_0	common/random.c	73;"	d	file:
+TYPE_1	common/random.c	78;"	d	file:
+TYPE_2	common/random.c	83;"	d	file:
+TYPE_3	common/random.c	88;"	d	file:
+TYPE_4	common/random.c	93;"	d	file:
+T_CONNECTION	p2pnat/include/rendezvous_packet.h	/^	T_CONNECTION,$/;"	e	enum:__anon9
+T_ENDPOINT	p2pnat/include/rendezvous_packet.h	/^	T_ENDPOINT,$/;"	e	enum:__anon9
+UBUF	contrib/fspscan.h	/^                    } UBUF;$/;"	t	typeref:struct:UBUF
+UBUF	contrib/fspscan.h	/^typedef struct UBUF {            char   cmd;  \/* message code.             *\/$/;"	s
+UBUF	include/common_def.h	/^                    } UBUF;$/;"	t	typeref:struct:UBUF
+UBUF	include/common_def.h	/^typedef struct UBUF {   unsigned char       cmd; \/* message code.             *\/$/;"	s
+UBUF_HSIZE	contrib/fspscan.h	33;"	d
+UBUF_HSIZE	include/common_def.h	54;"	d
+UBUF_MAXSPACE	include/common_def.h	61;"	d
+UBUF_SPACE	contrib/fspscan.h	34;"	d
+UBUF_SPACE	include/common_def.h	55;"	d
+UINT16	p2pnat/include/p2p_log.h	/^typedef unsigned short  UINT16;$/;"	t
+UINT32	p2pnat/include/p2p_log.h	/^typedef unsigned int    UINT32;$/;"	t
+UINT8	p2pnat/include/p2p_log.h	/^typedef unsigned char   UINT8;$/;"	t
+Usage	fsplib/test.c	/^static char Usage[] =$/;"	v	file:
+Usage	p2pnat/demo/p2pdemo.c	/^static char Usage[] =$/;"	v	file:
+VERSION	p2pnat/demo/p2pdemo.c	10;"	d	file:
+VER_BYTES	include/common_def.h	102;"	d
+VER_LOG	include/common_def.h	103;"	d
+VER_PRIVMODE	include/common_def.h	106;"	d
+VER_READONLY	include/common_def.h	104;"	d
+VER_REVNAME	include/common_def.h	105;"	d
+VER_THRUPUT	include/common_def.h	107;"	d
+VER_XTRADATA	include/common_def.h	108;"	d
+VOID	p2pnat/include/p2p_log.h	/^typedef void            VOID;$/;"	t
+WEXITSTATUS	bsd_src/function.c	77;"	d	file:
+WIFEXITED	bsd_src/function.c	80;"	d	file:
+WORD	p2pnat/include/p2p_log.h	/^typedef unsigned short  WORD;$/;"	t
+YYSTATE	clients/fspprof.c	86;"	d	file:
+YYSTATE	clients/fspsites.c	104;"	d	file:
+YY_AT_BOL	clients/fspprof.c	271;"	d	file:
+YY_AT_BOL	clients/fspsites.c	289;"	d	file:
+YY_BREAK	clients/fspprof.c	733;"	d	file:
+YY_BREAK	clients/fspsites.c	564;"	d	file:
+YY_BUFFER_EOF_PENDING	clients/fspprof.c	207;"	d	file:
+YY_BUFFER_EOF_PENDING	clients/fspsites.c	225;"	d	file:
+YY_BUFFER_NEW	clients/fspprof.c	195;"	d	file:
+YY_BUFFER_NEW	clients/fspsites.c	213;"	d	file:
+YY_BUFFER_NORMAL	clients/fspprof.c	196;"	d	file:
+YY_BUFFER_NORMAL	clients/fspsites.c	214;"	d	file:
+YY_BUFFER_STATE	clients/fspprof.c	/^typedef struct yy_buffer_state *YY_BUFFER_STATE;$/;"	t	typeref:struct:yy_buffer_state	file:
+YY_BUFFER_STATE	clients/fspsites.c	/^typedef struct yy_buffer_state *YY_BUFFER_STATE;$/;"	t	typeref:struct:yy_buffer_state	file:
+YY_BUF_SIZE	clients/fspprof.c	97;"	d	file:
+YY_BUF_SIZE	clients/fspsites.c	115;"	d	file:
+YY_CHAR	clients/fspprof.c	/^typedef unsigned char YY_CHAR;$/;"	t	file:
+YY_CHAR	clients/fspsites.c	/^typedef unsigned char YY_CHAR;$/;"	t	file:
+YY_CURRENT_BUFFER	clients/fspprof.c	216;"	d	file:
+YY_CURRENT_BUFFER	clients/fspsites.c	234;"	d	file:
+YY_DECL	clients/fspprof.c	721;"	d	file:
+YY_DECL	clients/fspsites.c	552;"	d	file:
+YY_DO_BEFORE_ACTION	clients/fspprof.c	287;"	d	file:
+YY_DO_BEFORE_ACTION	clients/fspsites.c	305;"	d	file:
+YY_END_OF_BUFFER	clients/fspprof.c	295;"	d	file:
+YY_END_OF_BUFFER	clients/fspsites.c	313;"	d	file:
+YY_END_OF_BUFFER_CHAR	clients/fspprof.c	94;"	d	file:
+YY_END_OF_BUFFER_CHAR	clients/fspsites.c	112;"	d	file:
+YY_EXIT_FAILURE	clients/fspprof.c	1814;"	d	file:
+YY_EXIT_FAILURE	clients/fspsites.c	1489;"	d	file:
+YY_FATAL_ERROR	clients/fspprof.c	714;"	d	file:
+YY_FATAL_ERROR	clients/fspsites.c	545;"	d	file:
+YY_FLEX_MAJOR_VERSION	clients/fspprof.c	8;"	d	file:
+YY_FLEX_MAJOR_VERSION	clients/fspsites.c	26;"	d	file:
+YY_FLEX_MINOR_VERSION	clients/fspprof.c	9;"	d	file:
+YY_FLEX_MINOR_VERSION	clients/fspsites.c	27;"	d	file:
+YY_FLUSH_BUFFER	clients/fspprof.c	245;"	d	file:
+YY_FLUSH_BUFFER	clients/fspsites.c	263;"	d	file:
+YY_INPUT	clients/fspprof.c	681;"	d	file:
+YY_INPUT	clients/fspsites.c	512;"	d	file:
+YY_MAY_BE_UNUSED	clients/fspprof.c	141;"	d	file:
+YY_MAY_BE_UNUSED	clients/fspprof.c	143;"	d	file:
+YY_MAY_BE_UNUSED	clients/fspsites.c	159;"	d	file:
+YY_MAY_BE_UNUSED	clients/fspsites.c	161;"	d	file:
+YY_MORE_ADJ	clients/fspprof.c	562;"	d	file:
+YY_MORE_ADJ	clients/fspsites.c	403;"	d	file:
+YY_NEVER_INTERACTIVE	clients/fspprof.c	568;"	d	file:
+YY_NEVER_INTERACTIVE	clients/fspsites.c	409;"	d	file:
+YY_NEW_FILE	clients/fspprof.c	92;"	d	file:
+YY_NEW_FILE	clients/fspsites.c	110;"	d	file:
+YY_NO_POP_STATE	clients/fspprof.c	644;"	d	file:
+YY_NO_POP_STATE	clients/fspsites.c	475;"	d	file:
+YY_NO_PUSH_STATE	clients/fspprof.c	643;"	d	file:
+YY_NO_PUSH_STATE	clients/fspsites.c	474;"	d	file:
+YY_NO_TOP_STATE	clients/fspprof.c	645;"	d	file:
+YY_NO_TOP_STATE	clients/fspsites.c	476;"	d	file:
+YY_NO_UNPUT	clients/fspprof.c	567;"	d	file:
+YY_NO_UNPUT	clients/fspsites.c	408;"	d	file:
+YY_NULL	clients/fspprof.c	66;"	d	file:
+YY_NULL	clients/fspsites.c	84;"	d	file:
+YY_NUM_RULES	clients/fspprof.c	294;"	d	file:
+YY_NUM_RULES	clients/fspsites.c	312;"	d	file:
+YY_PROTO	clients/fspprof.c	60;"	d	file:
+YY_PROTO	clients/fspprof.c	62;"	d	file:
+YY_PROTO	clients/fspsites.c	78;"	d	file:
+YY_PROTO	clients/fspsites.c	80;"	d	file:
+YY_READ_BUF_SIZE	clients/fspprof.c	665;"	d	file:
+YY_READ_BUF_SIZE	clients/fspsites.c	496;"	d	file:
+YY_RESTORE_YY_MORE_OFFSET	clients/fspprof.c	563;"	d	file:
+YY_RESTORE_YY_MORE_OFFSET	clients/fspsites.c	404;"	d	file:
+YY_RULE_SETUP	clients/fspprof.c	736;"	d	file:
+YY_RULE_SETUP	clients/fspsites.c	567;"	d	file:
+YY_SC_TO_UI	clients/fspprof.c	73;"	d	file:
+YY_SC_TO_UI	clients/fspsites.c	91;"	d	file:
+YY_START	clients/fspprof.c	85;"	d	file:
+YY_START	clients/fspsites.c	103;"	d	file:
+YY_START_STACK_INCR	clients/fspprof.c	709;"	d	file:
+YY_START_STACK_INCR	clients/fspsites.c	540;"	d	file:
+YY_STATE_EOF	clients/fspprof.c	89;"	d	file:
+YY_STATE_EOF	clients/fspsites.c	107;"	d	file:
+YY_USER_ACTION	clients/fspprof.c	728;"	d	file:
+YY_USER_ACTION	clients/fspsites.c	559;"	d	file:
+YY_USE_CONST	clients/fspprof.c	31;"	d	file:
+YY_USE_CONST	clients/fspprof.c	38;"	d	file:
+YY_USE_CONST	clients/fspprof.c	48;"	d	file:
+YY_USE_CONST	clients/fspsites.c	49;"	d	file:
+YY_USE_CONST	clients/fspsites.c	56;"	d	file:
+YY_USE_CONST	clients/fspsites.c	66;"	d	file:
+YY_USE_PROTOS	clients/fspprof.c	28;"	d	file:
+YY_USE_PROTOS	clients/fspprof.c	37;"	d	file:
+YY_USE_PROTOS	clients/fspprof.c	49;"	d	file:
+YY_USE_PROTOS	clients/fspsites.c	46;"	d	file:
+YY_USE_PROTOS	clients/fspsites.c	55;"	d	file:
+YY_USE_PROTOS	clients/fspsites.c	67;"	d	file:
+Y_or_N	clients/printpro.c	21;"	d	file:
+_AES_H	p2pnat/include/aes.h	2;"	d
+_FSPLIB_H	fsplib/include/fsplib.h	2;"	d
+_FSPLIB_H_LOCK	fsplib/include/lock.h	2;"	d
+_FSP_BSD_EXTERN_H_	include/bsd_extern.h	2;"	d
+_FSP_CLIENT_CONF_H_	include/client_conf.h	2;"	d
+_FSP_CLIENT_DEF_H_	include/client_def.h	11;"	d
+_FSP_COMMON_DEF_H_	include/common_def.h	12;"	d
+_FSP_CO_EXTERN_H_	include/co_extern.h	2;"	d
+_FSP_C_EXTERN_H_	include/c_extern.h	2;"	d
+_FSP_FIND_H_	include/find.h	40;"	d
+_FSP_LS_H_	include/ls.h	26;"	d
+_FSP_MY_STRING_H_	include/my-string.h	2;"	d
+_FSP_PROTO_H_	include/proto.h	2;"	d
+_FSP_SERVER_CONF_H_	include/server_conf.h	2;"	d
+_FSP_SERVER_DEF_H_	include/server_def.h	11;"	d
+_FSP_S_EXTERN_H_	include/s_extern.h	2;"	d
+_FSP_TWEAK_H_	include/tweak.h	2;"	d
+_P2P_LOG_H	p2pnat/include/p2p_log.h	12;"	d
+__buf	client/lock.c	/^  struct seminfo *__buf;$/;"	m	union:semun	typeref:struct:semun::seminfo	file:
+__buf	fsplib/lock.c	/^  struct seminfo *__buf;$/;"	m	union:semun	typeref:struct:semun::seminfo	file:
+__cplusplus	clients/fspprof.c	18;"	d	file:
+__cplusplus	clients/fspsites.c	36;"	d	file:
+_a_data	include/find.h	/^		char *_a_data[2];		\/* array of char pointers *\/$/;"	m	union:_plandata::__anon6
+_c_data	include/find.h	/^		char *_c_data;			\/* char pointer *\/$/;"	m	union:_plandata::__anon6
+_e_argv	include/find.h	/^			char **_e_argv;		\/* argv array *\/$/;"	m	struct:_plandata::__anon6::_ex
+_e_len	include/find.h	/^			int *_e_len;		\/* allocated length *\/$/;"	m	struct:_plandata::__anon6::_ex
+_e_orig	include/find.h	/^			char **_e_orig;		\/* original strings *\/$/;"	m	struct:_plandata::__anon6::_ex
+_ex	include/find.h	/^		struct _ex {$/;"	s	union:_plandata::__anon6
+_fcat	setup.sh	/^_fcat()   { fcatcmd "$@" ;set +f;}$/;"	f
+_fcd	setup.sh	/^_fcd()    { export FSP_DIR=$(fcdcmd "$@"); set +f;}$/;"	f
+_fdu	setup.sh	/^_fdu()    { fducmd "$@" ; set +f;}$/;"	f
+_ffind	setup.sh	/^_ffind()  { ffindcmd  "$@" ; set +f;}$/;"	f
+_fget	setup.sh	/^_fget()   { fgetcmd   "$@" ; set +f;}$/;"	f
+_fgrab	setup.sh	/^_fgrab()  { fgrabcmd  "$@" ; set +f;}$/;"	f
+_fhost	setup.sh	/^_fhost()  { eval $(fhostcmd "$@") ; set +f;}$/;"	f
+_fless	setup.sh	/^_fless()  { fcatcmd   "$@" | less ; set +f;}$/;"	f
+_fls	setup.sh	/^_fls()    { flscmd    "$@" ; set +f;}$/;"	f
+_fmore	setup.sh	/^_fmore()  { fcatcmd   "$@" | more ; set +f;}$/;"	f
+_fmv	setup.sh	/^_fmv()    { fmvcmd "$@"; set +f;}$/;"	f
+_fpro	setup.sh	/^_fpro()   { fprocmd   "$@"; set +f;}$/;"	f
+_frm	setup.sh	/^_frm()    { frmcmd    "$@"; set +f ;}$/;"	f
+_frmdir	setup.sh	/^_frmdir() { frmdircmd "$@"; set +f ;}$/;"	f
+_fsetup	setup.sh	/^_fsetup()  { eval $(fsetupcmd "$@") ; set +f;}$/;"	f
+_fspget	setup.sh	/^_fspget() {$/;"	f
+_fstat	setup.sh	/^_fstat()   { fstatcmd "$@" ;set +f;}$/;"	f
+_g_data	include/find.h	/^		gid_t _g_data;			\/* gid *\/$/;"	m	union:_plandata::__anon6
+_i_data	include/find.h	/^		ino_t _i_data;			\/* inode *\/$/;"	m	union:_plandata::__anon6
+_importcore	site_scons/importer.py	/^def _importcore(env,varlist,targets,prefix,setter):$/;"	f
+_l_data	include/find.h	/^		nlink_t _l_data;		\/* link count *\/$/;"	m	union:_plandata::__anon6
+_lsstruct	include/ls.h	/^typedef struct _lsstruct {$/;"	s
+_m_data	include/find.h	/^		mode_t _m_data;			\/* mode mask *\/$/;"	m	union:_plandata::__anon6
+_o_data	include/find.h	/^		off_t _o_data;			\/* file size *\/$/;"	m	union:_plandata::__anon6
+_option	include/find.h	/^typedef struct _option {$/;"	s
+_p_data	include/find.h	/^		struct _plandata *_p_data[2];	\/* PLAN trees *\/$/;"	m	union:_plandata::__anon6	typeref:struct:_plandata::__anon6::_plandata
+_plandata	include/find.h	/^typedef struct _plandata {$/;"	s
+_setenvvariable	site_scons/importer.py	/^def _setenvvariable(env,name,value):$/;"	f
+_setvariable	site_scons/importer.py	/^def _setvariable(env,name,value):$/;"	f
+_t_data	include/find.h	/^		time_t _t_data;			\/* time value *\/$/;"	m	union:_plandata::__anon6
+_u_data	include/find.h	/^		uid_t _u_data;			\/* uid *\/$/;"	m	union:_plandata::__anon6
+_x_adr	common/udp_io.c	/^int _x_adr (const char *host, int port, struct sockaddr_in * his)$/;"	f
+_x_adr	contrib/fspscan.c	/^int _x_adr(char *xhost,int port,struct sockaddr_in *his)$/;"	f
+_x_select	common/udp_io.c	/^int _x_select (fd_set * rf, long tt)  \/* tt is in unit of ms *\/$/;"	f
+_x_select	contrib/fspscan.c	/^int _x_select(fd_set *rf, long tt)       \/* tt is in unit of ms *\/$/;"	f
+_x_udp	common/udp_io.c	/^int _x_udp (const char * bindaddress, unsigned short * port)$/;"	f
+_x_udp	contrib/fspscan.c	/^int _x_udp(int *port)$/;"	f
+a_data	include/find.h	74;"	d
+acc_cnt	include/server_def.h	/^		unsigned short   acc_cnt;	\/* number of successful acc  *\/$/;"	m	struct:HTAB
+acccmp	bsd_src/cmp.c	/^int acccmp (LS * a, LS * b)$/;"	f
+acollect	bsd_src/glob.c	/^static void acollect (register char * as)$/;"	f	file:
+active	include/server_def.h	/^		unsigned short   active; };	\/* session continuing.	     *\/$/;"	m	struct:HTAB
+add_file_size	clients/fducmd.c	/^static void add_file_size (char * name, struct stat * sbufp,$/;"	f	file:
+add_host	clients/fhost.c	/^void add_host(struct fsp_host *h)$/;"	f
+add_host_alias	clients/fhost.c	/^void add_host_alias(struct fsp_host *h, const char *name)$/;"	f
+add_ipline	server/iprange.c	/^void add_ipline (const char * text, IPrange ** table)$/;"	f
+addpath	bsd_src/glob.c	/^static int addpath (char c)$/;"	f	file:
+aes_context	p2pnat/include/aes.h	/^aes_context;$/;"	t	typeref:struct:__anon12
+alias	clients/fhost.h	/^    char **alias;$/;"	m	struct:fsp_host
+amatch	bsd_src/glob.c	/^static int amatch (char * s, char * p)$/;"	f	file:
+any	bsd_src/glob.c	/^static int any (register int c, register const char * s)$/;"	f	file:
+append_dir_listing	server/file.c	/^static int append_dir_listing (DIRLISTING * dl,const char * buf,unsigned int size)$/;"	f	file:
+append_to_buf	clients/fmvcmd.c	/^static int append_to_buf(const char *what,size_t len)$/;"	f	file:
+arg_err	server/main.c	/^static void arg_err (void)$/;"	f	file:
+array	client/lock.c	/^  unsigned short int *array;$/;"	m	union:semun	file:
+array	fsplib/lock.c	/^  unsigned short int *array;$/;"	m	union:semun	file:
+autodetectMandir	site_scons/mandir.py	/^def autodetectMandir(conf,prefix):$/;"	f
+bb_key	include/common_def.h	/^                        unsigned char bb_key[2]; \/* message key.              *\/$/;"	m	struct:UBUF
+bb_len	include/common_def.h	/^                        unsigned char bb_len[2]; \/* number of bytes in buf 1. *\/$/;"	m	struct:UBUF
+bb_pos	include/common_def.h	/^                        unsigned char bb_pos[4]; \/* location in the file.     *\/$/;"	m	struct:UBUF
+bb_seq	include/common_def.h	/^                        unsigned char bb_seq[2]; \/* message sequence number.  *\/$/;"	m	struct:UBUF
+bb_size	include/common_def.h	/^                         unsigned char bb_size[4];$/;"	m	struct:RDIRENT
+bb_time	include/common_def.h	/^typedef struct RDIRENT { unsigned char bb_time[4];$/;"	m	struct:RDIRENT
+bitcount	tests/randomcheck.c	/^static int bitcount[16];$/;"	v	file:
+blkcpy	bsd_src/glob.c	/^static char **blkcpy (char ** oav, register char ** bv)$/;"	f	file:
+blkfree	bsd_src/glob.c	/^static void blkfree (char ** av0)$/;"	f	file:
+blklen	bsd_src/glob.c	/^static int blklen (register char ** av)$/;"	f	file:
+blocksize	fsplib/include/fsplib.h	/^	unsigned short blocksize; \/* size of directory block *\/$/;"	m	struct:FSP_DIR
+brace_subst	bsd_src/function.c	/^static void brace_subst (char * orig, char ** store, char * path, int len)$/;"	f	file:
+bsdglob	bsd_src/glob.c	/^char **bsdglob (register char * v)$/;"	f
+buf	client/lock.c	/^  struct semid_ds *buf;$/;"	m	union:semun	typeref:struct:semun::semid_ds	file:
+buf	clients/fmvcmd.c	/^static unsigned char buf[UBUF_SPACE];$/;"	v	file:
+buf	contrib/fspscan.h	/^                        char   buf[UBUF_SPACE];$/;"	m	struct:UBUF
+buf	fsplib/include/fsplib.h	/^	unsigned char   buf[FSP_SPACE];   \/* packet payload *\/$/;"	m	struct:FSP_PKT
+buf	fsplib/lock.c	/^  struct semid_ds *buf;$/;"	m	union:semun	typeref:struct:semun::semid_ds	file:
+buf	include/common_def.h	/^                        char   buf[UBUF_MAXSPACE];$/;"	m	struct:UBUF
+buffer	p2pnat/include/sha1.h	/^    unsigned char buffer[64];   \/*!< data block being processed *\/$/;"	m	struct:__anon20
+bufpos	fsplib/include/fsplib.h	/^	int bufpos;                \/* position in buffer *\/$/;"	m	struct:FSP_FILE
+build_dir_listing	server/file.c	/^static void build_dir_listing (DIRLISTING * dl,const char *directory)$/;"	f	file:
+buildfilename	fsplib/fsplib.c	/^static int buildfilename(const FSP_SESSION *s,FSP_PKT *out,const char *dirname)$/;"	f	file:
+busy_delay	client/lib.c	/^unsigned long busy_delay   = DEFAULT_DELAY;	\/* busy retransmit timer *\/$/;"	v
+c_closeparen	bsd_src/function.c	/^PLAN *c_closeparen (void)$/;"	f
+c_data	include/find.h	75;"	d
+c_exec	bsd_src/function.c	/^PLAN *c_exec (char *** argvp, int isok)$/;"	f
+c_ls	bsd_src/function.c	/^PLAN *c_ls (void)$/;"	f
+c_name	bsd_src/function.c	/^PLAN *c_name (char * pattern)$/;"	f
+c_newer	bsd_src/function.c	/^PLAN *c_newer (char * filename)$/;"	f
+c_not	bsd_src/function.c	/^PLAN *c_not (void)$/;"	f
+c_openparen	bsd_src/function.c	/^PLAN *c_openparen (void)$/;"	f
+c_or	bsd_src/function.c	/^PLAN *c_or (void)$/;"	f
+c_print	bsd_src/function.c	/^PLAN *c_print (void)$/;"	f
+c_prune	bsd_src/function.c	/^PLAN *c_prune (void)$/;"	f
+c_size	bsd_src/function.c	/^PLAN *c_size (char * arg)$/;"	f
+c_time	bsd_src/function.c	/^PLAN * c_time (char * arg)$/;"	f
+c_type	bsd_src/function.c	/^PLAN *c_type (char * typestring)$/;"	f
+cachesize	server/fifocache.h	/^    unsigned int cachesize; \/* max. number of entries *\/$/;"	m	struct:FifoCache
+charfunc	bsd_src/glob.c	/^typedef int (*charfunc) (char) ;$/;"	t	file:
+checkDSSSLProcessor	site_scons/jade.py	/^def checkDSSSLProcessor(check, name="jade"):$/;"	f
+checkForBuildingClients	site_scons/clients.py	/^def checkForBuildingClients(conf):$/;"	f
+checkForBuildingSharedLibrary	fsplib/site_scons/buildshared.py	/^def checkForBuildingSharedLibrary(conf):$/;"	f
+checkForCCOption	fsplib/site_scons/compilertest.py	/^def checkForCCOption(conf,option):$/;"	f
+checkForCCOption	site_scons/compilertest.py	/^def checkForCCOption(conf,option):$/;"	f
+checkForClientTimeout	site_scons/timeout.py	/^def checkForClientTimeout(conf):$/;"	f
+checkForDebugBuild	site_scons/debugmode.py	/^def checkForDebugBuild(conf):$/;"	f
+checkForDirentMember	fsplib/site_scons/dirent.py	/^def checkForDirentMember(conf,member,symbol):$/;"	f
+checkForLamerpack	site_scons/lamerpack.py	/^def checkForLamerpack(conf):$/;"	f
+checkForLockPrefix	fsplib/site_scons/lockprefix.py	/^def checkForLockPrefix(conf):$/;"	f
+checkForLockPrefix	site_scons/lockprefix.py	/^def checkForLockPrefix(conf):$/;"	f
+checkForLockingType	fsplib/site_scons/locktype.py	/^def checkForLockingType(check,conf):$/;"	f
+checkForLockingType	site_scons/locktype.py	/^def checkForLockingType(check,conf):$/;"	f
+checkForMaintainerMode	fsplib/site_scons/maintainer.py	/^def checkForMaintainerMode(conf,force=False):$/;"	f
+checkForMaintainerMode	site_scons/maintainer.py	/^def checkForMaintainerMode(conf,force=False):$/;"	f
+checkForUserDocdir	site_scons/docdir.py	/^def checkForUserDocdir(conf,olddocdir=None):$/;"	f
+checkForUserMandir	site_scons/mandir.py	/^def checkForUserMandir(conf,oldmandir=None):$/;"	f
+checkForUserPrefix	fsplib/site_scons/prefix.py	/^def checkForUserPrefix(conf,oldprefix=None):$/;"	f
+checkForUserPrefix	site_scons/prefix.py	/^def checkForUserPrefix(conf,oldprefix=None):$/;"	f
+checkForUserSysconfdir	site_scons/sysconfdir.py	/^def checkForUserSysconfdir(conf,prefix):$/;"	f
+checkForVariable	site_scons/clangtest.py	/^def checkForVariable(conf,variable,include):$/;"	f
+checkReliableSignals	site_scons/relsignals.py	/^def checkReliableSignals(conf):$/;"	f
+check_connection_and_send	p2pnat/demo/p2pdemo.c	/^void check_connection_and_send(int peer_fd, REND_CONN_HANDLE conn)$/;"	f
+check_endpoint_and_connect	p2pnat/demo/p2pdemo.c	/^REND_CONN_HANDLE check_endpoint_and_connect(REND_EPT_HANDLE endpoint, char *tid)$/;"	f
+check_ip	server/iprange.c	/^static char *check_ip (unsigned long inet_num, const IPrange * iprange)$/;"	f	file:
+check_ip_table	server/iprange.c	/^const char *check_ip_table (unsigned long inet_num,IPrange *table)$/;"	f
+check_required_vars	server/main.c	/^static void check_required_vars (void)$/;"	f	file:
+cid	p2pnat/include/rendezvous_endpoint.h	/^	char cid[41];$/;"	m	struct:__anon24
+cid	p2pnat/include/rendezvous_packet.h	/^	char cid[41];$/;"	m	struct:__anon10
+classic	tests/randomcheck.c	/^static unsigned short classic (void)$/;"	f	file:
+client_buf_len	client/util.c	/^unsigned short client_buf_len;$/;"	v
+client_destroy_key	client/lock.c	/^void client_destroy_key(void)$/;"	f
+client_destroy_key	fsplib/lock.c	/^client_destroy_key(FSP_LOCK *lock)$/;"	f
+client_destroy_key	fsplib/lock.c	/^void client_destroy_key(FSP_LOCK *lock)$/;"	f
+client_done	client/lib.c	/^int client_done (void)$/;"	f
+client_done	contrib/fspscan.c	/^static void client_done(void)$/;"	f	file:
+client_finish	client/lib.c	/^void client_finish(void)$/;"	f
+client_get_key	client/lock.c	/^unsigned short client_get_key (void)$/;"	f
+client_get_key	fsplib/lock.c	/^unsigned short client_get_key (FSP_LOCK *lock)$/;"	f
+client_id	p2pnat/demo/p2pdemo.c	/^char client_id[41] = {0};$/;"	v
+client_init_key	client/lock.c	/^void client_init_key (unsigned long server_addr,$/;"	f
+client_init_key	fsplib/lock.c	/^int client_init_key (FSP_LOCK *lock,$/;"	f
+client_interact	client/lib.c	/^UBUF *client_interact 	(unsigned char cmd, unsigned long pos,$/;"	f
+client_interact	contrib/fspscan.c	/^UBUF *client_interact(cmd,pos,l1,p1,l2,p2)$/;"	f
+client_intr	client/lib.c	/^static RETSIGTYPE client_intr (int signum)$/;"	f	file:
+client_intr	contrib/fspscan.c	/^void client_intr(int sig)$/;"	f
+client_intr_state	client/lib.c	/^int client_intr_state = 0;$/;"	v
+client_intr_state	contrib/fspscan.c	/^int client_intr_state = 0;$/;"	v
+client_key	p2pnat/demo/p2pdemo.c	/^char client_key[33] = {0};$/;"	v
+client_net_len	client/util.c	/^unsigned short client_net_len;$/;"	v
+client_port	p2pnat/demo/p2pdemo.c	/^int client_port = 0;$/;"	v
+client_service	p2pnat/demo/p2pdemo.c	/^char client_service[20] = "SIP";$/;"	v
+client_set_key	client/lock.c	/^void client_set_key (unsigned short key)$/;"	f
+client_set_key	client/lock.c	/^void client_set_key (unsigned short nkey)$/;"	f
+client_set_key	fsplib/lock.c	/^void client_set_key (FSP_LOCK *lock,unsigned short key)$/;"	f
+client_set_key	fsplib/lock.c	/^void client_set_key (FSP_LOCK *lock,unsigned short nkey)$/;"	f
+client_trace	client/lib.c	/^int client_trace = 0;$/;"	v
+client_trace	contrib/fspscan.c	/^int  client_trace = 0;$/;"	v
+clobbertype	clients/fgetcmd.c	/^static int clobbertype=C_UNIQUE;$/;"	v	file:
+cmd	contrib/fspscan.h	/^typedef struct UBUF {            char   cmd;  \/* message code.             *\/$/;"	m	struct:UBUF
+cmd	fsplib/include/fsplib.h	/^	unsigned char       cmd; \/* message code.             *\/$/;"	m	struct:FSP_PKT
+cmd	include/common_def.h	/^typedef struct UBUF {   unsigned char       cmd; \/* message code.             *\/$/;"	m	struct:UBUF
+code	p2pnat/include/rendezvous_packet.h	/^	char code[4];$/;"	m	struct:__anon10
+code_str	client/lock.c	/^static char code_str[] =$/;"	v	file:
+code_str	fsplib/lock.c	/^static char code_str[] =$/;"	v	file:
+collect	bsd_src/glob.c	/^static void collect (register char * as)$/;"	f	file:
+compareresults	tests/parsecheck.c	/^static int compareresults(PPATH *p1,PPATH *p2)$/;"	f	file:
+conf_read	server/conf.c	/^static int conf_read = 0;$/;"	v	file:
+config_file	server/main.c	/^static const char *config_file = CONF_FILE ;$/;"	v	file:
+conn_info	p2pnat/include/rendezvous_endpoint.h	/^	int conn_info;$/;"	m	struct:__anon25
+connid	p2pnat/include/rendezvous_endpoint.h	/^	char connid[9];$/;"	m	struct:__anon25
+connid	p2pnat/include/rendezvous_packet.h	/^	char connid[9]; \/* length 8 *\/$/;"	m	struct:__anon10
+context	p2pnat/include/rendezvous_packet.h	/^	void *context;$/;"	m	struct:__anon11
+context_type	p2pnat/include/rendezvous_packet.h	/^}context_type;$/;"	t	typeref:enum:__anon9
+copy_file	server/file.c	/^static const char *copy_file (const char * n1, const char * n2)$/;"	f	file:
+copyblk	bsd_src/glob.c	/^static char **copyblk (register char ** v)$/;"	f	file:
+copyright	bsd_src/ls.c	/^char copyright[] =$/;"	v
+create	include/find.h	/^  PLAN *(*create)();    \/* create function *\/$/;"	m	struct:_option
+create_dir_if_absent	server/server.c	/^int create_dir_if_absent(char* url)$/;"	f
+create_dir_link	server/conf.c	/^int create_dir_link(char* f)$/;"	f
+create_password_file	server/conf.c	/^int create_password_file(char* password)$/;"	f
+cur_time	server/server.c	/^time_t cur_time;$/;"	v
+current_index	p2pnat/include/p2p_log.h	/^    unsigned long  current_index;$/;"	m	struct:__anon17
+d_fileno	contrib/fspscan.h	/^typedef struct rdirent { unsigned long  d_fileno;$/;"	m	struct:rdirent
+d_fileno	include/client_def.h	/^typedef struct rdirent { unsigned long  d_fileno;$/;"	m	struct:rdirent
+d_fileno	include/tweak.h	34;"	d
+d_ino	include/tweak.h	37;"	d
+d_len	include/server_def.h	/^    unsigned int   d_len; \/* length of directory part of path.       *\/$/;"	m	struct:__anon2
+d_name	contrib/fspscan.h	/^			 char          *d_name; } rdirent;$/;"	m	struct:rdirent
+d_name	include/client_def.h	/^			 char          *d_name; } rdirent;$/;"	m	struct:rdirent
+d_namlen	contrib/fspscan.h	/^			 unsigned short d_namlen;$/;"	m	struct:rdirent
+d_namlen	include/client_def.h	/^			 unsigned short d_namlen;$/;"	m	struct:rdirent
+d_ptr	include/server_def.h	/^    const char    *d_ptr; \/* ptr to beginning of directory component *\/$/;"	m	struct:__anon2
+d_rcdlen	include/client_def.h	/^			 unsigned short d_rcdlen;$/;"	m	struct:rdirent
+d_reclen	contrib/fspscan.h	/^			 unsigned short d_reclen;$/;"	m	struct:rdirent
+daemonize	server/conf.c	/^int daemonize = 1;$/;"	v
+data	fsplib/include/fsplib.h	/^	unsigned char  *data;     \/* raw directory data *\/$/;"	m	struct:FSP_DIR
+datasize	fsplib/include/fsplib.h	/^	unsigned int   datasize;  \/* size of raw dir. data *\/$/;"	m	struct:FSP_DIR
+dbug	server/conf.c	/^int dbug = 0;$/;"	v
+dbug	tests/parsecheck.c	/^int dbug=1;$/;"	v
+ddp	contrib/fspscan.h	/^typedef struct RDIR { DDLIST   *ddp;$/;"	m	struct:RDIR
+ddp	include/client_def.h	/^typedef struct RDIR { DDLIST   *ddp;$/;"	m	struct:RDIR
+ddroot	client/util.c	/^static DDLIST *ddroot = 0;$/;"	v	file:
+debug_output	p2pnat/demo/p2pdemo.c	/^int debug_output = 0;$/;"	v
+degrees	common/random.c	/^static int degrees[MAX_TYPES] = {DEG_0, DEG_1, DEG_2, DEG_3, DEG_4};$/;"	v	file:
+delay	clients/fhost.h	/^    int delay;$/;"	m	struct:fsp_host
+demo_log_name	p2pnat/demo/p2pdemo.c	/^char demo_log_name[128] = {0};$/;"	v
+dep	contrib/fspscan.h	/^		      RDIRENT **dep; } RDIR;$/;"	m	struct:RDIR
+dep	include/client_def.h	/^		      RDIRENT **dep; } RDIR;$/;"	m	struct:RDIR
+dep_root	contrib/fspscan.h	/^			RDIRENT  **dep_root;$/;"	m	struct:DDLIST
+dep_root	include/client_def.h	/^			RDIRENT  **dep_root;$/;"	m	struct:DDLIST
+destroy_configuration	server/conf.c	/^void destroy_configuration (void)$/;"	f
+device_id	fsplib/test.c	/^char device_id[256]={0};$/;"	v
+dir	clients/fhost.h	/^    char *dir;$/;"	m	struct:fsp_host
+dir_cache_limit	server/conf.c	/^unsigned int dir_cache_limit = DEFAULT_DIRLISTCACHE_SIZE;$/;"	v
+directoryfromfilename	fsplib/fsplib.c	/^static char * directoryfromfilename(const char *filename)$/;"	f	file:
+dirent	fsplib/include/fsplib.h	/^	struct dirent dirent;$/;"	m	union:dirent_workaround	typeref:struct:dirent_workaround::dirent
+dirent_workaround	fsplib/include/fsplib.h	/^typedef union dirent_workaround {$/;"	u
+dirent_workaround	fsplib/include/fsplib.h	/^} dirent_workaround;$/;"	t	typeref:union:dirent_workaround
+dirlistcache	server/file.c	/^static struct FifoCache *dirlistcache;$/;"	v	typeref:struct:FifoCache	file:
+dirlistcache_entry_profiler	server/file.c	/^static unsigned int dirlistcache_entry_profiler (const void *entry)$/;"	f	file:
+dirlistcache_free_entry	server/file.c	/^static void dirlistcache_free_entry (void * entry)$/;"	f	file:
+dirname	fsplib/include/fsplib.h	/^	char   *dirname;          \/* directory name *\/$/;"	m	struct:FSP_DIR
+dirpos	fsplib/include/fsplib.h	/^	int     dirpos;           \/* current directory pos. *\/$/;"	m	struct:FSP_DIR
+dirstatcache	server/file.c	/^static struct FifoCache *dirstatcache;$/;"	v	typeref:struct:FifoCache	file:
+dirstatcache_entry_profiler	server/file.c	/^static unsigned int dirstatcache_entry_profiler  (const void *entry)$/;"	f	file:
+dirstatcache_free_entry	server/file.c	/^static void dirstatcache_free_entry (void * entry)$/;"	f	file:
+display_version	server/main.c	/^static void display_version (void)$/;"	f	file:
+displaydir	bsd_src/ls.c	/^static void displaydir (LS * stats, register int num)$/;"	f	file:
+divsize	bsd_src/function.c	/^static int divsize = 1;$/;"	v	file:
+dl_list	p2pnat/include/list.h	/^struct dl_list {$/;"	s
+dl_list_add	p2pnat/include/list.h	/^static inline void dl_list_add(struct dl_list *list, struct dl_list *item)$/;"	f
+dl_list_add_tail	p2pnat/include/list.h	/^static inline void dl_list_add_tail(struct dl_list *list, struct dl_list *item)$/;"	f
+dl_list_del	p2pnat/include/list.h	/^static inline void dl_list_del(struct dl_list *item)$/;"	f
+dl_list_empty	p2pnat/include/list.h	/^static inline int dl_list_empty(struct dl_list *list)$/;"	f
+dl_list_entry	p2pnat/include/list.h	65;"	d
+dl_list_first	p2pnat/include/list.h	68;"	d
+dl_list_for_each	p2pnat/include/list.h	76;"	d
+dl_list_for_each_reverse	p2pnat/include/list.h	87;"	d
+dl_list_for_each_safe	p2pnat/include/list.h	81;"	d
+dl_list_init	p2pnat/include/list.h	/^static inline void dl_list_init(struct dl_list *list)$/;"	f
+dl_list_last	p2pnat/include/list.h	72;"	d
+dl_list_len	p2pnat/include/list.h	/^static inline unsigned int dl_list_len(struct dl_list *list)$/;"	f
+doargs	bsd_src/ls.c	/^static void doargs (int argc, char ** argv)$/;"	f	file:
+dont_die	clients/fcatcmd.c	/^static RETSIGTYPE dont_die (int signum)$/;"	f	file:
+drk	p2pnat/include/aes.h	/^    uint32 drk[64];     \/* decryption round keys *\/$/;"	m	struct:__anon12
+dummy	.sconf_temp/conftest_1.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_10.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_11.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_12.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_13.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_14.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_15.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_16.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_17.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_18.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_19.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_2.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_20.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_21.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_22.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_23.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_24.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_25.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_26.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_27.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_28.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_29.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_3.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_30.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_31.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_32.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_33.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_4.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_5.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_6.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_7.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_8.c	/^void dummy(void) {}$/;"	f
+dummy	.sconf_temp/conftest_9.c	/^void dummy(void) {}$/;"	f
+dummy	fsplib/.sconf_temp/conftest_0.c	/^void dummy(void) {}$/;"	f
+dummy	fsplib/.sconf_temp/conftest_1.c	/^void dummy(void) {}$/;"	f
+dummy	fsplib/.sconf_temp/conftest_10.c	/^void dummy(void) {}$/;"	f
+dummy	fsplib/.sconf_temp/conftest_11.c	/^void dummy(void) {}$/;"	f
+dummy	fsplib/.sconf_temp/conftest_12.c	/^void dummy(void) {}$/;"	f
+dummy	fsplib/.sconf_temp/conftest_13.c	/^void dummy(void) {}$/;"	f
+dummy	fsplib/.sconf_temp/conftest_14.c	/^void dummy(void) {}$/;"	f
+dummy	fsplib/.sconf_temp/conftest_15.c	/^void dummy(void) {}$/;"	f
+dummy	fsplib/.sconf_temp/conftest_16.c	/^void dummy(void) {}$/;"	f
+dummy	fsplib/.sconf_temp/conftest_17.c	/^void dummy(void) {}$/;"	f
+dummy	fsplib/.sconf_temp/conftest_18.c	/^void dummy(void) {}$/;"	f
+dummy	fsplib/.sconf_temp/conftest_19.c	/^void dummy(void) {}$/;"	f
+dummy	fsplib/.sconf_temp/conftest_2.c	/^void dummy(void) {}$/;"	f
+dummy	fsplib/.sconf_temp/conftest_20.c	/^void dummy(void) {}$/;"	f
+dummy	fsplib/.sconf_temp/conftest_21.c	/^void dummy(void) {}$/;"	f
+dummy	fsplib/.sconf_temp/conftest_22.c	/^void dummy(void) {}$/;"	f
+dummy	fsplib/.sconf_temp/conftest_23.c	/^void dummy(void) {}$/;"	f
+dummy	fsplib/.sconf_temp/conftest_24.c	/^void dummy(void) {}$/;"	f
+dummy	fsplib/.sconf_temp/conftest_25.c	/^void dummy(void) {}$/;"	f
+dummy	fsplib/.sconf_temp/conftest_26.c	/^void dummy(void) {}$/;"	f
+dummy	fsplib/.sconf_temp/conftest_27.c	/^void dummy(void) {}$/;"	f
+dummy	fsplib/.sconf_temp/conftest_28.c	/^void dummy(void) {}$/;"	f
+dummy	fsplib/.sconf_temp/conftest_29.c	/^void dummy(void) {}$/;"	f
+dummy	fsplib/.sconf_temp/conftest_3.c	/^void dummy(void) {}$/;"	f
+dummy	fsplib/.sconf_temp/conftest_30.c	/^void dummy(void) {}$/;"	f
+dummy	fsplib/.sconf_temp/conftest_32.c	/^    void dummy()$/;"	f
+dummy	fsplib/.sconf_temp/conftest_33.c	/^    void dummy()$/;"	f
+dummy	fsplib/.sconf_temp/conftest_34.c	/^    void dummy()$/;"	f
+dummy	fsplib/.sconf_temp/conftest_4.c	/^void dummy(void) {}$/;"	f
+dummy	fsplib/.sconf_temp/conftest_5.c	/^void dummy(void) {}$/;"	f
+dummy	fsplib/.sconf_temp/conftest_6.c	/^void dummy(void) {}$/;"	f
+dummy	fsplib/.sconf_temp/conftest_7.c	/^void dummy(void) {}$/;"	f
+dummy	fsplib/.sconf_temp/conftest_8.c	/^void dummy(void) {}$/;"	f
+dummy	fsplib/.sconf_temp/conftest_9.c	/^void dummy(void) {}$/;"	f
+dump	server/server.c	/^static int dump = 0;$/;"	v	file:
+dump_htab	server/host.c	/^int dump_htab (FILE *fp)$/;"	f
+dump_iptab	server/iprange.c	/^void dump_iptab (IPrange *table,FILE * fp)$/;"	f
+dumpname	server/conf.c	/^char *dumpname = NULL;$/;"	v
+dupes	fsplib/include/fsplib.h	/^	unsigned int dupes;       \/* total pkt. dupes    *\/$/;"	m	struct:FSP_SESSION
+eLOG_COMP_API	p2pnat/include/p2p_log.h	/^    eLOG_COMP_API,$/;"	e	enum:__anon15
+eLOG_COMP_MAX	p2pnat/include/p2p_log.h	/^    eLOG_COMP_MAX,$/;"	e	enum:__anon15
+eLOG_COMP_MSG	p2pnat/include/p2p_log.h	/^    eLOG_COMP_MSG,$/;"	e	enum:__anon15
+eLOG_DUMP_FILE	p2pnat/include/p2p_log.h	/^    eLOG_DUMP_FILE,$/;"	e	enum:__anon14
+eLOG_DUMP_SCREEN	p2pnat/include/p2p_log.h	/^    eLOG_DUMP_SCREEN,$/;"	e	enum:__anon14
+eLOG_INFO_DEBUG	p2pnat/include/p2p_log.h	/^    eLOG_INFO_DEBUG,$/;"	e	enum:__anon18
+eLOG_INFO_ERROR	p2pnat/include/p2p_log.h	/^    eLOG_INFO_ERROR,$/;"	e	enum:__anon18
+eLOG_INFO_MAX	p2pnat/include/p2p_log.h	/^    eLOG_INFO_MAX$/;"	e	enum:__anon18
+eLOG_INFO_MSG	p2pnat/include/p2p_log.h	/^    eLOG_INFO_MSG,$/;"	e	enum:__anon18
+eLOG_SEVERITY_DEBUG	p2pnat/include/p2p_log.h	/^    eLOG_SEVERITY_DEBUG,$/;"	e	enum:__anon16
+eLOG_SEVERITY_ERROR	p2pnat/include/p2p_log.h	/^    eLOG_SEVERITY_ERROR,$/;"	e	enum:__anon16
+eLOG_SEVERITY_INFO	p2pnat/include/p2p_log.h	/^    eLOG_SEVERITY_INFO = 6,$/;"	e	enum:__anon16
+eLOG_SEVERITY_TRACE	p2pnat/include/p2p_log.h	/^    eLOG_SEVERITY_TRACE,$/;"	e	enum:__anon16
+eLOG_SEVERITY_TRAP	p2pnat/include/p2p_log.h	/^    eLOG_SEVERITY_TRAP,$/;"	e	enum:__anon16
+eLOG_TYPE_FILE	p2pnat/include/p2p_log.h	/^    eLOG_TYPE_FILE,$/;"	e	enum:__anon13
+eLOG_TYPE_MAX	p2pnat/include/p2p_log.h	/^    eLOG_TYPE_MAX,$/;"	e	enum:__anon13
+eLOG_TYPE_NONE	p2pnat/include/p2p_log.h	/^    eLOG_TYPE_NONE,$/;"	e	enum:__anon13
+eLOG_TYPE_SCREEN	p2pnat/include/p2p_log.h	/^    eLOG_TYPE_SCREEN,$/;"	e	enum:__anon13
+e_argv	include/find.h	84;"	d
+e_destroy_func	server/fifocache.h	/^    void (*e_destroy_func) (void *key); \/* element destoy function *\/$/;"	m	struct:FifoCache
+e_head	server/fifocache.h	/^    int8_t *e_head;\/* block of cache entries, every entry has entrysize bytes *\/$/;"	m	struct:FifoCache
+e_len	include/find.h	86;"	d
+e_next	server/fifocache.h	/^    int8_t *e_next; \/* new intem will be placed there *\/$/;"	m	struct:FifoCache
+e_orig	include/find.h	85;"	d
+e_stop	server/fifocache.h	/^    const void *e_stop; \/* stop mark for entries, never write here! *\/$/;"	m	struct:FifoCache
+ed	p2pnat/include/rendezvous_endpoint.h	/^	char ed[25];$/;"	m	struct:__anon24
+ed	p2pnat/include/rendezvous_packet.h	/^	char ed[25];$/;"	m	struct:__anon10
+emalloc	bsd_src/util.c	/^char *emalloc (int size)$/;"	f
+emalloc_ffind	bsd_src/function.c	/^static char *emalloc_ffind (unsigned int len)$/;"	f	file:
+emsg	p2pnat/include/rendezvous_packet.h	/^	char emsg[256];$/;"	m	struct:__anon10
+enableLargeFiles	site_scons/largefiles.py	/^def enableLargeFiles(conf):$/;"	f
+end_dir	clients/fducmd.c	/^static void end_dir (char * path, int mode, u_long sum, int level)$/;"	f	file:
+end_ptr	common/random.c	/^static long *end_ptr = &randtbl[ DEG_3 + 1 ];$/;"	v	file:
+endofpath	bsd_src/ls.c	/^static char *endofpath = path;$/;"	v	file:
+endpoint_status	p2pnat/include/p2p_api.h	/^}endpoint_status;$/;"	t	typeref:enum:__anon22
+endport	contrib/fspscan.c	/^int  endport = 65535;$/;"	v
+entp	bsd_src/glob.c	/^static	char *entp;$/;"	v	file:
+entrysize	server/fifocache.h	/^    unsigned int entrysize; \/* size of 1 entry in bytes *\/$/;"	m	struct:FifoCache
+env_client	client/util.c	/^void env_client (void)$/;"	f
+env_dir	client/util.c	/^const char *env_dir = "\/";$/;"	v
+env_dir_malloced	client/util.c	/^static int env_dir_malloced = 0;$/;"	v	file:
+env_host	client/util.c	/^const char *env_host;$/;"	v
+env_listen_on	client/util.c	/^const char *env_listen_on;$/;"	v
+env_local_dir	client/util.c	/^const char *env_local_dir;$/;"	v
+env_myport	client/util.c	/^const char *env_myport;$/;"	v
+env_passwd	client/util.c	/^const char *env_passwd = "\\0";$/;"	v
+env_port	client/util.c	/^const char *env_port;$/;"	v
+env_timeout	client/util.c	/^unsigned int env_timeout;$/;"	v
+eof	fsplib/include/fsplib.h	/^	unsigned char eof;         \/* EOF reached? *\/$/;"	m	struct:FSP_FILE
+eq	bsd_src/glob.c	44;"	d	file:
+erk	p2pnat/include/aes.h	/^    uint32 erk[64];     \/* encryption round keys *\/$/;"	m	struct:__anon12
+err	fsplib/include/fsplib.h	/^	unsigned char err;         \/* i\/o error? *\/$/;"	m	struct:FSP_FILE
+eval	include/find.h	/^	int (*eval) (struct _plandata *, struct stat *, char *);  \/* node evaluation function *\/$/;"	m	struct:_plandata
+eval_dir	clients/ffindcmd.c	/^static int eval_dir (char * name, struct stat * sbufp, u_long * sum)$/;"	f	file:
+eval_file	clients/ffindcmd.c	/^static void eval_file (char * name, struct stat * sbufp,$/;"	f	file:
+ex	include/find.h	/^		} ex;$/;"	m	union:_plandata::__anon6	typeref:struct:_plandata::__anon6::_ex
+execbrc	bsd_src/glob.c	/^static int execbrc (char * p, char * s)$/;"	f	file:
+expand	bsd_src/glob.c	/^static void expand (char * as)$/;"	f	file:
+f_accesstime	bsd_src/ls.c	/^int f_accesstime;		\/* use time of last access *\/$/;"	v
+f_cache_clear	server/fifocache.c	/^void f_cache_clear(struct FifoCache *cache)$/;"	f
+f_cache_delete_by_key	server/fifocache.c	/^int f_cache_delete_by_key(struct FifoCache *cache, void *key)$/;"	f
+f_cache_delete_entry	server/fifocache.c	/^int f_cache_delete_entry(struct FifoCache *cache, void *entry)$/;"	f
+f_cache_destroy	server/fifocache.c	/^void f_cache_destroy(struct FifoCache *cache)$/;"	f
+f_cache_find	server/fifocache.c	/^void *f_cache_find(struct FifoCache *cache,const void *key)$/;"	f
+f_cache_get_key	server/fifocache.c	/^void * f_cache_get_key(struct FifoCache *cache,const void *entry)$/;"	f
+f_cache_new	server/fifocache.c	/^struct FifoCache * f_cache_new(unsigned int cachesize,unsigned int entrysize,$/;"	f
+f_cache_put	server/fifocache.c	/^void * f_cache_put(struct FifoCache *cache,const void *key,const void *data)$/;"	f
+f_cache_set_memory_profilers	server/fifocache.c	/^void f_cache_set_memory_profilers(struct FifoCache *cache,unsigned int (*keysize) (const void *key),unsigned int (*entrysize) (const void *entry))$/;"	f
+f_cache_stats	server/fifocache.c	/^void f_cache_stats(struct FifoCache *cache,FILE *f)$/;"	f
+f_cache_void_profiler	server/fifocache.c	/^unsigned int f_cache_void_profiler(void *anything)$/;"	f
+f_cd	clients/fcdcmd.c	/^static int f_cd (char * p)$/;"	f	file:
+f_column	bsd_src/ls.c	/^int f_column;			\/* columnated format *\/$/;"	v
+f_dirname	bsd_src/ls.c	/^int f_dirname;			\/* if precede with directory name *\/$/;"	v
+f_group	bsd_src/ls.c	/^int f_group;			\/* show group ownership of a file *\/$/;"	v
+f_ignorelink	bsd_src/ls.c	/^int f_ignorelink;		\/* indirect through symbolic link operands *\/$/;"	v
+f_inode	bsd_src/ls.c	/^int f_inode;			\/* print inode *\/$/;"	v
+f_kblocks	bsd_src/ls.c	/^int f_kblocks;			\/* print size in kilobytes *\/$/;"	v
+f_len	include/server_def.h	/^    unsigned int   f_len; \/* length of last component in path        *\/$/;"	m	struct:__anon2
+f_listalldot	bsd_src/ls.c	/^int f_listalldot;		\/* list . and .. as well *\/$/;"	v
+f_listdir	bsd_src/ls.c	/^int f_listdir;			\/* list actual directory, not contents *\/$/;"	v
+f_listdot	bsd_src/ls.c	/^int f_listdot;			\/* list files beginning with . *\/$/;"	v
+f_longform	bsd_src/ls.c	/^int f_longform;			\/* long listing format *\/$/;"	v
+f_needstat	bsd_src/ls.c	/^int f_needstat;			\/* if need to stat files *\/$/;"	v
+f_newline	bsd_src/ls.c	/^int f_newline;			\/* if precede with newline *\/$/;"	v
+f_nonprint	bsd_src/ls.c	/^int f_nonprint;			\/* show unprintables as ? *\/$/;"	v
+f_nosort	bsd_src/ls.c	/^int f_nosort;			\/* don't sort output *\/$/;"	v
+f_ptr	include/server_def.h	/^    const char    *f_ptr; \/* ptr to begining of last path component  *\/$/;"	m	struct:__anon2
+f_recursive	bsd_src/ls.c	/^int f_recursive;		\/* ls subdirectories also *\/$/;"	v
+f_reversesort	bsd_src/ls.c	/^int f_reversesort;		\/* reverse whatever sort is used *\/$/;"	v
+f_singlecol	bsd_src/ls.c	/^int f_singlecol;		\/* use single column output *\/$/;"	v
+f_size	bsd_src/ls.c	/^int f_size;			\/* list size in short listing *\/$/;"	v
+f_statustime	bsd_src/ls.c	/^int f_statustime;		\/* use time of last mode change *\/$/;"	v
+f_timesort	bsd_src/ls.c	/^int f_timesort;			\/* sort by time vice name *\/$/;"	v
+f_total	bsd_src/ls.c	/^int f_total;			\/* if precede with "total" line *\/$/;"	v
+f_type	bsd_src/ls.c	/^int f_type;			\/* add type character for non-regular files *\/$/;"	v
+fd	fsplib/include/fsplib.h	/^	int fd;                   \/* i\/o descriptor      *\/$/;"	m	struct:FSP_SESSION
+fd	p2pnat/include/p2p_log.h	/^    FILE          *fd;$/;"	m	struct:__anon17
+fdclose	contrib/fspscan.c	/^static void fdclose(void)$/;"	f	file:
+fexist	include/tweak.h	18;"	d
+file_name	fsplib/test.c	/^char file_name[60]={0};$/;"	v
+file_size	p2pnat/include/p2p_log.h	/^    unsigned short file_size;    \/\/ K$/;"	m	struct:__anon17
+filename	p2pnat/include/p2p_log.h	/^    char           filename[128];$/;"	m	struct:__anon17
+fill	fsplib/include/fsplib.h	/^	char fill[offsetof (struct dirent, d_name) + MAXNAMLEN + 1];$/;"	m	union:dirent_workaround
+findDocbookStylesheets	site_scons/dsssl.py	/^def findDocbookStylesheets(check):$/;"	f
+find_create	bsd_src/option.c	/^PLAN *find_create (char *** argvp)$/;"	f
+find_exec	bsd_src/function.c	/^static int find_exec (PLAN * plan, struct stat * sbuf, char * path)$/;"	f	file:
+find_expr	bsd_src/function.c	/^int find_expr (PLAN * plan, struct stat * sbuf, char * path)$/;"	f
+find_formplan	bsd_src/find.c	/^void find_formplan (char ** argv)$/;"	f
+find_host	clients/fhost.c	/^struct fsp_host *find_host(const char *name)$/;"	f
+find_host	server/host.c	/^HTAB *find_host (unsigned long inet_num)$/;"	f
+find_hostname	server/host.c	/^static char *find_hostname (unsigned long inet_num)$/;"	f	file:
+find_ls	bsd_src/function.c	/^static int find_ls (PLAN * plan, struct stat * sbuf, char * path)$/;"	f	file:
+find_name	bsd_src/function.c	/^static int find_name (PLAN * plan, struct stat * sbuf, char * path)$/;"	f	file:
+find_newer	bsd_src/function.c	/^static int find_newer (PLAN * plan, struct stat * sbuf, char * path)$/;"	f	file:
+find_not	bsd_src/function.c	/^static int find_not (PLAN * plan, struct stat * sbuf, char * path)$/;"	f	file:
+find_or	bsd_src/function.c	/^static int find_or (PLAN * plan, struct stat * sbuf, char * path)$/;"	f	file:
+find_parsenum	bsd_src/function.c	/^static long find_parsenum (PLAN * plan, const char * option, char * str,$/;"	f	file:
+find_print	bsd_src/function.c	/^static int find_print (PLAN * plan, struct stat * sbuf, char * path)$/;"	f	file:
+find_prune	bsd_src/function.c	/^static int find_prune (PLAN * plan, struct stat * sbuf, char * path)$/;"	f	file:
+find_size	bsd_src/function.c	/^static int find_size (PLAN * plan, struct stat * sbuf, char * path)$/;"	f	file:
+find_time	bsd_src/function.c	/^static int find_time (PLAN * plan, struct stat * sbuf,  char * path)$/;"	f	file:
+find_type	bsd_src/function.c	/^static int find_type (PLAN * plan, struct stat * sbuf, char * path)$/;"	f	file:
+flag_logging	p2pnat/include/p2p_log.h	/^    unsigned char  flag_logging;$/;"	m	struct:__anon17
+flag_rotate	p2pnat/include/p2p_log.h	/^    unsigned char  flag_rotate;$/;"	m	struct:__anon17
+flag_rotating	p2pnat/include/p2p_log.h	/^    unsigned char  flag_rotating;$/;"	m	struct:__anon17
+flag_to_file	p2pnat/include/p2p_log.h	/^    unsigned char  flag_to_file;$/;"	m	struct:__anon17
+flags	include/find.h	/^	int flags;				\/* private flags *\/$/;"	m	struct:_plandata
+flags	include/find.h	/^  int flags;$/;"	m	struct:_option
+fls_main	bsd_src/ls.c	/^void fls_main (int argc, char ** argv)$/;"	f
+fname	clients/fgetcmd.c	/^static char *fname;$/;"	v	file:
+fnmatch	bsd_src/fnmatch.c	/^int fnmatch (register char * pattern, register char * string)$/;"	f
+fp	include/server_def.h	/^typedef struct { FILE *fp;$/;"	m	struct:__anon3
+fp	p2pnat/include/rendezvous_packet.h	/^	char fp[41];$/;"	m	struct:__anon10
+fp_cache_limit	server/conf.c	/^unsigned int fp_cache_limit= DEFAULT_FPCACHE_SIZE;$/;"	v
+fpcache	server/file.c	/^static struct FifoCache *fpcache;$/;"	v	typeref:struct:FifoCache	file:
+fpcache_entry_profiler	server/file.c	/^static unsigned int fpcache_entry_profiler (const void *entry)$/;"	f	file:
+fpcache_free_entry	server/file.c	/^static void fpcache_free_entry (void *entry)$/;"	f	file:
+fptr	common/random.c	/^static long *fptr = &randtbl[SEP_3+1];$/;"	v	file:
+fpwd	setup.sh	/^fpwd()    { $/;"	f
+free_ip_table	server/iprange.c	/^void free_ip_table (IPrange *table)$/;"	f
+fseeko	include/tweak.h	9;"	d
+fsp_access	fsplib/fsplib.c	/^int fsp_access(FSP_SESSION *s,const char *path, int mode)$/;"	f
+fsp_canupload	fsplib/fsplib.c	/^int fsp_canupload(FSP_SESSION *s,const char *fname)$/;"	f
+fsp_ch_passwd	fsplib/fsplib.c	/^int fsp_ch_passwd(FSP_SESSION *s,const char *new_fsp_password)$/;"	f
+fsp_cleanup	clients/fgetcmd.c	/^static RETSIGTYPE fsp_cleanup (int signum)$/;"	f	file:
+fsp_close_session	fsplib/fsplib.c	/^void fsp_close_session(FSP_SESSION *s)$/;"	f
+fsp_closedir	fsplib/fsplib.c	/^int fsp_closedir(FSP_DIR *dirp)$/;"	f
+fsp_fclose	fsplib/fsplib.c	/^int fsp_fclose(FSP_FILE *file)$/;"	f
+fsp_fflush	fsplib/fsplib.c	/^int fsp_fflush(FSP_FILE *file)$/;"	f
+fsp_fopen	fsplib/fsplib.c	/^FSP_FILE * fsp_fopen(FSP_SESSION *session, const char *path,const char *modeflags)$/;"	f
+fsp_fpurge	fsplib/fsplib.c	/^int fsp_fpurge(FSP_FILE *file)$/;"	f
+fsp_fread	fsplib/fsplib.c	/^size_t fsp_fread(void *dest,size_t size,size_t count,FSP_FILE *file)$/;"	f
+fsp_fseek	fsplib/fsplib.c	/^int fsp_fseek(FSP_FILE *stream, long offset, int whence)$/;"	f
+fsp_ftell	fsplib/fsplib.c	/^long fsp_ftell(FSP_FILE *f)$/;"	f
+fsp_fwrite	fsplib/fsplib.c	/^size_t fsp_fwrite(const void * source, size_t size, size_t count, FSP_FILE * file)$/;"	f
+fsp_getpro	fsplib/fsplib.c	/^int fsp_getpro(FSP_SESSION *s,const char *directory,unsigned char *result)$/;"	f
+fsp_host	clients/fhost.h	/^struct fsp_host {$/;"	s
+fsp_install	fsplib/fsplib.c	/^int fsp_install(FSP_SESSION *s,const char *fname,time_t timestamp)$/;"	f
+fsp_method	fsplib/test.c	/^int fsp_method;$/;"	v
+fsp_mkdir	fsplib/fsplib.c	/^int fsp_mkdir(FSP_SESSION *s,const char *directory)$/;"	f
+fsp_open_session	fsplib/fsplib.c	/^FSP_SESSION * fsp_open_session(const char* tid,const char* key, const char *password)$/;"	f
+fsp_opendir	fsplib/fsplib.c	/^FSP_DIR * fsp_opendir(FSP_SESSION *s,const char *dirname)$/;"	f
+fsp_password	fsplib/test.c	/^char fsp_password[60]={0};$/;"	v
+fsp_pkt_read	fsplib/fsplib.c	/^int fsp_pkt_read(FSP_PKT *p,const void *space,size_t recv_len)$/;"	f
+fsp_pkt_write	fsplib/fsplib.c	/^size_t fsp_pkt_write(const FSP_PKT *p,void *space)$/;"	f
+fsp_readdir	fsplib/fsplib.c	/^struct dirent * fsp_readdir(FSP_DIR *dirp)$/;"	f
+fsp_readdir_native	fsplib/fsplib.c	/^int fsp_readdir_native(FSP_DIR *dir,FSP_RDENTRY *entry, FSP_RDENTRY **result)$/;"	f
+fsp_readdir_r	fsplib/fsplib.c	/^int fsp_readdir_r(FSP_DIR *dir,struct dirent *entry, struct dirent **result)$/;"	f
+fsp_rename	fsplib/fsplib.c	/^int fsp_rename(FSP_SESSION *s,const char *from, const char *to)$/;"	f
+fsp_rewind	fsplib/fsplib.c	/^void fsp_rewind(FSP_FILE *f)$/;"	f
+fsp_rewinddir	fsplib/fsplib.c	/^void fsp_rewinddir(FSP_DIR *dirp)$/;"	f
+fsp_rmdir	fsplib/fsplib.c	/^int fsp_rmdir(FSP_SESSION *s,const char *directory)$/;"	f
+fsp_seekdir	fsplib/fsplib.c	/^void fsp_seekdir(FSP_DIR *dirp, long loc)$/;"	f
+fsp_stat	fsplib/fsplib.c	/^int fsp_stat(FSP_SESSION *s,const char *path,struct stat *sb)$/;"	f
+fsp_telldir	fsplib/fsplib.c	/^long fsp_telldir(FSP_DIR *dirp)$/;"	f
+fsp_transaction	fsplib/fsplib.c	/^int fsp_transaction(FSP_SESSION *s,FSP_PKT *p,FSP_PKT *rpkt)$/;"	f
+fsp_unlink	fsplib/fsplib.c	/^int fsp_unlink(FSP_SESSION *s,const char *directory)$/;"	f
+fsploga	server/log.c	/^void fsploga(const char *fmt, ...)$/;"	f
+fsplogf	server/log.c	/^void fsplogf (void)$/;"	f
+fsplogs	server/log.c	/^void fsplogs (void)$/;"	f
+ftouch	setup.sh	/^ftouch() { touch "$1"; fput "$1"; rm "$1" ;}$/;"	f
+fullp	include/server_def.h	/^    const char    *fullp; \/* ptr to string containing full pathname  *\/$/;"	m	struct:__anon2
+g_data	include/find.h	77;"	d
+g_tid	p2pnat/demo/p2pdemo.c	/^char g_tid[41] = {0};$/;"	v
+gargc	bsd_src/glob.c	/^static	int gargc;		\/* Number args in gargv *\/$/;"	v	file:
+gargv	bsd_src/glob.c	/^static	char **gargv;		\/* Pointer to the (stack) arglist *\/$/;"	v	file:
+gen_next_key	server/random.c	/^unsigned short gen_next_key (void)$/;"	f
+getVariableSize	site_scons/clangtest.py	/^def getVariableSize(conf,var):$/;"	f
+get_boolean	server/conf.c	/^static int get_boolean (const char *q)$/;"	f	file:
+get_dir_blk	client/util.c	/^static RDIRENT **get_dir_blk (char * path)$/;"	f	file:
+get_entrysize	server/fifocache.h	/^    unsigned int (*get_entrysize) (const void *entry);  \/* return dynamic memory used by entry *\/$/;"	m	struct:FifoCache
+get_file	clients/fgetcmd.c	/^get_file$/;"	f	file:
+get_keysize	server/fifocache.h	/^    unsigned int (*get_keysize) (const void *key); \/* return dynamic memory used by key *\/$/;"	m	struct:FifoCache
+get_pro	clients/fprocmd.c	/^static int get_pro (const char * p)$/;"	f	file:
+getsl	common/getsl.c	/^char *getsl(char *s, int l) {$/;"	f
+gflag	bsd_src/glob.c	/^static	int gflag;$/;"	v	file:
+ginit	bsd_src/glob.c	/^static int ginit (char ** agargv)$/;"	f	file:
+globbed	bsd_src/glob.c	/^static	int globbed;$/;"	v	file:
+globchars	bsd_src/glob.c	/^const char *globchars = "`{[*?";$/;"	v
+globcnt	bsd_src/glob.c	/^static	int globcnt;$/;"	v	file:
+globerr	bsd_src/glob.c	/^const   char *globerr;$/;"	v
+gnleft	bsd_src/glob.c	/^static	int gnleft;$/;"	v	file:
+gpath	bsd_src/glob.c	/^static	char *gpath, *gpathp, *lastgpathp;$/;"	v	file:
+gpathp	bsd_src/glob.c	/^static	char *gpath, *gpathp, *lastgpathp;$/;"	v	file:
+grab_enabled	server/conf.c	/^int grab_enabled = 1;$/;"	v
+hcnt	server/host.c	/^static unsigned  hcnt;		\/* number of clients.			*\/$/;"	v	file:
+hi	include/server_def.h	/^    unsigned char hi[4];$/;"	m	struct:__anon1
+hit	server/fifocache.h	/^    unsigned int hit; \/* cache search hits *\/$/;"	m	struct:FifoCache
+home	clients/fhostcmd.c	/^static const char *home="\/";$/;"	v	file:
+home	clients/fsetupcmd.c	/^static const char *home="\/";$/;"	v	file:
+home_dir	server/conf.c	/^char *home_dir = NULL;$/;"	v
+homedir_restricted	server/conf.c	/^int homedir_restricted = 1;$/;"	v
+host	clients/fhost.c	/^static struct fsp_host *host;$/;"	v	typeref:struct:fsp_host	file:
+host	clients/fspprof.c	/^static struct fsp_host *host=NULL;$/;"	v	typeref:struct:fsp_host	file:
+host	clients/fspsites.c	/^static struct fsp_host *host=NULL;$/;"	v	typeref:struct:fsp_host	file:
+host	contrib/fspscan.c	/^char *host = NULL;$/;"	v
+host_usage	clients/fhostcmd.c	/^static void host_usage (void) \/* print usage message *\/$/;"	f	file:
+hostaddr	clients/fhost.h	/^    char *hostaddr; \/* decimal ip address *\/$/;"	m	struct:fsp_host
+hostname	clients/fhost.h	/^    char *hostname;$/;"	m	struct:fsp_host
+hostname	include/server_def.h	/^		char	       *hostname;	\/* hostname of client        *\/$/;"	m	struct:HTAB
+hostsize	clients/fhost.c	/^static int hostsize=0;$/;"	v	file:
+htab	server/host.c	/^static HTAB     *htab;		\/* client data base.			*\/$/;"	v	file:
+htot	server/host.c	/^static unsigned  htot = 0;	\/* available entries in the data base.	*\/$/;"	v	file:
+hzero	server/host.c	/^static HTAB     hzero;$/;"	v	file:
+i_data	include/find.h	76;"	d
+ic	p2pnat/include/rendezvous_endpoint.h	/^	char ic[65];$/;"	m	struct:__anon24
+ic	p2pnat/include/rendezvous_endpoint.h	/^	char ic[65];$/;"	m	struct:__anon25
+ic	p2pnat/include/rendezvous_packet.h	/^	char ic[65];$/;"	m	struct:__anon10
+idle_delay	client/lib.c	/^unsigned long idle_delay   = DEFAULT_DELAY;	\/* idle retransmit timer *\/$/;"	v
+importEnvironment	site_scons/importer.py	/^def importEnvironment(env,varlist=None,target=None,prefix=None):$/;"	f
+importVariable	site_scons/importer.py	/^def importVariable(env,varlist=None,target=None,prefix=None):$/;"	f
+in	fsplib/include/fsplib.h	/^	FSP_PKT in,out;            \/* io packets *\/$/;"	m	struct:FSP_FILE
+inet_num	include/server_def.h	/^                 unsigned long inet_num;$/;"	m	struct:__anon3
+inet_num	include/server_def.h	/^struct HTAB {	unsigned long	inet_num;	\/* inet number of client     *\/$/;"	m	struct:HTAB
+inetd_mode	server/main.c	/^static int inetd_mode = 0;$/;"	v	file:
+inetstr	include/server_def.h	/^    char     inetstr[16]; \/* inet-address of remote-FSP        *\/$/;"	m	struct:__anon2
+init_caches	server/file.c	/^int init_caches (void)$/;"	f
+init_client	client/lib.c	/^void init_client (const char * host, unsigned short port, unsigned short myport)$/;"	f
+init_client	contrib/fspscan.c	/^void init_client(char *myhost,int port,int myport)$/;"	f
+init_home_dir	server/file.c	/^void init_home_dir (void)$/;"	f
+init_host	clients/fhost.c	/^struct fsp_host * init_host(void)$/;"	f
+init_htab	server/host.c	/^int init_htab (void) \/* always have 2 entries -- 0, MAXINT *\/$/;"	f
+init_random	server/main.c	/^static void init_random (void)$/;"	f	file:
+intcompare	tests/cachecheck.c	/^static int intcompare(const void *vi1,const void *vi2)$/;"	f	file:
+inuse	fsplib/include/fsplib.h	/^	short   inuse;            \/* in use counter *\/$/;"	m	struct:FSP_DIR
+ipad	p2pnat/include/sha1.h	/^    unsigned char ipad[64];     \/*!< HMAC: inner padding        *\/$/;"	m	struct:__anon20
+iptab	server/iprange.c	/^IPrange *iptab=NULL;$/;"	v
+isdir	bsd_src/glob.c	46;"	d	file:
+isoutput	clients/ffindcmd.c	/^int isoutput;			\/* user specified output operator *\/$/;"	v
+k_compare_func	server/fifocache.h	/^    int (*k_compare_func) (const void *key1,const void *key2); \/* element destoy function *\/$/;"	m	struct:FifoCache
+k_destroy_func	server/fifocache.h	/^    void (*k_destroy_func) (void *key); \/* key destoy function *\/$/;"	m	struct:FifoCache
+k_head	server/fifocache.h	/^    int8_t *k_head; \/* block of keys starts there *\/$/;"	m	struct:FifoCache
+k_next	server/fifocache.h	/^    int8_t *k_next; \/* new item *\/$/;"	m	struct:FifoCache
+k_stop	server/fifocache.h	/^    const void *k_stop; \/* stop mark for key entries *\/$/;"	m	struct:FifoCache
+key	client/lib.c	/^static unsigned short key;$/;"	v	file:
+key	contrib/fspscan.c	/^static unsigned short key;$/;"	v	file:
+key	contrib/fspscan.h	/^                        unsigned short  key;  \/* message key.              *\/$/;"	m	struct:UBUF
+key	fsplib/include/fsplib.h	/^	unsigned short      key; \/* message key.              *\/$/;"	m	struct:FSP_PKT
+key	p2pnat/include/rendezvous_endpoint.h	/^	char key[33];$/;"	m	struct:__anon24
+key	p2pnat/include/rendezvous_packet.h	/^	char key[33];$/;"	m	struct:__anon10
+key_persists	client/lock.c	/^int key_persists = 0;$/;"	v
+key_persists	client/lock.c	/^int key_persists = 1;$/;"	v
+key_string	client/lock.c	/^static char key_string[sizeof(FSP_KEY_PREFIX)+32];$/;"	v	file:
+key_string	fsplib/include/lock.h	/^		char key_string[sizeof(FSP_KEY_PREFIX)+32];$/;"	m	struct:FSP_LOCK
+key_string	fsplib/include/lock.h	/^	       char key_string[sizeof(FSP_KEY_PREFIX)+32];$/;"	m	struct:FSP_LOCK
+keysize	server/fifocache.h	/^    unsigned int keysize; \/* size of 1 key in bytes *\/$/;"	m	struct:FifoCache
+l_data	include/find.h	78;"	d
+last_acc	include/server_def.h	/^		time_t          last_acc;	\/* last sucessful access time*\/$/;"	m	struct:HTAB
+last_delay	fsplib/include/fsplib.h	/^	unsigned int last_delay;  \/* last delay time     *\/$/;"	m	struct:FSP_SESSION
+last_dupes	fsplib/include/fsplib.h	/^	unsigned int last_dupes;  \/* last dupes          *\/$/;"	m	struct:FSP_SESSION
+last_key	include/server_def.h	/^		unsigned short	last_key;	\/* previous key client used  *\/$/;"	m	struct:HTAB
+last_register	p2pnat/include/rendezvous_endpoint.h	/^	time_t last_register;$/;"	m	struct:__anon24
+last_request	p2pnat/include/rendezvous_endpoint.h	/^	time_t last_request;$/;"	m	struct:__anon24
+last_request	p2pnat/include/rendezvous_endpoint.h	/^	time_t last_request;$/;"	m	struct:__anon25
+last_request	p2pnat/include/rendezvous_packet.h	/^	time_t last_request;$/;"	m	struct:__anon11
+last_resends	fsplib/include/fsplib.h	/^	unsigned int last_resends;\/* last resends        *\/$/;"	m	struct:FSP_SESSION
+last_rtt	fsplib/include/fsplib.h	/^	unsigned int last_rtt;    \/* last rtt            *\/$/;"	m	struct:FSP_SESSION
+lastcheck	include/server_def.h	/^    time_t lastcheck;         \/* when the directory was last stat()-ed *\/$/;"	m	struct:__anon5
+lastgpathp	bsd_src/glob.c	/^static	char *gpath, *gpathp, *lastgpathp;$/;"	v	file:
+lastmod	fsplib/include/fsplib.h	/^	unsigned int  lastmod;$/;"	m	struct:FSP_RDENTRY
+len	clients/fgetcmd.c	/^static int len;$/;"	v	file:
+len	contrib/fspscan.h	/^                        unsigned short  len;  \/* number of bytes in buf 1. *\/$/;"	m	struct:UBUF
+len	fsplib/include/fsplib.h	/^	unsigned short      len; \/* number of bytes in buf 1. *\/$/;"	m	struct:FSP_PKT
+len	include/ls.h	/^	int len;			\/* file name length *\/$/;"	m	struct:_lsstruct
+list	p2pnat/include/rendezvous_endpoint.h	/^	struct dl_list list;$/;"	m	struct:__anon24	typeref:struct:__anon24::dl_list
+list	p2pnat/include/rendezvous_endpoint.h	/^	struct dl_list list;$/;"	m	struct:__anon25	typeref:struct:__anon25::dl_list
+list	p2pnat/include/rendezvous_packet.h	/^	struct dl_list list;$/;"	m	struct:__anon11	typeref:struct:__anon11::dl_list
+list_prof_file	clients/fhost.c	/^void list_prof_file (void) \/* list resource file *\/$/;"	f
+list_sites_file	clients/fhost.c	/^void list_sites_file (void) \/* list resource file in fspsites format *\/$/;"	f
+listen_on	server/conf.c	/^char *listen_on = NULL;$/;"	v
+listing	include/server_def.h	/^    int8_t *listing;     \/* pointer to directory listing *\/$/;"	m	struct:__anon4
+listing_size	include/server_def.h	/^    size_t listing_size; \/* how many bytes has listing? *\/$/;"	m	struct:__anon4
+lo	include/server_def.h	/^    unsigned char lo[4];$/;"	m	struct:__anon1
+load_access_rights	server/acl.c	/^void load_access_rights (DIRINFO *di)$/;"	f
+load_configuration	server/conf.c	/^void load_configuration (const char *config_file)$/;"	f
+load_password	server/acl.c	/^static char *load_password (const char * file)$/;"	f	file:
+local_dir	clients/fhost.h	/^    char *local_dir;$/;"	m	struct:fsp_host
+local_port	clients/fhost.h	/^    int local_port;$/;"	m	struct:fsp_host
+localport	contrib/fspscan.c	/^int  localport = 9191;$/;"	v
+lock	fsplib/include/fsplib.h	/^	void *   lock;            \/* key locking         *\/$/;"	m	struct:FSP_SESSION
+lock_fd	client/lock.c	/^static unsigned int lock_fd;$/;"	v	file:
+lock_fd	fsplib/include/lock.h	/^	       int lock_fd;$/;"	m	struct:FSP_LOCK
+lock_sem	client/lock.c	/^static int   lock_sem;$/;"	v	file:
+lock_sem	fsplib/include/lock.h	/^		int   lock_sem;$/;"	m	struct:FSP_LOCK
+lock_shm	client/lock.c	/^static int   lock_shm;$/;"	v	file:
+lock_shm	fsplib/include/lock.h	/^		int   lock_shm;$/;"	m	struct:FSP_LOCK
+log_dir	fsplib/test.c	/^char log_dir[256]=".";$/;"	v
+log_info	p2pnat/include/p2p_log.h	/^    S_LOG_INFO  log_info[eLOG_INFO_MAX];$/;"	m	struct:__anon19
+log_level	p2pnat/demo/p2pdemo.c	/^int log_level = 0;$/;"	v
+log_level	p2pnat/include/p2p_log.h	/^    char          log_level[eLOG_COMP_MAX];$/;"	m	struct:__anon19
+log_set	server/conf.c	/^static void log_set (int flag, int neg)$/;"	f	file:
+log_type	p2pnat/include/p2p_log.h	/^    unsigned char log_type;  \/\/ file \/ ram \/ remote ...$/;"	m	struct:__anon19
+logbuf	server/log.c	/^static char logbuf[LOGBUFFER];	\/* buffer for log message *\/$/;"	v	file:
+logfd	server/log.c	/^int logfd = -1;  \/* logfile file descriptor *\/$/;"	v
+logfile_backup	server/log.c	/^void logfile_backup(char* old_filename,char* suffix)$/;"	f
+logfile_check	server/log.c	/^void logfile_check(char* file_name,int* cur_file_size,int max_file_size,int* file_fd)$/;"	f
+logfile_size	server/log.c	/^int logfile_size = 0;\/* the current size of logfile *\/  \/\/Add by xxfan$/;"	v
+logging	server/conf.c	/^int logging = 0;$/;"	v
+logname	server/conf.c	/^char *logname = NULL;$/;"	v
+logpos	server/log.c	/^static size_t logpos = 0;	\/* current log message length *\/$/;"	v	file:
+ls_bad	clients/flscmd.c	/^int ls_bad (int n)$/;"	f
+lstat	include/ls.h	/^	struct stat lstat;		\/* lstat(2) for file *\/$/;"	m	struct:_lsstruct	typeref:struct:_lsstruct::stat
+m_data	include/find.h	79;"	d
+main	.sconf_temp/conftest_0.c	/^int main()$/;"	f
+main	.sconf_temp/conftest_34.c	/^int main() {$/;"	f
+main	.sconf_temp/conftest_35.c	/^int main() {$/;"	f
+main	.sconf_temp/conftest_36.c	/^int main() {$/;"	f
+main	.sconf_temp/conftest_37.c	/^int main() {$/;"	f
+main	.sconf_temp/conftest_46.c	/^int main() {$/;"	f
+main	.sconf_temp/conftest_47.c	/^int main() {$/;"	f
+main	.sconf_temp/conftest_48.c	/^int main() {$/;"	f
+main	.sconf_temp/conftest_49.c	/^int main() {$/;"	f
+main	.sconf_temp/conftest_50.c	/^int main() {$/;"	f
+main	.sconf_temp/conftest_51.c	/^int main() {$/;"	f
+main	.sconf_temp/conftest_52.c	/^int main() {$/;"	f
+main	.sconf_temp/conftest_53.c	/^int main()$/;"	f
+main	clients/fbye.c	/^int main (int argc, char ** argv)$/;"	f
+main	clients/fcatcmd.c	/^int main (int argc, char ** argv)$/;"	f
+main	clients/fcdcmd.c	/^int main (int argc, char ** argv)$/;"	f
+main	clients/fducmd.c	/^int main (int argc, char ** argv)$/;"	f
+main	clients/ffindcmd.c	/^int main (int argc, char **  argv)$/;"	f
+main	clients/fgetcmd.c	/^int main (int argc, char ** argv)$/;"	f
+main	clients/fhostcmd.c	/^int main (int argc, char ** argv)$/;"	f
+main	clients/flscmd.c	/^int main (int argc, char ** argv)$/;"	f
+main	clients/fmkdir.c	/^int main (int argc, char ** argv)$/;"	f
+main	clients/fmvcmd.c	/^int main (int argc, char ** argv)$/;"	f
+main	clients/fprocmd.c	/^int main (int argc, char ** argv)$/;"	f
+main	clients/fput.c	/^int main (int argc, char ** argv)$/;"	f
+main	clients/frmcmd.c	/^int main (int argc, char ** argv)$/;"	f
+main	clients/frmdircmd.c	/^int main (int argc, char **argv)$/;"	f
+main	clients/fsetupcmd.c	/^int main (int argc, char ** argv)$/;"	f
+main	clients/fspprof.c	/^int main()$/;"	f
+main	clients/fspsites.c	/^int main()$/;"	f
+main	clients/fstatcmd.c	/^int main (int argc, char ** argv)$/;"	f
+main	clients/fver.c	/^int main (int argc, char ** argv)$/;"	f
+main	clients/merge.c	/^int main (int argc, char ** argv)$/;"	f
+main	contrib/fspscan.c	/^int main(int argc,char **argv)$/;"	f
+main	fsplib/.sconf_temp/conftest_31.c	/^int main() {$/;"	f
+main	fsplib/.sconf_temp/conftest_36.c	/^int main() {$/;"	f
+main	fsplib/.sconf_temp/conftest_37.c	/^int main() {$/;"	f
+main	fsplib/.sconf_temp/conftest_38.c	/^int main() {$/;"	f
+main	fsplib/.sconf_temp/conftest_39.c	/^int main() {$/;"	f
+main	fsplib/test.c	/^int main (int argc, char *argv[])$/;"	f
+main	p2pnat/demo/p2pdemo.c	/^int main(int argc, char *argv[])$/;"	f
+main	server/main.c	/^int main (int argc, char ** argv)$/;"	f
+main	tests/cachecheck.c	/^int main(int argv,char **argc)$/;"	f
+main	tests/mklargefile.c	/^int main(int argc,char *argv[])$/;"	f
+main	tests/parsecheck.c	/^int main(int argc,const char *argv[])$/;"	f
+main	tests/randomcheck.c	/^int main(int argc,const char *argv[])$/;"	f
+make_dir	clients/fgetcmd.c	/^static int make_dir (char * name, struct stat * sbufp, u_long * mode)$/;"	f	file:
+make_dir	clients/fmkdir.c	/^static int make_dir (char * p)$/;"	f	file:
+make_key_string	client/lock.c	/^static void make_key_string(	unsigned long server_addr,$/;"	f	file:
+make_key_string	fsplib/lock.c	/^static void make_key_string(	FSP_LOCK *lock,$/;"	f	file:
+match	bsd_src/glob.c	/^static int match (char * s, char * p)$/;"	f	file:
+matchdir	bsd_src/glob.c	/^void matchdir (char * pattern)$/;"	f
+maxdelay	fsplib/include/fsplib.h	/^	unsigned int   maxdelay;  \/* maximum recv. delay *\/$/;"	m	struct:FSP_SESSION
+maxthcallowed	server/conf.c	/^unsigned int maxthcallowed = 0;$/;"	v
+message_request_t	p2pnat/include/rendezvous_packet.h	/^}message_request_t;$/;"	t	typeref:struct:__anon11
+mid	p2pnat/include/rendezvous_packet.h	/^	char mid[9]; \/* length 8 *\/$/;"	m	struct:__anon10
+mid	p2pnat/include/rendezvous_packet.h	/^	char mid[9];$/;"	m	struct:__anon11
+min	include/tweak.h	22;"	d
+min	include/tweak.h	24;"	d
+miss	server/fifocache.h	/^    unsigned int miss; \/* cache search misses *\/$/;"	m	struct:FifoCache
+miss_event_counter	p2pnat/include/p2p_log.h	/^    unsigned short miss_event_counter;$/;"	m	struct:__anon17
+modcmp	bsd_src/cmp.c	/^int modcmp (LS * a, LS * b)$/;"	f
+mtime	include/server_def.h	/^    time_t mtime;             \/* directory last modified time *\/$/;"	m	struct:__anon5
+mtime	include/server_def.h	/^    time_t mtime;        \/* when cache was build *\/$/;"	m	struct:__anon4
+my_endpoint	p2pnat/include/rendezvous_endpoint.h	/^	rendezvous_endpoint_t *my_endpoint;$/;"	m	struct:__anon25
+myfd	client/lib.c	/^static int myfd;$/;"	v	file:
+myfd	contrib/fspscan.c	/^static int myfd;$/;"	v	file:
+myfd	server/server.c	/^static int myfd;$/;"	v	file:
+myseq	client/lib.c	/^static unsigned short myseq = 0;$/;"	v	file:
+myseq	contrib/fspscan.c	/^static unsigned short myseq = 0;$/;"	v	file:
+n	clients/fmvcmd.c	/^static unsigned int n;$/;"	v	file:
+nMAX_EVENT_LOG	p2pnat/include/p2p_log.h	34;"	d
+nMAX_EVENT_LOG_LEVEL	p2pnat/include/p2p_log.h	35;"	d
+name	contrib/fspscan.h	/^                         char        name[1]; } RDIRENT;$/;"	m	struct:RDIRENT
+name	fsplib/include/fsplib.h	/^	char *name;                \/* filename for upload *\/$/;"	m	struct:FSP_FILE
+name	fsplib/include/fsplib.h	/^	char name[255 + 1];        \/* entry name *\/$/;"	m	struct:FSP_RDENTRY
+name	include/common_def.h	/^                         char          name[1]   ; } RDIRENT;$/;"	m	struct:RDIRENT
+name	include/find.h	/^  const char *name;           \/* option name *\/$/;"	m	struct:_option
+name	include/ls.h	/^	char *name;			\/* file name *\/$/;"	m	struct:_lsstruct
+namecmp	bsd_src/cmp.c	/^int namecmp (LS * a, LS * b)$/;"	f
+namlen	fsplib/include/fsplib.h	/^	unsigned short namlen;     \/* length     *\/$/;"	m	struct:FSP_RDENTRY
+new_fsp_password	fsplib/test.c	/^char new_fsp_password[60]={0};$/;"	v
+new_udp_socket	fsplib/comm.c	/^int new_udp_socket(int local_port, char *local_address)$/;"	f
+new_udp_socket	p2pnat/demo/comm.c	/^int new_udp_socket(int local_port, char *local_address)$/;"	f
+next	contrib/fspscan.h	/^typedef struct DDLIST {	struct DDLIST *next;$/;"	m	struct:DDLIST	typeref:struct:DDLIST::DDLIST
+next	include/client_def.h	/^typedef struct DDLIST {	struct DDLIST *next;$/;"	m	struct:DDLIST	typeref:struct:DDLIST::DDLIST
+next	include/find.h	/^	struct _plandata *next;			\/* next node *\/$/;"	m	struct:_plandata	typeref:struct:_plandata::_plandata
+next	p2pnat/include/list.h	/^	struct dl_list *next;$/;"	m	struct:dl_list	typeref:struct:dl_list::dl_list
+next_key	include/server_def.h	/^		unsigned short	next_key;	\/* next key client should use*\/$/;"	m	struct:HTAB
+no_unnamed	server/conf.c	/^int no_unnamed = 0;$/;"	v
+nomem	bsd_src/util.c	/^void nomem (void)$/;"	f
+not_squish	bsd_src/operator.c	/^PLAN *not_squish (PLAN * plan)$/;"	f
+now	clients/ffindcmd.c	/^time_t now;			\/* time find was run *\/$/;"	v
+nr	p2pnat/include/aes.h	/^    int nr;             \/* number of rounds *\/$/;"	m	struct:__anon12
+nr	tests/randomcheck.c	/^static unsigned short nr(void)$/;"	f	file:
+ntype	include/find.h	/^enum ntype {$/;"	g
+num_backup_file	p2pnat/include/p2p_log.h	/^    unsigned char  num_backup_file;$/;"	m	struct:__anon17
+o_data	include/find.h	80;"	d
+offsetof	p2pnat/include/list.h	62;"	d
+oid	p2pnat/include/rendezvous_endpoint.h	/^	char oid[41];$/;"	m	struct:__anon24
+oid	p2pnat/include/rendezvous_packet.h	/^	char oid[25];$/;"	m	struct:__anon10
+okey	client/lock.c	/^static unsigned int okey;$/;"	v	file:
+okey	client/lock.c	/^static unsigned short okey;$/;"	v	file:
+opad	p2pnat/include/sha1.h	/^    unsigned char opad[64];     \/*!< HMAC: outer padding        *\/$/;"	m	struct:__anon20
+option	bsd_src/option.c	/^OPTION *option (char * name)$/;"	f
+options	bsd_src/option.c	/^OPTION options[] = {$/;"	v
+optletter	clients/fgetcmd.c	/^static int optletter;$/;"	v	file:
+optletter	clients/fput.c	/^static int optletter;$/;"	v	file:
+or_squish	bsd_src/operator.c	/^PLAN *or_squish (PLAN * plan)$/;"	f
+out	fsplib/include/fsplib.h	/^	FSP_PKT in,out;            \/* io packets *\/$/;"	m	struct:FSP_FILE
+outputfile	contrib/fspscan.c	/^char *outputfile = NULL;$/;"	v
+owner	include/server_def.h	/^    IPrange *owner;           \/* owners of this directory *\/$/;"	m	struct:__anon5
+owner_password	include/server_def.h	/^    char *owner_password;     \/* password for owners *\/$/;"	m	struct:__anon5
+p2p_endpoint	fsplib/include/fsplib.h	/^	REND_EPT_HANDLE p2p_endpoint;\/*p2p nat struct*\/ $/;"	m	struct:FSP_SESSION
+p_class	p2pnat/include/rendezvous_packet.h	/^	rendezvous_class p_class; \/* P2PNAT00, P2PNAT01 *\/$/;"	m	struct:__anon10
+p_data	include/find.h	81;"	d
+p_type	p2pnat/include/rendezvous_packet.h	/^	rendezvous_type p_type; \/* REG, CON, FWD, PING, PONG *\/$/;"	m	struct:__anon10
+p_un	include/find.h	/^	} p_un;$/;"	m	struct:_plandata	typeref:union:_plandata::__anon6
+packetsize	server/conf.c	/^unsigned short packetsize = DEFAULT_SPACE;$/;"	v
+palloc	bsd_src/function.c	/^static PLAN *palloc (enum ntype t, int (*f)())$/;"	f	file:
+paren_squish	bsd_src/operator.c	/^PLAN *paren_squish (PLAN * plan)$/;"	f
+parse_hostname	server/iprange.c	/^static IPrange *parse_hostname (const char * text, unsigned int len)$/;"	f	file:
+parse_ipcomponent	server/iprange.c	/^static const char *parse_ipcomponent (const char * text, unsigned char * lo,$/;"	f	file:
+parse_ipcomponentnum	server/iprange.c	/^static unsigned char parse_ipcomponentnum (const char * * textp)$/;"	f	file:
+parse_ipline	server/iprange.c	/^static IPrange *parse_ipline (const char * text)$/;"	f	file:
+parse_ipnumber	server/iprange.c	/^static IPrange *parse_ipnumber (const char * text)$/;"	f	file:
+parse_path	server/path.c	/^const char *parse_path (char * fullp, unsigned int len, PPATH * pp)$/;"	f
+parse_prof_file_new	clients/fhostcmd.c	/^static void parse_prof_file_new (const char * filename)$/;"	f	file:
+parse_prof_file_new	clients/fsetupcmd.c	/^static void parse_prof_file_new (void)$/;"	f	file:
+passwd	include/server_def.h	/^    const char   *passwd; \/* ptr to password                  *\/$/;"	m	struct:__anon2
+password	clients/fhost.h	/^    char *password;$/;"	m	struct:fsp_host
+password	fsplib/include/fsplib.h	/^	char *password;           \/* host acccess password *\/$/;"	m	struct:FSP_SESSION
+path	bsd_src/ls.c	/^static char path[2*1024 + 1];$/;"	v	file:
+path	contrib/fspscan.h	/^			char          *path;$/;"	m	struct:DDLIST
+path	include/client_def.h	/^			char          *path;$/;"	m	struct:DDLIST
+ped	p2pnat/include/rendezvous_endpoint.h	/^	char ped[25];$/;"	m	struct:__anon24
+ped	p2pnat/include/rendezvous_packet.h	/^	char ped[25];$/;"	m	struct:__anon10
+peer_addr	p2pnat/include/rendezvous_packet.h	/^	struct sockaddr_in peer_addr;$/;"	m	struct:__anon10	typeref:struct:__anon10::sockaddr_in
+permit_passwordless_owners	server/conf.c	/^int permit_passwordless_owners = 0;$/;"	v
+phrase_argv	fsplib/test.c	/^int phrase_argv(int argc, char *argv[])$/;"	f
+phrase_argv	p2pnat/demo/p2pdemo.c	/^int phrase_argv(int argc, char *argv[])$/;"	f
+pidfile	server/pidfile.c	/^int pidfile(const char *pidfile_path)$/;"	f
+pidfile_cleanup	server/pidfile.c	/^void pidfile_cleanup(const char *pidfile_path)$/;"	f
+pidfile_pid	server/pidfile.c	/^static pid_t pidfile_pid;$/;"	v	file:
+pidlogname	server/conf.c	/^char *pidlogname = NULL;$/;"	v
+plan	bsd_src/find.c	/^PLAN *plan;$/;"	v
+port	clients/fhost.h	/^    int port;$/;"	m	struct:fsp_host
+port_num	include/server_def.h	/^                 unsigned long port_num;$/;"	m	struct:__anon3
+portstr	include/server_def.h	/^    char      portstr[8];  \/* port of remote-FSP                *\/$/;"	m	struct:__anon2
+pos	contrib/fspscan.h	/^                        unsigned long   pos;  \/* location in the file.     *\/$/;"	m	struct:UBUF
+pos	fsplib/include/fsplib.h	/^	unsigned int        pos; \/* location in the file.     *\/                       $/;"	m	struct:FSP_PKT
+pos	fsplib/include/fsplib.h	/^	unsigned int pos;          \/* position of next packet *\/$/;"	m	struct:FSP_FILE
+prcopy	bsd_src/util.c	/^void prcopy (char * src, char * dest, int len)$/;"	f
+preserve	clients/fgetcmd.c	/^static int preserve=0;$/;"	v	file:
+prev	p2pnat/include/list.h	/^	struct dl_list *prev;$/;"	m	struct:dl_list	typeref:struct:dl_list::dl_list
+print_bitcount	tests/randomcheck.c	/^static void print_bitcount(void)$/;"	f	file:
+print_command	server/server.c	/^static const char * print_command(unsigned char cmd)$/;"	f	file:
+print_host_setup	clients/fhost.c	/^int print_host_setup(struct fsp_host *setup,int csh,int lhost)$/;"	f
+print_path	tests/parsecheck.c	/^static void print_path(PPATH *pp)$/;"	f	file:
+print_pro	clients/printpro.c	/^int print_pro (UBUF * ub, FILE * where)$/;"	f
+printaname	bsd_src/print.c	/^static int printaname (LS * lp)$/;"	f	file:
+printcol	bsd_src/print.c	/^void printcol (LS * stats, int num)$/;"	f
+printfcn	bsd_src/ls.c	/^void (*printfcn)(LS *, int);$/;"	v
+printhelp	contrib/fspscan.c	/^static void printhelp(int argc,char **argv)$/;"	f	file:
+printlong	bsd_src/print.c	/^void printlong (LS * stats, int num)$/;"	f
+printlong_ffind	bsd_src/function.c	/^static void printlong_ffind (char * name, struct stat * sb)$/;"	f	file:
+printscol	bsd_src/print.c	/^void printscol (LS * stats, int num)$/;"	f
+printtime	bsd_src/print.c	/^static void printtime (time_t ftime)$/;"	f	file:
+printtime_ffind	bsd_src/function.c	/^static void printtime_ffind (time_t ftime)$/;"	f	file:
+printtype	bsd_src/print.c	/^static int printtype (mode_t mode)$/;"	f	file:
+priv_mode	server/conf.c	/^int priv_mode = 0;$/;"	v
+process	clients/ffindcmd.c	/^int process;			\/* process current directory *\/$/;"	v
+protection	include/server_def.h	/^    unsigned char protection; \/* directory protection flags *\/$/;"	m	struct:__anon5
+public_password	include/server_def.h	/^    char *public_password;    \/* password for file access *\/$/;"	m	struct:__anon5
+put_file	clients/fput.c	/^static int put_file (char * path)$/;"	f	file:
+queryuser	bsd_src/function.c	/^static int queryuser (char ** argv)$/;"	f	file:
+r_ed	p2pnat/include/rendezvous_endpoint.h	/^	char r_ed[25];$/;"	m	struct:__anon25
+r_ped	p2pnat/include/rendezvous_endpoint.h	/^	char r_ped[25];$/;"	m	struct:__anon25
+rand_deg	common/random.c	/^static int rand_deg = DEG_3;$/;"	v	file:
+rand_sep	common/random.c	/^static int rand_sep = SEP_3;$/;"	v	file:
+rand_type	common/random.c	/^static int rand_type = TYPE_3;$/;"	v	file:
+random	common/random.c	/^long random PROTO0((void))$/;"	f
+random_cid	p2pnat/demo/p2pdemo.c	/^int random_cid = 1;$/;"	v
+randtbl	common/random.c	/^static long randtbl[DEG_3+1] = {TYPE_3,$/;"	v	file:
+rangematch	bsd_src/fnmatch.c	/^static char *rangematch (register char * pattern, register char test)$/;"	f	file:
+rdirent	contrib/fspscan.h	/^			 char          *d_name; } rdirent;$/;"	t	typeref:struct:rdirent
+rdirent	contrib/fspscan.h	/^typedef struct rdirent { unsigned long  d_fileno;$/;"	s
+rdirent	include/client_def.h	/^			 char          *d_name; } rdirent;$/;"	t	typeref:struct:rdirent
+rdirent	include/client_def.h	/^typedef struct rdirent { unsigned long  d_fileno;$/;"	s
+read_configuration	server/conf.c	/^static void read_configuration (const char * name)$/;"	f	file:
+read_only	server/conf.c	/^int read_only = 0;$/;"	v
+readme	include/server_def.h	/^    char *readme;             \/* readme content *\/$/;"	m	struct:__anon5
+readme_file	server/conf.c	/^char *readme_file = NULL;$/;"	v
+realname	include/server_def.h	/^    char *realname;           \/* real directory name, full path resolved *\/$/;"	m	struct:__anon5
+reclen	fsplib/include/fsplib.h	/^	unsigned short reclen;     \/* directory record length *\/$/;"	m	struct:FSP_RDENTRY
+recv_udp_packet	fsplib/comm.c	/^int recv_udp_packet(int udp_fd, char *udp_message, int message_len, struct sockaddr_in *peer_addr)$/;"	f
+recv_udp_packet	p2pnat/demo/comm.c	/^int recv_udp_packet(int udp_fd, char *udp_message, int message_len, struct sockaddr_in *peer_addr)$/;"	f
+ref_cnt	contrib/fspscan.h	/^			int         ref_cnt; } DDLIST;$/;"	m	struct:DDLIST
+ref_cnt	include/client_def.h	/^			int         ref_cnt; } DDLIST;$/;"	m	struct:DDLIST
+remoteport	contrib/fspscan.c	/^int  remoteport = 21;$/;"	v
+remove_it	clients/frmcmd.c	/^static int remove_it (char * p)$/;"	f	file:
+remove_it	clients/frmdircmd.c	/^static int remove_it (char * p)$/;"	f	file:
+rename_file	clients/fmvcmd.c	/^static void rename_file (const char *fname,const char *target)$/;"	f	file:
+rendezvous_class	p2pnat/include/rendezvous_packet.h	/^}rendezvous_class;$/;"	t	typeref:enum:__anon7
+rendezvous_connection_status	p2pnat/include/p2p_api.h	/^}rendezvous_connection_status;$/;"	t	typeref:enum:__anon23
+rendezvous_connection_t	p2pnat/include/rendezvous_endpoint.h	/^}rendezvous_connection_t;$/;"	t	typeref:struct:__anon25
+rendezvous_endpoint_t	p2pnat/include/rendezvous_endpoint.h	/^}rendezvous_endpoint_t;$/;"	t	typeref:struct:__anon24
+rendezvous_packet_t	p2pnat/include/rendezvous_packet.h	/^}rendezvous_packet_t;$/;"	t	typeref:struct:__anon10
+rendezvous_type	p2pnat/include/rendezvous_packet.h	/^}rendezvous_type;$/;"	t	typeref:enum:__anon8
+require_access_rights	server/acl.c	/^const char * require_access_rights (const DIRINFO *di,unsigned char rights,unsigned long ip_addr, const char * passwd)$/;"	f
+resends	fsplib/include/fsplib.h	/^	unsigned int resends;     \/* total pkt. sends    *\/$/;"	m	struct:FSP_SESSION
+result	tests/randomcheck.c	/^static int result;$/;"	v	file:
+retries	contrib/fspscan.c	/^int  retries = 3;$/;"	v
+retry_count	p2pnat/include/rendezvous_endpoint.h	/^	int retry_count;$/;"	m	struct:__anon25
+retry_timeout	server/conf.c	/^time_t retry_timeout = 3;$/;"	v
+revacccmp	bsd_src/cmp.c	/^int revacccmp (LS * a, LS * b)$/;"	f
+revmodcmp	bsd_src/cmp.c	/^int revmodcmp (LS * a, LS * b)$/;"	f
+revnamecmp	bsd_src/cmp.c	/^int revnamecmp (LS * a, LS * b)$/;"	f
+revstatcmp	bsd_src/cmp.c	/^int revstatcmp (LS * a, LS * b)$/;"	f
+rounds	tests/randomcheck.c	/^static int rounds;$/;"	v	file:
+rptr	common/random.c	/^static long *rptr = &randtbl[1];$/;"	v	file:
+rscan	bsd_src/glob.c	/^static void rscan (register char **t, charfunc f)$/;"	f	file:
+rtts	fsplib/include/fsplib.h	/^	unsigned long rtts;       \/* cumul. rtt          *\/$/;"	m	struct:FSP_SESSION
+run_gid	server/conf.c	/^gid_t run_gid = 0;$/;"	v
+run_randomtest	tests/randomcheck.c	/^static void run_randomtest( unsigned short (*keygen)(void) )$/;"	f	file:
+run_uid	server/conf.c	/^uid_t run_uid = 0;$/;"	v
+runtestcase	tests/parsecheck.c	/^static int runtestcase(void)$/;"	f	file:
+s	fsplib/include/fsplib.h	/^	FSP_SESSION *s;            \/* master session *\/$/;"	m	struct:FSP_FILE
+salias	clients/fspprof.c	581;"	d	file:
+salias	clients/fspsites.c	422;"	d	file:
+save_access_rights	server/acl.c	/^void save_access_rights (DIRINFO *di)$/;"	f
+save_password	server/acl.c	/^static void save_password (const char *file,const char *password)$/;"	f	file:
+sccsid	common/random.c	/^static char sccsid[] = "@(#)random.c	5.7 (Berkeley) 6\/1\/90";$/;"	v	file:
+sdelay	clients/fspprof.c	589;"	d	file:
+sdir	clients/fspprof.c	585;"	d	file:
+sdir	clients/fspsites.c	424;"	d	file:
+search_fpcache	server/file.c	/^static FPCACHE *search_fpcache (unsigned long inet_num,$/;"	f	file:
+secure	p2pnat/include/rendezvous_packet.h	/^	unsigned char secure;$/;"	m	struct:__anon10
+semun	client/lock.c	/^union semun$/;"	u	file:
+semun	fsplib/lock.c	/^union semun$/;"	u	file:
+send_error	server/server.c	/^static void send_error (struct sockaddr_in * from, UBUF * ub, const char * msg)$/;"	f	file:
+seps	common/random.c	/^static int seps[MAX_TYPES] = {SEP_0, SEP_1, SEP_2, SEP_3, SEP_4};$/;"	v	file:
+seq	contrib/fspscan.h	/^                        unsigned short  seq;  \/* message sequence number.  *\/$/;"	m	struct:UBUF
+seq	fsplib/include/fsplib.h	/^	unsigned short      seq; \/* message sequence number.  *\/$/;"	m	struct:FSP_PKT
+seq	fsplib/include/fsplib.h	/^	unsigned short seq;       \/* sequence number     *\/$/;"	m	struct:FSP_SESSION
+serve_file	server/server.c	/^void serve_file (struct sockaddr_in * from, UBUF * ub, FILE * fp,$/;"	f
+server_addr	client/lib.c	/^static struct sockaddr_in server_addr;$/;"	v	typeref:struct:sockaddr_in	file:
+server_addr	contrib/fspscan.c	/^static struct sockaddr_in server_addr;$/;"	v	typeref:struct:sockaddr_in	file:
+server_address	p2pnat/demo/p2pdemo.c	/^char server_address[24] = "";$/;"	v
+server_address	server/server.c	/^char server_address[24] = "54.223.244.5";$/;"	v
+server_del_dir	server/file.c	/^const char *server_del_dir (PPATH * pp, DIRINFO *di)$/;"	f
+server_del_file	server/file.c	/^const char *server_del_file (PPATH * pp, DIRINFO * di)$/;"	f
+server_dump	server/server.c	/^RETSIGTYPE server_dump (int signum)$/;"	f
+server_get_dir	server/file.c	/^const char *server_get_dir (DIRLISTING ** dl, const DIRINFO * di)$/;"	f
+server_get_file	server/file.c	/^const char *server_get_file (PPATH * pp,$/;"	f
+server_get_pro	server/file.c	/^int server_get_pro (DIRINFO * di, char * result, const char * acc)$/;"	f
+server_grab_done	server/file.c	/^const char *server_grab_done (unsigned long inet_num,$/;"	f
+server_grab_file	server/file.c	/^const char *server_grab_file (FILE ** fp,$/;"	f
+server_install	server/file.c	/^const char *server_install (PPATH * pp, unsigned long inet_num,$/;"	f
+server_interrupt	server/server.c	/^RETSIGTYPE server_interrupt (int signum)$/;"	f
+server_ip	p2pnat/include/rendezvous_endpoint.h	/^	char server_ip[25];$/;"	m	struct:__anon24
+server_loop	server/server.c	/^int server_loop (int fd, time_t timeout)$/;"	f
+server_make_dir	server/file.c	/^const char *server_make_dir (PPATH * pp, unsigned long inet_num,DIRINFO **di)$/;"	f
+server_port	p2pnat/demo/p2pdemo.c	/^int server_port = 0;$/;"	v
+server_port	p2pnat/include/rendezvous_endpoint.h	/^	int server_port;$/;"	m	struct:__anon24
+server_port	server/server.c	/^int server_port = DEFAULT_P2PNAT_PORT;$/;"	v
+server_process_packet	server/server.c	/^static void server_process_packet (unsigned bytes, UBUF * ub, int old,$/;"	f	file:
+server_rename	server/file.c	/^const char *server_rename (PPATH *src,PPATH *dest,DIRINFO *sdir, DIRINFO *tdir)$/;"	f
+server_reply	server/server.c	/^int server_reply (struct sockaddr_in *from, UBUF * ub,$/;"	f
+server_secure_file	server/file.c	/^const char *server_secure_file (PPATH * pp, unsigned long inet_num,$/;"	f
+server_set_pro	server/file.c	/^const char *server_set_pro (DIRINFO *di, const char * key)$/;"	f
+server_show_version	server/server.c	/^static void server_show_version (struct sockaddr_in * from, UBUF * ub)$/;"	f	file:
+server_stat	server/file.c	/^const char *server_stat (UBUF * ubuf )$/;"	f
+server_up_load	server/file.c	/^const char *server_up_load (char * data, unsigned int len, unsigned long pos,$/;"	f
+service	p2pnat/include/rendezvous_endpoint.h	/^	char service[65];$/;"	m	struct:__anon24
+service	p2pnat/include/rendezvous_endpoint.h	/^	char service[65];$/;"	m	struct:__anon25
+service	p2pnat/include/rendezvous_packet.h	/^	char service[65];$/;"	m	struct:__anon10
+session_timeout	server/conf.c	/^time_t session_timeout = 60;$/;"	v
+set_pro	clients/fprocmd.c	/^static int set_pro (char * p, char * key)$/;"	f	file:
+setup_usage	clients/fsetupcmd.c	/^static void setup_usage (void) \/* print usage message *\/$/;"	f	file:
+sha1_context	p2pnat/include/sha1.h	/^sha1_context;$/;"	t	typeref:struct:__anon20
+share_key	client/lock.c	/^static unsigned int *share_key;$/;"	v	file:
+share_key	fsplib/include/lock.h	/^		unsigned int *share_key;$/;"	m	struct:FSP_LOCK
+share_key	fsplib/include/lock.h	/^               unsigned short share_key;$/;"	m	struct:FSP_LOCK
+shost	clients/fspprof.c	577;"	d	file:
+shostname	clients/fspprof.c	575;"	d	file:
+shutdown_caches	server/file.c	/^void shutdown_caches (void)$/;"	f
+shutdowning	server/server.c	/^int shutdowning = 0;$/;"	v
+sig_handler	.sconf_temp/conftest_53.c	/^void sig_handler(int sg)$/;"	f
+simple	tests/randomcheck.c	/^static unsigned short simple (void)$/;"	f	file:
+simple2	tests/randomcheck.c	/^static unsigned short simple2 (void)$/;"	f	file:
+simplecommand	fsplib/fsplib.c	/^static int simplecommand(FSP_SESSION *s,const char *directory,unsigned char command)$/;"	f	file:
+sitewrap	clients/fsetupcmd.c	/^int sitewrap(void)$/;"	f
+size	contrib/fspscan.h	/^                         unsigned long  size;$/;"	m	struct:RDIRENT
+size	fsplib/include/fsplib.h	/^	unsigned int  size;$/;"	m	struct:FSP_RDENTRY
+skip_whitespace	server/iprange.c	22;"	d	file:
+sldir	clients/fspprof.c	587;"	d	file:
+slport	clients/fspprof.c	583;"	d	file:
+sort	bsd_src/glob.c	/^static void sort (void)$/;"	f	file:
+sortbas	bsd_src/glob.c	/^static	char **sortbas;$/;"	v	file:
+sortfcn	bsd_src/ls.c	/^int (*sortfcn)(LS *, LS *);$/;"	v
+spassword	clients/fspprof.c	591;"	d	file:
+sport	clients/fspprof.c	579;"	d	file:
+sport	clients/fspsites.c	420;"	d	file:
+st_btotal	include/ls.h	40;"	d
+st_maxlen	include/ls.h	41;"	d
+start_dir	clients/fducmd.c	/^static int start_dir (char * name, struct stat * sbufp, u_long * sum)$/;"	f	file:
+start_from	clients/fgetcmd.c	/^static unsigned long start_from;$/;"	v	file:
+stat_bad	client/lib.c	/^unsigned long stat_resends, stat_iresends, stat_dupes, stat_bad, stat_ok;$/;"	v
+stat_cache_limit	server/conf.c	/^unsigned int stat_cache_limit = DEFAULT_DIRSTATCACHE_SIZE;$/;"	v
+stat_cache_timeout	server/conf.c	/^time_t stat_cache_timeout = 25;$/;"	v
+stat_caches	server/file.c	/^void stat_caches (FILE *fp)$/;"	f
+stat_dupes	client/lib.c	/^unsigned long stat_resends, stat_iresends, stat_dupes, stat_bad, stat_ok;$/;"	v
+stat_file	clients/fstatcmd.c	/^static void stat_file (const char *fname)$/;"	f	file:
+stat_iresends	client/lib.c	/^unsigned long stat_resends, stat_iresends, stat_dupes, stat_bad, stat_ok;$/;"	v
+stat_ok	client/lib.c	/^unsigned long stat_resends, stat_iresends, stat_dupes, stat_bad, stat_ok;$/;"	v
+stat_resends	client/lib.c	/^unsigned long stat_resends, stat_iresends, stat_dupes, stat_bad, stat_ok;$/;"	v
+statcmp	bsd_src/cmp.c	/^int statcmp (LS * a, LS * b)$/;"	f
+state	common/random.c	/^static long *state = &randtbl[ 1 ];$/;"	v	file:
+state	p2pnat/include/sha1.h	/^    uint32_t state[5];          \/*!< intermediate digest state  *\/$/;"	m	struct:__anon20
+status	p2pnat/include/rendezvous_endpoint.h	/^	endpoint_status status;$/;"	m	struct:__anon24
+status	p2pnat/include/rendezvous_endpoint.h	/^	rendezvous_connection_status status;$/;"	m	struct:__anon25
+status_code	p2pnat/include/rendezvous_endpoint.h	/^	int status_code;$/;"	m	struct:__anon24
+status_code	p2pnat/include/rendezvous_endpoint.h	/^	int status_code;$/;"	m	struct:__anon25
+statworks	client/util.c	/^int statworks=1;$/;"	v
+stimeout	clients/fspprof.c	593;"	d	file:
+string_compare	server/file.c	/^static int string_compare (const void *e1,const void *e2)$/;"	f	file:
+string_compare	tests/cachecheck.c	/^static int string_compare (const void *e1,const void *e2)$/;"	f	file:
+string_free	server/file.c	/^static void string_free (void * entry)$/;"	f	file:
+string_free	tests/cachecheck.c	/^static void string_free (void * entry)$/;"	f	file:
+string_profiler	server/file.c	/^static unsigned int string_profiler (const void *entry)$/;"	f	file:
+strspl	bsd_src/glob.c	/^static char *strspl (register char * cp, register const char * dp)$/;"	f	file:
+subdir	bsd_src/ls.c	/^static void subdir (LS * lp)$/;"	f	file:
+suffix	clients/fgetcmd.c	/^static int suffix;$/;"	v	file:
+sum	contrib/fspscan.h	/^                        unsigned char   sum;  \/* message checksum.         *\/$/;"	m	struct:UBUF
+sum	fsplib/include/fsplib.h	/^	unsigned char       sum; \/* message checksum.         *\/$/;"	m	struct:FSP_PKT
+sum	include/common_def.h	/^                        unsigned char       sum; \/* message checksum.         *\/$/;"	m	struct:UBUF
+system_umask	server/conf.c	/^mode_t system_umask = 0077;$/;"	v
+t_data	include/find.h	82;"	d
+tabdir	bsd_src/ls.c	/^static int tabdir (LS * lp, LS ** s_stats)$/;"	f	file:
+target_delay	client/lib.c	/^unsigned long target_delay = DEFAULT_DELAY;	\/* expected max delay from server on good connection *\/$/;"	v
+target_maxdelay	client/lib.c	/^unsigned long target_maxdelay = DEFAULT_MAXDELAY; \/* max resend timer *\/$/;"	v
+termwidth	bsd_src/ls.c	/^int termwidth = 80;		\/* default terminal width *\/$/;"	v
+test	.sconf_temp/conftest_53.c	/^volatile int test;$/;"	v
+testcases	tests/parsecheck.c	/^const char *testcases[]={$/;"	v
+testresults	tests/parsecheck.c	/^PPATH testresults[]={$/;"	v
+text	include/server_def.h	/^    char *text;$/;"	m	struct:__anon1
+tglob	bsd_src/glob.c	/^static int tglob (char c)$/;"	f	file:
+thc	server/server.c	/^static int thc[THCCOUNT];$/;"	v	file:
+thcbase	server/server.c	/^static time_t thcbase;$/;"	v	file:
+tid	p2pnat/include/rendezvous_endpoint.h	/^	char tid[41];$/;"	m	struct:__anon25
+tid	p2pnat/include/rendezvous_packet.h	/^	char tid[41];$/;"	m	struct:__anon10
+time	contrib/fspscan.h	/^typedef struct RDIRENT { unsigned long  time;$/;"	m	struct:RDIRENT
+timeout	clients/fhost.h	/^    int timeout;$/;"	m	struct:fsp_host
+timeout	fsplib/include/fsplib.h	/^	unsigned int   timeout;   \/* send timeout 1\/1000s*\/$/;"	m	struct:FSP_SESSION
+timestamps	clients/fput.c	/^static int timestamps=0;$/;"	v	file:
+tlogbuf	server/log.c	/^static char tlogbuf[LOGBUFFER];	\/* buffer for log message *\/$/;"	v	file:
+tlogfd	server/log.c	/^int tlogfd = -1; \/* transfer log file descriptor *\/$/;"	v
+tlogfile_size	server/log.c	/^int tlogfile_size = 0;\/*the current sizeo of tlogfile *\/  \/\/Add by xxfan$/;"	v
+tlogname	server/conf.c	/^char *tlogname = NULL;$/;"	v
+tmp_dir	server/conf.c	/^char *tmp_dir = NULL;$/;"	v
+toid	p2pnat/include/rendezvous_endpoint.h	/^	char toid[41];$/;"	m	struct:__anon25
+toid	p2pnat/include/rendezvous_packet.h	/^	char toid[25];$/;"	m	struct:__anon10
+token	include/find.h	/^  enum ntype token;     \/* token type *\/$/;"	m	struct:_option	typeref:enum:_option::ntype
+total	p2pnat/include/sha1.h	/^    uint32_t total[2];          \/*!< number of bytes processed  *\/$/;"	m	struct:__anon20
+total_file_size	clients/fducmd.c	/^static u_long total_file_size;$/;"	v	file:
+total_miss_event_counter	p2pnat/include/p2p_log.h	/^    unsigned long  total_miss_event_counter;$/;"	m	struct:__anon17
+touch	include/tweak.h	19;"	d
+trace	clients/fhost.h	/^    int trace;$/;"	m	struct:fsp_host
+trips	fsplib/include/fsplib.h	/^	unsigned int trips;       \/* total pkt trips     *\/$/;"	m	struct:FSP_SESSION
+tryfile	clients/fhostcmd.c	/^static int tryfile=0;$/;"	v	file:
+tryfile	clients/fsetupcmd.c	/^static int tryfile=0;$/;"	v	file:
+ttest	p2pnat/demo/p2pdemo.c	/^int ttest(void)$/;"	f
+type	contrib/fspscan.h	/^                         unsigned char  type;$/;"	m	struct:RDIRENT
+type	fsplib/include/fsplib.h	/^	unsigned char type;        \/* field type *\/$/;"	m	struct:FSP_RDENTRY
+type	include/common_def.h	/^                         unsigned char type      ;$/;"	m	struct:RDIRENT
+type	include/find.h	/^	enum ntype type;			\/* plan node type *\/$/;"	m	struct:_plandata	typeref:enum:_plandata::ntype
+type	p2pnat/include/rendezvous_packet.h	/^	context_type type;$/;"	m	struct:__anon11
+typecompare	bsd_src/option.c	/^static int typecompare (const void * a, const void * b)$/;"	f	file:
+u_data	include/find.h	83;"	d
+udp_fd	p2pnat/include/rendezvous_endpoint.h	/^	int udp_fd;$/;"	m	struct:__anon24
+udp_port	server/conf.c	/^unsigned short udp_port = 21;$/;"	v
+udp_sent_time	client/lib.c	/^unsigned long udp_sent_time;$/;"	v
+uint32	p2pnat/include/aes.h	9;"	d
+uint32_t	p2pnat/include/sha1.h	/^typedef UINT32 uint32_t;$/;"	t
+uint8	p2pnat/include/aes.h	5;"	d
+unput	clients/fspprof.c	135;"	d	file:
+unput	clients/fspsites.c	153;"	d	file:
+upload_cleanup	clients/fput.c	/^static RETSIGTYPE upload_cleanup (int signum)$/;"	f	file:
+upload_umask	server/conf.c	/^mode_t upload_umask = 0033;$/;"	v
+usage	bsd_src/util.c	/^void usage (void)$/;"	f
+usage	clients/fgetcmd.c	/^static void usage (void)$/;"	f	file:
+usage	clients/fput.c	/^static void usage (void)$/;"	f	file:
+usage_ffind	clients/ffindcmd.c	/^static void usage_ffind (void)$/;"	f	file:
+use_access_files	server/conf.c	/^int use_access_files = 1;$/;"	v
+use_directory_mtime	server/conf.c	/^int use_directory_mtime =$/;"	v
+use_prebuild_dirlists	server/conf.c	/^int use_prebuild_dirlists =$/;"	v
+util_abs_path	client/util.c	/^char *util_abs_path (const char * s2)$/;"	f
+util_cd	client/util.c	/^int util_cd (char * p)$/;"	f
+util_cd2	client/util.c	/^int util_cd2 (char * p)$/;"	f
+util_closedir	client/util.c	/^void util_closedir (RDIR * rdirp)$/;"	f
+util_download	client/util.c	/^int util_download (char * path, FILE * fp, unsigned long start_from)$/;"	f
+util_download_main	client/util.c	/^static int util_download_main (char * path, char * fpath, FILE * fp,$/;"	f	file:
+util_get_env	client/util.c	/^static void util_get_env (void)$/;"	f	file:
+util_getwd	client/util.c	/^char *util_getwd (char * p)$/;"	f
+util_grab_file	client/util.c	/^int util_grab_file (char * path, FILE * fp, unsigned long start_from)$/;"	f
+util_junk_password	client/util.c	/^void util_junk_password(char *path)$/;"	f
+util_opendir	client/util.c	/^RDIR *util_opendir (char * path)$/;"	f
+util_pktstats	client/util.c	/^static void util_pktstats(void)$/;"	f	file:
+util_process_file	client/util.c	/^void util_process_file(char *path, int mode,$/;"	f
+util_readdir	client/util.c	/^rdirent *util_readdir (RDIR * rdirp)$/;"	f
+util_split_path	client/util.c	/^static int util_split_path (char * path, char ** p1, char ** p2,$/;"	f	file:
+util_stat	client/util.c	/^int util_stat (char * path, struct stat * sbuf)$/;"	f
+util_upload	client/util.c	/^int util_upload (char * path, FILE * fp, time_t stamp)$/;"	f
+vDbgBreak	p2pnat/include/p2p_log.h	116;"	d
+vSysCrash	p2pnat/include/p2p_log.h	117;"	d
+val	client/lock.c	/^  int val;$/;"	m	union:semun	file:
+val	fsplib/lock.c	/^  int val;$/;"	m	union:semun	file:
+validate_path	server/file.c	/^const char *validate_path (char * fullp, unsigned lenfullp, PPATH * pp,DIRINFO **di, int want_directory)$/;"	f
+ver_enabled	server/conf.c	/^int ver_enabled = 1;$/;"	v
+version	p2pnat/include/rendezvous_packet.h	/^	char version[10];$/;"	m	struct:__anon10
+writing	fsplib/include/fsplib.h	/^	unsigned char writing;     \/* opened for writing *\/$/;"	m	struct:FSP_FILE
+xferlog	server/log.c	/^void xferlog(char direction, const char *filename,unsigned long filesize,const char *hostname)$/;"	f
+xlen	fsplib/include/fsplib.h	/^	unsigned short     xlen; \/* number of bytes in buf 2  *\/$/;"	m	struct:FSP_PKT
+yankexpr	bsd_src/operator.c	/^static PLAN *yankexpr (PLAN ** planp)$/;"	f	file:
+yanknode	bsd_src/operator.c	/^static PLAN *yanknode (PLAN ** planp)$/;"	f	file:
+yy_accept	clients/fspprof.c	/^static yyconst short int yy_accept[246] =$/;"	v	file:
+yy_accept	clients/fspsites.c	/^static yyconst short int yy_accept[34] =$/;"	v	file:
+yy_at_bol	clients/fspprof.c	/^	int yy_at_bol;$/;"	m	struct:yy_buffer_state	file:
+yy_at_bol	clients/fspsites.c	/^	int yy_at_bol;$/;"	m	struct:yy_buffer_state	file:
+yy_base	clients/fspprof.c	/^static yyconst short int yy_base[263] =$/;"	v	file:
+yy_base	clients/fspsites.c	/^static yyconst short int yy_base[38] =$/;"	v	file:
+yy_buf_pos	clients/fspprof.c	/^	char *yy_buf_pos;		\/* current position in input buffer *\/$/;"	m	struct:yy_buffer_state	file:
+yy_buf_pos	clients/fspsites.c	/^	char *yy_buf_pos;		\/* current position in input buffer *\/$/;"	m	struct:yy_buffer_state	file:
+yy_buf_size	clients/fspprof.c	/^	yy_size_t yy_buf_size;$/;"	m	struct:yy_buffer_state	file:
+yy_buf_size	clients/fspsites.c	/^	yy_size_t yy_buf_size;$/;"	m	struct:yy_buffer_state	file:
+yy_buffer_state	clients/fspprof.c	/^struct yy_buffer_state$/;"	s	file:
+yy_buffer_state	clients/fspsites.c	/^struct yy_buffer_state$/;"	s	file:
+yy_buffer_status	clients/fspprof.c	/^	int yy_buffer_status;$/;"	m	struct:yy_buffer_state	file:
+yy_buffer_status	clients/fspsites.c	/^	int yy_buffer_status;$/;"	m	struct:yy_buffer_state	file:
+yy_c_buf_p	clients/fspprof.c	/^static char *yy_c_buf_p = (char *) 0;$/;"	v	file:
+yy_c_buf_p	clients/fspsites.c	/^static char *yy_c_buf_p = (char *) 0;$/;"	v	file:
+yy_ch_buf	clients/fspprof.c	/^	char *yy_ch_buf;		\/* input buffer *\/$/;"	m	struct:yy_buffer_state	file:
+yy_ch_buf	clients/fspsites.c	/^	char *yy_ch_buf;		\/* input buffer *\/$/;"	m	struct:yy_buffer_state	file:
+yy_chk	clients/fspprof.c	/^static yyconst short int yy_chk[512] =$/;"	v	file:
+yy_chk	clients/fspsites.c	/^static yyconst short int yy_chk[53] =$/;"	v	file:
+yy_create_buffer	clients/fspprof.c	/^YY_BUFFER_STATE yy_create_buffer( FILE *file, int size )$/;"	f
+yy_create_buffer	clients/fspsites.c	/^YY_BUFFER_STATE yy_create_buffer( FILE *file, int size )$/;"	f
+yy_create_buffer	clients/fspsites.c	1;"	d	file:
+yy_current_buffer	clients/fspprof.c	/^static YY_BUFFER_STATE yy_current_buffer = 0;$/;"	v	file:
+yy_current_buffer	clients/fspsites.c	/^static YY_BUFFER_STATE yy_current_buffer = 0;$/;"	v	file:
+yy_def	clients/fspprof.c	/^static yyconst short int yy_def[263] =$/;"	v	file:
+yy_def	clients/fspsites.c	/^static yyconst short int yy_def[38] =$/;"	v	file:
+yy_delete_buffer	clients/fspprof.c	/^void yy_delete_buffer( YY_BUFFER_STATE b )$/;"	f
+yy_delete_buffer	clients/fspsites.c	/^void yy_delete_buffer( YY_BUFFER_STATE b )$/;"	f
+yy_delete_buffer	clients/fspsites.c	2;"	d	file:
+yy_did_buffer_switch_on_eof	clients/fspprof.c	/^static int yy_did_buffer_switch_on_eof;$/;"	v	file:
+yy_did_buffer_switch_on_eof	clients/fspsites.c	/^static int yy_did_buffer_switch_on_eof;$/;"	v	file:
+yy_ec	clients/fspprof.c	/^static yyconst int yy_ec[256] =$/;"	v	file:
+yy_ec	clients/fspsites.c	/^static yyconst int yy_ec[256] =$/;"	v	file:
+yy_fatal_error	clients/fspprof.c	/^static void yy_fatal_error( yyconst char msg[] )$/;"	f	file:
+yy_fatal_error	clients/fspsites.c	/^static void yy_fatal_error( yyconst char msg[] )$/;"	f	file:
+yy_fill_buffer	clients/fspprof.c	/^	int yy_fill_buffer;$/;"	m	struct:yy_buffer_state	file:
+yy_fill_buffer	clients/fspsites.c	/^	int yy_fill_buffer;$/;"	m	struct:yy_buffer_state	file:
+yy_flex_alloc	clients/fspprof.c	/^static void *yy_flex_alloc( yy_size_t size )$/;"	f	file:
+yy_flex_alloc	clients/fspsites.c	/^static void *yy_flex_alloc( yy_size_t size )$/;"	f	file:
+yy_flex_debug	clients/fspsites.c	6;"	d	file:
+yy_flex_free	clients/fspprof.c	/^static void yy_flex_free( void *ptr )$/;"	f	file:
+yy_flex_free	clients/fspsites.c	/^static void yy_flex_free( void *ptr )$/;"	f	file:
+yy_flex_realloc	clients/fspprof.c	/^static void *yy_flex_realloc( void *ptr, yy_size_t size )$/;"	f	file:
+yy_flex_realloc	clients/fspsites.c	/^static void *yy_flex_realloc( void *ptr, yy_size_t size )$/;"	f	file:
+yy_flex_strlen	clients/fspprof.c	/^static int yy_flex_strlen( yyconst char *s )$/;"	f	file:
+yy_flex_strlen	clients/fspsites.c	/^static int yy_flex_strlen( yyconst char *s )$/;"	f	file:
+yy_flex_strncpy	clients/fspprof.c	/^static void yy_flex_strncpy( char *s1, yyconst char *s2, int n )$/;"	f	file:
+yy_flex_strncpy	clients/fspsites.c	/^static void yy_flex_strncpy( char *s1, yyconst char *s2, int n )$/;"	f	file:
+yy_flush_buffer	clients/fspprof.c	/^void yy_flush_buffer( YY_BUFFER_STATE b )$/;"	f
+yy_flush_buffer	clients/fspsites.c	/^void yy_flush_buffer( YY_BUFFER_STATE b )$/;"	f
+yy_flush_buffer	clients/fspsites.c	8;"	d	file:
+yy_get_next_buffer	clients/fspprof.c	/^static int yy_get_next_buffer()$/;"	f	file:
+yy_get_next_buffer	clients/fspsites.c	/^static int yy_get_next_buffer()$/;"	f	file:
+yy_get_previous_state	clients/fspprof.c	/^static yy_state_type yy_get_previous_state()$/;"	f	file:
+yy_get_previous_state	clients/fspsites.c	/^static yy_state_type yy_get_previous_state()$/;"	f	file:
+yy_hold_char	clients/fspprof.c	/^static char yy_hold_char;$/;"	v	file:
+yy_hold_char	clients/fspsites.c	/^static char yy_hold_char;$/;"	v	file:
+yy_init	clients/fspprof.c	/^static int yy_init = 1;		\/* whether we need to initialize *\/$/;"	v	file:
+yy_init	clients/fspsites.c	/^static int yy_init = 1;		\/* whether we need to initialize *\/$/;"	v	file:
+yy_init_buffer	clients/fspprof.c	/^void yy_init_buffer( YY_BUFFER_STATE b, FILE *file )$/;"	f
+yy_init_buffer	clients/fspsites.c	/^void yy_init_buffer( YY_BUFFER_STATE b, FILE *file )$/;"	f
+yy_init_buffer	clients/fspsites.c	7;"	d	file:
+yy_input_file	clients/fspprof.c	/^	FILE *yy_input_file;$/;"	m	struct:yy_buffer_state	file:
+yy_input_file	clients/fspsites.c	/^	FILE *yy_input_file;$/;"	m	struct:yy_buffer_state	file:
+yy_is_interactive	clients/fspprof.c	/^	int yy_is_interactive;$/;"	m	struct:yy_buffer_state	file:
+yy_is_interactive	clients/fspsites.c	/^	int yy_is_interactive;$/;"	m	struct:yy_buffer_state	file:
+yy_is_our_buffer	clients/fspprof.c	/^	int yy_is_our_buffer;$/;"	m	struct:yy_buffer_state	file:
+yy_is_our_buffer	clients/fspsites.c	/^	int yy_is_our_buffer;$/;"	m	struct:yy_buffer_state	file:
+yy_last_accepting_cpos	clients/fspprof.c	/^static char *yy_last_accepting_cpos;$/;"	v	file:
+yy_last_accepting_cpos	clients/fspsites.c	/^static char *yy_last_accepting_cpos;$/;"	v	file:
+yy_last_accepting_state	clients/fspprof.c	/^static yy_state_type yy_last_accepting_state;$/;"	v	file:
+yy_last_accepting_state	clients/fspsites.c	/^static yy_state_type yy_last_accepting_state;$/;"	v	file:
+yy_load_buffer_state	clients/fspprof.c	/^void yy_load_buffer_state( void )$/;"	f
+yy_load_buffer_state	clients/fspsites.c	/^void yy_load_buffer_state( void )$/;"	f
+yy_load_buffer_state	clients/fspsites.c	9;"	d	file:
+yy_meta	clients/fspprof.c	/^static yyconst int yy_meta[29] =$/;"	v	file:
+yy_meta	clients/fspsites.c	/^static yyconst int yy_meta[11] =$/;"	v	file:
+yy_n_chars	clients/fspprof.c	/^	int yy_n_chars;$/;"	m	struct:yy_buffer_state	file:
+yy_n_chars	clients/fspprof.c	/^static int yy_n_chars;		\/* number of characters read into yy_ch_buf *\/$/;"	v	file:
+yy_n_chars	clients/fspsites.c	/^	int yy_n_chars;$/;"	m	struct:yy_buffer_state	file:
+yy_n_chars	clients/fspsites.c	/^static int yy_n_chars;		\/* number of characters read into yy_ch_buf *\/$/;"	v	file:
+yy_new_buffer	clients/fspprof.c	255;"	d	file:
+yy_new_buffer	clients/fspsites.c	273;"	d	file:
+yy_nxt	clients/fspprof.c	/^static yyconst short int yy_nxt[512] =$/;"	v	file:
+yy_nxt	clients/fspsites.c	/^static yyconst short int yy_nxt[53] =$/;"	v	file:
+yy_pop_state	clients/fspprof.c	/^static void yy_pop_state()$/;"	f	file:
+yy_pop_state	clients/fspsites.c	/^static void yy_pop_state()$/;"	f	file:
+yy_push_state	clients/fspprof.c	/^static void yy_push_state( int new_state )$/;"	f	file:
+yy_push_state	clients/fspsites.c	/^static void yy_push_state( int new_state )$/;"	f	file:
+yy_scan_buffer	clients/fspprof.c	/^YY_BUFFER_STATE yy_scan_buffer( char *base, yy_size_t size )$/;"	f
+yy_scan_buffer	clients/fspsites.c	/^YY_BUFFER_STATE yy_scan_buffer( char *base, yy_size_t size )$/;"	f
+yy_scan_buffer	clients/fspsites.c	3;"	d	file:
+yy_scan_bytes	clients/fspprof.c	/^YY_BUFFER_STATE yy_scan_bytes( yyconst char *bytes, int len )$/;"	f
+yy_scan_bytes	clients/fspsites.c	/^YY_BUFFER_STATE yy_scan_bytes( yyconst char *bytes, int len )$/;"	f
+yy_scan_bytes	clients/fspsites.c	5;"	d	file:
+yy_scan_string	clients/fspprof.c	/^YY_BUFFER_STATE yy_scan_string( yyconst char *yy_str )$/;"	f
+yy_scan_string	clients/fspsites.c	/^YY_BUFFER_STATE yy_scan_string( yyconst char *yy_str )$/;"	f
+yy_scan_string	clients/fspsites.c	4;"	d	file:
+yy_set_bol	clients/fspprof.c	264;"	d	file:
+yy_set_bol	clients/fspsites.c	282;"	d	file:
+yy_set_interactive	clients/fspprof.c	257;"	d	file:
+yy_set_interactive	clients/fspsites.c	275;"	d	file:
+yy_size_t	clients/fspprof.c	/^typedef unsigned int yy_size_t;$/;"	t	file:
+yy_size_t	clients/fspsites.c	/^typedef unsigned int yy_size_t;$/;"	t	file:
+yy_start	clients/fspprof.c	/^static int yy_start = 0;	\/* start state number *\/$/;"	v	file:
+yy_start	clients/fspsites.c	/^static int yy_start = 0;	\/* start state number *\/$/;"	v	file:
+yy_start_stack	clients/fspprof.c	/^static int *yy_start_stack = 0;$/;"	v	file:
+yy_start_stack	clients/fspsites.c	/^static int *yy_start_stack = 0;$/;"	v	file:
+yy_start_stack_depth	clients/fspprof.c	/^static int yy_start_stack_depth = 0;$/;"	v	file:
+yy_start_stack_depth	clients/fspsites.c	/^static int yy_start_stack_depth = 0;$/;"	v	file:
+yy_start_stack_ptr	clients/fspprof.c	/^static int yy_start_stack_ptr = 0;$/;"	v	file:
+yy_start_stack_ptr	clients/fspsites.c	/^static int yy_start_stack_ptr = 0;$/;"	v	file:
+yy_state_type	clients/fspprof.c	/^typedef int yy_state_type;$/;"	t	file:
+yy_state_type	clients/fspsites.c	/^typedef int yy_state_type;$/;"	t	file:
+yy_switch_to_buffer	clients/fspprof.c	/^void yy_switch_to_buffer( YY_BUFFER_STATE new_buffer )$/;"	f
+yy_switch_to_buffer	clients/fspsites.c	/^void yy_switch_to_buffer( YY_BUFFER_STATE new_buffer )$/;"	f
+yy_switch_to_buffer	clients/fspsites.c	10;"	d	file:
+yy_top_state	clients/fspprof.c	/^static int yy_top_state()$/;"	f	file:
+yy_top_state	clients/fspsites.c	/^static int yy_top_state()$/;"	f	file:
+yy_try_NUL_trans	clients/fspprof.c	/^static yy_state_type yy_try_NUL_trans( yy_state_type yy_current_state )$/;"	f	file:
+yy_try_NUL_trans	clients/fspsites.c	/^static yy_state_type yy_try_NUL_trans( yy_state_type yy_current_state )$/;"	f	file:
+yyconst	clients/fspprof.c	53;"	d	file:
+yyconst	clients/fspprof.c	55;"	d	file:
+yyconst	clients/fspsites.c	71;"	d	file:
+yyconst	clients/fspsites.c	73;"	d	file:
+yyin	clients/fspprof.c	/^FILE *yyin = (FILE *) 0, *yyout = (FILE *) 0;$/;"	v
+yyin	clients/fspsites.c	/^FILE *yyin = (FILE *) 0, *yyout = (FILE *) 0;$/;"	v
+yyin	clients/fspsites.c	11;"	d	file:
+yyinput	clients/fspprof.c	/^static int yyinput()$/;"	f	file:
+yyinput	clients/fspsites.c	/^static int yyinput()$/;"	f	file:
+yyleng	clients/fspprof.c	/^int yyleng;$/;"	v
+yyleng	clients/fspsites.c	/^int yyleng;$/;"	v
+yyleng	clients/fspsites.c	12;"	d	file:
+yyless	clients/fspprof.c	124;"	d	file:
+yyless	clients/fspprof.c	1832;"	d	file:
+yyless	clients/fspprof.c	1833;"	d	file:
+yyless	clients/fspsites.c	142;"	d	file:
+yyless	clients/fspsites.c	1507;"	d	file:
+yyless	clients/fspsites.c	1508;"	d	file:
+yylex	clients/fspsites.c	13;"	d	file:
+yymore	clients/fspprof.c	561;"	d	file:
+yymore	clients/fspsites.c	402;"	d	file:
+yyout	clients/fspprof.c	/^FILE *yyin = (FILE *) 0, *yyout = (FILE *) 0;$/;"	v
+yyout	clients/fspsites.c	/^FILE *yyin = (FILE *) 0, *yyout = (FILE *) 0;$/;"	v
+yyout	clients/fspsites.c	14;"	d	file:
+yyrestart	clients/fspprof.c	/^void yyrestart( FILE *input_file )$/;"	f
+yyrestart	clients/fspsites.c	/^void yyrestart( FILE *input_file )$/;"	f
+yyrestart	clients/fspsites.c	15;"	d	file:
+yyterminate	clients/fspprof.c	704;"	d	file:
+yyterminate	clients/fspsites.c	535;"	d	file:
+yytext	clients/fspprof.c	/^char *yytext;$/;"	v
+yytext	clients/fspsites.c	/^char *yytext;$/;"	v
+yytext	clients/fspsites.c	16;"	d	file:
+yytext_ptr	clients/fspprof.c	277;"	d	file:
+yytext_ptr	clients/fspsites.c	295;"	d	file:
+yyunput	clients/fspprof.c	/^static void yyunput( int c, register char *yy_bp )$/;"	f	file:
+yyunput	clients/fspsites.c	/^static void yyunput( int c, register char *yy_bp )$/;"	f	file:
+yywrap	clients/fhostcmd.c	/^int yywrap(void)$/;"	f
+yywrap	clients/fspsites.c	17;"	d	file:

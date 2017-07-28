@@ -1,0 +1,208 @@
+                                    Interested parties about FSP please email
+                                                               to Radim Kolar
+                                                           hsn at sendmail.cz
+                                                        visit our homepage on
+                                                  http://fsp.sourceforge.net/
+                                                                 and join us!
+    
+        For more than 7 years benefits of FSP protocol were unnoticed
+        and FSP software was not maintained...
+
+    FSP today
+
+        Written by Radim Kolar
+
+        Protocol related
+
+	FSP uses UDP datagrams and it is reliable even when there is
+	high number of packet loss. It is usable on WiFi network with
+	60%-80% packet loss.
+
+	FSP can very quickly addapt to changing line condition. This
+	is excelent for wireless packet networks where network condition
+	changes wildly based on receiver location and disturbance.
+	Unlike TCP based protocols, FSP has a fast restart when
+	line condition improves - It do not needs any RTT for retuning
+	self. FSP goes immediatly back to maximum possible speed.
+	
+	Maximum FSP speed is by design lower than maximum speed of TCP
+	based protocols because it has only 1 packet in the network.
+	TCP protocol has about 3 packets. Design of FSP protocol
+	makes impossible to send more than 1 packet into network.
+	This is nice method for bandwidth protection, better handling
+	traffic spikes and for sever protection against denial of
+	service attacks on server.
+
+	FSP server do not sends any data out unless is asked for. This
+	solves problem with transfering duplicate data when using TCP
+	protocol on overloaded lines. About 30% are dupes, thrown out
+	by client. Note: TCP stacks from BSD family has this dupe
+	ratio much lower.
+
+        Embedded devices
+
+	FSP protocol is very easy to implement; client core has about
+	one page of C code. It is ideal for embedded devices for
+	file-transfer tasks, like firmware downloading. Because of its
+	simplicity, there is a little chance to writing buggy
+	implementation.
+
+	FSP is also good for remote booting. It is simplier, faster
+	and more reliable than TFTP and supports directory listings.
+
+	FSP protocol can be used as wire-protocol even without using
+	any layer 2 stuff. It operates in degraded mode with extra
+	features disabled.
+
+	Stealth operation
+
+	UDP ports are not often port scanned today, only one exception
+	is scanning for Windows/Samba file sharing service. Nobody
+	will notice that you are running a fsp server.
+
+	FSP uses UDP which is unnoticed by many firewalls. FSP server
+	runs on 21 port by default, if you move it to port 53 (dns)
+	even strictly configured firewall can be worked around.
+
+	You want to run anonymous archive and want to keep lamers out.
+
+        Busy sites
+
+	You want to share something without ruining your valueable
+	bandwidth or latency. FSP protocol is slower than TCP based
+	protocol it means that more bandwith will be left for your own use.
+	Important point is that starting data sharing via FSP do not
+	considerably raises your network latency because FSP can
+	have just 1 packet floating in network. In ideal condition you will
+	not notice increased latency at all.
+
+	You have overloaded archive site. It is historicaly proven fact
+	that FSP handles overloaded lines or sites better than anything else.
+	FSP is very suitable for distributing updates to very large number
+	of subscribers because it can easily handle traffic spikes without
+	breaking connections and it can be very easily distributed between
+	multiple servers because it is more or less connectionless.
+
+	You do want to share large data files (movies, ISO images) on
+	slow (or you do not want to waste valuable bandwidth) lines.
+	Ideal for sharing files on modem lines.
+
+        FSP daemon is a very light server.
+
+    What is the purpose of FSP (V2.8.1):
+
+        Written by A.J.Doherty@reading.ac.uk
+    
+        FSP is a set of programs that implements a public-access archive
+        similar to an anonymous-FTP archive.  It is not meant to be a
+        replacement for FTP; it is only meant to do what anonymous-FTP
+        does, but in a manner more acceptable to the provider of the
+        service and more friendly to the clients. 
+
+        Providing anonymous-FTP service can be costly --- each active
+        session consumes one process slot in the OS and one stream socket
+        entry in the network sub-system.  The servers can also run
+        concurrently, adding to the system load.  A popular archive site
+        can easily be overwhelmed as a result.  Some were forced to
+        shutdown and some impose inconvenient access restrictions. 
+
+        Unlike FTP, FSP is connection-less and virtually state-less.  One
+        server handles requests from all clients machines.  Each active
+        client machine takes up 16-bytes in a dynamically extensible
+        table.  Since only one server exists on a server machine at any
+        time, the load added to the server machine is no more than one. 
+
+        In exchange for allowing site operators to keep their sites open
+        and do away with cumbersome access restrictions, this is what the
+        clients accept with FSP: 
+
+         1) Lower transfer rate.  The maximum rate is 1 kbyte per UDP
+            message round-trip time between the client and the server.
+        
+        In addition to the potential for more abundant sites and more
+        accessible sites, this is what the clients gain with FSP:
+
+         1) Robustness.  Since FSP is connectionless, fluctuations in
+            the network will not abort a FSP transaction.  Furthermore,
+            the 16-bytes of data for each client can be regenerated at
+            any point during any transaction.  Thus, if the server goes
+            down at any point during a transaction, the transaction will
+            resume when the server is restarted.  (like NFS) 
+
+         2) Friendlier user interface.  FSP does not have its own command
+            interpretor like FTP.  Since it is connectionless, there is
+            no reason to carry much information from one command to the
+            next, and the commands can all be made into individual Unix
+            programs.  For instance, there is one program you run to list
+            the directory and another you run to download a file. 
+
+         3) Client protection.  FSP oversees a directory structure similar
+            to that of an anonymous-FTP.  However, a directory created
+            via FSP transaction is owned by the client machine that issued
+            the creation request.  The client can create and delete files
+            and subdirectories in that directory.  In addition, the client
+            can enable any of the four attributes for that directory: 
+
+                A) Give all other clients the permission to create files.
+
+                B) Give all other clients the permission to delete files
+                   or subdirectories.
+
+                C) Give all other clients the permission to read files.
+                   (this is true by default)
+
+                D) Give all other clients the permission to create sub-
+                   directories.
+
+            Note: A subdirectory can be deleted if it is empty and the
+                  client owns the subdirectory.
+
+         4) Server protection.  FSP server does not spawn sub-programs.
+            It will accept only paths that are downward relative to its
+            designated working directory.  On systems with symbolic links,
+            the server will follow symbolic links, but it does not follow
+            uplinks ("..").  Clients cannot create symbolic links and
+            care should be taken so that other users on the server machine
+            cannot create symbolic links in the server's work space. 
+
+            It is also fairly difficult to formulate an attack to force a
+            shutdown of a FSP site by actions of a rogue site.  About the
+            only way to disrupt a FSP service is to flood the FSP site
+            with network packets.  FSP server prevents itself from
+            'counter-flooding' by filtering for legitimate requests using
+            the following method:
+
+                A) Each request message contains a key.  For each client,
+                   server database contains the keys to be used for the
+                   next client request and for the previous client request.
+
+                B) If the next request does not contain a key that matches
+                   either of the two keys, it is accepted only if at least
+                   one minute has elapsed since the last time a request
+                   is accepted.  If the key does match the old key
+                   (retransmit by client) it is accepted if the elapse time
+                   is greater than 3 seconds.
+
+                C) Every request message accepted is acknowledged with
+                   one reply message.  The reply message contains a new
+                   key to used for the next request.  The new key is
+                   computed by the server with a pseudo-random number
+                   generator. 
+
+            Flooding is a blatant violation of network etiquette because
+            a site can be subjected to flooding attack whether it has FSP
+            running or not, and flooding congests every link and gateway
+            between the rogue client and the server.  As a further measure
+            of protection, the server loads a table of rogue clients on
+            startup.  The server will not respond to requests from any of
+            those clients.
+
+    ***********************************************************************
+
+    This is a free software.  Be creative; make your own macros and tools
+    and let me know of any bugs and suggestions. 
+   
+    ***********************************************************************
+    
+    Source code uses several BSD-like licenses; Whole FSP is distributed
+    under 2-point BSD license, also known as MIT X11 License.

@@ -1,0 +1,111 @@
+FSP SUITE TO DO LIST
+====================
+
+/* maintained by hsn -at- sendmail * cz */
+
+Radim Kolar's personal wishlist from 1997
+*-high priority-*
+ - show loosers online (finfo command) and server statz
+
+SCons build framework:
+Supports for detecting cygwin environment and define OS_CYGWIN 1
+
+TESTSUITE NEEDED:
+Write a simple FSP protocol testing tool
+Write a test suite using testing tool
+test for remote buffer overflows
+Test if >2GB files but <4GB works correctly with and without --disable-largefile
+
+SECURITY BUGS:
+symlink to FILE can escape from FSP root directory. OLD known problem.
+symlink support must be reworked before `final` release.
+
+PROTOCOL-RELATED BUGS:
+we should add real,portable error codes support to CC_ERR extended data area.
+
+NEEDS IMPROVMENT:
+
+Client LIBRARY
+:low:
+fver and others add support new syntax fsp://host:port/file
+
+:long-term goals:
+drop this library and use libfsp instead
+
+LOCKING
+
+CLIENTS 
+:high: 
+some client commands should exit with nonzero rc on failure
+
+:low:
+clients do not freeing memory allocated from glob()
+
+FUTURE FEATURES FOR SERVER:
+:high: required for 2.8.2 final
+report number of clients connected, size of hostable in new command
+ CC_INFO command
+possible? special defence against rapid/double fire clients (burst command in fspclient)
+Native Supports for symbolic links (needed for mirroring Debian)
+new LSTAT COMMAND, new MAKELINK command
+
+SERVER DIR LISTINGS
+Server should save .FSP_CONTENT using 1k size directory blocks
+Server should support sending different sized directory blocks
+
+:midle:may not be in 2.8.2
+write FSP_CHANGE_PASSWORD command
+improve RENAME FSP command
+  * cross directory renames are unsuported for now
+
+:low:this will sure go after 2.8.2:
+hashed passwords. Do we really needs them?
+add switch for directory vs global ACL overide
+hard code acl into server configuration, do not use .FSP_ filez.
+support for user directory namespace ~hsn / public_html, check links to outside!
+use ntons a podobne funkce v iprange.c
+ipv6 socket support
+privileged Hosts, excluded from Byte transfer Limit (hard to do)
+
+
+PERFORMANCE:
+do host hashtable shrinking/clearing sometimes
+stat cache for FSP_STAT a other stat() calls
+chage O(N) fifo cache to some more sane lru hashtable code.
+background time() alarm() caller 
+Current performance 1925648B/s
+
+MAN:
+separate manpage for 7 fsp (protocol definition) == write FSP RFC
+Register udp/21 for FSP in http://www.iana.org/ FSP RFC needed!
+
+POSSIBLE NEW PROJECTS
+FSP Proxy repeater - take a look at old code, but we have NAT and fspproxy
+  today.
+Experimental transfer HTTP over fsp transport. Coder needed!
+
+libraries and support for FSP protocol
+======================================
+
+DONE: FSP library for Java
+DONE: FSP over HTTP
+DONE: new small,light fsplib for C.
+DONE: fsp backend in gftp
+
+FSP plugin for Netscape/MSIE. 
+  Not possible to write protocol plugins with Netscape 3 SDK,
+  not sure about MSIE 
+  we have fsproxy now.
+  Mozilla/Firefox have support for protocol plugins
+FSP backend for APT
+FSP support in major ftp programs: lftp,wget,curl
+Gnome vfs2 plugin
+AVFS plugin http://sourceforge.net/projects/avf
+
+LARGEFILES64 how to turn them on:
+*-------------------------------*
+
+Cygwin: #define __LARGE64_FILES fopen64,ftello64,fseeko64 _off64_t
+glibc 2.3: #define _LARGEFILE64_SOURCE off64_t
+native: _FILE_OFFSETS_BITS = 32 / 64 then use off_t
+FreeBSD: in 5.X always enabled, in 4.X not supported.

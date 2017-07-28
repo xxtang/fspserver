@@ -1,0 +1,45 @@
+---- xxfan Æ¥Åä (44 in 11 ÎÄ¼þ) ----
+Acl.c (server):	if(dbug) fprintf(stderr,"load access rights\n");/*Add xxfan*/
+Conf.c (server):/*Add by xxfan 2016-06-23*/
+Conf.c (server):/*Add by xxfan 2016-06-14*/
+Conf.c (server):/*Add by xxfan 2016-06-14*/
+Conf.c (server):			//exit(1);//- by xxfan 2016-6-27*/
+Conf.c (server):			continue;/*+by xxfan*/
+Conf.c (server):		/*Add by xxfan 2016-06-14	*/
+Conf.c (server):	/*Add by xxfan*/
+Conf.c (server):/*Add by xxfan*/
+File.c (server):	/*load access rights from home dir//Add by xxfan
+File.c (server):	//newdir.realname=strdup(work);//Del by xxfan*/
+File.c (server):	chdir(home_dir);/*Add by xxfan*/
+File.c (server):	newdir.realname=strdup(home_dir);/*Add by xxfan*/
+File.c (server):	newdir.realname=strdup(work);/*Add by xxfan*/
+File.c (server):	/*Del by xxfan
+File.c (server):	//Add by xxfan*/
+File.c (server):		//Add by xxfan
+Fspd.conf: homedir /home/xxfan/fsp
+Fspd.conf:tmpdir /home/xxfan/tmp/fsp
+Fspd.conf:pidlogname /home/xxfan/tmp/fspd.pid
+Fspd.conf:dumpfile /home/xxfan/tmp/fspd.stats
+Fspd.conf:logfile /home/xxfan/tmp/logfile
+Fspd.conf:xferlog /home/xxfan/tmp/xferlog
+Fsplib.c (fsplib):	//p2pnat add by xxfan 2016-03-11
+Fsplib.c (fsplib):// Add by xxfan 2016-03-30
+Fspscan.h (contrib):#define UBUF_SPACE 147080			        /* Changed by xxfan */
+Log.c (server):int logfile_size = 0;/* the current size of logfile */  //Add by xxfan
+Log.c (server):int tlogfile_size = 0;/*the current sizeo of tlogfile */  //Add by xxfan
+Log.c (server):	//Add by xxfan
+Log.c (server)://add by xxfan 2016-03-23
+Log.c (server)://add by xxfan 2016-03-23
+Log.c (server):	//Add by xxfan 2016-03-23
+Main.c (server):/*for p2pnat, add by xxfan 2016-03-09*/
+Main.c (server):	/*for p2pnat by xxfan 2016-03-09
+Server.c (server):/*Add by xxfan 2016-6-15
+Server.c (server):	/*for p2pnat by xxfan 16-03-08*/
+Server.c (server):			/*p2pnat add by xxfan 16-03-08
+Server.c (server):			// - by xxfan 2016-6-4
+Server.c (server):				/*- by xxfan 2016-6-4
+Server.c (server):			/*Add by xxfan	*/
+Server.c (server):			/*Add by xxfan 2016-03-25
+Server.c (server):/*Add by xxfan 2016-06-08*/
+Server_conf.h (include): - by xxfan 2016-6-14
+S_extern.h (include):/*Add by xxfan

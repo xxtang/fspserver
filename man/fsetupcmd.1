@@ -1,0 +1,76 @@
+.TH FSETUP 1 "Sep 2009" FSP
+.SH NAME
+fsetupcmd, fsetup \- set environment variables
+.SH SYNOPSIS
+.B fsetup -l | [-c | -b] host port [directory] | abbreviation
+.SH DESCRIPTION
+.LP
+.B fsetup
+uses a resources files to set all environmant variables needed to connect to a
+given host via FSP.
+.B fsetup
+loads all available resource files. If server is defined in multiple
+files, first match is returned. Load order is
+.I .fspsites
+in the current working directory and in the user's home
+directory. Then a system wide default file is used.
+If
+.B fsetup 
+is invoked with an abbreviation given, the resource files are searched for the
+first host to match this abbreviation. The values given for this host will
+be set.
+.LP
+If
+.B fsetup
+is invoked with a given host and port number, this host will be used and no
+searching in the resource file will be done.
+.LP
+Since programs cannot change environment variables of their parent shell in
+a simple way, it is recommended that the user defines a shell alias or
+function to make it possible.
+.LP
+.B csh
+example:
+.LP
+.nf
+alias fsetup 'eval `fsetupcmd \!*`'
+.fi
+.SH FILES
+.LP
+~/.fspsites
+.br
+/etc/fspsites
+
+For more information about the resource file confer
+.I fspsites(5).
+.SH ARGUMENTS
+.LP
+.B -l
+-- displays sites from
+.I fspsites(5)
+.LP
+.B -b
+-- output Bourne shell code
+.LP
+.B -c
+-- output C shell code
+.SH ENVIRONMENT
+.LP
+The environment variables associate this program with a FSP database and are
+set (resp. unset) if needed. See
+.I fsp_env(7)
+for list.
+.SH HISTORY
+.LP
+This program is rewrite of classic fsetup Perl script which was used in gold
+FSP era to parse standard fspsites format used for FSP site list exchange.
+It was used as replacement for
+.I fsp_prof(5)
+because it is much easier to use and more suitable for exchanging
+lists of public fsp servers.
+.SH "SEE ALSO"
+.PD
+fcatcmd(1), fcdcmd(1), fgetcmd(1), fgrabcmd(1), flscmd(1), fmkdir(1),
+fprocmd(1), fput(1), frmcmd(1), frmdircmd(1), fver(1), fducmd(1),
+fhostcmd(1), fspd(1), fsp_prof(5), ffindcmd(1), fsp_env(7), fbye(1),
+fspsites(5)

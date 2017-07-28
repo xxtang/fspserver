@@ -1,0 +1,187 @@
+Complete content of the FSP package:
+------------------------------------
+
+   BETA.README     Warning about using FSP beta versions
+   COPYRIGHT	   Who wrote FSP		   
+   ChangeLog	   A list of all the changes made to the source code
+		   seperated by version.
+   FILES	   This list.
+   INFO		   Information about the purpose of FSP
+   INSTALL	   Installation instructions for FSP
+   MACHINES        Where FSP compiles out of box
+   setup.csh       CSH script for initializing FSP (Unix).
+   setup.sh        SH script for initializing FSP (Unix).
+   fspd.conf   	   An example fspd.conf file suitable for copying and editing.
+   SConstruct      SCons main configuration file
+   SConscript      SCons script for building files in directory
+   TODO		   What is planed for future versions
+
+   doc/            Aditional FSP documentation
+   SConscript      SCons script for building files in directory
+   faq.html        OLD FSP FAQ
+   HISTORY         OLD FSP Changelog
+   PROTOCOL        FSP v2 protocol definition
+   4LAMERZ.TXT	   Lamerpack readme
+   fsp-faq.sgml    New SGML FSP FAQ
+
+   bsd_src/        Directory containing additional sources derived from
+                   those in public archive on uunet.uu.net. Most sources
+                   are modified to deal with FSP or some architectures.
+    SConscript     SCons script for building files in directory
+    cmp.c          BSD compare routines.
+    find.c	   Source for BSD find.
+    fnmatch.c	   filename matching functions for BSD find.
+    function.c	   BSD find function parser.
+    glob.c         modified BSD globbing routine.
+    ls.c           Modified ls source.
+    operator.c	   operator parsing code for BSD find.
+    option.c	   option parsing for BSD find.
+    print.c        Directory print routines, modified for VMS.
+    random.c       BSD random/srandom functions.
+    util.c         additional util routines for ls.
+    
+   client/	   Code common to all clients
+    SConscript     SCons script for building files in directory
+    lib.c          Core routines of the client library.
+    lock.c         Simple file locking code to do client multi-plexing.
+    util.c         Supplementry routines of the client library.
+
+   clients/	   Code for the standalone and merged client versions
+    SConscript     SCons script for building files in directory
+    fgrabcmd.c     environment variables (fcdcmd and fhostcmd)
+    fcatcmd.c      These compiles into individual client utilities.
+    fcdcmd.c       Those with a "cmd" in their name will require
+    fducmd.c       shell alias wrappers either because they do their own
+    ffindcmd.c     file globbing on argv based on directory information
+    fgetcmd.c      gotten from the server or because the modify the
+    fhostcmd.c     
+    flscmd.c        
+    fmkdir.c       
+    fprocmd.c      
+    fput.c         
+    frmcmd.c       
+    frmdircmd.c    
+    fver.c         
+    fstatcmd.c     
+    fmvcmd.c	   
+    fspprof.l      lex rules for generating fsp_prof parser
+    fprintpro.c    display protections flags in human readable form 
+    merge.c        This file is used to call the other client programs
+	           when program merging option is used.  Rather than
+		   compiling into individual client utility programs,
+		   users may opt to build a single program which
+		   contains all client funtionalities, which are to
+		   be distinguished at run time by the name used to
+		   activate the program.  Significant space saving can
+		   be achieved on some machines.
+
+   common/	   Directory containing code used in both server and clients
+    SConscript     SCons script for building files in directory
+    strdup.c	   Unix strdup function.
+    random.c       Unix random function.
+    getsl.c        gets with length limit
+    udp_io.c       Lowest level routines that deal with the unix inet
+                   sockets. Some changes might be needed to get it
+                   running with other network implementations.
+   include/	   Directory containing all include files.
+    bsd_extern.h   External definitions for all the functions from bsd_src dir.
+    c_extern.h     External definitions for all the functions from client dir.
+    client_conf.h  Client options that need to be manually configured.
+    client_def.h   Definition for the client code.
+    co_extern.h	   External definitions for all the functions from common dir.
+    common_def.h   Definitions common to both the server code and the
+                   client code.
+    find.h	   definitions for the BSD find command.
+    ls.h           definitions for the BSD ls command.
+    my-string.h	   Headerfile to avoid some bogus redefinitions of strings.
+    proto.h	   function prototyping headers.
+    s_extern.h     External definitions for all the functions from server dir. 
+    server_conf.h  Server options that need to be manually configured.
+    server_def.h   Definitions for the server code.
+    tweak.h        Defines macros for correct compilation based on SCons
+                   configured defines.
+    version.h	   header file containing FSP version information.
+
+   man/		   Manual pages for the FSP clients/server.
+     SConscript    SCons script for building files in directory
+		   Man pages
+     fcat.1
+     fcatcmd.1
+     fcd.1
+     fcdcmd.1
+     fdu.1
+     fducmd.1
+     ffind.1
+     ffindcmd.1
+     fget.1
+     fgetcmd.1
+     fgrab.1
+     fgrabcmd.1
+     fhost.1
+     fhostcmd.1
+     fls.1
+     flscmd.1
+     fmkdir.1
+     fpro.1
+     fprocmd.1
+     fput.1
+     frm.1
+     frmcmd.1
+     frmdir.1
+     frmdircmd.1
+     fspd.1
+     fver.1
+     fsetup.1
+     fsp_prof.5
+     fsp_env.7
+
+   server/	   Files needed to compile the FSPD server
+    SConscript     SCons script for building files in directory
+    acl.c          ACL loading, saving, testing
+    conf.c         fspd configuration file reading routines. 
+    fifocache.c    Simple FIFO - style cache
+    file.c         Server routines for file i/o.
+    filecache.c    fp-caching routines.
+    host.c         Server routines for maintaining client database.
+    info.c         Generation of INFO block
+    iprange.c      Range checks for IPv4
+    log.c          Loging stuff
+    main.c         Server main routine and dispatch loop.
+    path.c         Path parser
+    pidfile.c      Pidfile writing
+    random.c       Next KEY generator
+    server.c       FSP Packet serving
+
+   contrib/        User contributed files
+    SConscript     SCons script for building files in directory
+    rotate.py      90deg. rotation of input text
+    fspscan.c      FSP site scanner
+    fspscan.h	   FSP site scanner header file
+    auto_del.csh   Remove outdated files from FSP home
+
+   tests/          Tests for some internal FSPD functions
+    SConscript     SCons script for building files in directory
+    cacheheck.c    FSP key/value Cache function tests
+    mklargefile.c  Creates large file
+    parsecheck.c   Input path parsing
+    randomcheck.c  Random generator tests
+
+   site_scons/	   Custom tests for SCons framework
+    importer.py    Imports variables from environment into SCons
+    clangtest.py   Test for existence of variable, variable size
+    gzipBuilder.py Builds GZip compressed file
+    lockprefix.py  User supplied lock prefix
+    symlinkBuilder.py Builds symlink
+    locktype.py    Autodetects or user selected locking type
+    timeout.py     Check if we should build clients with infinite retry
+    prefix.py      User supplied installation prefix
+    maintainer.py  Check if we are enabling maintainer mode
+    compilertest.py Tests if compiler support additional switches
+    lamerpack.py   Check if we are building lamerpack
+    mandir.py      User supplied man directory
+    debugmode.py   Check if extra debug info is requested
+    sysconfdir.py  User configured directory with server config
+    relsignals.py  Check if signal handlers auto installs themself
+    docdir.py      User supplied documentation directory
+    clients.py	   Check if we are installing client commands
+    sgmldoc.py     Check if sgmlfmt is available and working
